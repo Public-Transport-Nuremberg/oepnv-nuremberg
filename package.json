@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/BolverBlitz/oepnv-nuremberg#readme",
   "dependencies": {
-    "require": "^0.4.4"
+    "request": "^2.88.2"
   }
 }
