@@ -1,0 +1,28 @@
+{
+  "name": "oepnv-nuremberg",
+  "version": "0.0.1",
+  "description": "A wrapper for multiple datapoints from VAG and VGN",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BolverBlitz/oepnv-nuremberg.git"
+  },
+  "keywords": [
+    "VAG",
+    "VGN",
+    "Nürnberg",
+    "ÖPNV"
+  ],
+  "author": "BolverBlitz",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/BolverBlitz/oepnv-nuremberg/issues"
+  },
+  "homepage": "https://github.com/BolverBlitz/oepnv-nuremberg#readme",
+  "dependencies": {
+    "require": "^0.4.4"
+  }
+}
