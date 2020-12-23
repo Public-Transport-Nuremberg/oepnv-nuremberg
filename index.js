@@ -23,16 +23,22 @@ let getstops = function(Name) {
 		var url = VAGDE + "/haltestellen.json/vgn?name=" + urlReformat(Name.trim());
 		request(url, { json: true }, (err, res, body) => {
 			if (err) { reject(err); }
-			for(i in body.Haltestellen){
-				let HaltestellennameSplit = body.Haltestellen[i].Haltestellenname.split("(");
-				let Name = HaltestellennameSplit[0];
-				body.Haltestellen[i].Haltestellenname = Name.trim();
-				let Ort = HaltestellennameSplit[1].replace(/[)]/g,"",);
-				body.Haltestellen[i].Ort = Ort;
-				body.Haltestellen[i].Produkte = body.Haltestellen[i].Produkte.replace(/ubahn/i,"U-Bahn",);
-				body.Haltestellen[i].Produkte = body.Haltestellen[i].Produkte.replace(/,/g,", ",);
+			try {
+				if(res.statusCode === 200){
+					for(i in body.Haltestellen){
+						let HaltestellennameSplit = body.Haltestellen[i].Haltestellenname.split("(");
+						body.Haltestellen[i].Haltestellenname = HaltestellennameSplit[0].trim();
+						body.Haltestellen[i].Ort = HaltestellennameSplit[1].replace(/[)]/g,"",);;
+						body.Haltestellen[i].Produkte = body.Haltestellen[i].Produkte.replace(/ubahn/i,"U-Bahn",);
+						body.Haltestellen[i].Produkte = body.Haltestellen[i].Produkte.replace(/,/g,", ",);
+					}
+				}else{
+					reject(res.statusCode)
+				}
+				resolve(body.Haltestellen);
+			} catch (error) {
+				reject(error);
 			}
-			resolve(body.Haltestellen);
   
 		});
 	});
