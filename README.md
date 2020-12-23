@@ -14,11 +14,11 @@
  URL: https://www.vgn.de/verbindungen/  
  License: Unknown  
 
-### Functions and todo list
+## Functions and todo list
 
 - [ ] Departures
-- [ ] Stops based on names
-- [ ] Stops based on GPS
+- [X] Stops based on names
+- [X] Stops based on GPS
 - [ ] Cacheing of Stops
 - [ ] Stops based on IDs (Not supported by API, will use Cache)
 - [ ] Turn adress into GPS
@@ -26,7 +26,7 @@
 - [ ] Get routes from and to stops
 - [ ] Get routes to anything. IDs, Stopnames, Adresses, GPS
   
-### Usage
+## Usage
  > A working example is [Test.js](URL)
 
  Usage:
@@ -34,8 +34,10 @@
  const vgn = require('oepnv-nuremberg');
 
  var Name = 'Opern';
- vgn.Haltestellen(Name).then(
-    function(message) {
+ vgn.getstops(Name).then(
+   function(message) {
      console.log(message);
-    });
+ }).catch(error => console.log(error));
  ```
+
+## Methods

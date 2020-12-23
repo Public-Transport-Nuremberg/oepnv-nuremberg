@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/BolverBlitz/oepnv-nuremberg#readme",
   "dependencies": {
+    "geolib": "^3.3.1",
     "request": "^2.88.2"
   }
 }
