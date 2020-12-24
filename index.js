@@ -18,6 +18,13 @@ function urlReformat(value)
     return value;
 }
 
+function encodeQueryData(data) {
+	const ret = [];
+	for (let d in data)
+	  ret.push(encodeURIComponent(d) + '=' + encodeURIComponent(data[d]));
+	return ret.join('&');
+ }
+
 /* Haltestellen VAG API */
 
 /**
@@ -26,19 +33,19 @@ function urlReformat(value)
  * @param {Object} parameter 
  */
 
-let getstops = function(mame, parameter) {
+let getStops = function(mame, parameter) {
 	return new Promise(function(resolve, reject) {
 		var url = `${VAGDE}/haltestellen.json/vgn?name=${urlReformat(mame.trim())}`
 		request(url, { json: true }, (err, res, body) => {
 			if (err) { reject(err); }
 			try {
 				if(res.statusCode === 200){
-					for(i in body.Haltestellen){
-						let HaltestellennameSplit = body.Haltestellen[i].Haltestellenname.split("(");
-						body.Haltestellen[i].Haltestellenname = HaltestellennameSplit[0].trim();
-						body.Haltestellen[i].Ort = HaltestellennameSplit[1].replace(/[)]/g,"",);;
-						body.Haltestellen[i].Produkte = body.Haltestellen[i].Produkte.replace(/ubahn/i,"U-Bahn",);
-					}
+					body.Haltestellen.map((Haltestellen) => {
+						let HaltestellennameSplit = Haltestellen.Haltestellenname.split("(");
+						Haltestellen.Haltestellenname = HaltestellennameSplit[0].trim();
+						Haltestellen.Ort = HaltestellennameSplit[1].replace(/[)]/g,"",);;
+						Haltestellen.Produkte = Haltestellen.Produkte.replace(/ubahn/i,"U-Bahn",);
+					});
 					if(parameter){
 						if(parameter.limit){
 							resolve(body.Haltestellen.slice(0, parameter.limit));
@@ -67,7 +74,7 @@ let getstops = function(mame, parameter) {
  * @param {Object} parameter 
  */
 
-let getstopsbygps = function(lat, lon, parameter) {
+let getStopsbygps = function(lat, lon, parameter) {
 	return new Promise(function(resolve, reject) {
 		console.log(lat,lon,parameter)
 		if(!parameter.distance){
@@ -113,7 +120,52 @@ let getstopsbygps = function(lat, lon, parameter) {
 	});
 
 }
+
+/**
+ * 
+ * @param {Number} ID 
+ * @param {Object} parameter 
+ */
+
+let getDepartures = function(ID, parameter) {
+	return new Promise(function(resolve, reject) {
+		var url = `${VAGDE}/abfahrten.json/vgn/${ID}`
+		if(parameter){
+			url = `${url}?${encodeQueryData(parameter)}`
+		}
+		request(url, { json: true }, (err, res, body) => {
+			if (err) { 
+			resolve(err.code);		
+			return err; 
+			}
+			body.Abfahrten.map((Abfahrten) =>{
+				Abfahrten.Produkt = Abfahrten.Produkt.replace(/ubahn/i,"U-Bahn",);
+				AbfahrtZeitSollArray = Abfahrten.AbfahrtszeitSoll;
+				AbfahrtZeitSollArray = AbfahrtZeitSollArray.split("+");
+				AbfahrtZeitSollArray = AbfahrtZeitSollArray[0].split("T");
+				AbfahrtZeitSollArrayDatum = AbfahrtZeitSollArray[0].split("-");
+				AbfahrtZeitSollArrayZeit = AbfahrtZeitSollArray[1].split(":");
+				AbfahrtZeitSollArrayDatum = AbfahrtZeitSollArrayDatum[1] + "/" + AbfahrtZeitSollArrayDatum[2] + "/" + AbfahrtZeitSollArrayDatum[0]
+				AbfahrtZeitSollArrayZeitUnix = new Date(AbfahrtZeitSollArrayDatum).getTime() + AbfahrtZeitSollArrayZeit[0] * 60 * 60 * 1000 + AbfahrtZeitSollArrayZeit[1] * 60 * 1000 + AbfahrtZeitSollArrayZeit[2] * 1000 + 60 * 60 * 1000
+
+				AbfahrtZeitIstArray = Abfahrten.AbfahrtszeitIst;
+				AbfahrtZeitIstArray = AbfahrtZeitIstArray.split("+");
+				AbfahrtZeitIstArray = AbfahrtZeitIstArray[0].split("T");
+				AbfahrtZeitIstArrayDatum = AbfahrtZeitIstArray[0].split("-");
+				AbfahrtZeitIstArrayZeit = AbfahrtZeitIstArray[1].split(":");
+				AbfahrtZeitIstArrayDatum = AbfahrtZeitIstArrayDatum[1] + "/" + AbfahrtZeitIstArrayDatum[2] + "/" + AbfahrtZeitIstArrayDatum[0]
+				AbfahrtZeitIstArrayZeitUnix = new Date(AbfahrtZeitIstArrayDatum).getTime() + AbfahrtZeitIstArrayZeit[0] * 60 * 60 * 1000 + AbfahrtZeitIstArrayZeit[1] * 60 * 1000 + AbfahrtZeitIstArrayZeit[2] * 1000 + 60 * 60 * 1000
+										
+				Abfahrten.AbfahrtZeitSoll = AbfahrtZeitSollArray[1]
+				Abfahrten.Verspätung = (AbfahrtZeitIstArrayZeitUnix - AbfahrtZeitSollArrayZeitUnix)/1000
+			});
+			resolve(body.Abfahrten);
+		});
+	});
+}
+
 module.exports = {
-	getstops,
-	getstopsbygps
+	getStops,
+	getStopsbygps,
+	getDepartures
 };

@@ -16,6 +16,7 @@
 
 ## Functions and todo list
 
+- [ ] Departures based on Ids (API)
 - [ ] Departures based on names
 - [ ] Departures based on GPS
 - [X] Stops based on names
