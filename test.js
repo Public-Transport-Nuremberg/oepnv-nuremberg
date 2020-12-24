@@ -1,26 +1,20 @@
 const vgn = require('./index');
 
-var Data = {
-   lat: '49.45015694',
-   lon: '11.083455',
-   limit: 3,
-   };
 
 
+getstops('Plärrer', {limit: 1});
+getstopsbygps('49.45015694', '11.083455', {limit: 1, distance: 400, sort: 'Distance'});
 
-getstops("Plärrer");
-getstopsbygps(Data);
 
-
-function getstops(Name){
-   vgn.getstops(Name).then(
+function getstops(name, parameter){
+   vgn.getstops(name, parameter).then(
       function(message) {
       console.log(message);
       }).catch(error => console.log(error));
 }
 
-function getstopsbygps(Data){
-   vgn.getstopsbygps(Data).then(
+function getstopsbygps(lat, lon, parameter){
+   vgn.getstopsbygps(lat, lon, parameter).then(
       function(message) {
       console.log(message);
       }).catch(error => console.log(error));

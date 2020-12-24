@@ -16,7 +16,8 @@
 
 ## Functions and todo list
 
-- [ ] Departures
+- [ ] Departures based on names
+- [ ] Departures based on GPS
 - [X] Stops based on names
 - [X] Stops based on GPS
 - [ ] Cacheing of Stops
@@ -27,7 +28,7 @@
 - [ ] Get routes to anything. IDs, Stopnames, Adresses, GPS
   
 ## Usage
- > A working example is [Test.js](URL)
+ > A working example is [Test.js](https://github.com/BolverBlitz/oepnv-nuremberg/blob/main/test.js)
 
  Usage:
  ```js
@@ -41,3 +42,17 @@
  ```
 
 ## Methods
+
+### getstops
+limit: Limit the listed stops to this amount  
+ ```js
+getstops('Plärrer', {limit: 1});
+ ```
+
+### getstopsbygps
+limit: Limit the listed stops to this amount  
+distance: Limit to stops in a radius in meters arround your GPS position (default: 500m)  
+sort: Sort your stops by distance or alphabetically (default: 'distance')  
+ ```js
+getstopsbygps('49.45015694', '11.083455', {limit: 3, distance: 200, sort: 'distance'});
+ ```

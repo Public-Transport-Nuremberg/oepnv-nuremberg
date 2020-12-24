@@ -19,9 +19,16 @@ function urlReformat(value)
 }
 
 /* Haltestellen VAG API */
-let getstops = function(Name) {
+
+/**
+ * 
+ * @param {String} mame 
+ * @param {Object} parameter 
+ */
+
+let getstops = function(mame, parameter) {
 	return new Promise(function(resolve, reject) {
-		var url = `${VAGDE}/haltestellen.json/vgn?name=${urlReformat(Name.trim())}`
+		var url = `${VAGDE}/haltestellen.json/vgn?name=${urlReformat(mame.trim())}`
 		request(url, { json: true }, (err, res, body) => {
 			if (err) { reject(err); }
 			try {
@@ -31,12 +38,21 @@ let getstops = function(Name) {
 						body.Haltestellen[i].Haltestellenname = HaltestellennameSplit[0].trim();
 						body.Haltestellen[i].Ort = HaltestellennameSplit[1].replace(/[)]/g,"",);;
 						body.Haltestellen[i].Produkte = body.Haltestellen[i].Produkte.replace(/ubahn/i,"U-Bahn",);
+					}
+					if(parameter){
+						if(parameter.limit){
+							resolve(body.Haltestellen.slice(0, parameter.limit));
+						}
+					}else{
 						resolve(body.Haltestellen);
 					}
 				}else{
 					reject(res.statusCode)
 				}
 			} catch (error) {
+				if(error instanceof TypeError){
+					reject("Bad response from API");
+				}
 				reject(error);
 			}
   
@@ -44,22 +60,30 @@ let getstops = function(Name) {
 	});
 }
 
-let getstopsbygps = function(data) {
+/**
+ * 
+ * @param {String} lat 
+ * @param {String} lon 
+ * @param {Object} parameter 
+ */
+
+let getstopsbygps = function(lat, lon, parameter) {
 	return new Promise(function(resolve, reject) {
-		if(!data.distance){
-			data.distance = 500;
+		console.log(lat,lon,parameter)
+		if(!parameter.distance){
+			parameter.distance = 500;
 		}
-		if(!data.sort){
-			data.sort = "Distance";
+		if(!parameter.sort){
+			parameter.sort = "Distance";
 		}
-		var url = `${VAGDE}/haltestellen.json/vgn?lon=${data.lon}&lat=${data.lat}&Distance=${data.distance}`
+		var url = `${VAGDE}/haltestellen.json/vgn?lon=${lon}&lat=${lat}&Distance=${parameter.distance}`
 		request(url, { json: true }, (err, res, body) => {
 			if (err) { reject(err); }
 			try {
 				if(res.statusCode === 200){
 					body.Haltestellen.map((Haltestellen) => {
 						Haltestellen.Distance = geolib.getDistance(
-							{ latitude: data.lat, longitude: data.lon },
+							{ latitude: lat, longitude: lon },
 							{ latitude: Haltestellen.Latitude, longitude: Haltestellen.Longitude }
 						);
 						let HaltestellennameSplit = Haltestellen.Haltestellenname.split("(");
@@ -67,13 +91,22 @@ let getstopsbygps = function(data) {
 						Haltestellen.Ort = HaltestellennameSplit[1].replace(/[)]/g,"",);
 						Haltestellen.Produkte = Haltestellen.Produkte.replace(/ubahn/i,"U-Bahn",);
 					});
-					if(data.sort === "Distance"){body.Haltestellen.sort((a, b) => (a.Distance > b.Distance) ? 1 : -1)};
-					if(data.sort === "Alphabetically"){body.Haltestellen.sort((a, b) => (a.Haltestellenname > b.Haltestellenname) ? 1 : -1)};
-					resolve(body.Haltestellen);
+					if(parameter.sort.toLowerCase() === "distance"){body.Haltestellen.sort((a, b) => (a.Distance > b.Distance) ? 1 : -1)};
+					if(parameter.sort.toLowerCase() === "alphabetically"){body.Haltestellen.sort((a, b) => (a.Haltestellenname > b.Haltestellenname) ? 1 : -1)};
+					if(parameter){
+						if(parameter.limit){
+							resolve(body.Haltestellen.slice(0, parameter.limit));
+						}
+					}else{
+						resolve(body.Haltestellen);
+					}
 				}else{
 					reject(res.statusCode)
 				}
 			} catch (error) {
+				if(error instanceof TypeError){
+					reject("Bad response from API");
+				}
 				reject(error);
 			}
 		});
