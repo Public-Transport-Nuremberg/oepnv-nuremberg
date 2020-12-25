@@ -134,32 +134,41 @@ let getDepartures = function(ID, parameter) {
 			url = `${url}?${encodeQueryData(parameter)}`
 		}
 		request(url, { json: true }, (err, res, body) => {
-			if (err) { 
-			resolve(err.code);		
-			return err; 
-			}
-			body.Abfahrten.map((Abfahrten) =>{
-				Abfahrten.Produkt = Abfahrten.Produkt.replace(/ubahn/i,"U-Bahn",);
-				AbfahrtZeitSollArray = Abfahrten.AbfahrtszeitSoll;
-				AbfahrtZeitSollArray = AbfahrtZeitSollArray.split("+");
-				AbfahrtZeitSollArray = AbfahrtZeitSollArray[0].split("T");
-				AbfahrtZeitSollArrayDatum = AbfahrtZeitSollArray[0].split("-");
-				AbfahrtZeitSollArrayZeit = AbfahrtZeitSollArray[1].split(":");
-				AbfahrtZeitSollArrayDatum = AbfahrtZeitSollArrayDatum[1] + "/" + AbfahrtZeitSollArrayDatum[2] + "/" + AbfahrtZeitSollArrayDatum[0]
-				AbfahrtZeitSollArrayZeitUnix = new Date(AbfahrtZeitSollArrayDatum).getTime() + AbfahrtZeitSollArrayZeit[0] * 60 * 60 * 1000 + AbfahrtZeitSollArrayZeit[1] * 60 * 1000 + AbfahrtZeitSollArrayZeit[2] * 1000 + 60 * 60 * 1000
+			if (err) { reject(err); }
+			try {
+				if(res.statusCode === 200){
+					body.Abfahrten.map((Abfahrten) =>{
+						Abfahrten.Produkt = Abfahrten.Produkt.replace(/ubahn/i,"U-Bahn",);
+						AbfahrtZeitSollArray = Abfahrten.AbfahrtszeitSoll;
+						AbfahrtZeitSollArray = AbfahrtZeitSollArray.split("+");
+						AbfahrtZeitSollArray = AbfahrtZeitSollArray[0].split("T");
+						AbfahrtZeitSollArrayDatum = AbfahrtZeitSollArray[0].split("-");
+						AbfahrtZeitSollArrayZeit = AbfahrtZeitSollArray[1].split(":");
+						AbfahrtZeitSollArrayDatum = AbfahrtZeitSollArrayDatum[1] + "/" + AbfahrtZeitSollArrayDatum[2] + "/" + AbfahrtZeitSollArrayDatum[0]
+						AbfahrtZeitSollArrayZeitUnix = new Date(AbfahrtZeitSollArrayDatum).getTime() + AbfahrtZeitSollArrayZeit[0] * 60 * 60 * 1000 + AbfahrtZeitSollArrayZeit[1] * 60 * 1000 + AbfahrtZeitSollArrayZeit[2] * 1000 + 60 * 60 * 1000
 
-				AbfahrtZeitIstArray = Abfahrten.AbfahrtszeitIst;
-				AbfahrtZeitIstArray = AbfahrtZeitIstArray.split("+");
-				AbfahrtZeitIstArray = AbfahrtZeitIstArray[0].split("T");
-				AbfahrtZeitIstArrayDatum = AbfahrtZeitIstArray[0].split("-");
-				AbfahrtZeitIstArrayZeit = AbfahrtZeitIstArray[1].split(":");
-				AbfahrtZeitIstArrayDatum = AbfahrtZeitIstArrayDatum[1] + "/" + AbfahrtZeitIstArrayDatum[2] + "/" + AbfahrtZeitIstArrayDatum[0]
-				AbfahrtZeitIstArrayZeitUnix = new Date(AbfahrtZeitIstArrayDatum).getTime() + AbfahrtZeitIstArrayZeit[0] * 60 * 60 * 1000 + AbfahrtZeitIstArrayZeit[1] * 60 * 1000 + AbfahrtZeitIstArrayZeit[2] * 1000 + 60 * 60 * 1000
-										
-				Abfahrten.AbfahrtZeitSoll = AbfahrtZeitSollArray[1]
-				Abfahrten.Verspätung = (AbfahrtZeitIstArrayZeitUnix - AbfahrtZeitSollArrayZeitUnix)/1000
-			});
-			resolve(body.Abfahrten);
+						AbfahrtZeitIstArray = Abfahrten.AbfahrtszeitIst;
+						AbfahrtZeitIstArray = AbfahrtZeitIstArray.split("+");
+						AbfahrtZeitIstArray = AbfahrtZeitIstArray[0].split("T");
+						AbfahrtZeitIstArrayDatum = AbfahrtZeitIstArray[0].split("-");
+						AbfahrtZeitIstArrayZeit = AbfahrtZeitIstArray[1].split(":");
+						AbfahrtZeitIstArrayDatum = AbfahrtZeitIstArrayDatum[1] + "/" + AbfahrtZeitIstArrayDatum[2] + "/" + AbfahrtZeitIstArrayDatum[0]
+						AbfahrtZeitIstArrayZeitUnix = new Date(AbfahrtZeitIstArrayDatum).getTime() + AbfahrtZeitIstArrayZeit[0] * 60 * 60 * 1000 + AbfahrtZeitIstArrayZeit[1] * 60 * 1000 + AbfahrtZeitIstArrayZeit[2] * 1000 + 60 * 60 * 1000
+												
+						Abfahrten.AbfahrtZeitFormat = `${AbfahrtZeitSollArrayDatum.split("/").join(".")} ${AbfahrtZeitSollArray[1]}`
+						Abfahrten.AbfahrtZeitZeit = AbfahrtZeitSollArray[1]
+						Abfahrten.Verspätung = (AbfahrtZeitIstArrayZeitUnix - AbfahrtZeitSollArrayZeitUnix)/1000
+					});
+					resolve(body.Abfahrten);
+				}else{
+					reject(res.statusCode)
+				}
+			} catch (error) {
+				if(error instanceof TypeError){
+					reject("Bad response from API");
+				}
+				reject(error);
+			}
 		});
 	});
 }
