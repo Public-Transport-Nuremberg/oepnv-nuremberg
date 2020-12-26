@@ -59,10 +59,10 @@ getstopsbygps('49.45015694', '11.083455', {limit: 3, distance: 200, sort: 'dista
  ```
 
 ### getDepartures
-Product: Bus/Ubahn or Tram
-TImeSpan: In minutes
-TimeDelay: Look for departures later in Minutes
-LimitCount: Limit the listed departures to this amount 
+Product: Bus/Ubahn or Tram  
+TImeSpan: In minutes  
+TimeDelay: Look for departures later in Minutes  
+LimitCount: Limit the listed departures to this amount   
 ```js
 getDepartures('704', {Product: "ubahn", TimeSpan: 10, TimeDelay: 445, LimitCount: 10})
 ```
