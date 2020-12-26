@@ -47,7 +47,7 @@
 ### getstops
 limit: Limit the listed stops to this amount  
  ```js
-getstops('Plärrer', {limit: 1});
+getStops('Plärrer', {limit: 1});
  ```
 
 ### getstopsbygps
@@ -55,7 +55,7 @@ limit: Limit the listed stops to this amount
 distance: Limit to stops in a radius in meters arround your GPS position (default: 500m)  
 sort: Sort your stops by distance or alphabetically (default: 'distance')  
  ```js
-getstopsbygps('49.45015694', '11.083455', {limit: 3, distance: 200, sort: 'distance'});
+getStopsbygps('49.45015694', '11.083455', {limit: 3, distance: 200, sort: 'distance'});
  ```
 
 ### getDepartures
