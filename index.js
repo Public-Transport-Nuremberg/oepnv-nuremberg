@@ -1,8 +1,8 @@
 const VAGDE = "https://start.vag.de/dm/api";
 //https://start.vag.de/dm/api/haltestellen.json/vgn?name=Plärrer
 
-const HPSSuggest = "https://www.vgn.de/ib/site/tools/HPSSuggest.php";
-//https://www.vgn.de/ib/site/tools/HPSSuggest.php?query={QueryString}&gps=1&Edition=de
+const DEFASSuggest = "https://www.vgn.de/ib/site/tools/DEFAS_Suggest.php";
+//https://www.vgn.de/ib/site/tools/DEFAS_Suggest.php?query=sd&gps=1&Edition=de
 
 const VGNDE = "https://www.vgn.de/verbindungen/";
 //https://www.vgn.de/verbindungen/?to=de%3A09564%3A704&td=coord%3A4440209.72739%3A686069.44855%3ANAV4%3AN%C3%BCrnberg%2C%20Leithastra%C3%9Fe
@@ -18,6 +18,12 @@ function urlReformat(value)
     return value;
 }
 
+function urlReformatPHP(value)
+{
+    value = value.replace(/ /g, "+");
+    return value;
+}
+
 function encodeQueryData(data) {
 	const ret = [];
 	for (let d in data)
@@ -29,13 +35,13 @@ function encodeQueryData(data) {
 
 /**
  * 
- * @param {String} mame 
+ * @param {String} name 
  * @param {Object} parameter 
  */
 
-let getStops = function(mame, parameter) {
+let getStops = function(name, parameter) {
 	return new Promise(function(resolve, reject) {
-		var url = `${VAGDE}/haltestellen.json/vgn?name=${urlReformat(mame.trim())}`
+		var url = `${VAGDE}/haltestellen.json/vgn?name=${urlReformat(name.trim())}`
 		request(url, { json: true }, (err, res, body) => {
 			if (err) { reject(err); }
 			try {
@@ -236,9 +242,50 @@ let getDeparturesbygps = function(lat, lon, parameter) {
 
 }
 
+/*VGN PHP */
+
+/**
+ * 
+ * @param {String} name 
+ * @param {Object} parameter 
+ */
+
+let getStopsPHP = function(name, parameter) {
+	return new Promise(function(resolve, reject) {
+		var url = `${DEFASSuggest}?query=${urlReformatPHP(name.trim())}&gps=1&Edition=de`
+		request(url, { json: true }, (err, res, body) => {
+			if (err) { reject(err); }
+			console.log(body)
+			resolve(url);
+			try {
+				if(res.statusCode === 200){
+
+					if(parameter){
+						if(parameter.limit){
+							resolve(body.slice(0, parameter.limit));
+						}
+					}else{
+						resolve(url);
+					}
+				}else{
+					reject(res.statusCode)
+				}
+			} catch (error) {
+				/*
+				if(error instanceof TypeError){
+					reject("Bad response from API");
+				}*/
+				reject(error);
+			}
+		});
+  
+	});
+}
+
 module.exports = {
 	getStops,
 	getStopsbygps,
 	getDepartures,
-	getDeparturesbygps
+	getDeparturesbygps,
+	getStopsPHP
 };

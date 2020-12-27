@@ -19,14 +19,15 @@
 - [ ] Departures based on Ids (Not supported by API, will use Cache)
 - [X] Departures based on names
 - [X] Departures based on GPS
+- [ ] Stops based on IDs (Not supported by API, will use Cache)
 - [X] Stops based on names
 - [X] Stops based on GPS
 - [ ] Cacheing of Stops
-- [ ] Stops based on IDs (Not supported by API, will use Cache)
-- [ ] Turn adress into GPS
-- [ ] Turn adress into list of near stops
+- [ ] Turn (part of)adress into list of near stops
 - [ ] Get routes from and to stops
 - [ ] Get routes to anything. IDs, Stopnames, Adresses, GPS
+- [ ] Get current elevator malfunctions
+- [ ] Get current timetable changes
   
 ## Usage
  > A working example is [Test.js](https://github.com/BolverBlitz/oepnv-nuremberg/blob/main/test.js)
