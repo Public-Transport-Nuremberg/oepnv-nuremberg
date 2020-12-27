@@ -6,7 +6,7 @@
  URL: https://opendata.vag.de/  
  License: Creative Commons Attribution 4.0 Int.  
   
- Stops based on an adress  comee from an undocumented endpoint of the VGN  
+ Stops based on an adress come from an undocumented endpoint of the VGN  
  URL: HPSSuggest.php  
  License: Unknown  
   
