@@ -18,7 +18,7 @@
 
 - [ ] Departures based on Ids (Not supported by API, will use Cache)
 - [X] Departures based on names
-- [ ] Departures based on GPS
+- [X] Departures based on GPS
 - [X] Stops based on names
 - [X] Stops based on GPS
 - [ ] Cacheing of Stops
@@ -44,13 +44,13 @@
 
 ## Methods
 
-### getstops
+### getStops
 limit: Limit the listed stops to this amount  
  ```js
 getStops('Plärrer', {limit: 1});
  ```
 
-### getstopsbygps
+### getStopsbygps
 limit: Limit the listed stops to this amount  
 distance: Limit to stops in a radius in meters arround your GPS position (default: 500m)  
 sort: Sort your stops by distance or alphabetically (default: 'distance')  
@@ -60,9 +60,21 @@ getStopsbygps('49.45015694', '11.083455', {limit: 3, distance: 200, sort: 'dista
 
 ### getDepartures
 Product: Bus/Ubahn or Tram  
-TImeSpan: In minutes  
-TimeDelay: Look for departures later in Minutes  
+TimeSpan: In minutes  
+TimeDelay: Look for future departures in minutes  
 LimitCount: Limit the listed departures to this amount   
 ```js
 getDepartures('704', {Product: "ubahn", TimeSpan: 10, TimeDelay: 445, LimitCount: 10})
+```
+
+### getDeparturesbygps
+limit: Limit the listed stops to this amount  
+distance: Limit to stops in a radius in meters arround your GPS position (default: 500m)  
+sort: Sort your stops by distance or alphabetically (default: 'distance') 
+Product: Bus/Ubahn or Tram  
+TimeSpan: In minutes  
+TimeDelay: Look for future departures in minutes  
+LimitCount: Limit the listed departures to this amount  
+```js
+getDeparturesbygps('49.4480881582118', '11.0647882822154', {Product: "ubahn", TimeSpan: 10, TimeDelay: 45, LimitCount: 2, limit: 5, distance: 200, sort: 'Distance'})
 ```

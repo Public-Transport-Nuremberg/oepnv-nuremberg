@@ -76,7 +76,6 @@ let getStops = function(mame, parameter) {
 
 let getStopsbygps = function(lat, lon, parameter) {
 	return new Promise(function(resolve, reject) {
-		console.log(lat,lon,parameter)
 		if(!parameter.distance){
 			parameter.distance = 500;
 		}
@@ -182,7 +181,7 @@ let getDepartures = function(ID, parameter) {
 
 let getDeparturesbygps = function(lat, lon, parameter) {
 	return new Promise(function(resolve, reject) {
-		console.log(lat,lon,parameter)
+		let PromiseAbfahren = []
 		if(!parameter.distance){
 			parameter.distance = 500;
 		}
@@ -203,16 +202,26 @@ let getDeparturesbygps = function(lat, lon, parameter) {
 						Haltestellen.Haltestellenname = HaltestellennameSplit[0].trim();
 						Haltestellen.Ort = HaltestellennameSplit[1].replace(/[)]/g,"",);
 						Haltestellen.Produkte = Haltestellen.Produkte.replace(/ubahn/i,"U-Bahn",);
+						PromiseAbfahren.push(getDepartures(Haltestellen.VGNKennung, parameter))
+
 					});
-					if(parameter.sort.toLowerCase() === "distance"){body.Haltestellen.sort((a, b) => (a.Distance > b.Distance) ? 1 : -1)};
-					if(parameter.sort.toLowerCase() === "alphabetically"){body.Haltestellen.sort((a, b) => (a.Haltestellenname > b.Haltestellenname) ? 1 : -1)};
-					if(parameter){
-						if(parameter.limit){
-							resolve(body.Haltestellen.slice(0, parameter.limit));
+
+					Promise.all(PromiseAbfahren)
+					.then(function(PAll) {
+						for(i in PAll){
+							body.Haltestellen[i].Abfahrten = PAll[i]
 						}
-					}else{
-						resolve(body.Haltestellen);
-					}
+						if(parameter.sort.toLowerCase() === "distance"){body.Haltestellen.sort((a, b) => (a.Distance > b.Distance) ? 1 : -1)};
+						if(parameter.sort.toLowerCase() === "alphabetically"){body.Haltestellen.sort((a, b) => (a.Haltestellenname > b.Haltestellenname) ? 1 : -1)};
+						if(parameter){
+							if(parameter.limit){
+								resolve(body.Haltestellen.slice(0, parameter.limit));
+							}
+						}else{
+							resolve(body.Haltestellen);
+						}
+					});
+
 				}else{
 					reject(res.statusCode)
 				}
@@ -230,5 +239,6 @@ let getDeparturesbygps = function(lat, lon, parameter) {
 module.exports = {
 	getStops,
 	getStopsbygps,
-	getDepartures
+	getDepartures,
+	getDeparturesbygps
 };
