@@ -3,8 +3,8 @@ const Abfahrten = require('./src/abfahrten')
 
 class openvgn {
     constructor(api_url, vag_url) {
-        this.api_url = api_url;
-        this.vag_url = vag_url;
+        this.api_url = api_url || "https://start.vag.de/dm/api";
+        this.vag_url = vag_url || "https://apigateway.vag.de/efa/";
     }
 
     urlReformat(value)

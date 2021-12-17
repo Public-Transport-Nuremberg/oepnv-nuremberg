@@ -19,13 +19,16 @@
 
  Usage:
  ```js
- const vgn = require('oepnv-nuremberg');
+const vgn_wrapper = require('./index');
 
- var Name = 'Opern';
- vgn.getstops(Name).then(
-   function(message) {
-     console.log(message);
- }).catch(error => console.log(error));
+const vgn = new vgn_wrapper.openvgn();
+
+async function main(){
+    const Output = await vgn.getStops('Luitpoldhain', {limit: 1});
+    console.log(Output);
+}
+
+main();
  ```
 
 ## Methods
@@ -51,7 +54,7 @@ getStopsbygps('49.45015694', '11.083455', {limit: 3, distance: 200, sort: 'dista
 ### getDepartures
 | Parameters | Definition  | Default Value | Possible Value |
 | ------------- | ------------- | ------------- | ------------- |
-| Product | Only return departures of one or multiple products  | - | Bus, Tram, UBahn |
+| Product | Only return departures of one or multiple products  | - | Ubahn,Bus,Tram,Sbahn |
 | TimeSpan | Return departures until that time  | - | Number |
 | TimeDelay | Look for now + x in minutes | - | Number |
 | LimitCount | Max amount of departures returned | - | Number |
@@ -65,7 +68,7 @@ getDepartures('704', {Product: "ubahn", TimeSpan: 10, TimeDelay: 445, LimitCount
 | limit | Max amount of stops returned  | - | Number |
 | distance | Max distance to given GPS Position  | 500 m | Number |
 | sort | Sort your stops by distance or alphabetically | distance | distance/alphabetically |
-| Product | Only return departures of one or multiple products  | - | Bus, Tram, UBahn |
+| Product | Only return departures of one or multiple products  | - | Ubahn,Bus,Tram,Sbahn |
 | TimeSpan | Return departures until that time  | - | Number |
 | TimeDelay | Look for now + x in minutes | - | Number |
 | LimitCount | Max amount of departures returned | - | Number |
