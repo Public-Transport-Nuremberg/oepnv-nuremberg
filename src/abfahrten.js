@@ -1,12 +1,18 @@
 const request = require("request");
 const geolib = require("geolib");
+const os = require('os');
+const package = require('../package.json');
+
+const customHeaderRequest = request.defaults({
+    headers: {'User-Agent': `OpenVGN/${package.version} (NodeJS_${process.env.NODE_VERSION}) ${os.platform()} (${os.arch()}) NodeJS Wrapper`}
+})
 
 /**
  * @param {String} url 
  */
 let getDepartures = function(url) {
 	return new Promise(function(resolve, reject) {
-		request(url, { json: true }, (err, res, body) => {
+		customHeaderRequest(url, { json: true }, (err, res, body) => {
 			if (err) { reject(err); }
 			try {
 				if(res.statusCode === 200){
@@ -55,7 +61,7 @@ let getDepartures = function(url) {
 let getDeparturesbygps = function(url, latitude, longitude, parameter, api_url, encodeQueryData) {
 	return new Promise(function(resolve, reject) {
 		let PromiseAbfahren = []
-		request(url, { json: true }, (err, res, body) => {
+		customHeaderRequest(url, { json: true }, (err, res, body) => {
 			if (err) { reject(err); }
 			try {
 				if(res.statusCode === 200){
