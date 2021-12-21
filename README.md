@@ -4,12 +4,10 @@
 ## Functions and todo list
 
 - [X] Departures based on Ids 
-- [ ] Departures based on names (Not supported by API, will use Cache)
 - [X] Departures based on GPS
-- [ ] Stops based on IDs (Not supported by API, will use Cache)
 - [X] Stops based on names
 - [X] Stops based on GPS
-- [ ] Cacheing of Stops
+- [ ] Get Trips
 - [ ] Turn (part of)adress into list of near stops
 - [ ] Get routes from and to stops
 - [ ] Get routes to anything. IDs, Stopnames, Adresses, GPS
