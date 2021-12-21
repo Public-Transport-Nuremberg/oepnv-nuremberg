@@ -13,6 +13,7 @@ const customHeaderRequest = request.defaults({
  */
  let getStops = function(url, parameter) {
 	return new Promise(function(resolve, reject) {
+		let Time_Started = new Date().getTime();
 		customHeaderRequest(url, { json: true }, (err, res, body) => {
 			if (err) { reject(err); }
 			try {
@@ -25,10 +26,18 @@ const customHeaderRequest = request.defaults({
 					});
 					if(parameter){
 						if(parameter.limit){
-							resolve(body.Haltestellen.slice(0, parameter.limit));
+							body.Metadata.RequestTime = new Date().getTime() - Time_Started
+							resolve({
+								Stops: body.Haltestellen.slice(0, parameter.limit),
+								Meta: body.Metadata
+							});
 						}
 					}else{
-						resolve(body.Haltestellen);
+						body.Metadata.RequestTime = new Date().getTime() - Time_Started
+						resolve({
+							Stops: body.Haltestellen,
+							Meta: body.Metadata
+						});
 					}
 				}else{
 					reject(res.statusCode)
@@ -52,6 +61,7 @@ const customHeaderRequest = request.defaults({
  */
  let getStopsbygps = function(url, latitude, longitude, parameter) {
 	return new Promise(function(resolve, reject) {
+		let Time_Started = new Date().getTime();
 		customHeaderRequest(url, { json: true }, (err, res, body) => {
 			if (err) { reject(err); }
 			try {
@@ -70,10 +80,18 @@ const customHeaderRequest = request.defaults({
 					if(parameter.sort.toLowerCase() === "alphabetically"){body.Haltestellen.sort((a, b) => (a.Haltestellenname > b.Haltestellenname) ? 1 : -1)};
 					if(parameter){
 						if(parameter.limit){
-							resolve(body.Haltestellen.slice(0, parameter.limit));
+							body.Metadata.RequestTime = new Date().getTime() - Time_Started
+							resolve({
+								Stops: body.Haltestellen.slice(0, parameter.limit),
+								Meta: body.Metadata
+							});
 						}
 					}else{
-						resolve(body.Haltestellen);
+						body.Metadata.RequestTime = new Date().getTime() - Time_Started
+						resolve({
+							Stops: body.Haltestellen,
+							Meta: body.Metadata
+						});
 					}
 				}else{
 					reject(res.statusCode)

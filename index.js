@@ -15,12 +15,6 @@ class openvgn {
         return value;
     }
 
-    urlReformatPHP(value)
-    {
-        value = value.replace(/ /g, "+");
-        return value;
-    }
-
     encodeQueryData(data) {
         const ret = [];
         for (let d in data)
@@ -65,7 +59,7 @@ class openvgn {
      * @param {String} target 
      * @param {Object} parameter 
     */
-    getDepartures(target){
+    getDepartures(target, parameter){
         let url = `${this.api_url}/abfahrten.json/vgn/${target}`
         if(parameter){
 			url = `${url}?${this.encodeQueryData(parameter)}`
