@@ -41,8 +41,13 @@ let getDepartures = function(url) {
 					});
 
 					body.Metadata.RequestTime = new Date().getTime() - Time_Started
+					if(!body.hasOwnProperty("Sonderinformationen")){
+						body.Sonderinformationen = []
+					}
+					
 					resolve({
 						Departures: body.Abfahrten,
+						Sonderinformationen: body.Sonderinformationen,
 						Meta: body.Metadata
 					});
 				}else{
@@ -111,7 +116,9 @@ let getDeparturesbygps = function(url, latitude, longitude, parameter, api_url, 
 								Meta: body.Metadata
 							});
 						}
-					});
+					}).catch(e => {
+						console.log(e)
+					})
 
 				}else{
 					reject(res.statusCode)
