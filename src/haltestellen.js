@@ -40,7 +40,11 @@ const customHeaderRequest = request.defaults({
 						});
 					}
 				}else{
-					reject(res.statusCode)
+					if("body" in res){
+						reject({code: res.statusCode, message: res.body.Message})
+					}else{
+						reject({code: res.statusCode})
+					}
 				}
 			} catch (error) {
 				if(error instanceof TypeError){
@@ -94,7 +98,11 @@ const customHeaderRequest = request.defaults({
 						});
 					}
 				}else{
-					reject(res.statusCode)
+					if("body" in res){
+						reject({code: res.statusCode, message: res.body.Message})
+					}else{
+						reject({code: res.statusCode})
+					}
 				}
 			} catch (error) {
 				if(error instanceof TypeError){

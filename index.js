@@ -36,9 +36,9 @@ class openvgn {
     }
 
     /**
-     * @param {String} lat
-     * @param {String} lon 
-     * @param {Object} parameter 
+     * @param {String} lat GPS Lat
+     * @param {String} lon GPS Lon
+     * @param {Object} parameter Quary parameter
     */
     getStopsbygps(lat, lon, parameter){
         if(!parameter.distance){
@@ -56,11 +56,16 @@ class openvgn {
     }
 
     /**
-     * @param {String} target 
-     * @param {Object} parameter 
+     * @param {String} target Stop ID
+     * @param {Object} parameter Quary parameter
     */
     getDepartures(target, parameter){
-        let url = `${this.api_url}/abfahrten.json/vgn/${target}`
+        let url;
+        if(parameter.Line){
+            url = `${this.api_url}/abfahrten.json/vgn/${target}/${parameter.Line}`
+        }else{
+            url = `${this.api_url}/abfahrten.json/vgn/${target}`
+        }
         if(parameter){
 			url = `${url}?${this.encodeQueryData(parameter)}`
 		}

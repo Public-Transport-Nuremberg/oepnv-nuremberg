@@ -51,7 +51,11 @@ let getDepartures = function(url) {
 						Meta: body.Metadata
 					});
 				}else{
-					reject(res.statusCode)
+					if("body" in res){
+						reject({code: res.statusCode, message: res.body.Message})
+					}else{
+						reject({code: res.statusCode})
+					}
 				}
 			} catch (error) {
 				if(error instanceof TypeError){
@@ -121,7 +125,11 @@ let getDeparturesbygps = function(url, latitude, longitude, parameter, api_url, 
 					})
 
 				}else{
-					reject(res.statusCode)
+					if("body" in res){
+						reject({code: res.statusCode, message: res.body.Message})
+					}else{
+						reject({code: res.statusCode})
+					}
 				}
 			} catch (error) {
 				if(error instanceof TypeError){
