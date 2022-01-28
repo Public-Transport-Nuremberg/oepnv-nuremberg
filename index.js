@@ -23,8 +23,8 @@ class openvgn {
     }
 
     /**
-     * @param {String} target 
-     * @param {Object} parameter 
+     * @param {String} target Stop name
+     * @param {Object} parameter Quary parameter
     */
     getStops(target, parameter) {
         const url = `${this.api_url}/haltestellen.json/vgn?name=${this.urlReformat(target.trim())}`
@@ -75,6 +75,13 @@ class openvgn {
         })
     }
 
+    /**
+     * 
+     * @param {Number} lat GPS Lat
+     * @param {Number} lon GPS Lon
+     * @param {Object} parameter Quary parameter
+     * @returns 
+     */
     getDeparturesbygps(lat, lon, parameter){
         if(!parameter.distance){
             parameter.distance = 500;
