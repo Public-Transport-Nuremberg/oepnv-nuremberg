@@ -47,6 +47,9 @@ let getDepartures = function(url) {
 					}
 					
 					resolve({
+						Stop: body.Haltestellenname,
+						VAGID: body.VAGKennung,
+						VGNID: body.VGNKennung,
 						Departures: body.Abfahrten,
 						Sonderinformationen: body.Sonderinformationen,
 						Meta: body.Metadata
@@ -111,6 +114,9 @@ let getDeparturesbygps = function(url, latitude, longitude, parameter, api_url, 
 								body.Metadata.RequestTime = new Date().getTime() - Time_Started
 								body.Metadata.URL = url
 								resolve({
+									Stop: body.Haltestellenname,
+									VAGID: body.VAGKennung,
+									VGNID: body.VGNKennung,
 									Stops: body.Haltestellen.slice(0, parameter.limit),
 									Meta: body.Metadata
 								});
@@ -119,6 +125,9 @@ let getDeparturesbygps = function(url, latitude, longitude, parameter, api_url, 
 							body.Metadata.RequestTime = new Date().getTime() - Time_Started
 							body.Metadata.URL = url
 							resolve({
+								Stop: body.Haltestellenname,
+								VAGID: body.VAGKennung,
+								VGNID: body.VGNKennung,
 								Stops: body.Haltestellen,
 								Meta: body.Metadata
 							});

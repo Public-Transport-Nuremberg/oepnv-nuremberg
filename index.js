@@ -56,16 +56,15 @@ class openvgn {
     }
 
     /**
-     * @param {String} target Stop ID
+     * @param {String} target Stop ID or VAG haltid
      * @param {Object} parameter Quary parameter
     */
     getDepartures(target, parameter){
-        let url;
-        if(parameter.Line){
-            url = `${this.api_url}/abfahrten.json/vgn/${target}/${parameter.Line}`
-        }else{
-            url = `${this.api_url}/abfahrten.json/vgn/${target}`
+        let source = "vgn"
+        if(isNaN(target)){
+            source = "vag"
         }
+        let url = `${this.api_url}/abfahrten.json/${source}/${target}`
         if(parameter){
 			url = `${url}?${this.encodeQueryData(parameter)}`
 		}
