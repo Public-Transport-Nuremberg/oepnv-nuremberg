@@ -3,7 +3,7 @@
  
 ## Functions and todo list
 
-- [X] Departures based on Ids 
+- [X] Departures based on Ids (Also VAG StopIDs, like "PL" for ID 704)
 - [X] Departures based on GPS
 - [X] Stops based on names
 - [X] Stops based on GPS
@@ -58,6 +58,8 @@ getStopsbygps('49.45015694', '11.083455', {limit: 3, distance: 200, sort: 'dista
 | LimitCount | Max amount of departures returned | - | Number |
 ```js
 getDepartures('704', {Product: "ubahn", TimeSpan: 10, TimeDelay: 445, LimitCount: 10})
+//Or
+getDepartures('PL', {Product: "ubahn", TimeSpan: 10, TimeDelay: 445, LimitCount: 10})
 ```
 
 ### getDeparturesbygps
