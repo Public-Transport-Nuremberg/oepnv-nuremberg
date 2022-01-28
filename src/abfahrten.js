@@ -41,6 +41,7 @@ let getDepartures = function(url) {
 					});
 
 					body.Metadata.RequestTime = new Date().getTime() - Time_Started
+					body.Metadata.URL = url
 					if(!body.hasOwnProperty("Sonderinformationen")){
 						body.Sonderinformationen = []
 					}
@@ -108,6 +109,7 @@ let getDeparturesbygps = function(url, latitude, longitude, parameter, api_url, 
 						if(parameter){
 							if(parameter.limit){
 								body.Metadata.RequestTime = new Date().getTime() - Time_Started
+								body.Metadata.URL = url
 								resolve({
 									Stops: body.Haltestellen.slice(0, parameter.limit),
 									Meta: body.Metadata
@@ -115,6 +117,7 @@ let getDeparturesbygps = function(url, latitude, longitude, parameter, api_url, 
 							}
 						}else{
 							body.Metadata.RequestTime = new Date().getTime() - Time_Started
+							body.Metadata.URL = url
 							resolve({
 								Stops: body.Haltestellen,
 								Meta: body.Metadata

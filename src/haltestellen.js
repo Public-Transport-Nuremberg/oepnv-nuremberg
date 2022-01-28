@@ -27,6 +27,7 @@ const customHeaderRequest = request.defaults({
 					if(parameter){
 						if(parameter.limit){
 							body.Metadata.RequestTime = new Date().getTime() - Time_Started
+							body.Metadata.URL = url
 							resolve({
 								Stops: body.Haltestellen.slice(0, parameter.limit),
 								Meta: body.Metadata
@@ -34,6 +35,7 @@ const customHeaderRequest = request.defaults({
 						}
 					}else{
 						body.Metadata.RequestTime = new Date().getTime() - Time_Started
+						body.Metadata.URL = url
 						resolve({
 							Stops: body.Haltestellen,
 							Meta: body.Metadata
@@ -85,6 +87,7 @@ const customHeaderRequest = request.defaults({
 					if(parameter){
 						if(parameter.limit){
 							body.Metadata.RequestTime = new Date().getTime() - Time_Started
+							body.Metadata.URL = url
 							resolve({
 								Stops: body.Haltestellen.slice(0, parameter.limit),
 								Meta: body.Metadata
@@ -92,6 +95,7 @@ const customHeaderRequest = request.defaults({
 						}
 					}else{
 						body.Metadata.RequestTime = new Date().getTime() - Time_Started
+						body.Metadata.URL = url
 						resolve({
 							Stops: body.Haltestellen,
 							Meta: body.Metadata
