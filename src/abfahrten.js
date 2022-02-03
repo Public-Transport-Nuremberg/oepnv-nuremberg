@@ -25,6 +25,11 @@ let getDepartures = function(url) {
 						Abfahrten.AbfahrtDate = AbfahrtszeitSoll.toLocaleDateString('de-DE')
 						Abfahrten.AbfahrtTime = AbfahrtszeitSoll.toLocaleTimeString('de-DE', {hour: "2-digit", minute: "2-digit"})
 						Abfahrten.Verspätung = (AbfahrtszeitIst - AbfahrtszeitSoll)/1000
+
+						Abfahrten.ZugType = "Kurzzug"
+						if(Abfahrten.Fahrzeugnummer.startsWith(3)){
+							Abfahrten.ZugType = "Langzug"
+						}
 					});
 
 					body.Metadata.RequestTime = new Date().getTime() - Time_Started
