@@ -88,7 +88,7 @@ let getDeparturesbygps = function(url, latitude, longitude, parameter, api_url, 
 						Haltestellen.Produkte = Haltestellen.Produkte.replace(/ubahn/i,"U-Bahn",);
                         let url = `${api_url}/abfahrten.json/vgn/${Haltestellen.VGNKennung}`
                         if(parameter){
-                            url = `${url}?${encodeQueryData(parameter)}`
+                            url = `${url}?${encodeQueryData(parameter, 'Departures')}`
                         }
 						PromiseAbfahren.push(getDepartures(url))
 

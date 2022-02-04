@@ -1,5 +1,9 @@
 const Haltestellen = require('./src/haltestellen')
 const Abfahrten = require('./src/abfahrten')
+const allowed_apiparameter = {
+    Departures: ['product', 'timespan', 'timedelay', 'limitcount'],
+    Stops: ['name', 'lon', 'lat', 'distance']
+    }
 
 class openvgn {
     constructor(api_url, vag_url) {
@@ -14,11 +18,18 @@ class openvgn {
         value = value.replace(/ü/g, "%C3%BC");
         return value;
     }
-
-    encodeQueryData(data) {
+    /**
+     * 
+     * @param {Array} data 
+     * @param {String} endpoint Departures, Stops
+     * @returns 
+     */
+    encodeQueryData(data, endpoint) {
         const ret = [];
         for (let d in data)
-        ret.push(encodeURIComponent(d) + '=' + encodeURIComponent(data[d]));
+        if(allowed_apiparameter[endpoint].includes(encodeURIComponent(d).toLowerCase())){
+            ret.push(encodeURIComponent(d) + '=' + encodeURIComponent(data[d]));
+        }
         return ret.join('&');
     }
 
@@ -66,7 +77,7 @@ class openvgn {
         }
         let url = `${this.api_url}/abfahrten.json/${source}/${target}`
         if(parameter){
-			url = `${url}?${this.encodeQueryData(parameter)}`
+			url = `${url}?${this.encodeQueryData(parameter, 'Departures')}`
 		}
         return Abfahrten.getDepartures(url, parameter).then(function(Abfahrten){
             return Abfahrten
