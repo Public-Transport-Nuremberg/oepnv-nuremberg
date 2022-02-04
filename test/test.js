@@ -27,8 +27,8 @@ describe('Stops API', function() {
 });
 
 describe('Departures API', function() {
-    this.timeout(5000);
-    this.slow(2000);
+    this.timeout(15000);
+    this.slow(4000);
 
     it('getDepartures', async () => {
         const Output = await vgn.getDepartures("LO", {Product: "Ubahn", TimeSpan: 60, TimeDelay: 0, LimitCount: 2})
