@@ -45,3 +45,22 @@ describe('Departures API', function() {
     });
     
 });
+
+describe('Trips API', function() {
+    this.timeout(15000);
+    this.slow(4000);
+
+    it('getTrip', async () => {
+        const CurrentDeparture = await vgn.getDepartures("PL", {Product: "Ubahn", TimeSpan: 60, TimeDelay: 0, LimitCount: 2})
+        const Output = await vgn.getTrip(CurrentDeparture.Departures[0].Fahrtnummer, {product: "Ubahn"})
+        expect(Output.Fahrt).to.have.property('Fahrtverlauf');
+        expect(Output).to.have.property('Meta');
+    });
+    
+    it('getTrips', async () => {
+        const Output = await vgn.getTrips("Ubahn", {timespan: 120})
+        expect(Output.Fahrt).to.have.property('Fahrten');
+        expect(Output).to.have.property('Meta');
+    });
+    
+});

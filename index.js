@@ -1,8 +1,10 @@
 const Haltestellen = require('./src/haltestellen')
 const Abfahrten = require('./src/abfahrten')
+const Fahrten = require('./src/fahrten')
 const allowed_apiparameter = {
     Departures: ['product', 'timespan', 'timedelay', 'limitcount'],
-    Stops: ['name', 'lon', 'lat', 'distance']
+    Stops: ['name', 'lon', 'lat', 'distance'],
+    Trips: ['timespan']
     }
 
 class openvgn {
@@ -103,6 +105,43 @@ class openvgn {
         const url = `${this.api_url}/haltestellen.json/vgn?lon=${lon}&lat=${lat}&Distance=${parameter.distance}`
         return Abfahrten.getDeparturesbygps(url, lat, lon, parameter, this.api_url, this.encodeQueryData).then(function(Abfahrten){
             return Abfahrten
+        }).catch(function(err){
+            return err
+        })
+    }
+
+    /**
+     * @param {Number} Fahrtnummer Fahrtnummer
+     * @param {Object} parameter parameter
+    */
+     getTrip(Fahrtnummer, parameter){
+        let url;
+        if(parameter.date){
+            const date = new Date(parameter.date).toLocaleTimeString('de-DE', {day: "2-digit", month: "2-digit", year: "numeric"}).split(",")[0]
+            console.log(date)
+            url = `${this.api_url}/fahrten.json/${parameter.product}/${date}/${Fahrtnummer}`
+        }else{
+            url = `${this.api_url}/fahrten.json/${parameter.product}/${Fahrtnummer}`
+        }
+        return Fahrten.getTrips(url).then(function(Fahrten){
+            return Fahrten
+        }).catch(function(err){
+            return err
+        })
+    }
+
+    /**
+     * @param {Number} product Fahrtnummer
+     * @param {Object} parameter Quary parameter
+    */
+     getTrips(product, parameter){
+        let url = `${this.api_url}/fahrten.json/${product}`
+
+        if(parameter){
+			url = `${url}?${this.encodeQueryData(parameter, 'Trips')}`
+		}
+        return Fahrten.getTrips(url).then(function(Fahrten){
+            return Fahrten
         }).catch(function(err){
             return err
         })
