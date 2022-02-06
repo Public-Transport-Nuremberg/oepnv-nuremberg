@@ -22,12 +22,14 @@ const vgn_wrapper = require('./index');
 
 const vgn = new vgn_wrapper.openvgn();
 
-async function main(){
+(async function (){
+  try {
     const Output = await vgn.getStops('Luitpoldhain', {limit: 1});
     console.log(Output);
-}
-
-main();
+  } catch (e) {
+    console.log(e)
+  }
+})();
  ```
 
 ## Methods
