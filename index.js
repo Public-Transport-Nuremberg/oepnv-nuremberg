@@ -8,6 +8,11 @@ const allowed_apiparameter = {
     }
 
 class openvgn {
+    /**
+     * 
+     * @param {string} api_url Open Data VAG API URL
+     * @param {string} vag_url EFA API
+     */
     constructor(api_url, vag_url) {
         this.api_url = api_url || "https://start.vag.de/dm/api";
         this.vag_url = vag_url || "https://apigateway.vag.de/efa/";

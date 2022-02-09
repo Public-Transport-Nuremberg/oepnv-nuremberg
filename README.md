@@ -9,9 +9,11 @@
 - [X] Stops based on GPS
 - [X] Get Trips
 - [X] Get Trip
-- [ ] Turn (part of)adress into list of near stops
-- [ ] Get routes from and to stops
+- [ ] Turn (part of) adress into list of near stops
+- [ ] Get routes from stop to stop
 - [ ] Get routes to anything. IDs, Stopnames, Adresses, GPS
+- [ ] Misc functions
+  - [ ] Calculate travle time between 2 stops from a Trip Object
   
 ## Usage
  > A working example is [Test.js](https://github.com/BolverBlitz/oepnv-nuremberg/blob/main/test.js)
