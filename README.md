@@ -110,7 +110,41 @@ This will list all trips of the given product (Ubahn, Tram, Bus) in a given time
 vgn.getTrips("Ubahn", {timespan: 10})
 ```
 
+### getVagWebpageDisturbances
+This will return a object based on the current webpage.  
+The object might not have all the keys, its generated only by the current content!  
+  
+```js
+{
+  "schedule_changes": {
+    "U-Bahn": [{...},{...}],
+    "Bus": [{...},{...}],
+    "Tram": [{...},{...}]
+  },
+  "disturbances": {
+    "Aufzugsstörungen": [{...},{...}],
+    "U-Bahn": [{...},{...}],
+    "Bus": [{...},{...}],
+    "Tram": [{...},{...}]
+  },
+  "Meta": {
+    "Timestamp": Timestamp,
+    "RequestTime": Number,
+    "ParseTime": Number,
+    "URL": 'https://www.vag.de/fahrplan/fahrplanaenderungen-stoerungen'
+  }
+}
+```
+
+```js
+vgn.getVagWebpageDisturbances()
+```
+
 ## Where is the data comming from?  
  Departures and stops are comming from the official VAG API endpoint  
  URL: https://opendata.vag.de/  
  License: Creative Commons Attribution 4.0 Int. 
+
+ Elevator disruptions and timetable deviations are comming from here  
+ URL: https://www.vag.de/fahrplan/fahrplanaenderungen-stoerungen  
+ License: Unknown   

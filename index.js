@@ -1,11 +1,12 @@
-const Haltestellen = require('./src/haltestellen')
-const Abfahrten = require('./src/abfahrten')
-const Fahrten = require('./src/fahrten')
+const Haltestellen = require('./src/haltestellen');
+const Abfahrten = require('./src/abfahrten');
+const Fahrten = require('./src/fahrten');
+const WebProcessor = require('./src/web_processor');
 const allowed_apiparameter = {
     Departures: ['product', 'timespan', 'timedelay', 'limitcount'],
     Stops: ['name', 'lon', 'lat', 'distance'],
     Trips: ['timespan']
-    }
+    };
 
 class openvgn {
     /**
@@ -151,6 +152,19 @@ class openvgn {
             return err
         })
     }
+
+    /**
+     * Function to scrape the VAG Webpage to return all ongoing delays, elevator outages and planned events as a object
+     * @returns Object
+     */
+    getVagWebpageDisturbances(){
+        return WebProcessor.getVagWebpageDisturbances().then(function(Oobject){
+            return Oobject
+        }).catch(function(err){
+            return err
+        })
+    } 
+
 }
 
 module.exports = {
