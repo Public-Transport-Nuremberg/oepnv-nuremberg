@@ -9,6 +9,8 @@
 - [X] Stops based on GPS
 - [X] Get Trips
 - [X] Get Trip
+- [X] Get elevator malfunctions
+- [X] Get current timetable changes
 - [ ] Turn (part of) adress into list of near stops
 - [ ] Get routes from stop to stop
 - [ ] Get routes to anything. IDs, Stopnames, Adresses, GPS
