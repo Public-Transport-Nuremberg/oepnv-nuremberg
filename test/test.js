@@ -1,5 +1,6 @@
 const vgn_wrapper = require('../index');
 const chai = require('chai');
+const fs = require('fs')
 const expect = chai.expect;
 
 
@@ -64,12 +65,40 @@ describe('Trips API', function () {
     });
 })
 
-describe('Webprocessor', function () {
-    this.timeout(15000);
-    this.slow(4000);
 
-    it('getVagWebpageDisturbances', async () => {
-        const Output = await vgn.getVagWebpageDisturbances();
-        expect(Output).to.have.property('Meta');
+fs.readdir("./test/VAGHtmlTestTemplates", function (err, filenames) {
+    if (err) { console.log(err); }
+    describe('Webprocessor', function () {
+        this.timeout(5000);
+        this.slow(2000);
+
+        //Just test if the URL still works
+        it('getVagWebpageDisturbances', async () => {
+            const Output = await vgn.getVagWebpageDisturbances();
+            expect(Output).to.have.property('Meta');
+        });
+
+        /*  Test the parser against static html files that have a expected output
+            The .txt files contain the HTML of the Webpage and the .json the expected output.
+        */
+        for (i = 0; i < filenames.length; i++) {
+            if (filenames[i].endsWith(".txt")) {
+                const rawdata = fs.readFileSync(`./test/VAGHtmlTestTemplates/${filenames[i]}`);
+                const expected = fs.readFileSync(`./test/VAGHtmlTestTemplates/${filenames[i]}.json`);
+                const prot = JSON.parse(expected);
+
+                it(`getVagWebpageDisturbances ${filenames[i]}`, async () => {
+                    const Output = await vgn.getVagWebpageDisturbances(rawdata);
+                    expect(Output.Meta).to.have.property('Timestamp');
+                    expect(Output.Meta).to.have.property('RequestTime');
+                    expect(Output.Meta).to.have.property('ParseTime');
+                    expect(Output.Meta).to.have.property('URL');
+                    //Remove Metadata because it is not expected to be the same
+                    delete Output.Meta
+                    delete prot.Meta
+                    expect(JSON.stringify(Output)).to.equal(JSON.stringify(prot));
+                });
+            }
+        }
     });
 });

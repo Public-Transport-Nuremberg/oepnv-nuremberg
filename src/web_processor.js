@@ -11,11 +11,13 @@ const customHeaderRequest = request.defaults({
  * Function to scrape the VAG Webpage to return all ongoing delays, elevator outages and planned events as a object
  * @returns Object
  */
-const getVagWebpageDisturbances = function () {
+const getVagWebpageDisturbances = function (test) {
     return new Promise(function (resolve, reject) {
         let Time_Started = new Date().getTime();
         customHeaderRequest("https://www.vag.de/fahrplan/fahrplanaenderungen-stoerungen", { json: false }, (err, res, body) => {
             if (err) { reject(err); }
+
+            if (test) { body = test };
 
             let Time_Started_parse = new Date().getTime();
             const $ = cheerio.load(body);
@@ -73,7 +75,7 @@ const getVagWebpageDisturbances = function () {
                             })
                         }
                         // Create Object if U-Bahn
-                        if(tracker === "U-Bahn" || tracker === "Bus" || tracker === "Tram"){
+                        if (tracker === "U-Bahn" || tracker === "Bus" || tracker === "Tram") {
                             disturbance_list[tracker].push({
                                 "Until": Key[i + 1].replace("Uhr", "").trim().slice(8),
                                 "Line": Key[i].split(":")[0].slice(6, Key[i].length),
@@ -111,16 +113,18 @@ const getVagWebpageDisturbances = function () {
                     }
                 }
             })
-            resolve({ schedule_changes: schedule_changes, disturbances: disturbance_list, Meta: {
-                Timestamp: new Date,
-                RequestTime: new Date().getTime() - Time_Started,
-                ParseTime: new Date().getTime() - Time_Started_parse,
-                URL: 'https://www.vag.de/fahrplan/fahrplanaenderungen-stoerungen'
-              }})
+            resolve({
+                schedule_changes: schedule_changes, disturbances: disturbance_list, Meta: {
+                    Timestamp: new Date,
+                    RequestTime: new Date().getTime() - Time_Started,
+                    ParseTime: new Date().getTime() - Time_Started_parse,
+                    URL: 'https://www.vag.de/fahrplan/fahrplanaenderungen-stoerungen'
+                }
+            })
         });
     });
 };
 
 module.exports = {
-	getVagWebpageDisturbances
+    getVagWebpageDisturbances
 };

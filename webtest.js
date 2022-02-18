@@ -11,21 +11,23 @@ const customHeaderRequest = request.defaults({
 })
 
 // Enable this to load a old webpage with all possible elements.
-/*
-fs.readFile('./VAGAllElements.html', 'utf8', (err, data) => {
+
+fs.readFile('./test/VAGHtmlTestTemplates/AZandUbahn.txt', 'utf8', (err, data) => {
     if (err) { console.log(err) }
     Gdata = data
     askURL();
 })
-*/
+
 
 const askURL = function () {
     return new Promise(function (resolve, reject) {
+        let Time_Started = new Date().getTime();
         customHeaderRequest("https://www.vag.de/fahrplan/fahrplanaenderungen-stoerungen", { json: false }, (err, res, body) => {
             if (err) { reject(err); }
 
-            //body = Gdata
+            body = Gdata
 
+            let Time_Started_parse = new Date().getTime();
             const $ = cheerio.load(body);
             let schedule_changes = {};
             let disturbance_list = {};
@@ -122,10 +124,15 @@ const askURL = function () {
                     }
                 }
             })
-            console.log({schedule_changes: schedule_changes, disturbances: disturbance_list})
-
+            //console.log(console.log(util.inspect({schedule_changes: schedule_changes, disturbances: disturbance_list}, false, null, true /* enable colors */)))
+            console.log(JSON.stringify({schedule_changes: schedule_changes, disturbances: disturbance_list, Meta: {
+                Timestamp: new Date,
+                RequestTime: new Date().getTime() - Time_Started,
+                ParseTime: new Date().getTime() - Time_Started_parse,
+                URL: 'https://www.vag.de/fahrplan/fahrplanaenderungen-stoerungen'
+            }}))
         });
     });
 };
 
-askURL();
+//askURL();

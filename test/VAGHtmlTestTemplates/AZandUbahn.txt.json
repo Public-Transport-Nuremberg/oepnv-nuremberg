@@ -1,0 +1,132 @@
+{
+    "schedule_changes": {
+        "U-Bahn": [
+            {
+                "Line": "U1",
+                "What": "Bauarbeiten im Bereich Muggenhof",
+                "Start": "13.09.",
+                "End": "13.03.",
+                "Updated": "2022-01-21T12:22:00.000Z"
+            },
+            {
+                "Line": "U1",
+                "What": "Bauarbeiten im Bereich Innenstadt",
+                "Start": "09.02.",
+                "End": "10.02.",
+                "Updated": "2022-02-08T20:00:00.000Z"
+            },
+            {
+                "Line": "U1",
+                "What": "Bauarbeiten im Bereich Innenstadt",
+                "Start": "10.02.",
+                "End": "11.02.",
+                "Updated": "2022-02-04T20:00:00.000Z"
+            },
+            {
+                "Line": "U2, U3",
+                "What": "Bauarbeiten im Bereich Hauptbahnhof",
+                "Start": "11.02.",
+                "End": "12.02.",
+                "Updated": "2022-02-05T20:00:00.000Z"
+            },
+            {
+                "Line": "U2",
+                "What": "Schleifarbeiten im Bereich zwischen den U-Bahnhöfen Flughafen und Rennweg",
+                "Start": "07.03.",
+                "End": "10.03.",
+                "Updated": "2022-02-08T08:23:00.000Z"
+            },
+            {
+                "Line": "U1, U2, U3",
+                "What": "Schleifarbeiten im U-Bahnnetz der VAG im Bereich Nürnberg und Fürth",
+                "Start": "07.03.",
+                "End": "01.04.",
+                "Updated": "2022-02-08T08:21:00.000Z"
+            },
+            {
+                "Line": "U3",
+                "What": "Schleifarbeiten im Bereich zwischen Nordwestring und Maxfeld",
+                "Start": "11.03.",
+                "End": "14.03.",
+                "Updated": "2022-02-08T09:14:00.000Z"
+            },
+            {
+                "Line": "U2",
+                "What": "Schleifarbeiten im Bereich zw. Röthenbach und St. Leonhard",
+                "Start": "15.03.",
+                "End": "16.03.",
+                "Updated": "2022-02-08T14:07:00.000Z"
+            },
+            {
+                "Line": "U1",
+                "What": "Schleifarbeiten im Bereich zw. Hardhöhe Fürth und Stadtgrenze",
+                "Start": "17.03.",
+                "End": "21.03.",
+                "Updated": "2022-02-08T15:19:00.000Z"
+            },
+            {
+                "Line": "U1",
+                "What": "Schleifarbeiten im Bereich zw. Muggenhof und Bärenschanze",
+                "Start": "22.03.",
+                "End": "24.03.",
+                "Updated": "2022-02-09T10:19:00.000Z"
+            }
+        ],
+        "Tram": [
+            {
+                "Line": "5, 7, 8",
+                "What": "Bauarbeiten im Bereich Glockenhof",
+                "Start": "30.10.",
+                "End": "12.09.",
+                "Updated": "2022-01-13T14:30:00.000Z"
+            },
+            {
+                "Line": "7, 8",
+                "What": "Geänderte Haltestellenbedienung im Bereich Hauptbahnhof",
+                "Start": "19.01.",
+                "End": "12.09.",
+                "Updated": "2022-01-19T03:00:00.000Z"
+            }
+        ],
+        "Bus": [
+            {
+                "Line": "55, 96",
+                "What": "Straßenbauarbeiten im Bereich Herzogstr.",
+                "Start": "25.10.21",
+                "End": "21.03.22",
+                "Updated": "2021-12-16T07:17:00.000Z"
+            },
+            {
+                "Line": "alle Nürnberger NightLiner",
+                "What": "NightLiner-Betrieb eingestellt im Bereich gesamtes NightLiner-Netz",
+                "Start": "Now",
+                "End": "Later",
+                "Updated": "2022-02-04T09:02:00.000Z"
+            }
+        ]
+    },
+    "disturbances": {
+        "Aufzugsstörungen": [
+            {
+                "Where": "Bahnsteig U2 <> Straßenbahninsel",
+                "Station": "Nürnberg Hauptbahnhof",
+                "What": " Aufzug außer Betrieb",
+                "Updated": "2022-02-09T09:25:00.000Z"
+            }
+        ],
+        "U-Bahn": [
+            {
+                "Until": "12:15",
+                "Line": "U2, U3",
+                "What": "Auslösung einer Sicherheitseinrichtung im Bereich Wöhrder Wiese",
+                "Updated": "2022-02-09T10:45:00.000Z"
+            }
+        ]
+    },
+    "Meta": {
+        "Timestamp": "2022-02-18T00:52:15.856Z",
+        "RequestTime": 602,
+        "ParseTime": 88,
+        "URL": "https://www.vag.de/fahrplan/fahrplanaenderungen-stoerungen"
+    }
+}

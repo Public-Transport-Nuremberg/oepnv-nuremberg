@@ -157,8 +157,8 @@ class openvgn {
      * Function to scrape the VAG Webpage to return all ongoing delays, elevator outages and planned events as a object
      * @returns Object
      */
-    getVagWebpageDisturbances(){
-        return WebProcessor.getVagWebpageDisturbances().then(function(Oobject){
+    getVagWebpageDisturbances(test){
+        return WebProcessor.getVagWebpageDisturbances(test).then(function(Oobject){
             return Oobject
         }).catch(function(err){
             return err
