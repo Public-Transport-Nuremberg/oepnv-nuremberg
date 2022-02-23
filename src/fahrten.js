@@ -9,7 +9,7 @@ const customHeaderRequest = request.defaults({
 /**
  * @param {String} url 
  */
- let getTrips = function(url) {
+ const getTrips = (url) => {
 	return new Promise(function(resolve, reject) {
 		let Time_Started = new Date().getTime();
 		customHeaderRequest(url, { json: true }, (err, res, body) => {

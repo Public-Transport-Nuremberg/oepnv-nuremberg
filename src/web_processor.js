@@ -11,7 +11,7 @@ const customHeaderRequest = request.defaults({
  * Function to scrape the VAG Webpage to return all ongoing delays, elevator outages and planned events as a object
  * @returns Object
  */
-const getVagWebpageDisturbances = function (test) {
+const getVagWebpageDisturbances = (test) => {
     return new Promise(function (resolve, reject) {
         let Time_Started = new Date().getTime();
         customHeaderRequest("https://www.vag.de/fahrplan/fahrplanaenderungen-stoerungen", { json: false }, (err, res, body) => {

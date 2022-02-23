@@ -10,7 +10,7 @@ const customHeaderRequest = request.defaults({
 /**
  * @param {String} url 
  */
-let getDepartures = function(url) {
+const getDepartures = (url) => {
 	return new Promise(function(resolve, reject) {
 		let Time_Started = new Date().getTime();
 		customHeaderRequest(url, { json: true }, (err, res, body) => {
@@ -69,7 +69,7 @@ let getDepartures = function(url) {
  * @param {String} longitude
  * @param {Object} parameter 
  */
-let getDeparturesbygps = function(url, latitude, longitude, parameter, api_url, encodeQueryData) {
+const getDeparturesbygps = (url, latitude, longitude, parameter, api_url, encodeQueryData) => {
 	return new Promise(function(resolve, reject) {
 		let PromiseAbfahren = []
 		let Time_Started = new Date().getTime();
