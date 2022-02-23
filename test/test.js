@@ -10,8 +10,8 @@ const vag_url = "https://apigateway.vag.de/efa/";
 const vgn = new vgn_wrapper.openvgn(api_url, vag_url);
 
 describe('Stops API', function () {
-    this.timeout(5000);
-    this.slow(2000);
+    this.timeout(15000);
+    this.slow(100);
 
     it('getStops', async () => {
         const Output = await vgn.getStops('Pl', { limit: 2 })
@@ -29,7 +29,7 @@ describe('Stops API', function () {
 
 describe('Departures API', function () {
     this.timeout(15000);
-    this.slow(4000);
+    this.slow(100);
 
     it('getDepartures', async () => {
         const Output = await vgn.getDepartures("LO", { Product: "Ubahn", TimeSpan: 60, TimeDelay: 0, LimitCount: 2 })
@@ -49,7 +49,7 @@ describe('Departures API', function () {
 
 describe('Trips API', function () {
     this.timeout(15000);
-    this.slow(4000);
+    this.slow(100);
 
     it('getTrip', async () => {
         const CurrentDeparture = await vgn.getDepartures("PL", { Product: "Ubahn", TimeSpan: 60, TimeDelay: 0, LimitCount: 2 })
@@ -69,8 +69,8 @@ describe('Trips API', function () {
 fs.readdir("./test/VAGHtmlTestTemplates", function (err, filenames) {
     if (err) { console.log(err); }
     describe('Webprocessor', function () {
-        this.timeout(5000);
-        this.slow(2000);
+        this.timeout(15000);
+        this.slow(100);
 
         //Just test if the URL still works
         it('getVagWebpageDisturbances', async () => {
