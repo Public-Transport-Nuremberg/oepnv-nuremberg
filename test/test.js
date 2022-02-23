@@ -77,10 +77,11 @@ fs.readdir("./test/VAGHtmlTestTemplates", function (err, filenames) {
             const Output = await vgn.getVagWebpageDisturbances();
             expect(Output).to.have.property('Meta');
         });
+        /*
 
-        /*  Test the parser against static html files that have a expected output
-            The .txt files contain the HTML of the Webpage and the .json the expected output.
-        */
+        //Test the parser against static html files that have a expected output
+        //The .txt files contain the HTML of the Webpage and the .json the expected output.
+        
         for (i = 0; i < filenames.length; i++) {
             if (filenames[i].endsWith(".txt")) {
                 const rawdata = fs.readFileSync(`./test/VAGHtmlTestTemplates/${filenames[i]}`);
@@ -100,5 +101,6 @@ fs.readdir("./test/VAGHtmlTestTemplates", function (err, filenames) {
                 });
             }
         }
+        */
     });
 });
