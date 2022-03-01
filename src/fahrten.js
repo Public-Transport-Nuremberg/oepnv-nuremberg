@@ -29,7 +29,7 @@ const customHeaderRequest = request.defaults({
                             const Endzeit = new Date(Fahrt.Endzeit);
                             
                             Fahrt.StartzeitDate = Startzeit.toLocaleDateString('de-DE')
-                            Fahrt.StartzeitTime = Startzeit.toLocaleTimeString('de-DE', {hour: "2-digit", minute: "2-digit"})
+                            Fahrt.StartzeitTime = Startzeit.toLocaleTimeString('de-DE', {hour: "2-digit", minute: "2-digit", timeZone: "Europe/Berlin"})
                             Fahrt.ZeitlicheDauer = (Endzeit - Startzeit)/1000
                         });
 					}
@@ -40,7 +40,7 @@ const customHeaderRequest = request.defaults({
                             const AbfahrtszeitSoll = new Date(Fahrt.AbfahrtszeitSoll);
                             
                             Fahrt.AbfahrtDate = AbfahrtszeitSoll.toLocaleDateString('de-DE')
-                            Fahrt.AbfahrtTime = AbfahrtszeitSoll.toLocaleTimeString('de-DE', {hour: "2-digit", minute: "2-digit"})
+                            Fahrt.AbfahrtTime = AbfahrtszeitSoll.toLocaleTimeString('de-DE', {hour: "2-digit", minute: "2-digit", timeZone: "Europe/Berlin"})
                             Fahrt.Verspätung = (AbfahrtszeitIst - AbfahrtszeitSoll)/1000
                         });
 					}

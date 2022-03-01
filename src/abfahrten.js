@@ -23,7 +23,7 @@ const getDepartures = (url) => {
 						const AbfahrtszeitSoll = new Date(Abfahrten.AbfahrtszeitSoll);
 						
 						Abfahrten.AbfahrtDate = AbfahrtszeitSoll.toLocaleDateString('de-DE')
-						Abfahrten.AbfahrtTime = AbfahrtszeitSoll.toLocaleTimeString('de-DE', {hour: "2-digit", minute: "2-digit"})
+						Abfahrten.AbfahrtTime = AbfahrtszeitSoll.toLocaleTimeString('de-DE', {hour: "2-digit", minute: "2-digit", timeZone: "Europe/Berlin"})
 						Abfahrten.Verspätung = (AbfahrtszeitIst - AbfahrtszeitSoll)/1000
 
 						if(Abfahrten.hasOwnProperty("Fahrzeugnummer")){
