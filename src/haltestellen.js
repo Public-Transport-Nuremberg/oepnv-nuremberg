@@ -50,7 +50,7 @@ const customHeaderRequest = request.defaults({
 				}
 			} catch (error) {
 				if(error instanceof TypeError){
-					reject("Bad response from API");
+					reject("Bad response from API" + error);
 				}
 				reject(error);
 			}
@@ -110,7 +110,7 @@ const customHeaderRequest = request.defaults({
 				}
 			} catch (error) {
 				if(error instanceof TypeError){
-					reject("Bad response from API");
+					reject("Bad response from API" + error);
 				}
 				reject(error);
 			}

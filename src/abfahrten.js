@@ -26,10 +26,15 @@ const getDepartures = (url) => {
 						Abfahrten.AbfahrtTime = AbfahrtszeitSoll.toLocaleTimeString('de-DE', {hour: "2-digit", minute: "2-digit"})
 						Abfahrten.Verspätung = (AbfahrtszeitIst - AbfahrtszeitSoll)/1000
 
-						Abfahrten.ZugType = "Kurzzug"
-						if(Abfahrten.Fahrzeugnummer.startsWith(3)){
-							Abfahrten.ZugType = "Langzug"
+						if(Abfahrten.hasOwnProperty("Fahrzeugnummer")){
+							Abfahrten.ZugType = "Kurzzug"
+							if(Abfahrten.Fahrzeugnummer.startsWith(3)){
+								Abfahrten.ZugType = "Langzug"
+							}
+						}else{
+							Abfahrten.ZugType = "Unbekannt"
 						}
+						
 					});
 
 					body.Metadata.RequestTime = new Date().getTime() - Time_Started
@@ -55,7 +60,7 @@ const getDepartures = (url) => {
 				}
 			} catch (error) {
 				if(error instanceof TypeError){
-					reject("Bad response from API");
+					reject("Bad response from API" + error);
 				}
 				reject(error);
 			}
@@ -137,8 +142,7 @@ const getDeparturesbygps = (url, latitude, longitude, parameter, api_url, encode
 				}
 			} catch (error) {
 				if(error instanceof TypeError){
-                    console.log(error)
-					reject("Bad response from API");
+					reject("Bad response from API" + error);
 				}
 				reject(error);
 			}
