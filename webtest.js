@@ -124,13 +124,13 @@ const askURL = function () {
                     }
                 }
             })
-            //console.log(console.log(util.inspect({schedule_changes: schedule_changes, disturbances: disturbance_list}, false, null, true /* enable colors */)))
-            console.log(JSON.stringify({schedule_changes: schedule_changes, disturbances: disturbance_list, Meta: {
+            console.log(console.log(util.inspect({schedule_changes: schedule_changes, disturbances: disturbance_list}, false, null, true /* enable colors */)))
+            /*console.log(JSON.stringify({schedule_changes: schedule_changes, disturbances: disturbance_list, Meta: {
                 Timestamp: new Date,
                 RequestTime: new Date().getTime() - Time_Started,
                 ParseTime: new Date().getTime() - Time_Started_parse,
                 URL: 'https://www.vag.de/fahrplan/fahrplanaenderungen-stoerungen'
-            }}))
+            }}))*/
         });
     });
 };

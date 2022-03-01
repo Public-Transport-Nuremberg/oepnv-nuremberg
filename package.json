@@ -1,6 +1,6 @@
 {
   "name": "oepnv-nuremberg",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "A wrapper for multiple datapoints from VAG and VGN",
   "main": "index.js",
   "scripts": {
