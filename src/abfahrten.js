@@ -27,12 +27,20 @@ const getDepartures = (url) => {
 						Abfahrten.Verspätung = (AbfahrtszeitIst - AbfahrtszeitSoll)/1000
 
 						if(Abfahrten.hasOwnProperty("Fahrzeugnummer")){
-							Abfahrten.ZugType = "Kurzzug"
-							if(Abfahrten.Fahrzeugnummer.startsWith(3)){
-								Abfahrten.ZugType = "Langzug"
+							//Check if Ubahn Fahrzeugnummer is there and get Type
+							if(Abfahrten.Fahrzeugnummer.startsWith(3) && Abfahrten.Produkt === "U-Bahn"){
+								Abfahrten.FahrzeugInfo = "Langzug"
+							}else if(Abfahrten.Produkt === "U-Bahn"){
+								Abfahrten.FahrzeugInfo = "Kurzzug"
+							}
+							//Check if Bus and set Privat or VAG
+							if(Abfahrten.Fahrzeugnummer.lenth === 3 && Abfahrten.Produkt === "Bus"){
+								Abfahrten.FahrzeugInfo = "VAG"
+							}else if(Abfahrten.Produkt === "Bus"){
+								Abfahrten.FahrzeugInfo = "Privat"
 							}
 						}else{
-							Abfahrten.ZugType = "Unbekannt"
+							Abfahrten.FahrzeugInfo = "Unbekannt"
 						}
 						
 					});
