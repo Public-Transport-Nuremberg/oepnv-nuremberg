@@ -1,5 +1,10 @@
 # oepnv-nuremberg  
  A wrapper for multiple datapoints from VAG and VGN  
+
+# Updating
+Version: 0.0.1 to 0.0.5 Compatible
+Version: 0.0.5 to 0.1.0 Not compatible, a lot was rewritten
+Version: 0.1.2 to 0.2.0 Not compatible, abfahrten output now contains more info
  
 ## Functions and todo list
 
@@ -109,7 +114,7 @@ This will list all trips of the given product (Ubahn, Tram, Bus) in a given time
 | ------------- | ------------- | ------------- | ------------- |
 | TimeSpan | Return departures until that time  | - | Number |
 ```js
-vgn.getTrips("Ubahn", {timespan: 10})
+getTrips("Ubahn", {timespan: 10})
 ```
 
 ### getVagWebpageDisturbances
@@ -139,7 +144,7 @@ The object might not have all the keys, its generated only by the current conten
 ```
 
 ```js
-vgn.getVagWebpageDisturbances()
+getVagWebpageDisturbances()
 ```
 
 ## Where is the data comming from?  

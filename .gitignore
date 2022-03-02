@@ -108,3 +108,4 @@ dist
 
 # package-lock
 ./package-lock.json
+test.js
