@@ -4,7 +4,8 @@
   "description": "A wrapper for multiple datapoints from VAG and VGN",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
+    "test": "./node_modules/mocha/bin/mocha",
+    "convert": "node ./tools/ConvertCSVtoJSON.js"
   },
   "repository": {
     "type": "git",
