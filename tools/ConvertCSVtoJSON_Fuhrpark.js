@@ -10,11 +10,6 @@ const Filenames = {
     "2": "Fuhrpark_Bus.json",
 }
 
-const Transportmittelnummer = {
-    "1": "fahrzeugnummer",
-    "2": "Betriebsnummer",
-}
-
 /* Functions */
 function askQuestion(query) {
     const rl = readline.createInterface({
@@ -33,7 +28,7 @@ function GetCSVPosition(KeyString) {
 }
 
 /**
- * 
+ * Downloads a file from the given URL, parses it and stores the result in static folder.
  * @param {Number} dowhat 
  * @param {String} downloadlink 
  */
@@ -47,7 +42,7 @@ function ParseCSV(dowhat, downloadlink) {
 
         ErsteZeileArr = body_lines_array[0].split(',');
 
-        for (i = 1; i < body_lines_array.length-1; i++) {
+        for (i = 1; i < body_lines_array.length - 1; i++) {
 
             const one_line = body_lines_array[i].split(",");
             let Stuff = {};
@@ -59,7 +54,13 @@ function ParseCSV(dowhat, downloadlink) {
             json_output[one_line["1"]] = Stuff;
         }
 
-        console.log(json_output);
+        fs.writeFile(`${path_static}/${Filenames[dowhat]}`, JSON.stringify(json_output), err => {
+            if (err) {
+                console.error(err)
+                return false
+            }
+            return true
+        })
     });
 }
 
@@ -76,3 +77,7 @@ function ParseCSV(dowhat, downloadlink) {
         console.log(e)
     }
 })();
+
+module.exports = {
+    ParseCSV
+}
