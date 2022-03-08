@@ -52,8 +52,12 @@ describe('Trips API', function () {
     this.slow(100);
 
     it('getTrip', async () => {
-        const CurrentDeparture = await vgn.getDepartures("PL", { Product: "Ubahn", TimeSpan: 60, TimeDelay: 0, LimitCount: 2 })
-        const Output = await vgn.getTrip(CurrentDeparture.Departures[0].Fahrtnummer, { product: "Ubahn" })
+        let CurrentDeparture = await vgn.getDepartures(704, { Product: "Ubahn", TimeSpan: 60, TimeDelay: 0, LimitCount: 2 })
+        let Output = await vgn.getTrip(CurrentDeparture.Departures[0].Fahrtnummer, { product: "Ubahn" })
+        if (Output.code === 404) {
+            CurrentDeparture = await vgn.getDepartures(704, { Product: "Tram", TimeSpan: 60, TimeDelay: 0, LimitCount: 2 })
+            Output = await vgn.getTrip(CurrentDeparture.Departures[0].Fahrtnummer, { product: "Tram" })
+        }
         expect(Output.Fahrt).to.have.property('Fahrtverlauf');
         expect(Output).to.have.property('Meta');
     });
