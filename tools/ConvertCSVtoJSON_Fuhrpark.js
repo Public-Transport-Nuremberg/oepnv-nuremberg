@@ -1,14 +1,14 @@
-const request = require('request');
+const request = require("request");
 const fs = require("fs");
-const readline = require('readline');
-const path = require('path');
-const path_static = path.join(__dirname, '../static');
+const readline = require("readline");
+const path = require("path");
+const path_static = path.join(__dirname, "../static");
 let ErsteZeileArr = "";
 
 const Filenames = {
     "1": "Fuhrpark_Tram.json",
     "2": "Fuhrpark_Bus.json",
-}
+};
 
 /* Functions */
 function askQuestion(query) {
@@ -23,10 +23,6 @@ function askQuestion(query) {
     }))
 }
 
-function GetCSVPosition(KeyString) {
-    return ErsteZeileArr.indexOf(KeyString)
-}
-
 /**
  * Downloads a file from the given URL, parses it and stores the result in static folder.
  * @param {Number} dowhat 
@@ -38,7 +34,7 @@ function ParseCSV(dowhat, downloadlink) {
     request(downloadlink, { json: true }, (err, res, body) => {
         if (err) { throw err; }
 
-        const body_lines_array = body.split("\n")
+        const body_lines_array = body.split("\n");
 
         ErsteZeileArr = body_lines_array[0].split(',');
 
@@ -56,10 +52,10 @@ function ParseCSV(dowhat, downloadlink) {
 
         fs.writeFile(`${path_static}/${Filenames[dowhat]}`, JSON.stringify(json_output), err => {
             if (err) {
-                console.error(err)
-                return false
+                console.error(err);
+                return false;
             }
-            return true
+            return true;
         })
     });
 }
@@ -74,7 +70,7 @@ function ParseCSV(dowhat, downloadlink) {
         ParseCSV(dowhat, downloadlink);
 
     } catch (e) {
-        console.log(e)
+        console.log(e);
     }
 })();
 

@@ -1,13 +1,13 @@
-const request = require('request');
+const request = require("request");
 const fs = require("fs");
-const readline = require('readline');
-const path = require('path');
-const path_static = path.join(__dirname, '../static');
+const readline = require("readline");
+const path = require("path");
+const path_static = path.join(__dirname, "../static");
 let ErsteZeileArr = [];
 
 const Filenames = {
     "1": "Steighoehen_Tram.json"
-}
+};
 
 /* Functions */
 function askQuestion(query) {
@@ -22,10 +22,6 @@ function askQuestion(query) {
     }))
 }
 
-function GetCSVPosition(KeyString) {
-    return ErsteZeileArr.indexOf(KeyString)
-}
-
 /**
  * Downloads a file from the given URL, parses it and stores the result in static folder.
  * @param {Number} dowhat 
@@ -37,14 +33,14 @@ function ParseCSV(dowhat, downloadlink) {
     request(downloadlink, { json: true }, (err, res, body) => {
         if (err) { throw err; }
 
-        const body_lines_array = body.split("\n")
+        const body_lines_array = body.split("\n");
 
         const ErsteZeileArrTemp = body_lines_array[0].split(',');
         for (i = 0; i < ErsteZeileArrTemp.length; i++) {
-            if(ErsteZeileArrTemp[i].includes('"position')){
+            if (ErsteZeileArrTemp[i].includes('"position')) {
                 ErsteZeileArrTemp[i] = ErsteZeileArrTemp[i].replace(/"/g, '');
                 ErsteZeileArr.push(`${ErsteZeileArrTemp[i]}.5`);
-            }else if(!ErsteZeileArrTemp[i].includes('5"')){
+            } else if (!ErsteZeileArrTemp[i].includes('5"')) {
                 ErsteZeileArr.push(`${ErsteZeileArrTemp[i]}`);
             }
         }
@@ -63,10 +59,10 @@ function ParseCSV(dowhat, downloadlink) {
 
         fs.writeFile(`${path_static}/${Filenames[dowhat]}`, JSON.stringify(json_output), err => {
             if (err) {
-                console.error(err)
-                return false
+                console.error(err);
+                return false;
             }
-            return true
+            return true;
         })
     });
 }
@@ -80,11 +76,11 @@ function ParseCSV(dowhat, downloadlink) {
 
         //const dowhat = 1;
         //const downloadlink = "https://opendata.vag.de/datastore/dump/37516980-a1ce-461f-aa68-bf466a70e7fc?bom=True";
-        
+
         ParseCSV(dowhat, downloadlink);
 
     } catch (e) {
-        console.log(e)
+        console.log(e);
     }
 })();
 
