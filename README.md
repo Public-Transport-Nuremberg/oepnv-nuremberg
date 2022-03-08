@@ -147,6 +147,19 @@ The object might not have all the keys, its generated only by the current conten
 getVagWebpageDisturbances()
 ```
 
+## More info
+### "Tram Steighöhen" | Tram platform heights
+| platform heights | Number in data  | Explanation |
+| ------------- | ------------- | ------------- |
+| 15 cm bis 25 cm rise | 1 | barrier-free |
+| 15 cm bis 25 cm rise | 2 | not barrier-free |
+| 15 cm bis 25 cm rise | 3 | not barrier-free |
+| Tilt change platform | 4 | not barrier-free |
+| Crossing up to 3cm high | 5 | not barrier-free |
+| No Platrom at all | 6 | not barrier-free |
+
+
+
 ## Where is the data comming from?  
  Departures and stops are comming from the official VAG API endpoint  
  URL: https://opendata.vag.de/  
