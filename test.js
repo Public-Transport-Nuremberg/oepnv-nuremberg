@@ -43,9 +43,9 @@ GT6N: 1000er
 
 (async function (){
     try {
-        //const Output = await vgn.getStops('Luitpoldhain', {limit: 10});
+        const Output = await vgn.getStops("Hardhöhe", {limit: 10});
         //const Output = await vgn.getStopsbygps('49.45015694', '11.083455', {limit: 2, distance: 400, sort: 'Distance'});
-        const Output = await vgn.getDepartures("PL", {product: "Ubahn", timespan: 60, timedelay: 0, limitcount: 5})
+        //const Output = await vgn.getDepartures("PL", {product: "Ubahn", timespan: 60, timedelay: 0, limitcount: 5})
         //const Output = await vgn.getDepartures("PL", { Product: "Ubahn", TimeSpan: 60, TimeDelay: 0, LimitCount: 2 })
         //const OutputCompare = await askURL(`https://start.vag.de/dm/api/abfahrten.json/VAG/PLAE/4?Product=Tram&TimeSpan=60&TimeDelay=0&LimitCount=5`)
         //const Output = await vgn.getVagWebpageDisturbances()

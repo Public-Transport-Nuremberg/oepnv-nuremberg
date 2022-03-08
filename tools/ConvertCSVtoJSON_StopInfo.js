@@ -6,7 +6,8 @@ const path_static = path.join(__dirname, '../static');
 let ErsteZeileArr = [];
 
 const Filenames = {
-    "1": "Steighoehen_Tram.json"
+    "1": "StopInfo_Tram.json",
+    "2": "StopInfo_Ubahn.json",
 }
 
 /* Functions */
@@ -39,26 +40,33 @@ function ParseCSV(dowhat, downloadlink) {
 
         const body_lines_array = body.split("\n")
 
-        const ErsteZeileArrTemp = body_lines_array[0].split(',');
-        for (i = 0; i < ErsteZeileArrTemp.length; i++) {
-            if(ErsteZeileArrTemp[i].includes('"position')){
-                ErsteZeileArrTemp[i] = ErsteZeileArrTemp[i].replace(/"/g, '');
-                ErsteZeileArr.push(`${ErsteZeileArrTemp[i]}.5`);
-            }else if(!ErsteZeileArrTemp[i].includes('5"')){
-                ErsteZeileArr.push(`${ErsteZeileArrTemp[i]}`);
-            }
-        }
+        ErsteZeileArr = body_lines_array[0].split(',');
 
         for (i = 1; i < body_lines_array.length - 1; i++) {
 
             const one_line = body_lines_array[i].split(",");
             let Stuff = {};
+            if(one_line["3"] == '"Fürth'){
+                one_line["3"] = one_line["4"].trim().replace('"', "");
+            }
 
             for (j = 2; j < one_line.length; j++) {
+                if(ErsteZeileArr[j] == null){ continue; }
+                if(one_line[j] === "x") {
+                    Stuff[ErsteZeileArr[j].replace("\r", "")] = true;
+                    continue;
+                }
+
+                if(one_line[j] === "\"\"") {
+                    if(!Stuff[ErsteZeileArr[j]]) { Stuff[ErsteZeileArr[j].replace("\r", "")] = false; continue;}
+                    Stuff[ErsteZeileArr[j].replace("\r", "")] = false;
+                    continue;
+                }
+
                 Stuff[ErsteZeileArr[j].replace("\r", "")] = one_line[j];
             };
 
-            json_output[one_line["6"]] = Stuff;
+            json_output[one_line["3"]] = Stuff;
         }
 
         fs.writeFile(`${path_static}/${Filenames[dowhat]}`, JSON.stringify(json_output), err => {
@@ -75,12 +83,12 @@ function ParseCSV(dowhat, downloadlink) {
 
 (async function () {
     try {
-        const dowhat = await askQuestion("Welche Datei möchtest du verarbeiten?\n1: Tram Steighöhen\n> ");
-        const downloadlink = await askQuestion("Nenne mir den aktuellen Downloadlink\n> ");
+        const dowhat = await askQuestion("Welche Datei möchtest du verarbeiten?\n1: Tram StopsInfo\n2: U-Bahn StopsInfo\n> ");
+        //const downloadlink = await askQuestion("Nenne mir den aktuellen Downloadlink\n> ");
 
-        //const dowhat = 1;
-        //const downloadlink = "https://opendata.vag.de/datastore/dump/37516980-a1ce-461f-aa68-bf466a70e7fc?bom=True";
-        
+        const downloadlink = "https://opendata.vag.de/datastore/dump/fb0a4c02-79c9-4985-a60a-8b7ff2f4a70d?bom=True" //Tram
+        //const downloadlink = "https://opendata.vag.de/datastore/dump/0eb9116d-7ad5-4fc2-b9b5-5879b39697b2?bom=True" //U-Bahn
+
         ParseCSV(dowhat, downloadlink);
 
     } catch (e) {
