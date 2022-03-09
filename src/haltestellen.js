@@ -10,8 +10,9 @@ const customHeaderRequest = request.defaults({
 /**
  * @param {String} url 
  * @param {Object} parameter 
+ * @param {String} static
  */
- const getStops = (url, parameter) => {
+ const getStops = (url, parameter, static) => {
 	return new Promise(function(resolve, reject) {
 		let Time_Started = new Date().getTime();
 		customHeaderRequest(url, { json: true }, (err, res, body) => {
