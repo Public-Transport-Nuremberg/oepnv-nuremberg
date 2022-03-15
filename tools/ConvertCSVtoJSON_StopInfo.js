@@ -43,7 +43,8 @@ function ParseCSV(dowhat, downloadlink) {
             const one_line = body_lines_array[i].split(",");
             let Stuff = {};
             if (one_line["3"] === '"Fürth') {
-                one_line["3"] = one_line["4"].trim().replace('"', "");
+                one_line["3"] = `Fürth, ${one_line["4"].trim().replace('"', "")}`;
+                one_line.splice(4,1)
             }
 
             for (j = 2; j < one_line.length; j++) {
@@ -82,6 +83,7 @@ function ParseCSV(dowhat, downloadlink) {
         const dowhat = await askQuestion("Welche Datei möchtest du verarbeiten?\n1: Tram StopsInfo\n2: U-Bahn StopsInfo\n> ");
         const downloadlink = await askQuestion("Nenne mir den aktuellen Downloadlink\n> ");
 
+        //const dowhat = 2
         //const downloadlink = "https://opendata.vag.de/datastore/dump/fb0a4c02-79c9-4985-a60a-8b7ff2f4a70d?bom=True" //Tram
         //const downloadlink = "https://opendata.vag.de/datastore/dump/0eb9116d-7ad5-4fc2-b9b5-5879b39697b2?bom=True" //U-Bahn
 
