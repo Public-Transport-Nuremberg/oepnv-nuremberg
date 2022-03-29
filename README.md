@@ -23,6 +23,7 @@ Version: 0.1.2 to 0.2.0 Not compatible, abfahrten output now contains more info
   - [ ] Calculate travle time between 2 stops from a Trip Object
   
 ## Usage
+ NodeJA 14.0 or higher  
  > A working example is [Test.js](https://github.com/BolverBlitz/oepnv-nuremberg/blob/main/test.js)
 
  Usage:
