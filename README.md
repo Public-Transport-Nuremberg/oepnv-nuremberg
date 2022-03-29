@@ -2,9 +2,9 @@
  A wrapper for multiple datapoints from VAG and VGN  
 
 # Updating
-Version: 0.0.1 to 0.0.5 Compatible
-Version: 0.0.5 to 0.1.0 Not compatible, a lot was rewritten
-Version: 0.1.2 to 0.2.0 Not compatible, abfahrten output now contains more info
+Version: 0.0.1 to 0.0.5 Compatible  
+Version: 0.0.5 to 0.1.0 Not compatible, a lot was rewritten  
+Version: 0.1.2 to 0.2.0 Not compatible, abfahrten output now contains more info  
  
 ## Functions and todo list
 
