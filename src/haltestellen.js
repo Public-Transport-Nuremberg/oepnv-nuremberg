@@ -10,7 +10,7 @@ const customHeaderRequest = request.defaults({
 /**
  * @param {String} url URL with Parameters
  * @param {Object} parameter Non URL Parameters
- * @param {String} static Required data from /static
+ * @param {Object} static Required data from /static
  */
  const getStops = (url, parameter, {Steighoehen_Tram, StopInfo_Tram, StopInfo_Ubahn}) => {
 	return new Promise(function(resolve, reject) {
@@ -78,8 +78,9 @@ const customHeaderRequest = request.defaults({
  * @param {String} latitude
  * @param {String} longitude
  * @param {Object} parameter 
+ * @param {Object} static Required data from /static
  */
- const getStopsbygps = (url, latitude, longitude, parameter) => {
+ const getStopsbygps = (url, latitude, longitude, parameter, {Steighoehen_Tram, StopInfo_Tram, StopInfo_Ubahn}) => {
 	return new Promise(function(resolve, reject) {
 		let Time_Started = new Date().getTime();
 		customHeaderRequest(url, { json: true }, (err, res, body) => {
@@ -95,6 +96,19 @@ const customHeaderRequest = request.defaults({
 						Haltestellen.Haltestellenname = HaltestellennameSplit[0].trim();
 						Haltestellen.Ort = HaltestellennameSplit[1].replace(/[)]/g,"",);
 						Haltestellen.Produkte = Haltestellen.Produkte.replace(/ubahn/i,"U-Bahn",);
+						Haltestellen.HaltestellenDaten = {}
+
+						if(Haltestellen.Produkte.includes('Tram')){
+							Haltestellen.HaltestellenDaten = {...StopInfo_Tram[Haltestellen.Haltestellenname], ...Steighoehen_Tram[Haltestellen.Haltestellenname]}
+						}
+
+						if(Haltestellen.Produkte.includes('U-Bahn')){
+							if(Haltestellen.Ort === 'Fürth') {
+								Haltestellen.HaltestellenDaten = StopInfo_Ubahn[`${Haltestellen.Ort}, ${Haltestellen.Haltestellenname}`]
+							}else{
+								Haltestellen.HaltestellenDaten = StopInfo_Ubahn[Haltestellen.Haltestellenname]
+							}
+						}
 					});
 					if(parameter.sort.toLowerCase() === "distance"){body.Haltestellen.sort((a, b) => (a.Distance > b.Distance) ? 1 : -1)};
 					if(parameter.sort.toLowerCase() === "alphabetically"){body.Haltestellen.sort((a, b) => (a.Haltestellenname > b.Haltestellenname) ? 1 : -1)};

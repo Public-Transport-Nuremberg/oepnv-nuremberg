@@ -80,7 +80,7 @@ class openvgn {
 			parameter.sort = "Distance";
 		};
         const url = `${this.api_url}/haltestellen.json/vgn?lon=${lon}&lat=${lat}&Distance=${parameter.distance}`;
-        return Haltestellen.getStopsbygps(url, lat, lon,parameter).then(function(Haltestellen){
+        return Haltestellen.getStopsbygps(url, lat, lon,parameter, {Steighoehen_Tram, StopInfo_Tram, StopInfo_Ubahn}).then(function(Haltestellen){
             return Haltestellen;
         }).catch(function(err){
             return err;
