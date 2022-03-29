@@ -25,7 +25,7 @@ class openvgn {
      * @param {String} value String to be encoded
      * @returns {String} Encoded String
      */
-    urlReformat(value)
+    #urlReformat(value)
     {
         value = value.replace(/ä/g, "%C3%A4");
         value = value.replace(/ö/g, "%C3%B6");
@@ -38,7 +38,7 @@ class openvgn {
      * @param {String} endpoint Departures, Stops, Trips
      * @returns {String} Encoded String
      */
-    encodeQueryData(data, endpoint) {
+    #encodeQueryData(data, endpoint) {
         const ret = [];
         for (let d in data){
             if(allowed_apiparameter[endpoint].includes(encodeURIComponent(d).toLowerCase())){
@@ -55,7 +55,7 @@ class openvgn {
      * @param {Number} [parameter.limit] Max amount of stops returned
     */
     getStops(target, parameter) {
-        const url = `${this.api_url}/haltestellen.json/vgn?name=${this.urlReformat(target.trim())}`;
+        const url = `${this.api_url}/haltestellen.json/vgn?name=${this.#urlReformat(target.trim())}`;
         return Haltestellen.getStops(url, parameter, {Steighoehen_Tram, StopInfo_Tram, StopInfo_Ubahn}).then(function(Haltestellen){
             return Haltestellen
         }).catch(function(err){
@@ -80,7 +80,7 @@ class openvgn {
 			parameter.sort = "Distance";
 		};
         const url = `${this.api_url}/haltestellen.json/vgn?lon=${lon}&lat=${lat}&Distance=${parameter.distance}`;
-        return Haltestellen.getStopsbygps(url, lat, lon,parameter, {Steighoehen_Tram, StopInfo_Tram, StopInfo_Ubahn}).then(function(Haltestellen){
+        return Haltestellen.getStopsbygps(url, lat, lon, parameter, {Steighoehen_Tram, StopInfo_Tram, StopInfo_Ubahn}).then(function(Haltestellen){
             return Haltestellen;
         }).catch(function(err){
             return err;
@@ -103,7 +103,7 @@ class openvgn {
         };
         let url = `${this.api_url}/abfahrten.json/${source}/${target}`;
         if(parameter){
-			url = `${url}?${this.encodeQueryData(parameter, "Departures")}`;
+			url = `${url}?${this.#encodeQueryData(parameter, "Departures")}`;
 		};
         return Abfahrten.getDepartures(url, parameter).then(function(Abfahrten){
             return Abfahrten;
@@ -133,7 +133,7 @@ class openvgn {
             parameter.sort = "Distance";
         };
         const url = `${this.api_url}/haltestellen.json/vgn?lon=${lon}&lat=${lat}&Distance=${parameter.distance}`;
-        return Abfahrten.getDeparturesbygps(url, lat, lon, parameter, this.api_url, this.encodeQueryData).then(function(Abfahrten){
+        return Abfahrten.getDeparturesbygps(url, lat, lon, parameter, this.api_url, this.#encodeQueryData).then(function(Abfahrten){
             return Abfahrten;
         }).catch(function(err){
             return err;
@@ -172,7 +172,7 @@ class openvgn {
         let url = `${this.api_url}/fahrten.json/${product}`;
 
         if(parameter){
-			url = `${url}?${this.encodeQueryData(parameter, "Trips")}`;
+			url = `${url}?${this.#encodeQueryData(parameter, "Trips")}`;
 		};
         return Fahrten.getTrips(url).then(function(Fahrten){
             return Fahrten;
