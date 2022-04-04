@@ -105,7 +105,7 @@ class openvgn {
         if(parameter){
 			url = `${url}?${this.#encodeQueryData(parameter, "Departures")}`;
 		};
-        return Abfahrten.getDepartures(url, parameter).then(function(Abfahrten){
+        return Abfahrten.getDepartures(url, {Fuhrpark_Tram, Fuhrpark_Bus}).then(function(Abfahrten){
             return Abfahrten;
         }).catch(function(err){
             return err;
@@ -133,7 +133,7 @@ class openvgn {
             parameter.sort = "Distance";
         };
         const url = `${this.api_url}/haltestellen.json/vgn?lon=${lon}&lat=${lat}&Distance=${parameter.distance}`;
-        return Abfahrten.getDeparturesbygps(url, lat, lon, parameter, this.api_url, this.#encodeQueryData).then(function(Abfahrten){
+        return Abfahrten.getDeparturesbygps(url, lat, lon, parameter, this.api_url, this.#encodeQueryData, {Fuhrpark_Tram, Fuhrpark_Bus}).then(function(Abfahrten){
             return Abfahrten;
         }).catch(function(err){
             return err;
