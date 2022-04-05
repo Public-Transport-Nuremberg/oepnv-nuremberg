@@ -3,11 +3,7 @@ const chai = require('chai');
 const fs = require('fs')
 const expect = chai.expect;
 
-
-const api_url = "https://start.vag.de/dm/api";
-const vag_url = "https://apigateway.vag.de/efa/";
-
-const vgn = new vgn_wrapper.openvgn(api_url, vag_url);
+const vgn = new vgn_wrapper.openvgn();
 
 describe('Stops API', function () {
     this.timeout(15000);
@@ -108,3 +104,15 @@ fs.readdir("./test/VAGHtmlTestTemplates", function (err, filenames) {
         */
     });
 });
+
+describe('Routes API', function () {
+    this.timeout(15000);
+    this.slow(100);
+
+    it('getLocations', async () => {
+        const Output = await vgn.getLocations("Plärrer")
+
+        expect(Output).to.have.property('locations');
+        expect(Output).to.have.property('Meta');
+    });
+})

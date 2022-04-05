@@ -2,11 +2,13 @@ const Haltestellen = require("./src/haltestellen");
 const Abfahrten = require("./src/abfahrten");
 const Fahrten = require("./src/fahrten");
 const WebProcessor = require("./src/web_processor");
+const routen = require("./src/routen")
 const {Fuhrpark_Bus, Fuhrpark_Tram, Steighoehen_Tram, StopInfo_Tram, StopInfo_Ubahn} = require("./static");
 const allowed_apiparameter = {
     Departures: ["product", "timespan", "timedelay", "limitcount"],
     Stops: ["name", "lon", "lat", "distance"],
-    Trips: ["timespan"]
+    Trips: ["timespan"],
+    Locations: ["name"]
     };
 
 class openvgn {
@@ -17,7 +19,7 @@ class openvgn {
      */
     constructor(api_url, vag_url) {
         this.api_url = api_url || "https://start.vag.de/dm/api";
-        this.vag_url = vag_url || "https://apigateway.vag.de/efa/";
+        this.vag_url = vag_url || "https://efa-gateway.vag.de";
     };
 
     /**
@@ -49,12 +51,24 @@ class openvgn {
     };
 
     /**
+     * Transform coordinates into a string that can be used for routes.
+     * @param {Number} lat 
+     * @param {Number} lon 
+     * @returns 
+     */
+    getCordString(lat, lon){
+        if(!lat || !lon){return new Error("getDeparturesbygps: Coordinates can´t be empty.")}
+        return `${lat}:${lon}:WGS84[DD.DDDDD]`
+    }
+
+    /**
      * This will get you all known data about a stop.
      * @param {String} target Stop name
      * @param {Object} parameter Quary parameter
      * @param {Number} [parameter.limit] Max amount of stops returned
     */
     getStops(target, parameter) {
+        if(!target){return new Error("getDepartures: Target can´t be empty.")}
         const url = `${this.api_url}/haltestellen.json/vgn?name=${this.#urlReformat(target.trim())}`;
         return Haltestellen.getStops(url, parameter, {Steighoehen_Tram, StopInfo_Tram, StopInfo_Ubahn}).then(function(Haltestellen){
             return Haltestellen
@@ -73,6 +87,7 @@ class openvgn {
      * @param {String} [parameter.sort] Sort your stops by distance or alphabetically
     */
     getStopsbygps(lat, lon, parameter){
+        if(!lat || !lon){return new Error("getDeparturesbygps: Coordinates can´t be empty.")}
         if(!parameter.distance){
 			parameter.distance = 500;
 		};
@@ -97,6 +112,7 @@ class openvgn {
      * @param {Number} [parameter.LimitCount] Max amount of departures returned
     */
     getDepartures(target, parameter){
+        if(!target){return new Error("getDepartures: Target can´t be empty.")}
         let source = "vgn";
         if(isNaN(target)){
             source = "vag";
@@ -126,6 +142,7 @@ class openvgn {
      * @param {Number} [parameter.LimitCount] Max amount of departures returned
      */
     getDeparturesbygps(lat, lon, parameter){
+        if(!lat || !lon){return new Error("getDeparturesbygps: Coordinates can´t be empty.")}
         if(!parameter.distance){
             parameter.distance = 500;
         };
@@ -148,6 +165,7 @@ class openvgn {
      * @param {String} [parameter.Product] Only return departures of one or multiple products
     */
      getTrip(Fahrtnummer, parameter){
+        if(!Fahrtnummer){return new Error("getTrip: Fahrtnummer can´t be empty.")}
         let url;
         if(parameter.date){
             const date = new Date(parameter.date).toLocaleTimeString("de-DE", {day: "2-digit", month: "2-digit", year: "numeric"}).split(",")[0];
@@ -169,6 +187,7 @@ class openvgn {
      * @param {Number} [parameter.TimeSpan] Return departures until that time
     */
      getTrips(product, parameter){
+        if(!product){return new Error("getTrips: Product can´t be empty.")}
         let url = `${this.api_url}/fahrten.json/${product}`;
 
         if(parameter){
@@ -193,6 +212,16 @@ class openvgn {
             return err;
         });
     };
+
+    getLocations(name){
+        if(!name){return new Error("getLocations: Name can´t be empty.")}
+        const url = `${this.vag_url}/api/v1/locations?name=${name}`
+        return routen.getLocations(url).then(function(locations){
+            return locations;
+        }).catch(function(err){
+            return err;
+        });
+    }
 
 };
 
