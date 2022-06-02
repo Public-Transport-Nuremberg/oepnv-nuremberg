@@ -61,6 +61,7 @@ const askURL = function () {
             let tracker = "";
             // Parse Aktuelle Störungen
             if(disturbance.hasOwnProperty("S")){
+                //console.log(disturbance)
                 disturbance["S"].map((Key, i) => {
                     Key = Key.replace(/\r?\n|\r/g, "")
                     Key = Key.replace(/\s\s+/g, '  ').split("  ")
@@ -75,6 +76,7 @@ const askURL = function () {
                             const UpdatedString = `${Key[i + 2].split(":")[1]}:${Key[i + 2].split(":")[2]}`
                             const UpdatedStringDate = UpdatedString.split("um")[0].trim().split(".")
                             const UpdatedStringTIme = UpdatedString.split("um")[1]
+                            //console.log(Key[i])
                             const UpdatedStamp = new Date(`${[UpdatedStringDate[2], UpdatedStringDate[1], UpdatedStringDate[0]].join("-")} ${UpdatedStringTIme.replace("Uhr", "").trim()}`);
 
                             // Create Object if Aufzugsstörungen

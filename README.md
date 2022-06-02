@@ -16,7 +16,7 @@ Version: 0.1.2 to 0.2.0 Not compatible, abfahrten output now contains more info
 - [X] Get Trip
 - [X] Get elevator malfunctions
 - [X] Get current timetable changes
-- [ ] Turn (part of) adress into list of near stops
+- [X] Turn (part of) adress into list of near stops
 - [ ] Get routes from stop to stop
 - [ ] Get routes to anything. IDs, Stopnames, Adresses, GPS
 - [ ] Misc functions

@@ -39,8 +39,13 @@ const getDepartures = (url, { Fuhrpark_Tram, Fuhrpark_Bus }) => {
 							//Check if Bus and set Operator (Privat or VAG)
 							if (Abfahrten.Fahrzeugnummer.length === 3 && Abfahrten.Produkt === "Bus") {
 								Abfahrten.FahrzeugInfo = "VAG";
-								Abfahrten.Fahrzeug = Fuhrpark_Bus[Abfahrten.Fahrzeugnummer];
-							} else if (Abfahrten.Fahrzeugnummer.length !== 3 &&Abfahrten.Produkt === "Bus") {
+								if (Fuhrpark_Bus[Abfahrten.Fahrzeugnummer]) {
+									Abfahrten.Fahrzeug = Fuhrpark_Bus[Abfahrten.Fahrzeugnummer];
+								} else {
+									Abfahrten.Fahrzeug = {}
+								}
+
+							} else if (Abfahrten.Fahrzeugnummer.length !== 3 && Abfahrten.Produkt === "Bus") {
 								Abfahrten.FahrzeugInfo = "Privat";
 								Abfahrten.Fahrzeug = {};
 							}
@@ -92,7 +97,7 @@ const getDepartures = (url, { Fuhrpark_Tram, Fuhrpark_Bus }) => {
  * @param {String} longitude
  * @param {Object} parameter 
  */
-const getDeparturesbygps = (url, latitude, longitude, parameter, api_url, encodeQueryData, {Fuhrpark_Tram, Fuhrpark_Bus}) => {
+const getDeparturesbygps = (url, latitude, longitude, parameter, api_url, encodeQueryData, { Fuhrpark_Tram, Fuhrpark_Bus }) => {
 	return new Promise(function (resolve, reject) {
 		let PromiseAbfahren = []
 		let Time_Started = new Date().getTime();
@@ -113,7 +118,7 @@ const getDeparturesbygps = (url, latitude, longitude, parameter, api_url, encode
 						if (parameter) {
 							url = `${url}?${encodeQueryData(parameter, 'Departures')}`
 						}
-						PromiseAbfahren.push(getDepartures(url, {Fuhrpark_Tram, Fuhrpark_Bus}))
+						PromiseAbfahren.push(getDepartures(url, { Fuhrpark_Tram, Fuhrpark_Bus }))
 
 					});
 
