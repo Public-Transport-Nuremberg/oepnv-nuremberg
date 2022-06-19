@@ -1,5 +1,8 @@
 # oepnv-nuremberg  
- A wrapper for multiple datapoints from VAG and VGN  
+ A wrapper for multiple datapoints from VAG and VGN.  
+ Serves stations and depatures with extra information, so you not only know when your next bus is comming but also if it has air conditioning.  
+ Stations also include if they are barrier-free, this if important for disabled people.  
+ It can scrape VAG webpage to get current events, like a elevator malfunction in realtime.
 
 # Updating
 Version: 0.0.1 to 0.0.5 Compatible  
