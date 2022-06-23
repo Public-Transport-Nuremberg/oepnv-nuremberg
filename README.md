@@ -17,8 +17,8 @@ Version: 0.1.2 to 0.2.0 Not compatible, abfahrten output now contains more info
 - [X] Stops based on GPS
 - [X] Get Trips
 - [X] Get Trip
-- [X] Get elevator malfunctions
-- [X] Get current timetable changes
+- [?] Get elevator malfunctions
+- [?] Get current timetable changes
 - [X] Turn (part of) adress into list of near stops
 - [ ] Get routes from stop to stop
 - [ ] Get routes to anything. IDs, Stopnames, Adresses, GPS
@@ -121,7 +121,8 @@ This will list all trips of the given product (Ubahn, Tram, Bus) in a given time
 getTrips("Ubahn", {timespan: 10})
 ```
 
-### getVagWebpageDisturbances
+### getVagWebpageDisturbances (BETA)
+This method is very unstable because the webpage is very complicated.  
 This will return a object based on the current webpage.  
 The object might not have all the keys, its generated only by the current content!  
   
