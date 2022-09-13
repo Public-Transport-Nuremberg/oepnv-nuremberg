@@ -20,6 +20,7 @@ Version: 0.1.2 to 0.2.0 Not compatible, abfahrten output now contains more info
 - [?] Get elevator malfunctions
 - [?] Get current timetable changes
 - [X] Turn (part of) adress into list of near stops
+- [X] Turn GPS into Adress
 - [ ] Get routes from stop to stop
 - [ ] Get routes to anything. IDs, Stopnames, Adresses, GPS
 - [ ] Misc functions
@@ -150,6 +151,12 @@ The object might not have all the keys, its generated only by the current conten
 
 ```js
 getVagWebpageDisturbances()
+```
+
+### reverseGeocode
+This method will return the closest adress to the given GPS Position.
+```js
+reverseGeocode('49.4480881582118', '11.0647882822154')
 ```
 
 ## More info
