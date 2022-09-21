@@ -24,7 +24,7 @@ Version: 0.1.2 to 0.2.0 Not compatible, abfahrten output now contains more info
 - [ ] Get routes from stop to stop
 - [ ] Get routes to anything. IDs, Stopnames, Adresses, GPS
 - [ ] Misc functions
-  - [ ] Calculate travle time between 2 stops from a Trip Object
+  - [X] Calculate travle time between 2 stops from a Trip Object
   
 ## Usage
  NodeJS 14.0 or higher  
@@ -113,13 +113,21 @@ getTrip(1000917, {Product: "ubahn"})
 ```
 
 ### getTrips
-This will list all trips of the given product (Ubahn, Tram, Bus) in a given timespan.
+This will list all trips of the given product (Ubahn, Tram, Bus) in a given timespan.  
   
 | Parameters | Definition  | Default Value | Possible Value |
 | ------------- | ------------- | ------------- | ------------- |
 | TimeSpan | Return departures until that time  | - | Number |
 ```js
 getTrips("Ubahn", {timespan: 10})
+```
+
+### calculateTripTime and calculateActualTripTime
+This will calculate the time it takes to travel from one stop to another.  
+
+```js
+calculateTripTime(getTripResponse, "LS", "704") // Returns difference in seconds acourting to the timetable
+calculateActualTripTime(getTripResponse, "LS", "704") // Returns difference in seconds acourting to the actual time
 ```
 
 ### getVagWebpageDisturbances (BETA)
