@@ -26,11 +26,11 @@ const url = VAGDE + "/haltestellen.json/vag?name=";
                 if (Haltestelle.Produkte.includes("U-Bahn")) {
                     if (Haltestelle.Ort === "Fürth") {
                         if(StopInfo_Ubahn[`${Haltestelle.Ort}, ${Haltestelle.Haltestellenname}`] === undefined) {
-                            console.log(`${Haltestelle.Ort}, ${Haltestelle.Haltestellenname}`);
+                            console.log(`Missing from U-Bahn Stoplist: ${Haltestelle.Ort}, ${Haltestelle.Haltestellenname}`);
                         }
                     } else {
                         if(StopInfo_Ubahn[Haltestelle.Haltestellenname] === undefined) {
-                            console.log(`${Haltestelle.Haltestellenname}`);
+                            console.log(`Missing from U-Bahn Stoplist: ${Haltestelle.Haltestellenname}`);
                         }
                     }
                 }
@@ -38,17 +38,17 @@ const url = VAGDE + "/haltestellen.json/vag?name=";
 
             body.Haltestellen.map((Haltestelle) => {
 
-                /*
+                
                 if (Haltestelle.Produkte.includes("Tram")) {
                     if (StopInfo_Tram[Haltestelle.Haltestellenname] === undefined) {
                         console.log(`${Haltestelle.Haltestellenname} is missing frim StopInfo_Tram`)
                     }
 
                     if (Steighoehen_Tram[Haltestelle.Haltestellenname] === undefined) {
-                        console.log(`${Haltestelle.Haltestellenname} is missing frim Steighoehen_Tram`)
+                        //console.log(`${Haltestelle.Haltestellenname} is missing frim Steighoehen_Tram`)
                     }
                 }
-                */
+                
 
             });
 
