@@ -31,8 +31,12 @@ class openvgn {
      */
     #urlReformat(value) {
         value = value.replace(/ä/g, "%C3%A4");
+        value = value.replace(/Ä/g, "%C3%84");
         value = value.replace(/ö/g, "%C3%B6");
+        value = value.replace(/Ö/g, "%C3%96");
         value = value.replace(/ü/g, "%C3%BC");
+        value = value.replace(/Ü/g, "%C3%9C");
+        value = value.replace(/ß/g, "%C3%9F");
         return value;
     };
     /**
