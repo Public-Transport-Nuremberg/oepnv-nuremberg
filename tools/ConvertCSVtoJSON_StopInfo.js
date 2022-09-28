@@ -63,7 +63,18 @@ function ParseCSV(dowhat, downloadlink) {
                 Stuff[ErsteZeileArr[j].replace("\r", "")] = one_line[j];
             };
 
-            json_output[one_line["3"]] = Stuff;
+            if(one_line["3"].includes("Hauptbahnhof")) {
+                json_output[Stuff.ort + " " + one_line["3"]] = Stuff;
+                if(Stuff.ort === "Fürth") {
+                    json_output["Fürth, Fürth Hauptbahnhof"] = Stuff;
+                }
+            }
+            
+            if(one_line["3"].endsWith("straße") || one_line["3"].endsWith("Straße")) {
+                json_output[one_line["3"].replace("  ", " ").replace("straße", "str.").replace("Straße", "Str.")] = Stuff;
+            }
+            
+            json_output[one_line["3"].replace("  ", " ")] = Stuff;
         }
 
         fs.writeFile(`${path_static}/${Filenames[dowhat]}`, JSON.stringify(json_output), err => {
