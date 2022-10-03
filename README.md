@@ -188,3 +188,7 @@ reverseGeocode('49.4480881582118', '11.0647882822154')
  Elevator disruptions and timetable deviations are comming from here  
  URL: https://www.vag.de/fahrplan/fahrplanaenderungen-stoerungen  
  License: Unknown   
+
+ Bus numbers from external companys are from nahverkehr-franken.de  
+ URL: https://www.nahverkehr-franken.de  
+ License: Unknown

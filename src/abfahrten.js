@@ -11,7 +11,7 @@ const customHeaderRequest = request.defaults({
  * @param {String} url 
  * @param {Object} static Required data from /static
  */
-const getDepartures = (url, { Fuhrpark_Tram, Fuhrpark_Bus }) => {
+const getDepartures = (url, { Fuhrpark_Tram, Fuhrpark_Bus, Fuhrpark_PVU }) => {
 	return new Promise(function (resolve, reject) {
 		let Time_Started = new Date().getTime();
 		customHeaderRequest(url, { json: true }, (err, res, body) => {
@@ -46,8 +46,12 @@ const getDepartures = (url, { Fuhrpark_Tram, Fuhrpark_Bus }) => {
 								}
 
 							} else if (Abfahrten.Fahrzeugnummer.length !== 3 && Abfahrten.Produkt === "Bus") {
-								Abfahrten.FahrzeugInfo = "Privat";
-								Abfahrten.Fahrzeug = {};
+								if (Fuhrpark_PVU[Abfahrten.Fahrzeugnummer]) {
+									Abfahrten.FahrzeugInfo = Fuhrpark_PVU[Abfahrten.Fahrzeugnummer];
+								} else {
+									Abfahrten.FahrzeugInfo = "Privat Unknown";
+									Abfahrten.Fahrzeug = {};
+								}
 							}
 							//check if Tram
 							if (Abfahrten.Produkt.includes("Tram")) {

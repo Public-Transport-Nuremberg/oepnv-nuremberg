@@ -4,7 +4,7 @@ const Fahrten = require("./src/fahrten");
 const WebProcessor = require("./src/web_processor");
 const routen = require("./src/routen")
 const reverseGeocode = require("./src/reversegeocord")
-const { Fuhrpark_Bus, Fuhrpark_Tram, Steighoehen_Tram, StopInfo_Tram, StopInfo_Ubahn } = require("./static");
+const { Fuhrpark_Bus, Fuhrpark_Tram, Fuhrpark_PVU, Steighoehen_Tram, StopInfo_Tram, StopInfo_Ubahn } = require("./static");
 const allowed_apiparameter = {
     Departures: ["product", "timespan", "timedelay", "limitcount"],
     Stops: ["name", "lon", "lat", "distance"],
@@ -174,7 +174,7 @@ class openvgn {
             parameter.sort = "Distance";
         };
         const url = `${this.api_url}/haltestellen.json/vgn?lon=${lon}&lat=${lat}&Distance=${parameter.distance}`;
-        return Abfahrten.getDeparturesbygps(url, lat, lon, parameter, this.api_url, this.#encodeQueryData, { Fuhrpark_Tram, Fuhrpark_Bus }).then(function (Abfahrten) {
+        return Abfahrten.getDeparturesbygps(url, lat, lon, parameter, this.api_url, this.#encodeQueryData, { Fuhrpark_Tram, Fuhrpark_Bus, Fuhrpark_PVU }).then(function (Abfahrten) {
             return Abfahrten;
         }).catch(function (err) {
             return err;
