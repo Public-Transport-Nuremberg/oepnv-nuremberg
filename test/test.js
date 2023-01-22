@@ -65,6 +65,18 @@ describe('Trips API', function () {
     });
 })
 
+describe('reverseGeocode API', function () {
+    this.timeout(15000);
+    this.slow(100);
+
+    it('reverseGeocode', async () => {
+        let Output = await vgn.reverseGeocode('49.4480881582118', '11.0647882822154')
+        expect(Output).to.have.property('Location');
+        expect(Output.Location. addresses[0].houseNumber).to.be.a.string("33P");
+        expect(Output).to.have.property('Meta');
+    });
+})
+
 
 fs.readdir("./test/VAGHtmlTestTemplates", function (err, filenames) {
     if (err) { console.log(err); }
