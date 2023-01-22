@@ -1,2 +1,4 @@
-.static_humanreadable
-.test
+static_humanreadable
+test
+webtest.js
+test.js
