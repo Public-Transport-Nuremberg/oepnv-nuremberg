@@ -78,7 +78,7 @@ const getVagWebpageDisturbances = (test) => {
                             // Create Object if U-Bahn
                             if (tracker === "U-Bahn" || tracker === "Bus" || tracker === "Tram") {
                                 disturbance_list[tracker].push({
-                                    "Until": Key[i + 1].replace("Uhr", "").trim().slice(8),
+                                    "Until": (Key[i + 1] !== "beendet") ? Key[i + 1].replace("Uhr", "").trim().slice(8) : "beendet",
                                     "Line": Key[i].split(":")[0].slice(6, Key[i].length),
                                     "What": Key[i].split(":")[1],
                                     "Updated": UpdatedStamp
