@@ -27,14 +27,18 @@ const getStops = (url, parameter, { Steighoehen_Tram, StopInfo_Tram, StopInfo_Ub
 						Haltestellen.HaltestellenDaten = {}
 
 						if (Haltestellen.Produkte.includes("Tram")) {
-							Haltestellen.HaltestellenDaten = { ...StopInfo_Tram[Haltestellen.Haltestellenname], ...Steighoehen_Tram[Haltestellen.Haltestellenname] }
+							if (Haltestellen.Ort === StopInfo_Tram[Haltestellen.Haltestellenname]?.ort) {
+								Haltestellen.HaltestellenDaten = { ...StopInfo_Tram[Haltestellen.Haltestellenname], ...Steighoehen_Tram[Haltestellen.Haltestellenname] }
+							}
 						}
 
 						if (Haltestellen.Produkte.includes("U-Bahn")) {
 							if (Haltestellen.Ort === "Fürth") {
 								Haltestellen.HaltestellenDaten = StopInfo_Ubahn[`${Haltestellen.Ort}, ${Haltestellen.Haltestellenname}`]
 							} else {
-								Haltestellen.HaltestellenDaten = StopInfo_Ubahn[Haltestellen.Haltestellenname]
+								if (Haltestellen.Ort === StopInfo_Tram[Haltestellen.Haltestellenname]?.ort) {
+									Haltestellen.HaltestellenDaten = StopInfo_Ubahn[Haltestellen.Haltestellenname]
+								}
 							}
 						}
 					});
@@ -99,14 +103,18 @@ const getStopsbygps = (url, latitude, longitude, parameter, { Steighoehen_Tram, 
 						Haltestellen.HaltestellenDaten = {}
 
 						if (Haltestellen.Produkte.includes("Tram")) {
-							Haltestellen.HaltestellenDaten = { ...StopInfo_Tram[Haltestellen.Haltestellenname], ...Steighoehen_Tram[Haltestellen.Haltestellenname] }
+							if (Haltestellen.Ort === StopInfo_Tram[Haltestellen.Haltestellenname]?.ort) {
+								Haltestellen.HaltestellenDaten = { ...StopInfo_Tram[Haltestellen.Haltestellenname], ...Steighoehen_Tram[Haltestellen.Haltestellenname] }
+							}
 						}
 
 						if (Haltestellen.Produkte.includes("U-Bahn")) {
 							if (Haltestellen.Ort === "Fürth") {
 								Haltestellen.HaltestellenDaten = StopInfo_Ubahn[`${Haltestellen.Ort}, ${Haltestellen.Haltestellenname}`]
 							} else {
-								Haltestellen.HaltestellenDaten = StopInfo_Ubahn[Haltestellen.Haltestellenname]
+								if (Haltestellen.Ort === StopInfo_Tram[Haltestellen.Haltestellenname]?.ort) {
+									Haltestellen.HaltestellenDaten = StopInfo_Ubahn[Haltestellen.Haltestellenname]
+								}
 							}
 						}
 					});
