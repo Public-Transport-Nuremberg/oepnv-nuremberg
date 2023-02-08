@@ -52,7 +52,7 @@ const getVagWebpageDisturbances = (test) => {
             if(disturbance.hasOwnProperty("S")){
                 disturbance["S"].map((Key, i) => {
                     Key = Key.replace(/\r?\n|\r/g, "") //Replace new lines
-                    Key = Key.replace(/\s\s+/g, '  ').split("  ") //Parsing spaces
+                    Key = Key.replace(/\s\s\s+/g, '   ').split('   ') //Parsing spaces
 
                     if (!(i & 1)) {
                         tracker = Key[0].trim().split(" ")[0];
@@ -92,7 +92,7 @@ const getVagWebpageDisturbances = (test) => {
             if(disturbance.hasOwnProperty("F")){
                 disturbance["F"].map((Key, i) => {
                     Key = Key.replace(/\r?\n|\r/g, "") //Replace new lines
-                    Key = Key.replace(/\s\s+/g, '  ').split("  ") //Parsing spaces
+                    Key = Key.replace(/\s\s\s+/g, '   ').split('   ') //Parsing spaces
                     if (!(i & 1)) {
                         tracker = Key[0].trim().split(" ")[0];
                         schedule_changes[tracker] = [];
@@ -101,7 +101,7 @@ const getVagWebpageDisturbances = (test) => {
                             if (Key[i] === "") { continue; }
                             if (Key[i].toLowerCase().startsWith("linie")) {
                                 const UpdatedString = `${Key[i + 2].split(":")[1]}:${Key[i + 2].split(":")[2]}`
-                                const UpdatedStringDate = UpdatedString.split("um")[0].trim().split(".")
+                                const UpdatedStringDate = UpdatedString.split("um")[0].trim()?.split(".")
                                 const UpdatedStringTIme = UpdatedString.split("um")[1]
                                 const UpdatedStamp = new Date(`${[UpdatedStringDate[2], UpdatedStringDate[1], UpdatedStringDate[0]].join("-")} ${UpdatedStringTIme.replace("Uhr", "").trim()}`);
                                 // Create Object
