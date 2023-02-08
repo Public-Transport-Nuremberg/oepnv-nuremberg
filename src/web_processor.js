@@ -49,7 +49,7 @@ const getVagWebpageDisturbances = (test) => {
 
             let tracker = ""; //Used to convert headlines to object keys
             // Parse Aktuelle Störungen
-            if(disturbance.hasOwnProperty("S")){
+            if (disturbance.hasOwnProperty("S")) {
                 disturbance["S"].map((Key, i) => {
                     Key = Key.replace(/\r?\n|\r/g, "") //Replace new lines
                     Key = Key.replace(/\s\s\s+/g, '   ').split('   ') //Parsing spaces
@@ -89,7 +89,7 @@ const getVagWebpageDisturbances = (test) => {
                 })
             }
             // Parse Aktuelle Fahrplanänderungen
-            if(disturbance.hasOwnProperty("F")){
+            if (disturbance.hasOwnProperty("F")) {
                 disturbance["F"].map((Key, i) => {
                     Key = Key.replace(/\r?\n|\r/g, "") //Replace new lines
                     Key = Key.replace(/\s\s\s+/g, '   ').split('   ') //Parsing spaces
@@ -104,12 +104,22 @@ const getVagWebpageDisturbances = (test) => {
                                 const UpdatedStringDate = UpdatedString.split("um")[0].trim()?.split(".")
                                 const UpdatedStringTIme = UpdatedString.split("um")[1]
                                 const UpdatedStamp = new Date(`${[UpdatedStringDate[2], UpdatedStringDate[1], UpdatedStringDate[0]].join("-")} ${UpdatedStringTIme.replace("Uhr", "").trim()}`);
+
+                                let Start, End;
+                                // Check for "ab dem DD.MM" template, will be false if thats used.
+                                if (Key[i + 1].split(" ")[0] !== "ab") {
+                                    Start = (Key[i + 1].split(" ")[1] != "auf") ? Key[i + 1].split(" ")[1] : "Now"
+                                    End = (Key[i + 1].split(" ")[3] != null) ? Key[i + 1].split(" ")[3] : "Later"
+                                } else {
+                                    Start = (Key[i + 1].split(" ")[2] != "auf") ? Key[i + 1].split(" ")[2] : "Now"
+                                    End = "Unknown"
+                                }
                                 // Create Object
                                 schedule_changes[tracker].push({
                                     "Line": Key[i].split(":")[0].slice(6, Key[i].length),
                                     "What": Key[i].split(":")[1],
-                                    "Start": (Key[i + 1].split(" ")[1] != "auf") ? Key[i + 1].split(" ")[1] : "Now",
-                                    "End": (Key[i + 1].split(" ")[3] != null) ? Key[i + 1].split(" ")[3] : "Later",
+                                    "Start": Start,
+                                    "End": End,
                                     "Updated": UpdatedStamp
                                 })
                             }
