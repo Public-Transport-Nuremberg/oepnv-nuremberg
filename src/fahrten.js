@@ -36,8 +36,8 @@ const customHeaderRequest = request.defaults({
                     
 					if(body.hasOwnProperty("Fahrtverlauf")){
                         body.Fahrtverlauf.map((Fahrt) =>{
-                            const AbfahrtszeitIst = new Date(Fahrt.AbfahrtszeitIst);
-                            const AbfahrtszeitSoll = new Date(Fahrt.AbfahrtszeitSoll);
+							const AbfahrtszeitIst = new Date(Fahrt.AbfahrtszeitIst || Fahrt.AnkunftszeitIst);
+                            const AbfahrtszeitSoll = new Date(Fahrt.AbfahrtszeitSoll || Fahrt.AnkunftszeitSoll);
                             
                             Fahrt.AbfahrtDate = AbfahrtszeitSoll.toLocaleDateString('de-DE')
                             Fahrt.AbfahrtTime = AbfahrtszeitSoll.toLocaleTimeString('de-DE', {hour: "2-digit", minute: "2-digit", timeZone: "Europe/Berlin"})
