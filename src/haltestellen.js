@@ -21,6 +21,7 @@ const getStops = (url, parameter, { Steighoehen_Tram, StopInfo_Tram, StopInfo_Ub
 				if (res.statusCode === 200) {
 					body.Haltestellen.map((Haltestellen) => {
 						let HaltestellennameSplit = Haltestellen.Haltestellenname.split("(");
+						if(!Haltestellen.Produkte) Haltestellen.Produkte = "";
 						Haltestellen.Haltestellenname = HaltestellennameSplit[0].trim();
 						Haltestellen.Ort = HaltestellennameSplit[1].replace(/[)]/g, "",);;
 						Haltestellen.Produkte = Haltestellen.Produkte.replace(/ubahn/i, "U-Bahn",);
