@@ -21,7 +21,7 @@ const getStops = (url, parameter, { Steighoehen_Tram, StopInfo_Tram, StopInfo_Ub
 				if (res.statusCode === 200) {
 					body.Haltestellen.map((Haltestellen) => {
 						let HaltestellennameSplit = Haltestellen.Haltestellenname.split("(");
-						if(!Haltestellen.Produkte) Haltestellen.Produkte = "";
+						if (!Haltestellen.Produkte) Haltestellen.Produkte = "";
 						Haltestellen.Haltestellenname = HaltestellennameSplit[0].trim();
 						Haltestellen.Ort = HaltestellennameSplit[1].replace(/[)]/g, "",);;
 						Haltestellen.Produkte = Haltestellen.Produkte.replace(/ubahn/i, "U-Bahn",);
@@ -62,9 +62,9 @@ const getStops = (url, parameter, { Steighoehen_Tram, StopInfo_Tram, StopInfo_Ub
 					}
 				} else {
 					if ("body" in res) {
-						reject({ code: res.statusCode, message: res.body.Message })
+						reject({ code: res.statusCode, message: res.body.Message, url: url || "" })
 					} else {
-						reject({ code: res.statusCode })
+						reject({ code: res.statusCode, url: url || "" })
 					}
 				}
 			} catch (error) {

@@ -80,9 +80,9 @@ const getDepartures = (url, { Fuhrpark_Tram, Fuhrpark_Bus, Fuhrpark_PVU }) => {
 					});
 				} else {
 					if ("body" in res) {
-						reject({ code: res.statusCode, message: res.body.Message })
+						reject({ code: res.statusCode, message: res.body.Message, url: url || "" })
 					} else {
-						reject({ code: res.statusCode })
+						reject({ code: res.statusCode, url: url || "" })
 					}
 				}
 			} catch (error) {
@@ -156,9 +156,9 @@ const getDeparturesbygps = (url, latitude, longitude, parameter, api_url, encode
 
 				} else {
 					if ("body" in res) {
-						reject({ code: res.statusCode, message: res.body.Message })
+						reject({ code: res.statusCode, message: res.body.Message, url: url || "" })
 					} else {
-						reject({ code: res.statusCode })
+						reject({ code: res.statusCode, url: url || "" })
 					}
 				}
 			} catch (error) {
