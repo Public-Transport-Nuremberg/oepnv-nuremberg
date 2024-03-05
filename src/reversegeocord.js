@@ -1,6 +1,4 @@
 const request = require("request");
-const os = require("os");
-const package = require("../package.json");
 const fakeUA = require("../data/fake_browser");
 
 const customHeaderRequest = request.defaults({

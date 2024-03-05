@@ -24,7 +24,6 @@ const getStops = (url, parameter, { Steighoehen_Tram, StopInfo_Tram, StopInfo_Ub
 						if (!Haltestellen.Produkte) Haltestellen.Produkte = "";
 						Haltestellen.Haltestellenname = HaltestellennameSplit[0].trim();
 						Haltestellen.Ort = HaltestellennameSplit[1].replace(/[)]/g, "",);;
-						Haltestellen.Produkte = Haltestellen.Produkte.replace(/ubahn/i, "U-Bahn",);
 						Haltestellen.HaltestellenDaten = {}
 
 						if (Haltestellen.Produkte.includes("Tram")) {
@@ -33,12 +32,12 @@ const getStops = (url, parameter, { Steighoehen_Tram, StopInfo_Tram, StopInfo_Ub
 							}
 						}
 
-						if (Haltestellen.Produkte.includes("U-Bahn")) {
+						if (Haltestellen.Produkte.includes("UBahn")) {
 							if (Haltestellen.Ort === "Fürth") {
 								Haltestellen.HaltestellenDaten = StopInfo_Ubahn[`${Haltestellen.Ort}, ${Haltestellen.Haltestellenname}`]
 							} else {
 								if (Haltestellen.Ort === StopInfo_Tram[Haltestellen.Haltestellenname]?.ort) {
-									Haltestellen.HaltestellenDaten = StopInfo_Ubahn[Haltestellen.Haltestellenname]
+									Haltestellen.HaltestellenDaten = StopInfo_Ubahn[Haltestellen.Haltestellenname] ?? {}
 								}
 							}
 						}

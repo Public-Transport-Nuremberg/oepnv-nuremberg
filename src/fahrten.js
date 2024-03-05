@@ -16,8 +16,6 @@ const getTrips = (url) => {
 			if (err) { reject(err); }
 			try {
 				if (res.statusCode === 200) {
-					body.Produkt = body.Produkt.replace(/ubahn/i, "U-Bahn",);
-
 					let Metadata = body.Metadata
 					delete body.Metadata
 					Metadata.RequestTime = new Date().getTime() - Time_Started

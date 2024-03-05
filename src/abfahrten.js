@@ -19,7 +19,6 @@ const getDepartures = (url, { Fuhrpark_Tram, Fuhrpark_Bus, Fuhrpark_PVU }) => {
 			try {
 				if (res.statusCode === 200) {
 					body.Abfahrten.map((Abfahrten) => {
-						Abfahrten.Produkt = Abfahrten.Produkt.replace(/ubahn/i, "U-Bahn",);
 						const AbfahrtszeitIst = new Date(Abfahrten.AbfahrtszeitIst)
 						const AbfahrtszeitSoll = new Date(Abfahrten.AbfahrtszeitSoll);
 
@@ -29,10 +28,10 @@ const getDepartures = (url, { Fuhrpark_Tram, Fuhrpark_Bus, Fuhrpark_PVU }) => {
 
 						if (Abfahrten.hasOwnProperty("Fahrzeugnummer")) {
 							//Check if Ubahn Fahrzeugnummer is there and get Type
-							if (Abfahrten.Fahrzeugnummer.startsWith(3) && Abfahrten.Produkt === "U-Bahn") {
+							if (Abfahrten.Fahrzeugnummer.startsWith(3) && Abfahrten.Produkt === "UBahn") {
 								Abfahrten.FahrzeugInfo = "Langzug";
 								Abfahrten.Fahrzeug = {};
-							} else if (Abfahrten.Produkt === "U-Bahn") {
+							} else if (Abfahrten.Produkt === "UBahn") {
 								Abfahrten.FahrzeugInfo = "Kurzzug";
 								Abfahrten.Fahrzeug = {};
 							}
@@ -55,7 +54,8 @@ const getDepartures = (url, { Fuhrpark_Tram, Fuhrpark_Bus, Fuhrpark_PVU }) => {
 							}
 							//check if Tram
 							if (Abfahrten.Produkt.includes("Tram")) {
-								Abfahrten.Fahrzeug = Fuhrpark_Tram[Abfahrten.Fahrzeugnummer]
+								Abfahrten.FahrzeugInfo = "VAG";
+								Abfahrten.Fahrzeug = Fuhrpark_Tram[Abfahrten.Fahrzeugnummer] ?? {};
 							}
 						} else {
 							Abfahrten.FahrzeugInfo = "Unbekannt";
