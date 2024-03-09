@@ -192,8 +192,7 @@ class openvgn {
         if (!Fahrtnummer) { return new Error("getTrip: Fahrtnummer can´t be empty.") }
         let url;
         if (parameter.date) {
-            const date = new Date(parameter.date).toLocaleTimeString("de-DE", { day: "2-digit", month: "2-digit", year: "numeric" }).split(",")[0];
-            url = `${this.api_url}/fahrten.json/${parameter.product}/${date}/${Fahrtnummer}`;
+            url = `${this.api_url}/fahrten.json/${parameter.product}/${parameter.date}/${Fahrtnummer}`;
         } else {
             url = `${this.api_url}/fahrten.json/${parameter.product}/${Fahrtnummer}`;
         };
