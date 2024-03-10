@@ -130,6 +130,7 @@ class openvgn {
      * This will list all departures from a given stop.
      * @param {String} target Stop ID or VAG haltid
      * @param {Object} parameter Quary parameter
+     * @param {String} [parameter.Line] Only return departures of one line
      * @param {String} [parameter.Product] Only return departures of one or multiple products
      * @param {Number} [parameter.TimeSpan] Return departures until that time
      * @param {Number} [parameter.TimeDelay] Look for now + x in minutes
@@ -142,6 +143,8 @@ class openvgn {
             source = "vag";
         };
         let url = `${this.api_url}/abfahrten.json/${source}/${target}`;
+        if(parameter.Line) url = `${url}/${parameter.Line}`;
+        
         if (parameter) {
             url = `${url}?${this.#encodeQueryData(parameter, "Departures")}`;
         };
