@@ -38,14 +38,14 @@ const getDepartures = (url, { Fuhrpark_Tram, Fuhrpark_Bus, Fuhrpark_PVU }) => {
 							//Check if Bus and set Operator (Privat or VAG)
 							if (Abfahrten.Fahrzeugnummer.length === 3 && Abfahrten.Produkt === "Bus") {
 								Abfahrten.FahrzeugInfo = "VAG";
-								if (Fuhrpark_Bus[Abfahrten.Fahrzeugnummer]) {
+								if (Fuhrpark_Bus && Fuhrpark_Bus.hasOwnProperty(Abfahrten.Fahrzeugnummer)) {
 									Abfahrten.Fahrzeug = Fuhrpark_Bus[Abfahrten.Fahrzeugnummer];
 								} else {
 									Abfahrten.Fahrzeug = {}
 								}
 
 							} else if (Abfahrten.Fahrzeugnummer.length !== 3 && Abfahrten.Produkt === "Bus") {
-								if (Fuhrpark_PVU[Abfahrten.Fahrzeugnummer]) {
+								if (Fuhrpark_PVU && Fuhrpark_PVU.hasOwnProperty(Abfahrten.Fahrzeugnummer)) {
 									Abfahrten.FahrzeugInfo = Fuhrpark_PVU[Abfahrten.Fahrzeugnummer];
 								} else {
 									Abfahrten.FahrzeugInfo = "Privat Unknown";
@@ -53,7 +53,7 @@ const getDepartures = (url, { Fuhrpark_Tram, Fuhrpark_Bus, Fuhrpark_PVU }) => {
 								}
 							}
 							//check if Tram
-							if (Abfahrten.Produkt.includes("Tram")) {
+							if (Abfahrten.hasOwnProperty("Produkt") && Abfahrten.Produkt.includes("Tram")) {
 								Abfahrten.FahrzeugInfo = "VAG";
 								Abfahrten.Fahrzeug = Fuhrpark_Tram[Abfahrten.Fahrzeugnummer] ?? {};
 							}
@@ -86,9 +86,6 @@ const getDepartures = (url, { Fuhrpark_Tram, Fuhrpark_Bus, Fuhrpark_PVU }) => {
 					}
 				}
 			} catch (error) {
-				if (error instanceof TypeError) {
-					reject("Bad response from API" + error);
-				}
 				reject(error);
 			}
 		});
