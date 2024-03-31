@@ -1,11 +1,5 @@
-const request = require("request");
+const { customFetch } = require("../data/newRequest");
 const geolib = require("geolib");
-const os = require("os");
-const package = require("../package.json");
-
-const customHeaderRequest = request.defaults({
-	headers: { "User-Agent": `OpenVGN/${package.version} (NodeJS_${process.env.NODE_VERSION}) ${os.platform()} (${os.arch()}) NodeJS Wrapper` }
-})
 
 /**
  * @param {String} url URL with Parameters
@@ -15,56 +9,55 @@ const customHeaderRequest = request.defaults({
 const getStops = (url, parameter, { Steighoehen_Tram, StopInfo_Tram, StopInfo_Ubahn }) => {
 	return new Promise(function (resolve, reject) {
 		let Time_Started = new Date().getTime();
-		customHeaderRequest(url, { json: true }, (err, res, body) => {
+		customFetch(url, { json: true }, (err, res, body) => {
 			if (err) { reject(err); }
 			try {
-				if (res.statusCode === 200) {
-					body.Haltestellen.map((Haltestellen) => {
-						let HaltestellennameSplit = Haltestellen.Haltestellenname.split("(");
-						if (!Haltestellen.Produkte) Haltestellen.Produkte = "";
-						Haltestellen.Haltestellenname = HaltestellennameSplit[0].trim();
-						Haltestellen.Ort = HaltestellennameSplit[1].replace(/[)]/g, "",);;
-						Haltestellen.HaltestellenDaten = {}
-
-						if (Haltestellen.Produkte.includes("Tram")) {
-							if (Haltestellen.Ort === StopInfo_Tram[Haltestellen.Haltestellenname]?.ort) {
-								Haltestellen.HaltestellenDaten = { ...StopInfo_Tram[Haltestellen.Haltestellenname], ...Steighoehen_Tram[Haltestellen.Haltestellenname] }
-							}
-						}
-
-						if (Haltestellen.Produkte.includes("UBahn")) {
-							if (Haltestellen.Ort === "Fürth") {
-								Haltestellen.HaltestellenDaten = StopInfo_Ubahn[`${Haltestellen.Ort}, ${Haltestellen.Haltestellenname}`]
-							} else {
-								if (Haltestellen.Ort === StopInfo_Tram[Haltestellen.Haltestellenname]?.ort) {
-									Haltestellen.HaltestellenDaten = StopInfo_Ubahn[Haltestellen.Haltestellenname] ?? {}
-								}
-							}
-						}
-					});
-					if (parameter) {
-						if (parameter.limit) {
-							body.Metadata.RequestTime = new Date().getTime() - Time_Started
-							body.Metadata.URL = url
-							resolve({
-								Stops: body.Haltestellen.slice(0, parameter.limit),
-								Meta: body.Metadata
-							});
-						}
-					} else {
-						body.Metadata.RequestTime = new Date().getTime() - Time_Started
-						body.Metadata.URL = url
-						resolve({
-							Stops: body.Haltestellen,
-							Meta: body.Metadata
-						});
-					}
-				} else {
+				if (res.statusCode !== 200) {
 					if ("body" in res) {
 						reject({ code: res.statusCode, message: res.body.Message, url: url || "" })
 					} else {
 						reject({ code: res.statusCode, url: url || "" })
 					}
+				}
+				body.Haltestellen.map((Haltestellen) => {
+					let HaltestellennameSplit = Haltestellen.Haltestellenname.split("(");
+					if (!Haltestellen.Produkte) Haltestellen.Produkte = "";
+					Haltestellen.Haltestellenname = HaltestellennameSplit[0].trim();
+					Haltestellen.Ort = HaltestellennameSplit[1].replace(/[)]/g, "",);;
+					Haltestellen.HaltestellenDaten = {}
+
+					if (Haltestellen.Produkte.includes("Tram")) {
+						if (Haltestellen.Ort === StopInfo_Tram[Haltestellen.Haltestellenname]?.ort) {
+							Haltestellen.HaltestellenDaten = { ...StopInfo_Tram[Haltestellen.Haltestellenname], ...Steighoehen_Tram[Haltestellen.Haltestellenname] }
+						}
+					}
+
+					if (Haltestellen.Produkte.includes("UBahn")) {
+						if (Haltestellen.Ort === "Fürth") {
+							Haltestellen.HaltestellenDaten = StopInfo_Ubahn[`${Haltestellen.Ort}, ${Haltestellen.Haltestellenname}`]
+						} else {
+							if (Haltestellen.Ort === StopInfo_Tram[Haltestellen.Haltestellenname]?.ort) {
+								Haltestellen.HaltestellenDaten = StopInfo_Ubahn[Haltestellen.Haltestellenname] ?? {}
+							}
+						}
+					}
+				});
+				if (parameter) {
+					if (parameter.limit) {
+						body.Metadata.RequestTime = new Date().getTime() - Time_Started
+						body.Metadata.URL = url
+						resolve({
+							Stops: body.Haltestellen.slice(0, parameter.limit),
+							Meta: body.Metadata
+						});
+					}
+				} else {
+					body.Metadata.RequestTime = new Date().getTime() - Time_Started
+					body.Metadata.URL = url
+					resolve({
+						Stops: body.Haltestellen,
+						Meta: body.Metadata
+					});
 				}
 			} catch (error) {
 				if (error instanceof TypeError) {
@@ -87,7 +80,7 @@ const getStops = (url, parameter, { Steighoehen_Tram, StopInfo_Tram, StopInfo_Ub
 const getStopsbygps = (url, latitude, longitude, parameter, { Steighoehen_Tram, StopInfo_Tram, StopInfo_Ubahn }) => {
 	return new Promise(function (resolve, reject) {
 		let Time_Started = new Date().getTime();
-		customHeaderRequest(url, { json: true }, (err, res, body) => {
+		customFetch(url, { json: true }, (err, res, body) => {
 			if (err) { reject(err); }
 			try {
 				if (res.statusCode === 200) {

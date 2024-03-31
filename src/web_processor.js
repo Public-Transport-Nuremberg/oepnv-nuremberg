@@ -1,11 +1,5 @@
 const cheerio = require('cheerio');
-const package = require('../package.json');
-const os = require('os');
-const request = require("request");
-
-const customHeaderRequest = request.defaults({
-    headers: { 'User-Agent': `OpenVGN/${package.version} (NodeJS_${process.env.NODE_VERSION}) ${os.platform()} (${os.arch()}) NodeJS Wrapper` }
-})
+const { customFetch } = require("../data/newRequest");
 
 function generateTimestamps(start, end) {
 
@@ -53,7 +47,7 @@ function generateTimestamps(start, end) {
 const getVagWebpageDisturbances = (test) => {
     return new Promise(function (resolve, reject) {
         let Time_Started = new Date().getTime();
-        customHeaderRequest("https://www.vag.de/fahrplan/fahrplanaenderungen-stoerungen", { json: false }, (err, res, body) => {
+        customFetch("https://www.vag.de/fahrplan/fahrplanaenderungen-stoerungen", { json: false }, (err, res, body) => {
             if (err) { reject(err); }
 
             if (test) { body = test };

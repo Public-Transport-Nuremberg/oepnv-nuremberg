@@ -1,11 +1,5 @@
-const request = require("request");
 const geolib = require("geolib");
-const os = require("os");
-const package = require("../package.json");
-
-const customHeaderRequest = request.defaults({
-	headers: { "User-Agent": `OpenVGN/${package.version} (NodeJS_${process.env.NODE_VERSION}) ${os.platform()} (${os.arch()}) NodeJS Wrapper` }
-})
+const { customFetch } = require("../data/newRequest");
 
 /**
  * @param {String} url 
@@ -14,77 +8,76 @@ const customHeaderRequest = request.defaults({
 const getDepartures = (url, { Fuhrpark_Tram, Fuhrpark_Bus, Fuhrpark_PVU }) => {
 	return new Promise(function (resolve, reject) {
 		let Time_Started = new Date().getTime();
-		customHeaderRequest(url, { json: true }, (err, res, body) => {
+		customFetch(url, { json: true }, (err, res, body) => {
 			if (err) { reject(err); }
 			try {
-				if (res.statusCode === 200) {
-					body.Abfahrten.map((Abfahrten) => {
-						const AbfahrtszeitIst = new Date(Abfahrten.AbfahrtszeitIst)
-						const AbfahrtszeitSoll = new Date(Abfahrten.AbfahrtszeitSoll);
-
-						Abfahrten.AbfahrtDate = AbfahrtszeitSoll.toLocaleDateString('de-DE')
-						Abfahrten.AbfahrtTime = AbfahrtszeitSoll.toLocaleTimeString('de-DE', { hour: "2-digit", minute: "2-digit", timeZone: "Europe/Berlin" })
-						Abfahrten.Verspätung = (AbfahrtszeitIst - AbfahrtszeitSoll) / 1000
-
-						if (Abfahrten.hasOwnProperty("Fahrzeugnummer")) {
-							//Check if Ubahn Fahrzeugnummer is there and get Type
-							if (Abfahrten.Fahrzeugnummer.startsWith(3) && Abfahrten.Produkt === "UBahn") {
-								Abfahrten.FahrzeugInfo = "Langzug";
-								Abfahrten.Fahrzeug = {};
-							} else if (Abfahrten.Produkt === "UBahn") {
-								Abfahrten.FahrzeugInfo = "Kurzzug";
-								Abfahrten.Fahrzeug = {};
-							}
-							//Check if Bus and set Operator (Privat or VAG)
-							if (Abfahrten.Fahrzeugnummer.length === 3 && Abfahrten.Produkt === "Bus") {
-								Abfahrten.FahrzeugInfo = "VAG";
-								if (Fuhrpark_Bus && Fuhrpark_Bus.hasOwnProperty(Abfahrten.Fahrzeugnummer)) {
-									Abfahrten.Fahrzeug = Fuhrpark_Bus[Abfahrten.Fahrzeugnummer];
-								} else {
-									Abfahrten.Fahrzeug = {}
-								}
-
-							} else if (Abfahrten.Fahrzeugnummer.length !== 3 && Abfahrten.Produkt === "Bus") {
-								if (Fuhrpark_PVU && Fuhrpark_PVU.hasOwnProperty(Abfahrten.Fahrzeugnummer)) {
-									Abfahrten.FahrzeugInfo = Fuhrpark_PVU[Abfahrten.Fahrzeugnummer];
-								} else {
-									Abfahrten.FahrzeugInfo = "Privat Unknown";
-									Abfahrten.Fahrzeug = {};
-								}
-							}
-							//check if Tram
-							if (Abfahrten.hasOwnProperty("Produkt") && Abfahrten.Produkt.includes("Tram")) {
-								Abfahrten.FahrzeugInfo = "VAG";
-								Abfahrten.Fahrzeug = Fuhrpark_Tram[Abfahrten.Fahrzeugnummer] ?? {};
-							}
-						} else {
-							Abfahrten.FahrzeugInfo = "Unbekannt";
-							Abfahrten.Fahrzeug = {};
-						}
-
-					});
-
-					body.Metadata.RequestTime = new Date().getTime() - Time_Started
-					body.Metadata.URL = url
-					if (!body.hasOwnProperty("Sonderinformationen")) {
-						body.Sonderinformationen = []
-					}
-
-					resolve({
-						Stop: body.Haltestellenname,
-						VAGID: body.VAGKennung,
-						VGNID: body.VGNKennung,
-						Departures: body.Abfahrten,
-						Sonderinformationen: body.Sonderinformationen,
-						Meta: body.Metadata
-					});
-				} else {
+				if (res.statusCode !== 200) {
 					if ("body" in res) {
 						reject({ code: res.statusCode, message: res.body.Message, url: url || "" })
 					} else {
 						reject({ code: res.statusCode, url: url || "" })
 					}
 				}
+				body.Abfahrten.map((Abfahrten) => {
+					const AbfahrtszeitIst = new Date(Abfahrten.AbfahrtszeitIst)
+					const AbfahrtszeitSoll = new Date(Abfahrten.AbfahrtszeitSoll);
+
+					Abfahrten.AbfahrtDate = AbfahrtszeitSoll.toLocaleDateString('de-DE')
+					Abfahrten.AbfahrtTime = AbfahrtszeitSoll.toLocaleTimeString('de-DE', { hour: "2-digit", minute: "2-digit", timeZone: "Europe/Berlin" })
+					Abfahrten.Verspätung = (AbfahrtszeitIst - AbfahrtszeitSoll) / 1000
+
+					if (Abfahrten.hasOwnProperty("Fahrzeugnummer")) {
+						//Check if Ubahn Fahrzeugnummer is there and get Type
+						if (Abfahrten.Fahrzeugnummer.startsWith(3) && Abfahrten.Produkt === "UBahn") {
+							Abfahrten.FahrzeugInfo = "Langzug";
+							Abfahrten.Fahrzeug = {};
+						} else if (Abfahrten.Produkt === "UBahn") {
+							Abfahrten.FahrzeugInfo = "Kurzzug";
+							Abfahrten.Fahrzeug = {};
+						}
+						//Check if Bus and set Operator (Privat or VAG)
+						if (Abfahrten.Fahrzeugnummer.length === 3 && Abfahrten.Produkt === "Bus") {
+							Abfahrten.FahrzeugInfo = "VAG";
+							if (Fuhrpark_Bus && Fuhrpark_Bus.hasOwnProperty(Abfahrten.Fahrzeugnummer)) {
+								Abfahrten.Fahrzeug = Fuhrpark_Bus[Abfahrten.Fahrzeugnummer];
+							} else {
+								Abfahrten.Fahrzeug = {}
+							}
+
+						} else if (Abfahrten.Fahrzeugnummer.length !== 3 && Abfahrten.Produkt === "Bus") {
+							if (Fuhrpark_PVU && Fuhrpark_PVU.hasOwnProperty(Abfahrten.Fahrzeugnummer)) {
+								Abfahrten.FahrzeugInfo = Fuhrpark_PVU[Abfahrten.Fahrzeugnummer];
+							} else {
+								Abfahrten.FahrzeugInfo = "Privat Unknown";
+								Abfahrten.Fahrzeug = {};
+							}
+						}
+						//check if Tram
+						if (Abfahrten.hasOwnProperty("Produkt") && Abfahrten.Produkt.includes("Tram")) {
+							Abfahrten.FahrzeugInfo = "VAG";
+							Abfahrten.Fahrzeug = Fuhrpark_Tram[Abfahrten.Fahrzeugnummer] ?? {};
+						}
+					} else {
+						Abfahrten.FahrzeugInfo = "Unbekannt";
+						Abfahrten.Fahrzeug = {};
+					}
+
+				});
+
+				body.Metadata.RequestTime = new Date().getTime() - Time_Started
+				body.Metadata.URL = url
+				if (!body.hasOwnProperty("Sonderinformationen")) {
+					body.Sonderinformationen = []
+				}
+
+				resolve({
+					Stop: body.Haltestellenname,
+					VAGID: body.VAGKennung,
+					VGNID: body.VGNKennung,
+					Departures: body.Abfahrten,
+					Sonderinformationen: body.Sonderinformationen,
+					Meta: body.Metadata
+				});
 			} catch (error) {
 				reject(error);
 			}
@@ -102,7 +95,7 @@ const getDeparturesbygps = (url, latitude, longitude, parameter, api_url, encode
 	return new Promise(function (resolve, reject) {
 		let PromiseAbfahren = []
 		let Time_Started = new Date().getTime();
-		customHeaderRequest(url, { json: true }, (err, res, body) => {
+		customFetch(url, { json: true }, (err, res, body) => {
 			if (err) { reject(err); }
 			try {
 				if (res.statusCode === 200) {

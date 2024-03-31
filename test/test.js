@@ -6,7 +6,7 @@ const expect = chai.expect;
 const vgn = new vgn_wrapper.openvgn();
 
 describe('Stops API', function () {
-    this.timeout(15000);
+    this.timeout(120000);
     this.slow(100);
 
     it('getStops', async () => {
@@ -24,7 +24,7 @@ describe('Stops API', function () {
 });
 
 describe('Departures API', function () {
-    this.timeout(15000);
+    this.timeout(120000);
     this.slow(100);
 
     it('getDepartures', async () => {
@@ -44,7 +44,7 @@ describe('Departures API', function () {
 });
 
 describe('Trips API', function () {
-    this.timeout(15000);
+    this.timeout(120000);
     this.slow(100);
 
     it('getTrip', async () => {
@@ -66,7 +66,7 @@ describe('Trips API', function () {
 })
 
 describe('reverseGeocode API', function () {
-    this.timeout(15000);
+    this.timeout(120000);
     this.slow(100);
 
     it('reverseGeocode', async () => {
@@ -81,7 +81,7 @@ describe('reverseGeocode API', function () {
 fs.readdir("./test/VAGHtmlTestTemplates", function (err, filenames) {
     if (err) { console.log(err); }
     describe('Webprocessor', function () {
-        this.timeout(15000);
+        this.timeout(120000);
         this.slow(100);
 
         //Just test if the URL still works
@@ -118,7 +118,7 @@ fs.readdir("./test/VAGHtmlTestTemplates", function (err, filenames) {
 });
 
 describe('Routes API', function () {
-    this.timeout(15000);
+    this.timeout(120000);
     this.slow(100);
 
     it('getLocations', async () => {

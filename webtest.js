@@ -6,7 +6,7 @@ const os = require('os');
 const request = require("request");
 //let Gdata = "";
 
-const customHeaderRequest = request.defaults({
+const customFetch = request.defaults({
     headers: { 'User-Agent': `OpenVGN/${package.version} (NodeJS_${process.env.NODE_VERSION}) ${os.platform()} (${os.arch()}) NodeJS Wrapper` }
 })
 
@@ -22,7 +22,7 @@ fs.readFile('./test/VAGHtmlTestTemplates/AZandUbahn.txt', 'utf8', (err, data) =>
 const askURL = function () {
     return new Promise(function (resolve, reject) {
         let Time_Started = new Date().getTime();
-        customHeaderRequest("https://www.vag.de/fahrplan/fahrplanaenderungen-stoerungen", { json: false }, (err, res, body) => {
+        customFetch("https://www.vag.de/fahrplan/fahrplanaenderungen-stoerungen", { json: false }, (err, res, body) => {
             if (err) { reject(err); }
 
             //body = Gdata
