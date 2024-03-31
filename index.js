@@ -2,9 +2,10 @@ const Haltestellen = require("./src/haltestellen");
 const Abfahrten = require("./src/abfahrten");
 const Fahrten = require("./src/fahrten");
 const WebProcessor = require("./src/web_processor");
-const routen = require("./src/routen")
-const reverseGeocode = require("./src/reversegeocord")
+const routen = require("./src/routen");
+const reverseGeocode = require("./src/reversegeocord");
 const { Fuhrpark_Bus, Fuhrpark_Tram, Fuhrpark_PVU, Steighoehen_Tram, StopInfo_Tram, StopInfo_Ubahn } = require("./static");
+const Fuhrpark_Total = {...Fuhrpark_Bus, ...Fuhrpark_Tram, ...Fuhrpark_PVU};
 const allowed_apiparameter = {
     Departures: ["product", "timespan", "timedelay", "limitcount"],
     Stops: ["name", "lon", "lat", "distance"],
@@ -83,6 +84,15 @@ class openvgn {
     getCordString(lat, lon) {
         if (!lat || !lon) { return new Error("getDeparturesbygps: Coordinates can´t be empty.") }
         return `${lat}:${lon}:WGS84[DD.DDDDD]`
+    }
+
+    /**
+     * Fetches the vehicle data from the merged object based on the given ID.
+     * @param {number} id - The ID of the vehicle to fetch data for.
+     * @returns {object} The data associated with the vehicle ID, or an empty object if not found.
+     */
+    getVehicleDataById = (id) => {
+        return Fuhrpark_Total[id] || {};
     }
 
     /**
