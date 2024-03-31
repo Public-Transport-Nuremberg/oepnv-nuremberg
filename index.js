@@ -21,7 +21,7 @@ class openvgn {
     constructor(api_url, vag_url) {
         this.api_url = api_url || "https://start.vag.de/dm/api";
         this.vag_url = vag_url || "https://efa-gateway.vag.de";
-        this.map_and_route_url = "https://iw.mapandroute.de/MapAPI-1.3//servlet/FrontController";
+        this.map_and_route_url = "https://iw.mapandroute.de/MapAPI-1.4/servlet/FrontController";
     };
 
     /**
