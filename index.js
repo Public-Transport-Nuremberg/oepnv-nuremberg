@@ -3,7 +3,7 @@ const Abfahrten = require("./src/abfahrten");
 const Fahrten = require("./src/fahrten");
 const WebProcessor = require("./src/web_processor");
 const routen = require("./src/routen");
-const reverseGeocode = require("./src/mapandroute");
+const mapandroute = require("./src/mapandroute");
 const { Fuhrpark_Bus, Fuhrpark_Tram, Fuhrpark_PVU, Steighoehen_Tram, StopInfo_Tram, StopInfo_Ubahn } = require("./static");
 const Fuhrpark_Total = {...Fuhrpark_Bus, ...Fuhrpark_Tram, ...Fuhrpark_PVU};
 const allowed_apiparameter = {
@@ -23,6 +23,7 @@ class openvgn {
         this.api_url = api_url || "https://start.vag.de/dm/api";
         this.vag_url = vag_url || "https://efa-gateway.vag.de";
         this.map_and_route_url = "https://iw.mapandroute.de/MapAPI-1.4/servlet/FrontController";
+        this.vag_livemap_url = "https://livemap.vag.de"; // VAG often forgets to update SSL for couple of weeks, be warned (Downtime about 5 Weeks a year (2022 & 2023)) - Also IPv4 only
     };
 
     /**
@@ -74,6 +75,20 @@ class openvgn {
         return xy;
     };
 
+    #WGS84toXY(xy) {
+        // Constants for conversion
+        const D2R = Math.PI / 180;
+        const R2D = 180 / Math.PI;
+        const A = 6378137.0;
+    
+        // Inverse transformations:
+        // λ=x/(A⋅D2R)​
+        // ϕ=2⋅tan^⁡−1(e*(y/A))−π/2
+        const lon = xy[0] / (A * D2R);
+        const lat = (Math.atan(Math.exp(xy[1] / A)) * 2 - Math.PI / 2) * R2D;
+    
+        return [lon, lat];
+    }
 
     /**
      * Transform coordinates into a string that can be used for routes.
@@ -268,8 +283,28 @@ class openvgn {
         if (!lat || !lon) { return new Error("reverseGeocode: Coordinates can´t be empty.") }
         const xy = this.#XYtoWGS84([lon, lat]);
         const url = `${this.map_and_route_url}?cmd=reverseGeocode&VNR=0&PNR=0&country=EU&x=${xy[0]}&y=${xy[1]}&hits=1`;
-        return reverseGeocode.reverseGeocode(url).then(function (locations) {
+        return mapandroute.reverseGeocode(url).then(function (locations) {
             return locations;
+        }).catch(function (err) {
+            return err;
+        });
+    }
+
+    /**
+     * Will reutrn the exact geomoetry of a given line in lat and lon
+     * @param {String} line 
+     * @returns 
+     */
+    geoLines(line) {
+        const possibleLines = [ "4", "5", "6", "7", "8", "10", "11", "U1", "U2", "U3" ]
+        if (!line) { return new Error("geoLines: Line can´t be empty.") }
+        if (!possibleLines.includes(line)) { return new Error("geoLines: Line not found.") }
+        const url = `${this.vag_livemap_url}/lines.xhr?${new Date().getTime()}`;
+        return mapandroute.geoLines(url, line).then(cords => {
+            for (let i = 0; i < cords.Cords.length; i++) {
+                cords.Cords[i] = this.#WGS84toXY(cords.Cords[i]);
+            }
+            return cords;
         }).catch(function (err) {
             return err;
         });

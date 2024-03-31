@@ -1,27 +1,11 @@
 const util = require('util')
 const vgn_wrapper = require('./index');
-/* Import Request to also be able to query urls directly for compared output */
-const package = require('./package.json');
-const os = require('os');
-const request = require("request");
 const geolib = require("geolib");
-const customFetch = request.defaults({
-    headers: {'User-Agent': `OpenVGN/${package.version} (NodeJS_${process.env.NODE_VERSION}) ${os.platform()} (${os.arch()}) NodeJS Wrapper`}
-})
 
 const api_url = "https://start.vag.de/dm/api";
 const vag_url= "https://efa-gateway.vag.de";
 
 const vgn = new vgn_wrapper.openvgn(api_url, vag_url);
-
-const askURL = function(URL) {
-    return new Promise(function(resolve, reject) {
-        customFetch(URL, { json: true }, (err, res, body) => {
-            if (err) { reject(err); }
-            resolve(body)
-        });
-    });
-};
 
 /*
 Plärrer: 704
@@ -56,7 +40,8 @@ GT6N: 1000er
         //console.log("Should only contain departures from line 4 but using normal Departures and filters output")
         //console.log(Output.Departures.filter(entry => entry.Linienname == "4"))
         //const Output = await vgn.getTrip(1000560, {product: "ubahn"})
-        const Output = await vgn.reverseGeocode('49.4480881582118', '11.0647882822154')
+        //const Output = await vgn.reverseGeocode('49.4480881582118', '11.0647882822154')
+        const Output = await vgn.geoLines("8")
         //const Output = await vgn.getTrips("Ubahn", {timespan: 10})
         //const Output = await vgn.getLocations("Plärrer")
         console.log(util.inspect(Output, false, null, true /* enable colors */))
