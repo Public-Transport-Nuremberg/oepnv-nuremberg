@@ -1,43 +1,68 @@
 const cheerio = require('cheerio');
 const { customFetch } = require("../data/newRequest");
 
+// THIS FILE DOES DO A LOT OF ASSUMPIONS
+// The VAG hates to write dates in a consistent format, so we have to make some assumptions
+// The VAG wants people to guess the year, so we have to make some assumptions aswell
+
+// Why do we even have to guess this???? Whats so hard about writing a date in a consistent format?????
+
 function generateTimestamps(start, end) {
+    // e.g. "16.07.24" => {day: 16, month: 7, year: 2024}
+    // e.g. "04.08."   => {day: 4,  month: 8, year: CURRENT_YEAR}
+    function parseDate(dateStr) {
+        // Trim and remove trailing . if present
+        dateStr = dateStr.trim();
+        if (dateStr.endsWith(".")) {
+            dateStr = dateStr.slice(0, -1);
+        }
 
-    if (start === "Now") {
-        start = new Date().toLocaleDateString('de-DE')
+        const parts = dateStr.split(".");
+        if (parts.length < 2) {
+            throw new Error(`Invalid date format: "${dateStr}"`);
+        }
+
+        const day = parseInt(parts[0], 10);
+        const month = parseInt(parts[1], 10);
+        let year;
+
+        // Check if year is provided
+        if (parts[2]) {
+            const yearStr = parts[2].trim();
+            // Assume 2-digit year means 20YY
+            if (yearStr.length === 2) {
+                year = 2000 + parseInt(yearStr, 10);
+            } else {
+                year = parseInt(yearStr, 10);
+            }
+        } else {
+            // No year provided => assume current year (OR next year if month is in the past at later check)
+            year = new Date().getFullYear();
+        }
+
+        return { day, month, year };
     }
 
-    if (end === "Later") {
-        end = new Date().toLocaleDateString('de-DE')
+    const startObj = parseDate(start);
+    const endObj = parseDate(end);
+
+    let startYear = startObj.year;
+    let endYear = endObj.year;
+
+    // If start and end have the same year but the start month is greater, bump the end year
+    if (startYear === endYear && startObj.month > endObj.month) {
+        endYear++;
     }
 
-    // Get the current year
-    const currentYear = new Date().getFullYear();
+    // Construct the Date objects (start at 04:00, end at 01:00 *next* day)
+    const startDate = new Date(startYear, startObj.month - 1, startObj.day, 4, 0);
+    const endDate = new Date(endYear, endObj.month - 1, endObj.day, 1, 0);
+    endDate.setDate(endDate.getDate() + 1); // shift 1 day ahead
 
-    // Extract day and month for start and end dates
-    const [startDay, startMonth] = start.split('.');
-    const [endDay, endMonth] = end.split('.');
-
-    // Assume the year for start and end dates is the current year
-    let startYear = currentYear;
-    let endYear = currentYear;
-
-    // If the start month is after the end month, the end date is in the next year
-    if (parseInt(startMonth) > parseInt(endMonth)) {
-        endYear += 1;
-    }
-
-    // Create Date objects for start and end dates with the specified times
-    const startDate = new Date(startYear, startMonth - 1, startDay, 4, 0);
-    // For the end date, add 1 day to handle the requirement of ending at 01:00 the next day
-    const endDate = new Date(endYear, endMonth - 1, endDay, 1, 0);
-    endDate.setDate(endDate.getDate() + 1);
-
-    // Convert dates to ISO string or any other format you prefer
     const startTimestamp = startDate.toISOString();
     const endTimestamp = endDate.toISOString();
 
-    return { startTimestamp, endTimestamp };
+    return [startTimestamp, endTimestamp];
 }
 
 /**
@@ -123,45 +148,58 @@ const getVagWebpageDisturbances = (test) => {
             }
             // Parse Aktuelle Fahrplanänderungen
             if (disturbance.hasOwnProperty("F")) {
-                disturbance["F"].map((Key, i) => {
-                    Key = Key.replace(/\r?\n|\r/g, "") //Replace new lines
-                    Key = Key.replace(/\s\s\s+/g, '   ').split('   ') //Parsing spaces
-                    if (!(i & 1)) {
-                        tracker = Key[0].trim().split(" ")[0];
-                        schedule_changes[tracker] = [];
-                    } else {
-                        for (let i = 1; i < Key.length; i = i + 3) {
-                            if (Key[i] === "") { continue; }
-                            if (Key[i].toLowerCase().startsWith("linie")) {
-                                const UpdatedString = `${Key[i + 2].split(":")[1]}:${Key[i + 2].split(":")[2]}`
-                                const UpdatedStringDate = UpdatedString.split("um")[0].trim()?.split(".")
-                                const UpdatedStringTIme = UpdatedString.split("um")[1]
-                                const UpdatedStamp = new Date(`${[UpdatedStringDate[2], UpdatedStringDate[1], UpdatedStringDate[0]].join("-")} ${UpdatedStringTIme.replace("Uhr", "").trim()}`);
+                try {
+                    disturbance["F"].map((Key, i) => {
+                        Key = Key.replace(/\r?\n|\r/g, "") //Replace new lines
+                        Key = Key.replace(/\s\s\s+/g, '   ').split('   ') //Parsing spaces
+                        if (!(i & 1)) {
+                            tracker = Key[0].trim().split(" ")[0];
+                            schedule_changes[tracker] = [];
+                        } else {
+                            for (let i = 1; i < Key.length; i = i + 3) {
+                                if (Key[i] === "") { continue; }
+                                if (Key[i].toLowerCase().startsWith("linie")) {
+                                    const UpdatedString = `${Key[i + 2].split(":")[1]}:${Key[i + 2].split(":")[2]}`
+                                    const UpdatedStringDate = UpdatedString.split("um")[0].trim()?.split(".")
+                                    const UpdatedStringTIme = UpdatedString.split("um")[1]
+                                    const UpdatedStamp = new Date(`${[UpdatedStringDate[2], UpdatedStringDate[1], UpdatedStringDate[0]].join("-")} ${UpdatedStringTIme.replace("Uhr", "").trim()}`);
 
-                                let Start, End;
-                                // Check for "ab dem DD.MM" template, will be false if thats used.
-                                if (Key[i + 1].split(" ")[0] !== "ab") {
-                                    Start = (Key[i + 1].split(" ")[1] != "auf") ? Key[i + 1].split(" ")[1] : "Now"
-                                    End = (Key[i + 1].split(" ")[3] != null) ? Key[i + 1].split(" ")[3] : "Later"
-                                } else {
-                                    Start = (Key[i + 1].split(" ")[2] != "auf") ? Key[i + 1].split(" ")[2] : "Now"
-                                    End = "Unknown"
+                                    let Start, End;
+                                    const splitted = Key[i + 1].split(" ");
+
+                                    if (splitted[0] !== "ab") {
+                                        Start = splitted[1] !== "auf" ? splitted[1] : "Now";
+                                        End = splitted[3] || "Later";
+                                        if (splitted[4]) End += splitted[4]; // Handle strange way VAG writes dates... eg "04.08. 25" => "04.08." + "25" => "04.08.25"
+                                    } else {
+                                        Start = splitted[2] !== "auf" ? splitted[2] : "Now";
+                                        End = "Unknown";
+                                    }
+
+                                    let startTimestamp, endTimestamp;
+
+                                    try {
+                                        [startTimestamp, endTimestamp] = generateTimestamps(Start, End);
+                                    } catch (e) {
+                                        startTimestamp = new Date(1).toISOString();
+                                        endTimestamp = new Date(1).toISOString();
+                                    }
+
+                                    // Create Object
+                                    schedule_changes[tracker].push({
+                                        "Line": Key[i].split(":")[0].slice(6, Key[i].length),
+                                        "What": Key[i].split(":")[1],
+                                        "Start": startTimestamp,
+                                        "End": endTimestamp,
+                                        "Updated": UpdatedStamp
+                                    })
                                 }
-
-                                const { startTimestamp, endTimestamp } = generateTimestamps(Start, End);
-
-                                // Create Object
-                                schedule_changes[tracker].push({
-                                    "Line": Key[i].split(":")[0].slice(6, Key[i].length),
-                                    "What": Key[i].split(":")[1],
-                                    "Start": startTimestamp,
-                                    "End": endTimestamp,
-                                    "Updated": UpdatedStamp
-                                })
                             }
                         }
-                    }
-                })
+                    })
+                } catch (e) {
+                    console.log(e)
+                }
             }
             resolve({
                 schedule_changes: schedule_changes, disturbances: disturbance_list, Meta: {
