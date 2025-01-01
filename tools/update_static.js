@@ -21,7 +21,8 @@ const package_show = `${opendata_vag}/api/3/action/package_show?id=`;
  * Convert certain string values to boolean, otherwise return original value.
  */
 const parseBoolean = (value) => {
-    if (typeof value === 'string') {
+    // Handle NO (Nordostbahnhof) and JA (Jakobinenstraße) as special cases
+    if (typeof value === 'string' && value !== 'NO' && value !== 'JA') {
         const lower = value.trim().toLowerCase();
         if (['x', 'ja', 'yes'].includes(lower)) return true;
         if (['nein', 'no'].includes(lower)) return false;
@@ -47,6 +48,11 @@ const checkPackageList = async () => {
     });
 }
 
+/**
+ * Get the latest package data from a key
+ * @param {String} key 
+ * @returns {Promise<Object>}
+ */
 const getLatestPackageData = async (key) => {
     const body = await fetch(package_show + key);
     const page = await body.json();
@@ -71,7 +77,10 @@ const getLatestPackageData = async (key) => {
     const file_arrayBuffer = await body_file.arrayBuffer();
     const fileBuffer = Buffer.from(file_arrayBuffer);
 
-    return fileBuffer;
+    // Get modified date from last_modified or metadata_modified or fall back to created
+    const modified = new Date(latestResource.last_modified || page.result.metadata_modified || page.result.metadata_created);
+
+    return { fileBuffer: fileBuffer, license: page.result.license_id, name: page.result.name, maintainer: page.result.maintainer, maintainer_email: page.result.maintainer_email, created: page.result.metadata_created, modified: modified };
 }
 
 /**
@@ -151,12 +160,13 @@ const transformStationsSheet = (workbook) => {
 
 (async () => {
     const avaible_keys = await checkPackageList();
+    let sources_file = {};
 
     for (const key of avaible_keys) {
         const data = await getLatestPackageData(key);
 
         // Load the data into a workbook
-        const workbook = XLSX.read(data, { type: "buffer" });
+        const workbook = XLSX.read(data.fileBuffer, { type: "buffer" });
         let fileToWrite = {};
 
         switch (key) {
@@ -189,6 +199,9 @@ const transformStationsSheet = (workbook) => {
                 break;
         }
 
+        delete data.fileBuffer;
+        sources_file[data.name] = data;
+
         fs.writeFile(`${path.join(__dirname, "../static")}/${key}.json`, JSON.stringify(fileToWrite), err => {
             if (err) {
                 console.error(err);
@@ -205,4 +218,20 @@ const transformStationsSheet = (workbook) => {
             return true;
         });
     }
+
+    fs.writeFile(`${path.join(__dirname, "../static")}/sources.json`, JSON.stringify(sources_file), err => {
+        if (err) {
+            console.error(err);
+            return false;
+        }
+        return true;
+    });
+
+    fs.writeFile(`${path.join(__dirname, "../static_humanreadable")}/sources.json`, JSON.stringify(sources_file, null, 2), err => {
+        if (err) {
+            console.error(err);
+            return false;
+        }
+        return true;
+    });
 })()
