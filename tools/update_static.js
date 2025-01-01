@@ -2,7 +2,6 @@ const fs = require("fs");
 const path = require("path");
 const XLSX = require("xlsx");
 
-/*
 const opendata_keys = [
     "geokoordinaten-taxi-warteplatze",
     "haltestellen-id-geodaten", // Alle Haltestellen VAG
@@ -13,15 +12,22 @@ const opendata_keys = [
     "haltestellen-tram", // Details zu den Tram Haltestellen
     "fuhrpark-bus-ausstattung" // Details zu den Bussen
 ];
-*/
-
-const opendata_keys = [
-    "steighoehen-tram", // Höhe des Bahnsteigs an Tram Haltestellen
-];
 
 const opendata_vag = "https://opendata.vag.de"
 const package_list = `${opendata_vag}/api/3/action/package_list`;
 const package_show = `${opendata_vag}/api/3/action/package_show?id=`;
+
+/**
+ * Convert certain string values to boolean, otherwise return original value.
+ */
+const parseBoolean = (value) => {
+    if (typeof value === 'string') {
+        const lower = value.trim().toLowerCase();
+        if (['x', 'ja', 'yes'].includes(lower)) return true;
+        if (['nein', 'no'].includes(lower)) return false;
+    }
+    return value;
+};
 
 /**
  * Check if all keys are still in the package list
@@ -69,7 +75,7 @@ const getLatestPackageData = async (key) => {
 }
 
 /**
- * Transform the sheet into an object by a key
+ * Transform the sheet into an object by a key with automatic boolean conversion
  * @param {Object} workbook 
  * @param {String} columnKey 
  * @returns 
@@ -81,11 +87,17 @@ const transformSheetByKey = (workbook, columnKey) => {
     const rows = XLSX.utils.sheet_to_json(sheet);
 
     const result = {};
-    rows.forEach((row) => {
-        const keyValue = row[columnKey];
-        const { [columnKey]: removedKey, ...restOfRow } = row;
-        result[keyValue] = restOfRow;
-    });
+  rows.forEach((row) => {
+    const keyValue = row[columnKey];
+    const { [columnKey]: _, ...restOfRow } = row;
+
+    // Convert boolean values (x => true, nein => false, etc.)
+    const formattedRow = Object.fromEntries(
+      Object.entries(restOfRow).map(([field, value]) => [field, parseBoolean(value)])
+    );
+
+    result[keyValue] = formattedRow;
+  });
 
     return result;
 }
@@ -98,14 +110,14 @@ const transformSheetByKey = (workbook, columnKey) => {
 
         // Load the data into a workbook
         const workbook = XLSX.read(data, { type: "buffer" });
-        let fileToWrite = "";
+        let fileToWrite = {};
 
         switch (key) {
             case "steighoehen-tram":
                 fileToWrite = transformSheetByKey(workbook, "Haltestelle");
                 break;
             case "fahrzeugtypen-tram":
-                fileToWrite = transformSheetByKey(workbook, "Fahrzeugnummer");
+                fileToWrite = transformSheetByKey(workbook, "fahrzeugnummer");
                 break;
             case "u-bahn-aufzuege":
                 fileToWrite = transformSheetByKey(workbook, "efa_nr_bhf");
@@ -117,7 +129,10 @@ const transformSheetByKey = (workbook, columnKey) => {
                 fileToWrite = transformSheetByKey(workbook, "haltestelle");
                 break;
             case "fuhrpark-bus-ausstattung":
-                fileToWrite = transformSheetByKey(workbook, "Betriebsnummer");
+                fileToWrite = transformSheetByKey(workbook, "Betriebsnummern");
+                break;
+            default:
+                console.error(`Key ${key} is not implemented`);
                 break;
         }
 
