@@ -1,5 +1,5 @@
-const fs = require("fs");
-const path = require("path");
+const fs = require("node:fs");
+const path = require("node:path");
 const XLSX = require("xlsx");
 
 const opendata_keys = [
@@ -84,23 +84,70 @@ const transformSheetByKey = (workbook, columnKey) => {
     const sheetName = workbook.SheetNames[0];
     const sheet = workbook.Sheets[sheetName];
 
-    const rows = XLSX.utils.sheet_to_json(sheet);
+    const rows = XLSX.utils.sheet_to_json(sheet, {
+        raw: false,
+        dateNF: "hh:mm"
+    });
 
     const result = {};
-  rows.forEach((row) => {
-    const keyValue = row[columnKey];
-    const { [columnKey]: _, ...restOfRow } = row;
+    rows.forEach((row) => {
+        const keyValue = row[columnKey];
+        const { [columnKey]: _, ...restOfRow } = row;
 
-    // Convert boolean values (x => true, nein => false, etc.)
-    const formattedRow = Object.fromEntries(
-      Object.entries(restOfRow).map(([field, value]) => [field, parseBoolean(value)])
-    );
+        // Convert boolean values (x => true, nein => false, etc.)
+        const formattedRow = Object.fromEntries(
+            Object.entries(restOfRow).map(([field, value]) => [field, parseBoolean(value)])
+        );
 
-    result[keyValue] = formattedRow;
-  });
+        result[keyValue] = formattedRow;
+    });
 
     return result;
 }
+
+const transformStationsSheet = (workbook) => {
+    const sheetName = workbook.SheetNames[0];
+    const sheet = workbook.Sheets[sheetName];
+
+    const rows = XLSX.utils.sheet_to_json(sheet);
+
+    const result = {};
+
+    rows.forEach((row) => {
+        // Convert boolean values (x => true, nein => false, etc.)
+        const parsedRow = Object.fromEntries(
+            Object.entries(row).map(([field, value]) => [field, parseBoolean(value)])
+        );
+
+        // Use VGNKennung as the key for the station (Because thats what PULS uses)
+        const vgnKey = parsedRow.VGNKennung;
+        if (!vgnKey) return; // Skip broken rows
+
+        // If its a unknown VGNKennung, create a new entry
+        if (!result[vgnKey]) {
+            result[vgnKey] = {
+                VAGKennung: parsedRow.VAGKennung,
+                Platforms: {}
+            };
+        }
+
+        // Insert the platform data
+        const platformKey = parsedRow.Haltepunkt;
+        if (platformKey) {
+            result[vgnKey].Platforms[platformKey] = {
+                GlobalID: parsedRow.GlobalID,
+                Haltestellenname: parsedRow.Haltestellenname,
+                latitude: parsedRow.latitude,
+                longitude: parsedRow.longitude,
+                Betriebszweig: parsedRow.Betriebszweig,
+                Dataprovider: parsedRow.Dataprovider
+            };
+        }
+    });
+
+    return result;
+}
+
 
 (async () => {
     const avaible_keys = await checkPackageList();
@@ -113,6 +160,9 @@ const transformSheetByKey = (workbook, columnKey) => {
         let fileToWrite = {};
 
         switch (key) {
+            case "geokoordinaten-taxi-warteplatze":
+                fileToWrite = transformSheetByKey(workbook, "Name");
+                break;
             case "steighoehen-tram":
                 fileToWrite = transformSheetByKey(workbook, "Haltestelle");
                 break;
@@ -131,6 +181,9 @@ const transformSheetByKey = (workbook, columnKey) => {
             case "fuhrpark-bus-ausstattung":
                 fileToWrite = transformSheetByKey(workbook, "Betriebsnummern");
                 break;
+            case "haltestellen-id-geodaten":
+                fileToWrite = transformStationsSheet(workbook);
+                break;
             default:
                 console.error(`Key ${key} is not implemented`);
                 break;
@@ -144,5 +197,12 @@ const transformSheetByKey = (workbook, columnKey) => {
             return true;
         });
 
+        fs.writeFile(`${path.join(__dirname, "../static_humanreadable")}/${key}.json`, JSON.stringify(fileToWrite, null, 2), err => {
+            if (err) {
+                console.error(err);
+                return false;
+            }
+            return true;
+        });
     }
 })()
