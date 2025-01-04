@@ -2,6 +2,8 @@ const fs = require("node:fs");
 const path = require("node:path");
 const XLSX = require("xlsx");
 
+const enable_null_default = false;
+
 const opendata_keys = [
     "geokoordinaten-taxi-warteplatze",
     "haltestellen-id-geodaten", // Alle Haltestellen VAG
@@ -21,14 +23,12 @@ const package_show = `${opendata_vag}/api/3/action/package_show?id=`;
  * Convert certain string values to boolean, otherwise return original value.
  */
 const parseBoolean = (value) => {
-    // Handle NO (Nordostbahnhof) and JA (Jakobinenstraße) as special cases
-    if (typeof value === 'string' && value !== 'NO' && value !== 'JA') {
-        const lower = value.trim().toLowerCase();
-        if (['x', 'ja', 'yes'].includes(lower)) return true;
-        if (['nein', 'no'].includes(lower)) return false;
-    }
+    if (typeof value !== "string") return value;
+    const lower = value.toLowerCase();
+    if (["x", "ja", "yes", "true"].includes(lower)) return true;
+    if (["nein", "no", "false"].includes(lower)) return false;
     return value;
-};
+}
 
 /**
  * Check if all keys are still in the package list
@@ -84,75 +84,107 @@ const getLatestPackageData = async (key) => {
 }
 
 /**
- * Transform the sheet into an object by a key with automatic boolean conversion
- * @param {Object} workbook 
- * @param {String} columnKey 
- * @returns 
+ * Transform the sheet into an object by a key with automatic boolean conversion,
+ * ensuring no __EMPTY columns are included. Missing fields become null.
+ *
+ * @param {Object} workbook  XLSX Workbook object
+ * @param {String} columnKey The header name of the column to use as the key
  */
-const transformSheetByKey = (workbook, columnKey) => {
+function transformSheetByKey(workbook, columnKey) {
     const sheetName = workbook.SheetNames[0];
     const sheet = workbook.Sheets[sheetName];
 
-    const rows = XLSX.utils.sheet_to_json(sheet, {
-        raw: false,
-        dateNF: "hh:mm"
+    let data;
+    if (enable_null_default) {
+        data = XLSX.utils.sheet_to_json(sheet, { header: 1, defval: null, raw: false });
+    } else {
+        data = XLSX.utils.sheet_to_json(sheet, { header: 1, raw: false });
+    }
+
+    const headers = data[0] || [];
+    const dataRows = data.slice(1);
+
+    const colMap = {};
+    headers.forEach((header, colIndex) => {
+        if (header && typeof header === "string" && header.trim() !== "") {
+            colMap[colIndex] = header.trim();
+        }
     });
 
+    const keyColIndex = headers.indexOf(columnKey);
+    if (keyColIndex === -1) {
+        throw new Error(`Column "${columnKey}" not found in sheet headers.`);
+    }
+
     const result = {};
-    rows.forEach((row) => {
-        const keyValue = row[columnKey];
-        const { [columnKey]: _, ...restOfRow } = row;
 
-        // Convert boolean values (x => true, nein => false, etc.)
-        const formattedRow = Object.fromEntries(
-            Object.entries(restOfRow).map(([field, value]) => [field, parseBoolean(value)])
-        );
+    dataRows.forEach((rowArr) => {
+        const keyValue = rowArr[keyColIndex] ?? null;
 
-        result[keyValue] = formattedRow;
+        // Build an object with all other valid headers
+        const rowObj = {};
+        for (const [colIndexStr, header] of Object.entries(colMap)) {
+            const colIndex = Number(colIndexStr);
+            if (colIndex === keyColIndex) continue; // skip the key column
+            let cellValue = rowArr[colIndex] ?? null;
+            cellValue = parseBoolean(cellValue);
+            rowObj[header] = cellValue;
+        }
+
+        result[keyValue] = rowObj;
     });
 
     return result;
 }
 
-const transformStationsSheet = (workbook) => {
+function transformStationsSheet(workbook) {
     const sheetName = workbook.SheetNames[0];
     const sheet = workbook.Sheets[sheetName];
 
-    const rows = XLSX.utils.sheet_to_json(sheet);
+    let rawData;
+    if (enable_null_default) {
+        rawData = XLSX.utils.sheet_to_json(sheet, { header: 1, defval: null, raw: false });
+    } else {
+        rawData = XLSX.utils.sheet_to_json(sheet, { header: 1, raw: false });
+    }
+
+    const headers = rawData[0] || [];
+    const rows = rawData.slice(1);
+
+    // Map column indexes to actual header names
+    const colMap = {};
+    headers.forEach((header, index) => {
+        if (header && typeof header === "string" && header.trim() !== "") {
+            colMap[index] = header.trim();
+        }
+    });
 
     const result = {};
-
     rows.forEach((row) => {
-        // Convert boolean values (x => true, nein => false, etc.)
-        const parsedRow = Object.fromEntries(
-            Object.entries(row).map(([field, value]) => [field, parseBoolean(value)])
-        );
+        const rowObj = {};
+        for (const [colIndexStr, headerName] of Object.entries(colMap)) {
+            rowObj[headerName] = parseBoolean(row[colIndexStr] ?? null);
+        }
 
-        // Use VGNKennung as the key for the station (Because thats what PULS uses)
-        const vgnKey = parsedRow.VGNKennung;
+        const vgnKey = rowObj.VGNKennung;
         if (!vgnKey) {
-            console.error("Missing VGNKennung", parsedRow );
-            return; // Skip broken rows
+            console.error("Missing VGNKennung", rowObj);
+            return;
         }
 
-        // If its a unknown VGNKennung, create a new entry
         if (!result[vgnKey]) {
-            result[vgnKey] = {
-                VAGKennung: parsedRow.VAGKennung,
-                Platforms: {}
-            };
+            result[vgnKey] = { VAGKennung: rowObj.VAGKennung, Platforms: {} };
         }
 
-        // Insert the platform data
-        const platformKey = parsedRow.Haltepunkt;
+        const platformKey = rowObj.Haltepunkt;
         if (platformKey) {
             result[vgnKey].Platforms[platformKey] = {
-                GlobalID: parsedRow.GlobalID,
-                Haltestellenname: parsedRow.Haltestellenname,
-                latitude: parsedRow.latitude,
-                longitude: parsedRow.longitude,
-                Betriebszweig: parsedRow.Betriebszweig,
-                Dataprovider: parsedRow.Dataprovider
+                GlobalID: rowObj.GlobalID,
+                Haltestellenname: rowObj.Haltestellenname,
+                latitude: rowObj.latitude,
+                longitude: rowObj.longitude,
+                Betriebszweig: rowObj.Betriebszweig,
+                Dataprovider: rowObj.Dataprovider
             };
         }
     });
@@ -160,57 +192,68 @@ const transformStationsSheet = (workbook) => {
     return result;
 }
 
-const transformElevatorSheet = (workbook) => {
+function transformElevatorSheet(workbook) {
     const sheetName = workbook.SheetNames[0];
     const sheet = workbook.Sheets[sheetName];
 
-    const rows = XLSX.utils.sheet_to_json(sheet);
+    let rawData;
+    if (enable_null_default) {
+        rawData = XLSX.utils.sheet_to_json(sheet, { header: 1, defval: null, raw: false });
+    } else {
+        rawData = XLSX.utils.sheet_to_json(sheet, { header: 1, raw: false });
+    }
+
+    const headers = rawData[0] || [];
+    const rows = rawData.slice(1);
+
+    // Map column indexes to actual header names
+    const colMap = {};
+    headers.forEach((header, index) => {
+        if (header && typeof header === "string" && header.trim() !== "") {
+            colMap[index] = header.trim();
+        }
+    });
 
     const result = {};
-
     rows.forEach((row) => {
-        // Convert boolean values (x => true, nein => false, etc.)
-        const parsedRow = Object.fromEntries(
-            Object.entries(row).map(([field, value]) => [field, parseBoolean(value)])
-        );
-
-        // Use VGNKennung as the key for the station (Because that's what PULS uses)
-        const vgnKey = parsedRow.efa_nr_bhf;
-        if (!vgnKey) {
-            console.error("Missing efa_nr_bhf", parsedRow);
-            return; // Skip broken rows
+        const rowObj = {};
+        for (const [colIndexStr, headerName] of Object.entries(colMap)) {
+            rowObj[headerName] = parseBoolean(row[colIndexStr] ?? null);
         }
 
-        // If it's an unknown VGNKennung, create a new entry
+        const vgnKey = rowObj.efa_nr_bhf;
+        if (!vgnKey) {
+            console.error("Missing efa_nr_bhf", rowObj);
+            return;
+        }
+
         if (!result[vgnKey]) {
             result[vgnKey] = {};
         }
 
-        // Insert the platform data directly
-        const platformKey = parsedRow.lage_aufzug;
+        const platformKey = rowObj.lage_aufzug;
         if (platformKey) {
             result[vgnKey][platformKey] = {
-                aufzug_nr_SAP_code: parsedRow.aufzug_nr_SAP_code,
-                ort: parsedRow.ort,
-                "u-bahnhof_kurz": parsedRow["u-bahnhof_kurz"],
-                "u-bahnhof_lang": parsedRow["u-bahnhof_lang"],
-                "standort_von": parsedRow["standort_von"],
-                "standort_nach_1": parsedRow["standort_nach_1"],
-                "standort_nach_2": parsedRow["standort_nach_2"],
-                "standort_nach_3": parsedRow["standort_nach_3"],
-                "lichte_breite_aufzugstuer_cm": parsedRow["lichte_breite_aufzugstuer_cm"],
-                "breite_kabine_cm": parsedRow["breite_kabine_cm"],
-                "tiefe_kabine_cm": parsedRow["tiefe_kabine_cm"],
-                "durchladerichtung": parsedRow["durchladerichtung"],
-                "koordinate_breite": parsedRow["koordinate_breite"],
-                "koordinate-laenge": parsedRow["koordinate-laenge"],
+                aufzug_nr_SAP_code: rowObj.aufzug_nr_SAP_code,
+                ort: rowObj.ort,
+                "u-bahnhof_kurz": rowObj["u-bahnhof_kurz"],
+                "u-bahnhof_lang": rowObj["u-bahnhof_lang"],
+                standort_von: rowObj.standort_von,
+                standort_nach_1: rowObj.standort_nach_1,
+                standort_nach_2: rowObj.standort_nach_2,
+                standort_nach_3: rowObj.standort_nach_3,
+                lichte_breite_aufzugstuer_cm: rowObj.lichte_breite_aufzugstuer_cm,
+                breite_kabine_cm: rowObj.breite_kabine_cm,
+                tiefe_kabine_cm: rowObj.tiefe_kabine_cm,
+                durchladerichtung: rowObj.durchladerichtung,
+                koordinate_breite: rowObj.koordinate_breite,
+                "koordinate-laenge": rowObj["koordinate-laenge"]
             };
         }
     });
 
     return result;
-};
-
+}
 
 
 (async () => {
@@ -256,6 +299,20 @@ const transformElevatorSheet = (workbook) => {
 
         delete data.fileBuffer;
         sources_file[data.name] = data;
+
+        // Remove all values that are null (Recursively)
+        if (!enable_null_default) {
+            const removeNull = (obj) => {
+                for (const key in obj) {
+                    if (obj[key] === null) {
+                        delete obj[key];
+                    } else if (typeof obj[key] === "object") {
+                        removeNull(obj[key]);
+                    }
+                }
+            }
+            removeNull(fileToWrite);
+        }
 
         fs.writeFile(`${path.join(__dirname, "../static")}/${key}.json`, JSON.stringify(fileToWrite), err => {
             if (err) {
