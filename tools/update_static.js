@@ -130,7 +130,10 @@ const transformStationsSheet = (workbook) => {
 
         // Use VGNKennung as the key for the station (Because thats what PULS uses)
         const vgnKey = parsedRow.VGNKennung;
-        if (!vgnKey) return; // Skip broken rows
+        if (!vgnKey) {
+            console.error("Missing VGNKennung", parsedRow );
+            return; // Skip broken rows
+        }
 
         // If its a unknown VGNKennung, create a new entry
         if (!result[vgnKey]) {
@@ -157,6 +160,58 @@ const transformStationsSheet = (workbook) => {
     return result;
 }
 
+const transformElevatorSheet = (workbook) => {
+    const sheetName = workbook.SheetNames[0];
+    const sheet = workbook.Sheets[sheetName];
+
+    const rows = XLSX.utils.sheet_to_json(sheet);
+
+    const result = {};
+
+    rows.forEach((row) => {
+        // Convert boolean values (x => true, nein => false, etc.)
+        const parsedRow = Object.fromEntries(
+            Object.entries(row).map(([field, value]) => [field, parseBoolean(value)])
+        );
+
+        // Use VGNKennung as the key for the station (Because that's what PULS uses)
+        const vgnKey = parsedRow.efa_nr_bhf;
+        if (!vgnKey) {
+            console.error("Missing efa_nr_bhf", parsedRow);
+            return; // Skip broken rows
+        }
+
+        // If it's an unknown VGNKennung, create a new entry
+        if (!result[vgnKey]) {
+            result[vgnKey] = {};
+        }
+
+        // Insert the platform data directly
+        const platformKey = parsedRow.lage_aufzug;
+        if (platformKey) {
+            result[vgnKey][platformKey] = {
+                aufzug_nr_SAP_code: parsedRow.aufzug_nr_SAP_code,
+                ort: parsedRow.ort,
+                "u-bahnhof_kurz": parsedRow["u-bahnhof_kurz"],
+                "u-bahnhof_lang": parsedRow["u-bahnhof_lang"],
+                "standort_von": parsedRow["standort_von"],
+                "standort_nach_1": parsedRow["standort_nach_1"],
+                "standort_nach_2": parsedRow["standort_nach_2"],
+                "standort_nach_3": parsedRow["standort_nach_3"],
+                "lichte_breite_aufzugstuer_cm": parsedRow["lichte_breite_aufzugstuer_cm"],
+                "breite_kabine_cm": parsedRow["breite_kabine_cm"],
+                "tiefe_kabine_cm": parsedRow["tiefe_kabine_cm"],
+                "durchladerichtung": parsedRow["durchladerichtung"],
+                "koordinate_breite": parsedRow["koordinate_breite"],
+                "koordinate-laenge": parsedRow["koordinate-laenge"],
+            };
+        }
+    });
+
+    return result;
+};
+
+
 
 (async () => {
     const avaible_keys = await checkPackageList();
@@ -180,7 +235,7 @@ const transformStationsSheet = (workbook) => {
                 fileToWrite = transformSheetByKey(workbook, "fahrzeugnummer");
                 break;
             case "u-bahn-aufzuege":
-                fileToWrite = transformSheetByKey(workbook, "efa_nr_bhf");
+                fileToWrite = transformElevatorSheet(workbook, "efa_nr_bhf");
                 break;
             case "bahnhoefe-u-bahn":
                 fileToWrite = transformSheetByKey(workbook, "u-bahnhof_lang");
