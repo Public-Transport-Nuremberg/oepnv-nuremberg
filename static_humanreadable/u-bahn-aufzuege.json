@@ -1,0 +1,888 @@
+{
+  "101": {
+    "A-Kopf": {
+      "aufzug_nr_SAP_code": "71000086",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "WT",
+      "u-bahnhof_lang": "Weißer Turm",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Verteilerebene",
+      "standort_nach_2": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "100",
+      "breite_kabine_cm": "135",
+      "tiefe_kabine_cm": "190",
+      "koordinate_breite": "49.450383",
+      "koordinate-laenge": "11.070668"
+    }
+  },
+  "232": {
+    "Bahnsteigmitte": {
+      "aufzug_nr_SAP_code": "71002909",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "FE",
+      "u-bahnhof_lang": "Friedrich-Ebert-Platz",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Verteilerebene",
+      "standort_nach_2": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "100",
+      "breite_kabine_cm": "125",
+      "tiefe_kabine_cm": "205",
+      "koordinate_breite": "49.462490",
+      "koordinate-laenge": "11.071376"
+    }
+  },
+  "250": {
+    "A-Kopf": {
+      "aufzug_nr_SAP_code": "71002908",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "KA",
+      "u-bahnhof_lang": "Kaulbachplatz",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "100",
+      "breite_kabine_cm": "125",
+      "tiefe_kabine_cm": "210",
+      "koordinate_breite": "49.463348",
+      "koordinate-laenge": "11.078274"
+    }
+  },
+  "258": {
+    "Bahnsteigmitte": {
+      "aufzug_nr_SAP_code": "71033905",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "KN",
+      "u-bahnhof_lang": "Klinikum-Nord",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "100",
+      "breite_kabine_cm": "125",
+      "tiefe_kabine_cm": "200",
+      "koordinate_breite": "49.464040",
+      "koordinate-laenge": "11.063873"
+    }
+  },
+  "275": {
+    "A-Kopf": {
+      "aufzug_nr_SAP_code": "71033906",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "NW",
+      "u-bahnhof_lang": "Nordwestring",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene (stadtauswärts)",
+      "lichte_breite_aufzugstuer_cm": "100",
+      "breite_kabine_cm": "125",
+      "tiefe_kabine_cm": "210",
+      "koordinate_breite": "49.465810",
+      "koordinate-laenge": "11.054505"
+    },
+    "B-Kopf": {
+      "aufzug_nr_SAP_code": "71033907",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "NW",
+      "u-bahnhof_lang": "Nordwestring",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene (stadteinwärts)",
+      "lichte_breite_aufzugstuer_cm": "100",
+      "breite_kabine_cm": "125",
+      "tiefe_kabine_cm": "210",
+      "koordinate_breite": "49.465583",
+      "koordinate-laenge": "11.055443"
+    }
+  },
+  "331": {
+    "B-Kopf": {
+      "aufzug_nr_SAP_code": "71000285",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "MF",
+      "u-bahnhof_lang": "Maxfeld",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "100",
+      "breite_kabine_cm": "130",
+      "tiefe_kabine_cm": "223",
+      "koordinate_breite": "49.463320",
+      "koordinate-laenge": "11.085259"
+    }
+  },
+  "332": {
+    "A-Kopf": {
+      "aufzug_nr_SAP_code": "71000241",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "RA",
+      "u-bahnhof_lang": "Rathenauplatz",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "80",
+      "breite_kabine_cm": "110",
+      "tiefe_kabine_cm": "140",
+      "koordinate_breite": "49.457127",
+      "koordinate-laenge": "11.089540"
+    }
+  },
+  "333": {
+    "Bahnsteigmitte": {
+      "aufzug_nr_SAP_code": "71000235",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "WW",
+      "u-bahnhof_lang": "Wöhrder Wiese",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "80",
+      "breite_kabine_cm": "110",
+      "tiefe_kabine_cm": "155",
+      "koordinate_breite": "49.452497",
+      "koordinate-laenge": "11.086857"
+    }
+  },
+  "340": {
+    "B-Kopf": {
+      "aufzug_nr_SAP_code": "71000245",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "RE",
+      "u-bahnhof_lang": "Rennweg",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "90",
+      "breite_kabine_cm": "110",
+      "tiefe_kabine_cm": "145",
+      "koordinate_breite": "49.460949",
+      "koordinate-laenge": "11.093220"
+    }
+  },
+  "341": {
+    "A-Kopf": {
+      "aufzug_nr_SAP_code": "71000249",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "SH",
+      "u-bahnhof_lang": "Schoppershof",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "90",
+      "breite_kabine_cm": "110",
+      "tiefe_kabine_cm": "145",
+      "koordinate_breite": "49.464812",
+      "koordinate-laenge": "11.100601"
+    }
+  },
+  "503": {
+    "A-Kopf": {
+      "aufzug_nr_SAP_code": "71031910",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "MP",
+      "u-bahnhof_lang": "Maffeiplatz",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Verteilerebene",
+      "standort_nach_2": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "90",
+      "breite_kabine_cm": "110",
+      "tiefe_kabine_cm": "145",
+      "koordinate_breite": "49.435273",
+      "koordinate-laenge": "11.084315"
+    }
+  },
+  "505": {
+    "OP2 an der Stadtmauer": {
+      "aufzug_nr_SAP_code": "71000228",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "OP",
+      "u-bahnhof_lang": "Opernhaus",
+      "standort_von": "Übergang Stadtgraben",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "90",
+      "breite_kabine_cm": "120",
+      "tiefe_kabine_cm": "140",
+      "koordinate_breite": "49.447112",
+      "koordinate-laenge": "11.074873"
+    },
+    "OP1 Bahnsteigmitte": {
+      "aufzug_nr_SAP_code": "71000227",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "OP",
+      "u-bahnhof_lang": "Opernhaus",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Übergang Stadtgraben",
+      "lichte_breite_aufzugstuer_cm": "90",
+      "breite_kabine_cm": "165",
+      "tiefe_kabine_cm": "160",
+      "koordinate_breite": "49.446882",
+      "koordinate-laenge": "11.074873"
+    }
+  },
+  "510": {
+    "HB1 nach Bahnsteig U2": {
+      "aufzug_nr_SAP_code": "71000062",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "HB",
+      "u-bahnhof_lang": "Nürnberg Hauptbahnhof",
+      "standort_von": "Bahnsteig U1",
+      "standort_nach_1": "Bahnsteig U2",
+      "standort_nach_2": "Verteilerebene",
+      "lichte_breite_aufzugstuer_cm": "85",
+      "breite_kabine_cm": "140",
+      "tiefe_kabine_cm": "150",
+      "koordinate_breite": "49.446988",
+      "koordinate-laenge": "11.082137"
+    },
+    "HB U2 Bahnsteig nach Verteiler": {
+      "aufzug_nr_SAP_code": "71000063",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "HB",
+      "u-bahnhof_lang": "Nürnberg Hauptbahnhof",
+      "standort_von": "Bahnsteig U2",
+      "standort_nach_1": "Verteilerebene",
+      "standort_nach_2": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "80",
+      "breite_kabine_cm": "140",
+      "tiefe_kabine_cm": "150",
+      "koordinate_breite": "49.446797",
+      "koordinate-laenge": "11.081617"
+    },
+    "HB3, Stadtmission": {
+      "aufzug_nr_SAP_code": "71000064",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "HB",
+      "u-bahnhof_lang": "Nürnberg Hauptbahnhof",
+      "standort_von": "Königstorpassage/Stadtmission",
+      "standort_nach_1": "Hauptbahnhof Mittelhalle",
+      "lichte_breite_aufzugstuer_cm": "85",
+      "breite_kabine_cm": "120",
+      "tiefe_kabine_cm": "150",
+      "koordinate_breite": "49.446358",
+      "koordinate-laenge": "11.081601"
+    }
+  },
+  "511": {
+    "B-Kopf": {
+      "aufzug_nr_SAP_code": "71000076",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "LO",
+      "u-bahnhof_lang": "Lorenzkirche",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Verteilerebene",
+      "lichte_breite_aufzugstuer_cm": "120",
+      "breite_kabine_cm": "150",
+      "tiefe_kabine_cm": "195"
+    }
+  },
+  "534": {
+    "Bahnsteigmitte": {
+      "aufzug_nr_SAP_code": "71030786",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "AP",
+      "u-bahnhof_lang": "Aufseßplatz",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "90",
+      "breite_kabine_cm": "105",
+      "tiefe_kabine_cm": "140",
+      "koordinate_breite": "49.440806",
+      "koordinate-laenge": "11.080173"
+    }
+  },
+  "561": {
+    "B-Kopf": {
+      "aufzug_nr_SAP_code": "71030913",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "FR",
+      "u-bahnhof_lang": "Frankenstraße",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "90",
+      "breite_kabine_cm": "110",
+      "tiefe_kabine_cm": "140",
+      "koordinate_breite": "49.430633",
+      "koordinate-laenge": "11.086353"
+    }
+  },
+  "601": {
+    "A-Kopf": {
+      "aufzug_nr_SAP_code": "71031940",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "SC",
+      "u-bahnhof_lang": "Schweinau",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "90",
+      "breite_kabine_cm": "110",
+      "tiefe_kabine_cm": "140",
+      "koordinate_breite": "49.434569",
+      "koordinate-laenge": "11.048559"
+    }
+  },
+  "602": {
+    "B-Kopf": {
+      "aufzug_nr_SAP_code": "71032766",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "SL",
+      "u-bahnhof_lang": "St. Leonhard",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "90",
+      "breite_kabine_cm": "110",
+      "tiefe_kabine_cm": "135",
+      "koordinate_breite": "49.438551",
+      "koordinate-laenge": "11.049876"
+    }
+  },
+  "654": {
+    "B-Kopf": {
+      "aufzug_nr_SAP_code": "71000272",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "GA",
+      "u-bahnhof_lang": "Gustav-Adolf-Straße",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "100",
+      "breite_kabine_cm": "125",
+      "tiefe_kabine_cm": "210",
+      "koordinate_breite": "49.439062",
+      "koordinate-laenge": "11.035820"
+    }
+  },
+  "701": {
+    "A-Kopf": {
+      "aufzug_nr_SAP_code": "71031831",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "MA",
+      "u-bahnhof_lang": "Maximilianstraße",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "90",
+      "breite_kabine_cm": "105",
+      "tiefe_kabine_cm": "135",
+      "koordinate_breite": "49.455128",
+      "koordinate-laenge": "11.042591"
+    }
+  },
+  "702": {
+    "Bahnsteigmitte": {
+      "aufzug_nr_SAP_code": "71000109",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "BS",
+      "u-bahnhof_lang": "Bärenschanze",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "90",
+      "breite_kabine_cm": "110",
+      "tiefe_kabine_cm": "140",
+      "koordinate_breite": "49.452587",
+      "koordinate-laenge": "11.050733"
+    }
+  },
+  "703": {
+    "Bahnsteigmitte": {
+      "aufzug_nr_SAP_code": "71000103",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "GO",
+      "u-bahnhof_lang": "Gostenhof",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "90",
+      "breite_kabine_cm": "110",
+      "tiefe_kabine_cm": "140",
+      "koordinate_breite": "49.424451",
+      "koordinate-laenge": "11.089754"
+    }
+  },
+  "704": {
+    "A-Kopf": {
+      "aufzug_nr_SAP_code": "71025354",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "PL",
+      "u-bahnhof_lang": "Plärrer 2",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Bahnsteig",
+      "standort_nach_2": "Verteilerebene",
+      "standort_nach_3": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "94",
+      "breite_kabine_cm": "113",
+      "tiefe_kabine_cm": "220",
+      "koordinate_breite": "49.448242",
+      "koordinate-laenge": "11.065496"
+    }
+  },
+  "710": {
+    "B-Kopf": {
+      "aufzug_nr_SAP_code": "71031149",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "RO",
+      "u-bahnhof_lang": "Rothenburger Straße",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Verteilerebene",
+      "standort_nach_2": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "100",
+      "breite_kabine_cm": "160",
+      "tiefe_kabine_cm": "215",
+      "koordinate_breite": "49.444238",
+      "koordinate-laenge": "11.054832"
+    }
+  },
+  "1101": {
+    "SG2, B-Kopf": {
+      "aufzug_nr_SAP_code": "71000140",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "SG",
+      "u-bahnhof_lang": "Stadtgrenze",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "90",
+      "breite_kabine_cm": "110",
+      "tiefe_kabine_cm": "140",
+      "koordinate_breite": "49.465590",
+      "koordinate-laenge": "11.010792"
+    },
+    "SG1, B-Kopf": {
+      "aufzug_nr_SAP_code": "71000141",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "SG",
+      "u-bahnhof_lang": "Stadtgrenze",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "90",
+      "breite_kabine_cm": "110",
+      "tiefe_kabine_cm": "140",
+      "koordinate_breite": "49.465477",
+      "koordinate-laenge": "11.010682"
+    }
+  },
+  "1102": {
+    "MU2, A-Kopf": {
+      "aufzug_nr_SAP_code": "71000136",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "MU",
+      "u-bahnhof_lang": "Muggenhof",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "90",
+      "breite_kabine_cm": "110",
+      "tiefe_kabine_cm": "140",
+      "koordinate_breite": "49.461479",
+      "koordinate-laenge": "11.023192"
+    },
+    "MU1, A-Kopf": {
+      "aufzug_nr_SAP_code": "71000135",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "MU",
+      "u-bahnhof_lang": "Muggenhof",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "90",
+      "breite_kabine_cm": "110",
+      "tiefe_kabine_cm": "140",
+      "koordinate_breite": "49.461549",
+      "koordinate-laenge": "11.023246"
+    }
+  },
+  "1103": {
+    "EB3, A-Kopf": {
+      "aufzug_nr_SAP_code": "71000128",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "EB",
+      "u-bahnhof_lang": "Eberhardshof",
+      "standort_von": "Verteilerebene",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "90",
+      "breite_kabine_cm": "110",
+      "tiefe_kabine_cm": "132",
+      "koordinate_breite": "49.457760",
+      "koordinate-laenge": "11.034109"
+    },
+    "EB2, A-Kopf": {
+      "aufzug_nr_SAP_code": "71000127",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "EB",
+      "u-bahnhof_lang": "Eberhardshof",
+      "standort_von": "Verteilerebene",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "90",
+      "breite_kabine_cm": "110",
+      "tiefe_kabine_cm": "135",
+      "koordinate_breite": "49.458111",
+      "koordinate-laenge": "11.034287"
+    },
+    "EB1, A-Kopf": {
+      "aufzug_nr_SAP_code": "71000126",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "EB",
+      "u-bahnhof_lang": "Eberhardshof",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Verteilerebene",
+      "lichte_breite_aufzugstuer_cm": "90",
+      "breite_kabine_cm": "110",
+      "tiefe_kabine_cm": "132",
+      "koordinate_breite": "49.457945",
+      "koordinate-laenge": "11.034032"
+    }
+  },
+  "1120": {
+    "A-Kopf": {
+      "aufzug_nr_SAP_code": "71000280",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "SB",
+      "u-bahnhof_lang": "Sündersbühl",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "100",
+      "breite_kabine_cm": "130",
+      "tiefe_kabine_cm": "210",
+      "koordinate_breite": "49.441992",
+      "koordinate-laenge": "11.043985"
+    }
+  },
+  "1320": {
+    "B-Kopf": {
+      "aufzug_nr_SAP_code": "71000263",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "ZI",
+      "u-bahnhof_lang": "Ziegelstein",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "100",
+      "breite_kabine_cm": "110",
+      "tiefe_kabine_cm": "158",
+      "koordinate_breite": "49.348506",
+      "koordinate-laenge": "11.105225"
+    }
+  },
+  "1324": {
+    "B-Kopf": {
+      "aufzug_nr_SAP_code": "71002664",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "HH",
+      "u-bahnhof_lang": "Herrnhütte",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "standort_nach_2": "Parkhaus",
+      "lichte_breite_aufzugstuer_cm": "89",
+      "breite_kabine_cm": "120",
+      "tiefe_kabine_cm": "162",
+      "koordinate_breite": "49.478365",
+      "koordinate-laenge": "11.109763"
+    }
+  },
+  "1335": {
+    "A-Kopf": {
+      "aufzug_nr_SAP_code": "71000255",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": false,
+      "u-bahnhof_lang": "Nordostbahnhof",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Verteilerebene",
+      "standort_nach_2": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "90",
+      "breite_kabine_cm": "132",
+      "tiefe_kabine_cm": "151",
+      "koordinate_breite": "49.472398",
+      "koordinate-laenge": "11.104431"
+    }
+  },
+  "1391": {
+    "FL2, B-Kopf": {
+      "aufzug_nr_SAP_code": "71000268",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "FL",
+      "u-bahnhof_lang": "Flughafen",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "100",
+      "breite_kabine_cm": "176",
+      "tiefe_kabine_cm": "234",
+      "koordinate_breite": "49.494020",
+      "koordinate-laenge": "11.078671"
+    },
+    "FL1, A-Kopf": {
+      "aufzug_nr_SAP_code": "71000267",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "FL",
+      "u-bahnhof_lang": "Flughafen",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "100",
+      "breite_kabine_cm": "176",
+      "tiefe_kabine_cm": "234",
+      "koordinate_breite": "49.494068",
+      "koordinate-laenge": "11.077749"
+    }
+  },
+  "1502": {
+    "B-Kopf": {
+      "aufzug_nr_SAP_code": "71000018",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "ME",
+      "u-bahnhof_lang": "Messe",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "90",
+      "breite_kabine_cm": "110",
+      "tiefe_kabine_cm": "130",
+      "koordinate_breite": "49.415880",
+      "koordinate-laenge": "11.113765"
+    }
+  },
+  "1503": {
+    "B-Kopf": {
+      "aufzug_nr_SAP_code": "71000016",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "LN",
+      "u-bahnhof_lang": "Langwasser Nord",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "90",
+      "breite_kabine_cm": "110",
+      "tiefe_kabine_cm": "142",
+      "koordinate_breite": "49.412830",
+      "koordinate-laenge": "11.120964"
+    }
+  },
+  "1504": {
+    "SR1, A-Kopf": {
+      "aufzug_nr_SAP_code": "71000014",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "SR",
+      "u-bahnhof_lang": "Scharfreiterring",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "90",
+      "breite_kabine_cm": "110",
+      "tiefe_kabine_cm": "150",
+      "koordinate_breite": "49.408362",
+      "koordinate-laenge": "11.126962"
+    },
+    "SR2, A-Kopf": {
+      "aufzug_nr_SAP_code": "71000289",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "SR",
+      "u-bahnhof_lang": "Scharfreiterring",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "90",
+      "breite_kabine_cm": "110",
+      "tiefe_kabine_cm": "150",
+      "koordinate_breite": "49.408328",
+      "koordinate-laenge": "11.126833"
+    }
+  },
+  "1506": {
+    "B-Kopf": {
+      "aufzug_nr_SAP_code": "71032035",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "GE",
+      "u-bahnhof_lang": "Gemeinschaftshaus",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "90",
+      "breite_kabine_cm": "110",
+      "tiefe_kabine_cm": "145",
+      "koordinate_breite": "49.401521",
+      "koordinate-laenge": "11.135577"
+    }
+  },
+  "1507": {
+    "A-Kopf": {
+      "aufzug_nr_SAP_code": "71031830",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "LS",
+      "u-bahnhof_lang": "Langwasser Süd",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "90",
+      "breite_kabine_cm": "110",
+      "tiefe_kabine_cm": "150",
+      "koordinate_breite": "49.398470",
+      "koordinate-laenge": "11.140941"
+    }
+  },
+  "1550": {
+    "B-Kopf": {
+      "aufzug_nr_SAP_code": "71000020",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "BA",
+      "u-bahnhof_lang": "Bauernfeindstraße",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "90",
+      "breite_kabine_cm": "110",
+      "tiefe_kabine_cm": "150",
+      "koordinate_breite": "49.417388",
+      "koordinate-laenge": "11.107285"
+    }
+  },
+  "1567": {
+    "A-Kopf": {
+      "aufzug_nr_SAP_code": "71000012",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "LM",
+      "u-bahnhof_lang": "Langwasser Mitte",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "90",
+      "breite_kabine_cm": "110",
+      "tiefe_kabine_cm": "140",
+      "koordinate_breite": "49.404655",
+      "koordinate-laenge": "11.131908"
+    }
+  },
+  "1701": {
+    "B-Kopf": {
+      "aufzug_nr_SAP_code": "71031148",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "HA",
+      "u-bahnhof_lang": "Hasenbuck",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Verteilerebene",
+      "standort_nach_2": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "90",
+      "breite_kabine_cm": "110",
+      "tiefe_kabine_cm": "140",
+      "koordinate_breite": "49.424451",
+      "koordinate-laenge": "11.089754"
+    }
+  },
+  "1902": {
+    "A-Kopf": {
+      "aufzug_nr_SAP_code": "71000207",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "HM",
+      "u-bahnhof_lang": "Hohe Marter",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "85",
+      "breite_kabine_cm": "110",
+      "tiefe_kabine_cm": "140",
+      "koordinate_breite": "49.429119",
+      "koordinate-laenge": "11.044052"
+    }
+  },
+  "1970": {
+    "RB1, A-Kopf": {
+      "aufzug_nr_SAP_code": "71000201",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "RB",
+      "u-bahnhof_lang": "Röthenbach",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Verteilerebene",
+      "standort_nach_2": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "85",
+      "breite_kabine_cm": "110",
+      "tiefe_kabine_cm": "140",
+      "koordinate_breite": "49.420962",
+      "koordinate-laenge": "11.032003"
+    },
+    "RB2, Parkhaus": {
+      "aufzug_nr_SAP_code": "71002666",
+      "ort": "Nürnberg",
+      "u-bahnhof_kurz": "RB",
+      "u-bahnhof_lang": "Röthenbach",
+      "standort_von": "Parkhaus",
+      "standort_nach_1": "Parkebene",
+      "standort_nach_2": "Parkebene",
+      "koordinate_breite": "49.421086",
+      "koordinate-laenge": "11.033193"
+    }
+  },
+  "2110": {
+    "B-Kopf": {
+      "aufzug_nr_SAP_code": "71000157",
+      "ort": "Fürth",
+      "u-bahnhof_kurz": "FH",
+      "u-bahnhof_lang": "Fürth Hauptbahnhof",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Verteilerebene",
+      "standort_nach_2": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "90",
+      "breite_kabine_cm": "110",
+      "tiefe_kabine_cm": "140",
+      "koordinate_breite": "49.470557",
+      "koordinate-laenge": "10.990716"
+    }
+  },
+  "2130": {
+    "B-Kopf": {
+      "aufzug_nr_SAP_code": "71000177",
+      "ort": "Fürth",
+      "u-bahnhof_kurz": "SF",
+      "u-bahnhof_lang": "Fürth Stadthalle",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "100",
+      "breite_kabine_cm": "140",
+      "tiefe_kabine_cm": "160",
+      "koordinate_breite": "49.480436",
+      "koordinate-laenge": "10.981017"
+    }
+  },
+  "2164": {
+    "RF2, A-Kopf": {
+      "aufzug_nr_SAP_code": "71000172",
+      "ort": "Fürth",
+      "u-bahnhof_kurz": "RF",
+      "u-bahnhof_lang": "Fürth Rathaus",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "100",
+      "breite_kabine_cm": "140",
+      "tiefe_kabine_cm": "160",
+      "koordinate_breite": "49.477146",
+      "koordinate-laenge": "10.988566"
+    },
+    "RF1, B-Kopf": {
+      "aufzug_nr_SAP_code": "71000171",
+      "ort": "Fürth",
+      "u-bahnhof_kurz": "RF",
+      "u-bahnhof_lang": "Fürth Rathaus",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "100",
+      "breite_kabine_cm": "140",
+      "tiefe_kabine_cm": "160",
+      "koordinate_breite": "49.477894",
+      "koordinate-laenge": "10.988191"
+    }
+  },
+  "2171": {
+    "A-Kopf": {
+      "aufzug_nr_SAP_code": "71000146",
+      "ort": "Fürth",
+      "u-bahnhof_kurz": true,
+      "u-bahnhof_lang": "Fürth Jakobinenstraße",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Verteilerebene",
+      "standort_nach_2": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "90",
+      "breite_kabine_cm": "110",
+      "tiefe_kabine_cm": "140",
+      "koordinate_breite": "49.468131",
+      "koordinate-laenge": "11.000941"
+    }
+  },
+  "2180": {
+    "B-Kopf": {
+      "aufzug_nr_SAP_code": "71000183",
+      "ort": "Fürth",
+      "u-bahnhof_kurz": "KF",
+      "u-bahnhof_lang": "Fürth Klinikum",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "100",
+      "breite_kabine_cm": "140",
+      "tiefe_kabine_cm": "210",
+      "koordinate_breite": "49.482575",
+      "koordinate-laenge": "10.968582"
+    }
+  },
+  "2390": {
+    "B-Kopf": {
+      "aufzug_nr_SAP_code": "71000192",
+      "ort": "Fürth",
+      "u-bahnhof_kurz": "HF",
+      "u-bahnhof_lang": "Fürth Hardhöhe",
+      "standort_von": "Bahnsteig",
+      "standort_nach_1": "Straßenebene",
+      "lichte_breite_aufzugstuer_cm": "100",
+      "breite_kabine_cm": "130",
+      "tiefe_kabine_cm": "210",
+      "koordinate_breite": "49.480401",
+      "koordinate-laenge": "10.957135"
+    }
+  }
+}

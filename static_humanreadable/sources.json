@@ -1,0 +1,66 @@
+{
+  "geokoordinaten-taxi-warteplatze": {
+    "license": "cc-by-4.0",
+    "name": "geokoordinaten-taxi-warteplatze",
+    "maintainer": "Taxi-Zentrale Nürnberg eG",
+    "maintainer_email": "",
+    "created": "2018-01-11T14:51:51.731448",
+    "modified": "2018-01-11T14:03:06.752Z"
+  },
+  "haltestellen-id-geodaten": {
+    "license": "cc-by-4.0",
+    "name": "haltestellen-id-geodaten",
+    "maintainer": "VAG",
+    "maintainer_email": "service@vag.de",
+    "created": "2017-05-04T08:13:09.474207",
+    "modified": "2022-03-11T09:37:20.084Z"
+  },
+  "steighoehen-tram": {
+    "license": "cc-by-4.0",
+    "name": "steighoehen-tram",
+    "maintainer": "VAG",
+    "maintainer_email": "service@vag.de",
+    "created": "2017-05-02T09:25:01.790732",
+    "modified": "2022-02-02T12:58:39.465Z"
+  },
+  "fahrzeugtypen-tram": {
+    "license": "cc-by-4.0",
+    "name": "fahrzeugtypen-tram",
+    "maintainer": "VAG",
+    "maintainer_email": "service@vag.de",
+    "created": "2017-03-30T11:21:54.449573",
+    "modified": "2023-02-22T13:51:09.685Z"
+  },
+  "u-bahn-aufzuege": {
+    "license": "cc-by-4.0",
+    "name": "u-bahn-aufzuege",
+    "maintainer": "VAG",
+    "maintainer_email": "service@vag.de",
+    "created": "2017-05-02T07:03:24.064083",
+    "modified": "2025-01-07T06:41:40.427Z"
+  },
+  "bahnhoefe-u-bahn": {
+    "license": "cc-by-4.0",
+    "name": "bahnhoefe-u-bahn",
+    "maintainer": "VAG",
+    "maintainer_email": "service@vag.de",
+    "created": "2017-04-25T12:31:37.962308",
+    "modified": "2025-01-07T06:48:42.606Z"
+  },
+  "haltestellen-tram": {
+    "license": "cc-by-4.0",
+    "name": "haltestellen-tram",
+    "maintainer": "VAG",
+    "maintainer_email": "service@vag.de",
+    "created": "2017-04-25T13:22:46.092094",
+    "modified": "2023-02-23T09:46:27.381Z"
+  },
+  "fuhrpark-bus-ausstattung": {
+    "license": "cc-by-4.0",
+    "name": "fuhrpark-bus-ausstattung",
+    "maintainer": "VAG",
+    "maintainer_email": "service@vag.de",
+    "created": "2017-07-04T07:28:11.248327",
+    "modified": "2023-04-04T12:43:39.151Z"
+  }
+}
