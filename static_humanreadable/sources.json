@@ -13,7 +13,7 @@
     "maintainer": "VAG",
     "maintainer_email": "service@vag.de",
     "created": "2017-05-04T08:13:09.474207",
-    "modified": "2022-03-11T09:37:20.084Z"
+    "modified": "2025-09-25T12:34:16.964Z"
   },
   "steighoehen-tram": {
     "license": "cc-by-4.0",
@@ -29,7 +29,7 @@
     "maintainer": "VAG",
     "maintainer_email": "service@vag.de",
     "created": "2017-03-30T11:21:54.449573",
-    "modified": "2023-02-22T13:51:09.685Z"
+    "modified": "2023-02-22T13:50:38.827Z"
   },
   "u-bahn-aufzuege": {
     "license": "cc-by-4.0",
@@ -45,7 +45,7 @@
     "maintainer": "VAG",
     "maintainer_email": "service@vag.de",
     "created": "2017-04-25T12:31:37.962308",
-    "modified": "2025-01-07T06:48:42.606Z"
+    "modified": "2025-09-26T05:28:53.238Z"
   },
   "haltestellen-tram": {
     "license": "cc-by-4.0",
@@ -53,7 +53,7 @@
     "maintainer": "VAG",
     "maintainer_email": "service@vag.de",
     "created": "2017-04-25T13:22:46.092094",
-    "modified": "2023-02-23T09:46:27.381Z"
+    "modified": "2025-09-26T07:11:06.783Z"
   },
   "fuhrpark-bus-ausstattung": {
     "license": "cc-by-4.0",
@@ -61,6 +61,6 @@
     "maintainer": "VAG",
     "maintainer_email": "service@vag.de",
     "created": "2017-07-04T07:28:11.248327",
-    "modified": "2023-04-04T12:43:39.151Z"
+    "modified": "2025-09-25T12:41:22.265Z"
   }
 }

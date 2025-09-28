@@ -25,8 +25,9 @@ const package_show = `${opendata_vag}/api/3/action/package_show?id=`;
 const parseBoolean = (value) => {
     if (typeof value !== "string") return value;
     const lower = value.toLowerCase();
+    if(value === "JA" || value === "NEIN") return value;
     if (["x", "ja", "yes", "true"].includes(lower)) return true;
-    if (["nein", "no", "false"].includes(lower)) return false;
+    if (["nein", "no", "false", "nv"].includes(lower)) return false;
     return value;
 }
 

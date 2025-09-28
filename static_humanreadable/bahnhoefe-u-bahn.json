@@ -59,7 +59,7 @@
     "taxistand": true,
     "fahrkartenautomat": true
   },
-  "Bauernfeindstraße": {
+  "Bauernfeindstr.": {
     "linie": "U1",
     "ort": "Nürnberg",
     "u-bahnhof_kurz": "BA",
@@ -80,7 +80,7 @@
     "fahrkartenautomat": true,
     "verkaufsstelle": true
   },
-  "Frankenstraße": {
+  "Frankenstr.": {
     "linie": "U1",
     "ort": "Nürnberg",
     "u-bahnhof_kurz": "FR",
@@ -187,7 +187,7 @@
     "bike&ride": true,
     "fahrkartenautomat": true
   },
-  "Maximilianstraße": {
+  "Maximilianstr.": {
     "linie": "U1",
     "ort": "Nürnberg",
     "u-bahnhof_kurz": "MA",
@@ -225,17 +225,17 @@
     "fahrkartenautomat": true,
     "umsteigemöglichkeit Bus": true
   },
-  "Fürth, Jakobinenstraße": {
+  "Jakobinenstr.": {
     "linie": "U1",
     "ort": "Fürth",
-    "u-bahnhof_kurz": true,
+    "u-bahnhof_kurz": "JA",
     "aufzug": true,
     "bike&ride": true,
     "taxistand": true,
     "fahrkartenautomat": true,
     "umsteigemöglichkeit Bus": true
   },
-  "Fürth, Hauptbahnhof": {
+  "Fürth Hauptbahnhof": {
     "linie": "U1",
     "ort": "Fürth",
     "u-bahnhof_kurz": "FH",
@@ -249,7 +249,7 @@
     "umsteigemöglichkeit Bus": true,
     "umsteigemöglichkeit DB": true
   },
-  "Fürth, Rathaus": {
+  "Rathaus": {
     "linie": "U1",
     "ort": "Fürth",
     "u-bahnhof_kurz": "RF",
@@ -259,7 +259,7 @@
     "fahrkartenautomat": true,
     "umsteigemöglichkeit Bus": true
   },
-  "Fürth, Stadthalle": {
+  "Stadthalle": {
     "linie": "U1",
     "ort": "Fürth",
     "u-bahnhof_kurz": "SF",
@@ -268,7 +268,7 @@
     "fahrkartenautomat": true,
     "umsteigemöglichkeit Bus": true
   },
-  "Fürth, Klinikum": {
+  "Klinikum": {
     "linie": "U1",
     "ort": "Fürth",
     "u-bahnhof_kurz": "KS",
@@ -282,7 +282,7 @@
     "umsteigemöglichkeit Bus": true,
     "umsteigemöglichkeit DB": true
   },
-  "Fürth, Hardhöhe": {
+  "Hardhöhe": {
     "linie": "U1",
     "ort": "Fürth",
     "u-bahnhof_kurz": "HF",
@@ -392,7 +392,7 @@
     "taxistand": true,
     "fahrkartenautomat": true
   },
-  "Rothenburger Straße": {
+  "Rothenburger Str.": {
     "linie": "U3",
     "ort": "Nürnberg",
     "u-bahnhof_kurz": "RO",
@@ -507,7 +507,7 @@
     "bike&ride": true,
     "fahrkartenautomat": true
   },
-  "Gustav-Adolf-Straße": {
+  "Gustav-Adolf-Str.": {
     "linie": "U3",
     "ort": "Nürnberg",
     "u-bahnhof_kurz": "GA",
@@ -517,5 +517,12 @@
     "fahrkartenautomat": true,
     "verkaufsstelle": true,
     "umsteigemöglichkeit Bus": true
+  },
+  "Großreuth b. Schw.": {
+    "linie": "U3",
+    "ort": "Nürnberg",
+    "u-bahnhof_kurz": "GR",
+    "aufzug": true,
+    "fahrkartenautomat": true
   }
 }

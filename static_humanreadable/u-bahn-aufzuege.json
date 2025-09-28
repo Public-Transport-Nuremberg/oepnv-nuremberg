@@ -843,7 +843,7 @@
     "A-Kopf": {
       "aufzug_nr_SAP_code": "71000146",
       "ort": "Fürth",
-      "u-bahnhof_kurz": true,
+      "u-bahnhof_kurz": "JA",
       "u-bahnhof_lang": "Fürth Jakobinenstraße",
       "standort_von": "Bahnsteig",
       "standort_nach_1": "Verteilerebene",

@@ -3,7 +3,7 @@ const vgn_wrapper = require('./index');
 const geolib = require("geolib");
 
 const api_url = "https://start.vag.de/dm/api";
-const vag_url= "https://efa-gateway.vag.de";
+const vag_url = "https://efa-gateway.vag.de";
 
 const vgn = new vgn_wrapper.openvgn(api_url, vag_url);
 
@@ -25,8 +25,13 @@ GT6N: 1000er
 
 */
 
-(async function (){
+
+(async function () {
     try {
+        const { Fuhrpark_Bus } = require("./static");
+        const keyString = Object.keys(Fuhrpark_Bus).join(", ");
+        console.log(`${keyString}`);
+        //const Output = await vgn.getVehicleDataById(1201)
         //const Output = await vgn.getStops("Jakobinen", {limit: 10});
         //const Output = await vgn.getStopsbygps('49.45015694', '11.083455', {limit: 2, distance: 400, sort: 'Distance'});
         //const Output = await vgn.getDepartures(704, {product: "bus", timespan: 60, timedelay: 0, limitcount: 5})
