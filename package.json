@@ -4,7 +4,7 @@
   "description": "A wrapper for multiple datapoints from VAG and VGN",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha",
+    "test": "mocha",
     "win-test": "node ./node_modules/mocha/bin/mocha"
   },
   "repository": {
