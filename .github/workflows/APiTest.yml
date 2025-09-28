@@ -16,6 +16,8 @@ jobs:
         node:
           - 18
           - 20
+          - 22
+          - 24
     steps:
       - uses: actions/setup-node@v3
         with:
@@ -29,6 +31,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-v${{ matrix.node }}-
       - name: Install Dependencies
-        run: npm install
+        run: npm install --dev
       - name: Run All Node.js Tests
         run: npm run test
