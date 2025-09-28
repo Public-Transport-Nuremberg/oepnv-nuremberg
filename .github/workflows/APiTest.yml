@@ -31,6 +31,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-v${{ matrix.node }}-
       - name: Install Dependencies
-        run: npm install --dev
+        run: npm install --include=dev
       - name: Run All Node.js Tests
         run: npm run test
