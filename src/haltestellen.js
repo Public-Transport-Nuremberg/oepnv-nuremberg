@@ -92,7 +92,7 @@ const getStopsbygps = (url, latitude, longitude, parameter, { Steighoehen_Tram, 
 						let HaltestellennameSplit = Haltestellen.Haltestellenname.split("(");
 						Haltestellen.Haltestellenname = HaltestellennameSplit[0].trim();
 						Haltestellen.Ort = HaltestellennameSplit[1].replace(/[)]/g, "",);
-						Haltestellen.Produkte = Haltestellen.Produkte.replace(/ubahn/i, "U-Bahn",);
+						Haltestellen.Produkte ? Haltestellen.Produkte = Haltestellen.Produkte?.replace(/ubahn/i, "U-Bahn",) : Haltestellen.Produkte = "";
 						Haltestellen.HaltestellenDaten = {}
 
 						if (Haltestellen.Produkte.includes("Tram")) {
