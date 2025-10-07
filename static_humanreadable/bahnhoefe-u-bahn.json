@@ -73,7 +73,7 @@
   "Hasenbuck": {
     "linie": "U1",
     "ort": "Nürnberg",
-    "u-bahnhof_kurz": "HB",
+    "u-bahnhof_kurz": "HA",
     "aufzug": true,
     "bike&ride": true,
     "taxistand": true,
@@ -97,7 +97,7 @@
   "Maffeiplatz": {
     "linie": "U1",
     "ort": "Nürnberg",
-    "u-bahnhof_kurz": "MA",
+    "u-bahnhof_kurz": "MP",
     "aufzug": true,
     "bike&ride": true,
     "fahrkartenautomat": true
@@ -271,7 +271,7 @@
   "Klinikum": {
     "linie": "U1",
     "ort": "Fürth",
-    "u-bahnhof_kurz": "KS",
+    "u-bahnhof_kurz": "KF",
     "aufzug": true,
     "toilette": true,
     "lage_toilette": "Oberfläche",
