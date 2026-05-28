@@ -1,9 +1,18 @@
-const Fuhrpark_Bus = require("./Fuhrpark_Bus");
-const Fuhrpark_Tram = require("./Fuhrpark_Tram");
-const Steighoehen_Tram = require("./Steighoehen_Tram");
-const StopInfo_Tram = require("./StopInfo_Tram");
-const StopInfo_Ubahn = require("./StopInfo_Ubahn");
+const Fuhrpark_Bus = require("./fuhrpark-bus-ausstattung");
+const Fuhrpark_Tram = require("./fahrzeugtypen-tram");
+const Steighoehen_Tram = require("./steighoehen-tram");
+const StopInfo_Tram = require("./haltestellen-tram");
+const StopInfo_Ubahn = require("./bahnhoefe-u-bahn");
 const Fuhrpark_PVU = require("./PVU");
+const Tram_Types = require("./tram-types");
+
+
+// Itterate over the keys of Fuhrpark_Tram and add the corresponding values from Tram_Types
+for (const key in Fuhrpark_Tram) {
+    if (Tram_Types[Fuhrpark_Tram[key].typ]) {
+        Fuhrpark_Tram[key] = { ...Fuhrpark_Tram[key], ...Tram_Types[Fuhrpark_Tram[key].typ] };
+    }
+}
 
 module.exports = {
     Fuhrpark_Bus,

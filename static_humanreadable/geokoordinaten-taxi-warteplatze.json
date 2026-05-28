@@ -1,0 +1,311 @@
+{
+  "Stein": {
+    "Breite": "49.41442",
+    "Länge": "11.01562"
+  },
+  "Röthenbach": {
+    "Breite": "49.42092",
+    "Länge": "11.03285"
+  },
+  "Eibach": {
+    "Breite": "49.40408",
+    "Länge": "11.03515"
+  },
+  "Südfriedhof": {
+    "Breite": "49.41048",
+    "Länge": "11.08322"
+  },
+  "Diana": {
+    "Breite": "49.42862",
+    "Länge": "11.06517"
+  },
+  "Hirsch": {
+    "Breite": "49.42663",
+    "Länge": "11.07170"
+  },
+  "Dr. Luppe": {
+    "Breite": "49.43558",
+    "Länge": "11.06522"
+  },
+  "Hohe Marter": {
+    "Breite": "49.42817",
+    "Länge": "11.04337"
+  },
+  "Donau": {
+    "Breite": "49.41115",
+    "Länge": "11.06385"
+  },
+  "Christuskirche": {
+    "Breite": "49.43975",
+    "Länge": "11.07583"
+  },
+  "Wölckern": {
+    "Breite": "49.44053",
+    "Länge": "11.08133"
+  },
+  "Celtis": {
+    "Breite": "49.44410",
+    "Länge": "11.08217"
+  },
+  "Scharrer": {
+    "Breite": "49.44325",
+    "Länge": "11.10467"
+  },
+  "Münchener": {
+    "Breite": "49.43703",
+    "Länge": "11.10337",
+    "von": "4:00",
+    "bis": "21:00",
+    "Tage": "Mo.-So."
+  },
+  "Meistersingerhalle": {
+    "Breite": "49.43788",
+    "Länge": "11.10622"
+  },
+  "Volksfest": {
+    "Breite": "49.43255",
+    "Länge": "11.10740"
+  },
+  "Hiroshimaplatz": {
+    "Breite": "49.43187",
+    "Länge": "11.09847"
+  },
+  "Franken": {
+    "Breite": "49.42977",
+    "Länge": "11.08723"
+  },
+  "Südwestpark": {
+    "Breite": "49.42848",
+    "Länge": "11.01905"
+  },
+  "Virnsberger": {
+    "Breite": "49.44292",
+    "Länge": "11.01517"
+  },
+  "Wallenstein": {
+    "Breite": "49.43923",
+    "Länge": "11.03713"
+  },
+  "Edison": {
+    "Breite": "49.43287",
+    "Länge": "11.02447",
+    "von": "22:00",
+    "bis": "6:00",
+    "Tage": "Mo.-So."
+  },
+  "Rothenburger": {
+    "Breite": "49.44408",
+    "Länge": "11.05478"
+  },
+  "Won": {
+    "Breite": "49.44333",
+    "Länge": "11.06600",
+    "von": "22:00",
+    "bis": "7:00",
+    "Tage": "Mo.-So."
+  },
+  "Plärrer": {
+    "Breite": "49.44807",
+    "Länge": "11.06425"
+  },
+  "Müllner": {
+    "Breite": "49.45148",
+    "Länge": "11.05377"
+  },
+  "Eberhardshof": {
+    "Breite": "49.45740",
+    "Länge": "11.03455"
+  },
+  "Zeltner": {
+    "Breite": "49.44568",
+    "Länge": "11.07127",
+    "von": "20:00",
+    "bis": "6:00",
+    "Tage": "Mo.-So."
+  },
+  "Hauptpost": {
+    "Breite": "49.44722",
+    "Länge": "11.08361",
+    "von": "derzeit wg. Baustelle nicht aktiv"
+  },
+  "Kontumazgarten": {
+    "Breite": "49.45328",
+    "Länge": "11.06717"
+  },
+  "Adlerstr.": {
+    "Breite": "49.45157",
+    "Länge": "11.07308"
+  },
+  "Otto": {
+    "Breite": "49.44827",
+    "Länge": "11.06782"
+  },
+  "Jakobsplatz": {
+    "Breite": "49.45042",
+    "Länge": "11.07008"
+  },
+  "Hallplatz": {
+    "Breite": "49.44913",
+    "Länge": "11.07881"
+  },
+  "Luitpold": {
+    "Breite": "49.44830",
+    "Länge": "11.08013",
+    "von": "19:00",
+    "bis": "8:00",
+    "Tage": "Mo.-So."
+  },
+  "Busbahnhof": {
+    "Breite": "49.44752",
+    "Länge": "11.08485"
+  },
+  "Grand Hotel": {
+    "Breite": "49.44762",
+    "Länge": "11.08295"
+  },
+  "Bahnhof": {
+    "Breite": "49.44651",
+    "Länge": "11.08138"
+  },
+  "Maritim": {
+    "Breite": "49.44650",
+    "Länge": "11.07797"
+  },
+  "Cine Citta": {
+    "Breite": "49.45170",
+    "Länge": "11.08292",
+    "von": "18:00",
+    "bis": "8:00",
+    "Tage": "Mo.-So."
+  },
+  "Opernhaus": {
+    "Breite": "49.44658",
+    "Länge": "11.07667"
+  },
+  "Kornmarkt": {
+    "Breite": "49.44907",
+    "Länge": "11.07755"
+  },
+  "Am Wegfeld": {
+    "Breite": "49.49200",
+    "Länge": "1.054083"
+  },
+  "Flughafen": {
+    "Breite": "49.49399",
+    "Länge": "11.07756"
+  },
+  "Thon": {
+    "Breite": "49.47357",
+    "Länge": "11.06352"
+  },
+  "Fr. Ebert": {
+    "Breite": "49.46280",
+    "Länge": "11.07138"
+  },
+  "Krankenhaus": {
+    "Breite": "49.46255",
+    "Länge": "11.06458"
+  },
+  "Schniegling": {
+    "Breite": "49.46632",
+    "Länge": "11.04073"
+  },
+  "Schiller": {
+    "Breite": "49.46438",
+    "Länge": "11.08595"
+  },
+  "Planet": {
+    "Breite": "49.47607",
+    "Länge": "11.11012",
+    "von": "21:00",
+    "bis": "6:00",
+    "Tage": "nur Sa.+So."
+  },
+  "Theresienkrankenhaus": {
+    "Breite": "49.46933",
+    "Länge": "11.10950"
+  },
+  "Ziegelstein": {
+    "Breite": "49.48492",
+    "Länge": "11.10483"
+  },
+  "Rockfabrik": {
+    "Breite": "49.47680",
+    "Länge": "11.11267",
+    "von": "20:00",
+    "bis": "10:00",
+    "Tage": "Mo.-So."
+  },
+  "Nordost": {
+    "Breite": "49.47210",
+    "Länge": "11.10465"
+  },
+  "Staden": {
+    "Breite": "49.48240",
+    "Länge": "11.13523"
+  },
+  "Stresemann": {
+    "Breite": "49.45872",
+    "Länge": "11.09707"
+  },
+  "Bayreuther": {
+    "Breite": "49.45647",
+    "Länge": "11.08937"
+  },
+  "Spitalgasse": {
+    "Breite": "49.45362",
+    "Länge": "11.07873"
+  },
+  "Hauptmarkt": {
+    "Breite": "49.45417",
+    "Länge": "11.07678"
+  },
+  "Laufamholz": {
+    "Breite": "49.46482",
+    "Länge": "11.15242"
+  },
+  "Mögeldorf": {
+    "Breite": "49.46057",
+    "Länge": "11.13242"
+  },
+  "Noriker": {
+    "Breite": "49.45132",
+    "Länge": "11.10375"
+  },
+  "Zabo": {
+    "Breite": "49.44307",
+    "Länge": "11.12443"
+  },
+  "Valznerweiher": {
+    "Breite": "49.43530",
+    "Länge": "11.1327"
+  },
+  "Regensburger": {
+    "Breite": "49.43305",
+    "Länge": "11.12992"
+  },
+  "Stadion/Arena": {
+    "Breite": "49.42857",
+    "Länge": "11.12575"
+  },
+  "Breslauer": {
+    "Breite": "49.41417",
+    "Länge": "11.14850"
+  },
+  "Langwasser": {
+    "Breite": "49.40458",
+    "Länge": "11.13207"
+  },
+  "Messe West": {
+    "Breite": "49.41668",
+    "Länge": "11.11315"
+  },
+  "Messe Ost": {
+    "Breite": "49.42057",
+    "Länge": "11.12093"
+  },
+  "Altstadtfest": {
+    "Breite": "49.45254",
+    "Länge": "11.08080"
+  }
+}
