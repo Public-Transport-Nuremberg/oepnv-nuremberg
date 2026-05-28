@@ -1,0 +1,46 @@
+{
+  "GT6N": {
+    "Name": "GT6N",
+    "Sitzplaetze": 59,
+    "Stehplaetze4prom2": 98,
+    "Gesamtplaetze": 157,
+    "Spurweite": 1435,
+    "Fussbodenfreiheit_mm": 300,
+    "Gewicht_t": 30,
+    "Höchstgeschwindigkeit_km_h": 70,
+    "Antrieb": "3x120kW"
+  },
+  "GT8N": {
+    "Name": "GT8N",
+    "Sitzplaetze": 73,
+    "Stehplaetze4prom2": 145,
+    "Gesamtplaetze": 218,
+    "Spurweite": 1435,
+    "Fussbodenfreiheit_mm": 300,
+    "Gewicht_t": 36,
+    "Höchstgeschwindigkeit_km_h": 70,
+    "Antrieb": "4x120kW"
+  },
+  "GTV6": {
+    "Name": "GTV6",
+    "Sitzplaetze": 87,
+    "Stehplaetze4prom2": 132,
+    "Gesamtplaetze": 1231,
+    "Spurweite": 1435,
+    "Fussbodenfreiheit_mm": 300,
+    "Gewicht_t": 35.5,
+    "Höchstgeschwindigkeit_km_h": 60,
+    "Antrieb": "8x45kW"
+  },
+  "GTA8": {
+    "Name": "Avenio",
+    "Sitzplaetze": 62,
+    "Stehplaetze4prom2": 156,
+    "Gesamtplaetze": 218,
+    "Spurweite": 1435,
+    "Fussbodenfreiheit_mm": 300,
+    "Gewicht_t": 45,
+    "Höchstgeschwindigkeit_km_h": 70,
+    "Antrieb": "6x100kW"
+  }
+}
