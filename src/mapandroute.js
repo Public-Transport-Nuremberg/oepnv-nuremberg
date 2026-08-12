@@ -30,20 +30,36 @@ const reverseGeocode = (url) => {
     });
 }
 
-const geoLines = (url, line) => {
+const geoLines = (url, line, isFeatureCollection = false) => {
     return new Promise(function(resolve, reject) {
         let Time_Started = new Date().getTime();
         customFetch(url, { json: true, gzip: true}, (err, res, body) => {
             if (err) { reject(err); return; }
             try {
                 if (res.statusCode === 200) {
+                    // The bus endpoint currently omits its JSON content type,
+                    // so customFetch may return the response body as text.
+                    if (typeof body === "string") body = JSON.parse(body);
+
+                    let coordinates;
+                    if (isFeatureCollection) {
+                        const feature = body.features.find(feature => String(feature.properties?.name) === line);
+                        if (!feature) {
+                            reject({ code: 404, message: "Line not found", url: url });
+                            return;
+                        }
+                        coordinates = feature.geometry.coordinates;
+                    } else {
+                        coordinates = body[line].geojson.geometry.coordinates;
+                    }
+
                     let Metadata = {
                         RequestTime: new Date().getTime() - Time_Started,
                         url: url
                     };
 
                     resolve({
-                        Cords: body[line].geojson.geometry.coordinates,
+                        Cords: coordinates,
                         Meta: Metadata
                     });
                 } else {

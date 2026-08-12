@@ -77,6 +77,21 @@ describe('reverseGeocode API', function () {
     });
 })
 
+describe('GeoLines API', function () {
+    this.timeout(120000);
+    this.slow(2500);
+
+    it('returns GeoJSON coordinates for a bus line', async () => {
+        const Output = await vgn.geoLines('36');
+        expect(Output).to.have.property('Cords').that.is.an('array').and.is.not.empty;
+        expect(Output.Cords[0]).to.be.an('array').and.is.not.empty;
+        expect(Output.Cords[0][0]).to.be.an('array').with.lengthOf(2);
+        expect(Output.Cords[0][0][0]).to.be.within(-180, 180);
+        expect(Output.Cords[0][0][1]).to.be.within(-90, 90);
+        expect(Output).to.have.property('Meta');
+    });
+})
+
 
 fs.readdir("./test/VAGHtmlTestTemplates", function (err, filenames) {
     if (err) { console.log(err); }

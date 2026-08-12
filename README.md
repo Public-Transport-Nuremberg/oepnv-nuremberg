@@ -161,6 +161,13 @@ The object might not have all the keys, its generated only by the current conten
 getVagWebpageDisturbances()
 ```
 
+### geoLines
+Returns the exact geometry of a U-Bahn, tram or bus line in GeoJSON coordinate order (`longitude, latitude`).
+Bus lines can consist of multiple line segments, so their `Cords` value is a nested `MultiLineString` coordinate array.
+```js
+geoLines('36')
+```
+
 ### reverseGeocode
 This method will return the closest adress to the given GPS Position.
 ```js

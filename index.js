@@ -291,18 +291,27 @@ class openvgn {
     }
 
     /**
-     * Will reutrn the exact geomoetry of a given line in lat and lon
-     * @param {String} line 
+     * Will return the exact geometry of a given U-Bahn, tram or bus line in lon and lat
+     * @param {String|Number} line
      * @returns 
      */
     geoLines(line) {
-        const possibleLines = [ "4", "5", "6", "7", "8", "10", "11", "U1", "U2", "U3" ]
+        const railLines = [ "4", "5", "6", "7", "8", "10", "11", "U1", "U2", "U3" ];
         if (!line) { return new Error("geoLines: Line can´t be empty.") }
-        if (!possibleLines.includes(line)) { return new Error("geoLines: Line not found.") }
-        const url = `${this.vag_livemap_url}/lines.xhr?${new Date().getTime()}`;
-        return mapandroute.geoLines(url, line).then(cords => {
-            for (let i = 0; i < cords.Cords.length; i++) {
-                cords.Cords[i] = this.#WGS84toXY(cords.Cords[i]);
+        line = String(line);
+
+        const isRailLine = railLines.includes(line);
+        const url = isRailLine
+            ? `${this.vag_livemap_url}/lines.xhr?${new Date().getTime()}`
+            : `${this.vag_livemap_url}/static/buslines/buslines.geojson`;
+
+        return mapandroute.geoLines(url, line, !isRailLine).then(cords => {
+            // Rail coordinates use Web Mercator; bus coordinates are already
+            // WGS84 coordinates as required by the GeoJSON specification.
+            if (isRailLine) {
+                for (let i = 0; i < cords.Cords.length; i++) {
+                    cords.Cords[i] = this.#WGS84toXY(cords.Cords[i]);
+                }
             }
             return cords;
         }).catch(function (err) {
