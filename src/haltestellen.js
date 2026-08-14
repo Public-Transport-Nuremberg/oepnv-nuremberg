@@ -1,6 +1,12 @@
 const { customFetch } = require("../data/newRequest");
 const geolib = require("geolib");
 
+const getUbahnDataByKurz = (stopInfoUbahn, kurz) => {
+	if (!kurz) return undefined;
+	const kuerzel = kurz.split(",").map((value) => value.trim());
+	return Object.values(stopInfoUbahn).find((station) => kuerzel.includes(station["u-bahnhof_kurz"]));
+};
+
 /**
  * @param {String} url URL with Parameters
  * @param {Object} parameter Non URL Parameters
@@ -33,12 +39,11 @@ const getStops = (url, parameter, { Steighoehen_Tram, StopInfo_Tram, StopInfo_Ub
 					}
 
 					if (Haltestellen.Produkte.includes("UBahn")) {
+						const uBahnDataByKurz = getUbahnDataByKurz(StopInfo_Ubahn, Haltestellen.VAGKennung);
 						if (Haltestellen.Ort === "Fürth") {
-							Haltestellen.HaltestellenDaten = StopInfo_Ubahn[`${Haltestellen.Ort}, ${Haltestellen.Haltestellenname}`]
+							Haltestellen.HaltestellenDaten = uBahnDataByKurz ?? StopInfo_Ubahn[`${Haltestellen.Ort}, ${Haltestellen.Haltestellenname}`]
 						} else {
-							if (Haltestellen.Ort === StopInfo_Tram[Haltestellen.Haltestellenname]?.ort) {
-								Haltestellen.HaltestellenDaten = StopInfo_Ubahn[Haltestellen.Haltestellenname] ?? {}
-							}
+							Haltestellen.HaltestellenDaten = uBahnDataByKurz ?? StopInfo_Ubahn[Haltestellen.Haltestellenname] ?? {}
 						}
 					}
 				});
@@ -102,12 +107,11 @@ const getStopsbygps = (url, latitude, longitude, parameter, { Steighoehen_Tram, 
 						}
 
 						if (Haltestellen.Produkte.includes("U-Bahn")) {
+							const uBahnDataByKurz = getUbahnDataByKurz(StopInfo_Ubahn, Haltestellen.VAGKennung);
 							if (Haltestellen.Ort === "Fürth") {
-								Haltestellen.HaltestellenDaten = StopInfo_Ubahn[`${Haltestellen.Ort}, ${Haltestellen.Haltestellenname}`]
+								Haltestellen.HaltestellenDaten = uBahnDataByKurz ?? StopInfo_Ubahn[`${Haltestellen.Ort}, ${Haltestellen.Haltestellenname}`]
 							} else {
-								if (Haltestellen.Ort === StopInfo_Tram[Haltestellen.Haltestellenname]?.ort) {
-									Haltestellen.HaltestellenDaten = StopInfo_Ubahn[Haltestellen.Haltestellenname]
-								}
+								Haltestellen.HaltestellenDaten = uBahnDataByKurz ?? StopInfo_Ubahn[Haltestellen.Haltestellenname] ?? {}
 							}
 						}
 					});

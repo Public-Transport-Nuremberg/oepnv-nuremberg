@@ -107,7 +107,7 @@ const getDeparturesbygps = (url, latitude, longitude, parameter, api_url, encode
 						let HaltestellennameSplit = Haltestellen.Haltestellenname.split("(");
 						Haltestellen.Haltestellenname = HaltestellennameSplit[0].trim();
 						Haltestellen.Ort = HaltestellennameSplit[1].replace(/[)]/g, "",);
-						Haltestellen.Produkte = Haltestellen.Produkte.replace(/ubahn/i, "U-Bahn",);
+						Haltestellen.Produkte ? Haltestellen.Produkte = Haltestellen.Produkte.replace(/ubahn/i, "U-Bahn",) : Haltestellen.Produkte = ""; // Handle case where Produkte is undefined
 						let url = `${api_url}/abfahrten.json/vgn/${Haltestellen.VGNKennung}`
 						if (parameter) {
 							url = `${url}?${encodeQueryData(parameter, 'Departures')}`

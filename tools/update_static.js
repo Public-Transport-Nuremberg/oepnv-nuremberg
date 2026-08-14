@@ -128,7 +128,11 @@ function transformSheetByKey(workbook, columnKey) {
             const colIndex = Number(colIndexStr);
             if (colIndex === keyColIndex) continue; // skip the key column
             let cellValue = rowArr[colIndex] ?? null;
-            cellValue = parseBoolean(cellValue);
+            // Station abbreviations such as "NO" must remain strings;
+            // parseBoolean would otherwise convert "NO" to false.
+            if (header !== "u-bahnhof_kurz") {
+                cellValue = parseBoolean(cellValue);
+            }
             rowObj[header] = cellValue;
         }
 

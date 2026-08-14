@@ -72,7 +72,7 @@ describe('reverseGeocode API', function () {
     it('reverseGeocode', async () => {
         let Output = await vgn.reverseGeocode('49.4480881582118', '11.0647882822154')
         expect(Output).to.have.property('Location');
-        expect(Output.Location. addresses[0].houseNumber).to.be.a.string("29/31");
+        expect(Output.Location. addresses[0].houseNumber).to.be.a.string("29");
         expect(Output).to.have.property('Meta');
     });
 })

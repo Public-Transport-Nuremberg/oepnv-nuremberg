@@ -332,7 +332,7 @@
   "Nordostbahnhof": {
     "linie": "U2",
     "ort": "Nürnberg",
-    "u-bahnhof_kurz": false,
+    "u-bahnhof_kurz": "NO",
     "aufzug": true,
     "toilette": true,
     "behindertengerechte_toilette": true,

@@ -135,7 +135,7 @@ class openvgn {
      * @param {Number} [parameter.distance] Max distance to given GPS Position
      * @param {String} [parameter.sort] Sort your stops by distance or alphabetically
     */
-    getStopsbygps(lat, lon, parameter) {
+    getStopsbygps(lat, lon, parameter = {}) {
         if (!lat || !lon) { return new Error("getDeparturesbygps: Coordinates can´t be empty.") }
         if (!parameter.distance) {
             parameter.distance = 500;
@@ -161,7 +161,7 @@ class openvgn {
      * @param {Number} [parameter.TimeDelay] Look for now + x in minutes
      * @param {Number} [parameter.LimitCount] Max amount of departures returned
     */
-    getDepartures(target, parameter) {
+    getDepartures(target, parameter = {}) {
         if (!target) { return new Error("getDepartures: Target can´t be empty.") }
         let source = "vgn";
         if (isNaN(target)) {
@@ -193,7 +193,7 @@ class openvgn {
      * @param {Number} [parameter.TimeDelay] Look for now + x in minutes
      * @param {Number} [parameter.LimitCount] Max amount of departures returned
      */
-    getDeparturesbygps(lat, lon, parameter) {
+    getDeparturesbygps(lat, lon, parameter = {}) {
         if (!lat || !lon) { return new Error("getDeparturesbygps: Coordinates can´t be empty.") }
         if (!parameter.distance) {
             parameter.distance = 500;
@@ -202,6 +202,7 @@ class openvgn {
             parameter.sort = "Distance";
         };
         const url = `${this.api_url}/haltestellen.json/vgn?lon=${lon}&lat=${lat}&Distance=${parameter.distance}`;
+        console.log(url)
         return Abfahrten.getDeparturesbygps(url, lat, lon, parameter, this.api_url, this.#encodeQueryData, { Fuhrpark_Tram, Fuhrpark_Bus, Fuhrpark_PVU }).then(function (Abfahrten) {
             return Abfahrten;
         }).catch(function (err) {
@@ -216,7 +217,7 @@ class openvgn {
      * @param {Object} parameter parameter
      * @param {String} [parameter.Product] Only return departures of one or multiple products
     */
-    getTrip(Fahrtnummer, parameter) {
+    getTrip(Fahrtnummer, parameter = {}) {
         if (!Fahrtnummer) { return new Error("getTrip: Fahrtnummer can´t be empty.") }
         let url;
         if (parameter.date) {
