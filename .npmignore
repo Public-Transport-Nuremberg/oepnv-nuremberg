@@ -2,3 +2,5 @@ static_humanreadable
 test
 webtest.js
 test.js
+node_modules
+tools
