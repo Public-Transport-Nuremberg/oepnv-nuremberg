@@ -202,7 +202,6 @@ class openvgn {
             parameter.sort = "Distance";
         };
         const url = `${this.api_url}/haltestellen.json/vgn?lon=${lon}&lat=${lat}&Distance=${parameter.distance}`;
-        console.log(url)
         return Abfahrten.getDeparturesbygps(url, lat, lon, parameter, this.api_url, this.#encodeQueryData, { Fuhrpark_Tram, Fuhrpark_Bus, Fuhrpark_PVU }).then(function (Abfahrten) {
             return Abfahrten;
         }).catch(function (err) {
