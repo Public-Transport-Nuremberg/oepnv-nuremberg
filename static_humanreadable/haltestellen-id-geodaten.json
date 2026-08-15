@@ -1,6 +1,7 @@
 {
   "101": {
     "VAGKennung": "WT",
+    "VGNKennung": "101",
     "Platforms": {
       "WT:1": {
         "GlobalID": "de:09564:101:11:1",
@@ -20,6 +21,7 @@
   },
   "148": {
     "VAGKennung": "WEINTR",
+    "VGNKennung": "148",
     "Platforms": {
       "WEINTR:1": {
         "GlobalID": "de:09564:148:0:1",
@@ -39,6 +41,7 @@
   },
   "149": {
     "VAGKennung": "EGID-P",
+    "VGNKennung": "149",
     "Platforms": {
       "EGID-P:1": {
         "GlobalID": "de:09564:149:0:1",
@@ -58,6 +61,7 @@
   },
   "150": {
     "VAGKennung": "HL-G",
+    "VGNKennung": "150",
     "Platforms": {
       "HL-G:1": {
         "GlobalID": "de:09564:150:0:1",
@@ -70,6 +74,7 @@
   },
   "151": {
     "VAGKennung": "HAUPTM",
+    "VGNKennung": "151",
     "Platforms": {
       "HAUPTM:1": {
         "GlobalID": "de:09564:151:0:1",
@@ -96,6 +101,7 @@
   },
   "152": {
     "VAGKennung": "RATH",
+    "VGNKennung": "152",
     "Platforms": {
       "RATH:1": {
         "GlobalID": "de:09564:152:0:1",
@@ -129,6 +135,7 @@
   },
   "153": {
     "VAGKennung": "MAXTOR",
+    "VGNKennung": "153",
     "Platforms": {
       "MAXTOR:1": {
         "GlobalID": "de:09564:153:0:1",
@@ -148,6 +155,7 @@
   },
   "154": {
     "VAGKennung": "LAUF-T",
+    "VGNKennung": "154",
     "Platforms": {
       "LAUF-T:1": {
         "GlobalID": "de:09564:154:0:1",
@@ -167,6 +175,7 @@
   },
   "155": {
     "VAGKennung": "INNLAU",
+    "VGNKennung": "155",
     "Platforms": {
       "INNLAU:2": {
         "GlobalID": "de:09564:155:0:2",
@@ -186,6 +195,7 @@
   },
   "156": {
     "VAGKennung": "BURGST",
+    "VGNKennung": "156",
     "Platforms": {
       "BURGST:1": {
         "GlobalID": "de:09564:156:0:1",
@@ -219,6 +229,7 @@
   },
   "230": {
     "VAGKennung": "BUNR",
+    "VGNKennung": "230",
     "Platforms": {
       "BUNR:1": {
         "GlobalID": "de:09564:230:13:1",
@@ -273,6 +284,7 @@
   },
   "231": {
     "VAGKennung": "JUVENE",
+    "VGNKennung": "231",
     "Platforms": {
       "JUVENE:1": {
         "GlobalID": "de:09564:231:13:1",
@@ -306,6 +318,7 @@
   },
   "232": {
     "VAGKennung": "FRIE",
+    "VGNKennung": "232",
     "Platforms": {
       "FRIE:5": {
         "GlobalID": "de:09564:232:17:5",
@@ -395,6 +408,7 @@
   },
   "233": {
     "VAGKennung": "TIERGT",
+    "VGNKennung": "233",
     "Platforms": {
       "TIERGT:1": {
         "GlobalID": "de:09564:233:13:1",
@@ -428,6 +442,7 @@
   },
   "234": {
     "VAGKennung": "HALL",
+    "VGNKennung": "234",
     "Platforms": {
       "HALL:1": {
         "GlobalID": "de:09564:234:13:1",
@@ -475,6 +490,7 @@
   },
   "235": {
     "VAGKennung": "WEST",
+    "VGNKennung": "235",
     "Platforms": {
       "WEST:1": {
         "GlobalID": "de:09564:235:13:1",
@@ -515,6 +531,7 @@
   },
   "236": {
     "VAGKennung": "JULIEN",
+    "VGNKennung": "236",
     "Platforms": {
       "JULIEN:1": {
         "GlobalID": "de:09564:236:13:1",
@@ -548,6 +565,7 @@
   },
   "237": {
     "VAGKennung": "ST-JOH",
+    "VGNKennung": "237",
     "Platforms": {
       "ST-JOH:1": {
         "GlobalID": "de:09564:237:13:1",
@@ -616,6 +634,7 @@
   },
   "238": {
     "VAGKennung": "HALLER",
+    "VGNKennung": "238",
     "Platforms": {
       "HALLER:1": {
         "GlobalID": "de:09564:238:13:1",
@@ -656,6 +675,7 @@
   },
   "250": {
     "VAGKennung": "KAULBP",
+    "VGNKennung": "250",
     "Platforms": {
       "KAULBP:5": {
         "GlobalID": "de:09564:250:17:5",
@@ -689,6 +709,7 @@
   },
   "251": {
     "VAGKennung": "WEF-KR",
+    "VGNKennung": "251",
     "Platforms": {
       "WEF-KR:1": {
         "GlobalID": "de:09564:251:0:1",
@@ -715,6 +736,7 @@
   },
   "253": {
     "VAGKennung": "LERCHE",
+    "VGNKennung": "253",
     "Platforms": {
       "LERCHE:1": {
         "GlobalID": "de:09564:253:0:1",
@@ -741,6 +763,7 @@
   },
   "255": {
     "VAGKennung": "ROETST",
+    "VGNKennung": "255",
     "Platforms": {
       "ROETST:1": {
         "GlobalID": "de:09564:255:0:1",
@@ -760,6 +783,7 @@
   },
   "256": {
     "VAGKennung": "GROSWE",
+    "VGNKennung": "256",
     "Platforms": {
       "GROSWE:1": {
         "GlobalID": "de:09564:256:0:1",
@@ -786,6 +810,7 @@
   },
   "258": {
     "VAGKennung": "KL-NOR",
+    "VGNKennung": "258",
     "Platforms": {
       "KL-NOR:1": {
         "GlobalID": "de:09564:258:13:1",
@@ -826,6 +851,7 @@
   },
   "259": {
     "VAGKennung": "LA-ZEI",
+    "VGNKennung": "259",
     "Platforms": {
       "LA-ZEI:1": {
         "GlobalID": "de:09564:259:0:1",
@@ -838,6 +864,7 @@
   },
   "260": {
     "VAGKennung": "LA-ZEI",
+    "VGNKennung": "260",
     "Platforms": {
       "LA-ZEI:41": {
         "GlobalID": "de:09564:259:0:41",
@@ -850,6 +877,7 @@
   },
   "261": {
     "VAGKennung": "KL-SUE",
+    "VGNKennung": "261",
     "Platforms": {
       "KL-SUE:1": {
         "GlobalID": "de:09564:261:0:1",
@@ -862,6 +890,7 @@
   },
   "271": {
     "VAGKennung": "ARNHAM",
+    "VGNKennung": "271",
     "Platforms": {
       "ARNHAM:1": {
         "GlobalID": "de:09564:271:13:1",
@@ -881,6 +910,7 @@
   },
   "275": {
     "VAGKennung": "NRDWRG",
+    "VGNKennung": "275",
     "Platforms": {
       "NRDWRG:6": {
         "GlobalID": "de:09564:275:13:6",
@@ -921,6 +951,7 @@
   },
   "330": {
     "VAGKennung": "STPA",
+    "VGNKennung": "330",
     "Platforms": {
       "STPAS:11": {
         "GlobalID": "de:09564:330:12:11",
@@ -947,6 +978,7 @@
   },
   "331": {
     "VAGKennung": "MXFLD",
+    "VGNKennung": "331",
     "Platforms": {
       "MXFLD:6": {
         "GlobalID": "de:09564:331:13:6",
@@ -1008,6 +1040,7 @@
   },
   "332": {
     "VAGKennung": "RAP",
+    "VGNKennung": "332",
     "Platforms": {
       "RAP:6": {
         "GlobalID": "de:09564:332:73:6",
@@ -1104,6 +1137,7 @@
   },
   "333": {
     "VAGKennung": "WOEHWI",
+    "VGNKennung": "333",
     "Platforms": {
       "WOEHWI:6": {
         "GlobalID": "de:09564:333:3:6",
@@ -1151,6 +1185,7 @@
   },
   "334": {
     "VAGKennung": "STRE",
+    "VGNKennung": "334",
     "Platforms": {
       "STRE:1": {
         "GlobalID": "de:09564:334:13:1",
@@ -1184,6 +1219,7 @@
   },
   "335": {
     "VAGKennung": "DEICHS",
+    "VGNKennung": "335",
     "Platforms": {
       "DEICHS:1": {
         "GlobalID": "de:09564:335:13:1",
@@ -1217,6 +1253,7 @@
   },
   "336": {
     "VAGKennung": "TAUR",
+    "VGNKennung": "336",
     "Platforms": {
       "TAUR:41": {
         "GlobalID": "de:09564:336:13:41",
@@ -1271,6 +1308,7 @@
   },
   "338": {
     "VAGKennung": "MAFD",
+    "VGNKennung": "338",
     "Platforms": {
       "MAFD:1": {
         "GlobalID": "de:09564:338:0:1",
@@ -1304,6 +1342,7 @@
   },
   "340": {
     "VAGKennung": "RENNWE",
+    "VGNKennung": "340",
     "Platforms": {
       "RENNWE:6": {
         "GlobalID": "de:09564:340:3:6",
@@ -1351,6 +1390,7 @@
   },
   "341": {
     "VAGKennung": "SCHOPP",
+    "VGNKennung": "341",
     "Platforms": {
       "SCHOPP:6": {
         "GlobalID": "de:09564:341:3:6",
@@ -1384,6 +1424,7 @@
   },
   "343": {
     "VAGKennung": "WELSER",
+    "VGNKennung": "343",
     "Platforms": {
       "WELSER:1": {
         "GlobalID": "de:09564:343:0:1",
@@ -1403,6 +1444,7 @@
   },
   "350": {
     "VAGKennung": "ROLL",
+    "VGNKennung": "350",
     "Platforms": {
       "ROLL:1": {
         "GlobalID": "de:09564:350:0:1",
@@ -1436,6 +1478,7 @@
   },
   "351": {
     "VAGKennung": "MART",
+    "VGNKennung": "351",
     "Platforms": {
       "MART:1": {
         "GlobalID": "de:09564:351:0:1",
@@ -1469,6 +1512,7 @@
   },
   "352": {
     "VAGKennung": "FRIEDE",
+    "VGNKennung": "352",
     "Platforms": {
       "FRIEDE:1": {
         "GlobalID": "de:09564:352:0:1",
@@ -1516,6 +1560,7 @@
   },
   "353": {
     "VAGKennung": "TELLST",
+    "VGNKennung": "353",
     "Platforms": {
       "TELLST:1": {
         "GlobalID": "de:09564:353:0:1",
@@ -1549,6 +1594,7 @@
   },
   "354": {
     "VAGKennung": "SCHO",
+    "VGNKennung": "354",
     "Platforms": {
       "SCHO:1": {
         "GlobalID": "de:09564:354:73:1",
@@ -1587,6 +1633,7 @@
   },
   "355": {
     "VAGKennung": "HINTER",
+    "VGNKennung": "355",
     "Platforms": {
       "HINTER:1": {
         "GlobalID": "de:09564:355:0:1",
@@ -1606,6 +1653,7 @@
   },
   "356": {
     "VAGKennung": "SCHI",
+    "VGNKennung": "356",
     "Platforms": {
       "SCHI:1": {
         "GlobalID": "de:09564:356:0:1",
@@ -1653,6 +1701,7 @@
   },
   "360": {
     "VAGKennung": "WOEHRD",
+    "VGNKennung": "360",
     "Platforms": {
       "WOEHRD:1": {
         "GlobalID": "de:09564:360:0:1",
@@ -1679,6 +1728,7 @@
   },
   "361": {
     "VAGKennung": "HARMON",
+    "VGNKennung": "361",
     "Platforms": {
       "HARMON:1": {
         "GlobalID": "de:09564:361:0:1",
@@ -1698,6 +1748,7 @@
   },
   "362": {
     "VAGKennung": "BISM",
+    "VGNKennung": "362",
     "Platforms": {
       "BISM:1": {
         "GlobalID": "de:09564:362:0:1",
@@ -1724,6 +1775,7 @@
   },
   "363": {
     "VAGKennung": "BAUVER",
+    "VGNKennung": "363",
     "Platforms": {
       "BAUVER:1": {
         "GlobalID": "de:09564:363:0:1",
@@ -1743,6 +1795,7 @@
   },
   "364": {
     "VAGKennung": "SEBAST",
+    "VGNKennung": "364",
     "Platforms": {
       "SEBAST:1": {
         "GlobalID": "de:09564:364:0:1",
@@ -1762,6 +1815,7 @@
   },
   "365": {
     "VAGKennung": "HEIN",
+    "VGNKennung": "365",
     "Platforms": {
       "HEIN:1": {
         "GlobalID": "de:09564:365:0:1",
@@ -1802,6 +1856,7 @@
   },
   "366": {
     "VAGKennung": "FACH",
+    "VGNKennung": "366",
     "Platforms": {
       "FACH:1": {
         "GlobalID": "de:09564:366:0:1",
@@ -1835,6 +1890,7 @@
   },
   "408": {
     "VAGKennung": "FRANKS",
+    "VGNKennung": "408",
     "Platforms": {
       "FRANKS:1": {
         "GlobalID": "de:09564:408:3:1",
@@ -1854,6 +1910,7 @@
   },
   "410": {
     "VAGKennung": "FRANKB",
+    "VGNKennung": "410",
     "Platforms": {
       "FRANKB:1": {
         "GlobalID": "de:09564:410:4:3",
@@ -1873,6 +1930,7 @@
   },
   "411": {
     "VAGKennung": "GLEISH",
+    "VGNKennung": "411",
     "Platforms": {
       "GLEISH:1": {
         "GlobalID": "de:09564:411:3:1",
@@ -1892,6 +1950,7 @@
   },
   "420": {
     "VAGKennung": "STEPHA",
+    "VGNKennung": "420",
     "Platforms": {
       "STEPHA:1": {
         "GlobalID": "de:09564:420:0:1",
@@ -1939,6 +1998,7 @@
   },
   "425": {
     "VAGKennung": "RO-LUX",
+    "VGNKennung": "425",
     "Platforms": {
       "RO-LUX:1": {
         "GlobalID": "de:09564:425:0:1",
@@ -1951,6 +2011,7 @@
   },
   "427": {
     "VAGKennung": "DUEREN",
+    "VGNKennung": "427",
     "Platforms": {
       "DUEREN:1": {
         "GlobalID": "de:09564:427:3:N",
@@ -1998,6 +2059,7 @@
   },
   "429": {
     "VAGKennung": "TULL-P",
+    "VGNKennung": "429",
     "Platforms": {
       "TULL-P:1": {
         "GlobalID": "de:09564:429:3:1",
@@ -2031,6 +2093,7 @@
   },
   "430": {
     "VAGKennung": "MAR",
+    "VGNKennung": "430",
     "Platforms": {
       "MAR:11": {
         "GlobalID": "de:09564:430:12:11",
@@ -2050,6 +2113,7 @@
   },
   "431": {
     "VAGKennung": "MTUN",
+    "VGNKennung": "431",
     "Platforms": {
       "MTUN:1": {
         "GlobalID": "de:09564:431:13:1",
@@ -2090,6 +2154,7 @@
   },
   "433": {
     "VAGKennung": "ARMINI",
+    "VGNKennung": "433",
     "Platforms": {
       "ARMINI:1": {
         "GlobalID": "de:09564:433:13:1",
@@ -2123,6 +2188,7 @@
   },
   "434": {
     "VAGKennung": "MARTHA",
+    "VGNKennung": "434",
     "Platforms": {
       "MARTHA:3": {
         "GlobalID": "de:09564:434:13:3",
@@ -2156,6 +2222,7 @@
   },
   "435": {
     "VAGKennung": "BUSINE",
+    "VGNKennung": "435",
     "Platforms": {
       "BUSINE:1": {
         "GlobalID": "de:09564:435:3:1",
@@ -2210,6 +2277,7 @@
   },
   "436": {
     "VAGKennung": "HARS",
+    "VGNKennung": "436",
     "Platforms": {
       "HARS:11": {
         "GlobalID": "de:09564:436:12:11",
@@ -2257,6 +2325,7 @@
   },
   "437": {
     "VAGKennung": "PETERS",
+    "VGNKennung": "437",
     "Platforms": {
       "PETERS:1": {
         "GlobalID": "de:09564:437:13:1",
@@ -2318,6 +2387,7 @@
   },
   "438": {
     "VAGKennung": "SAR",
+    "VGNKennung": "438",
     "Platforms": {
       "SAR:11": {
         "GlobalID": "de:09564:438:12:11",
@@ -2351,6 +2421,7 @@
   },
   "439": {
     "VAGKennung": "IMMELM",
+    "VGNKennung": "439",
     "Platforms": {
       "IMMELM:1": {
         "GlobalID": "de:09564:439:13:1",
@@ -2384,6 +2455,7 @@
   },
   "440": {
     "VAGKennung": "FLIEGE",
+    "VGNKennung": "440",
     "Platforms": {
       "FLIEGE:1": {
         "GlobalID": "de:09564:440:13:1",
@@ -2431,6 +2503,7 @@
   },
   "441": {
     "VAGKennung": "DUT",
+    "VGNKennung": "441",
     "Platforms": {
       "DUT:1": {
         "GlobalID": "de:09564:441:3:1",
@@ -2471,6 +2544,7 @@
   },
   "442": {
     "VAGKennung": "SCRL",
+    "VGNKennung": "442",
     "Platforms": {
       "SCRL:11": {
         "GlobalID": "de:09564:442:12:11",
@@ -2490,6 +2564,7 @@
   },
   "443": {
     "VAGKennung": "LUIT",
+    "VGNKennung": "443",
     "Platforms": {
       "LUIT:1": {
         "GlobalID": "de:09564:443:13:1",
@@ -2530,6 +2605,7 @@
   },
   "444": {
     "VAGKennung": "MSH",
+    "VGNKennung": "444",
     "Platforms": {
       "MSH:1": {
         "GlobalID": "de:09564:444:13:1",
@@ -2584,6 +2660,7 @@
   },
   "445": {
     "VAGKennung": "PL-D-O",
+    "VGNKennung": "445",
     "Platforms": {
       "PL-D-O:1": {
         "GlobalID": "de:09564:445:13:1",
@@ -2631,6 +2708,7 @@
   },
   "446": {
     "VAGKennung": "HOLZGA",
+    "VGNKennung": "446",
     "Platforms": {
       "HOLZGA:1": {
         "GlobalID": "de:09564:446:13:1",
@@ -2664,6 +2742,7 @@
   },
   "451": {
     "VAGKennung": "OSTRIN",
+    "VGNKennung": "451",
     "Platforms": {
       "OSTRIN:1": {
         "GlobalID": "de:09564:451:3:1",
@@ -2683,6 +2762,7 @@
   },
   "452": {
     "VAGKennung": "GLEISS",
+    "VGNKennung": "452",
     "Platforms": {
       "GLEISS:1": {
         "GlobalID": "de:09564:452:0:1",
@@ -2702,6 +2782,7 @@
   },
   "453": {
     "VAGKennung": "PASSAU",
+    "VGNKennung": "453",
     "Platforms": {
       "PASSAU:1": {
         "GlobalID": "de:09564:453:0:1",
@@ -2728,6 +2809,7 @@
   },
   "454": {
     "VAGKennung": "MARIEB",
+    "VGNKennung": "454",
     "Platforms": {
       "MARIEB:1": {
         "GlobalID": "de:09564:454:0:1",
@@ -2761,6 +2843,7 @@
   },
   "455": {
     "VAGKennung": "KOMOTA",
+    "VGNKennung": "455",
     "Platforms": {
       "KOMOTA:1": {
         "GlobalID": "de:09564:455:0:1",
@@ -2780,6 +2863,7 @@
   },
   "457": {
     "VAGKennung": "BESTEL",
+    "VGNKennung": "457",
     "Platforms": {
       "BESTEL:1": {
         "GlobalID": "de:09564:457:0:1",
@@ -2806,6 +2890,7 @@
   },
   "458": {
     "VAGKennung": "BURGER",
+    "VGNKennung": "458",
     "Platforms": {
       "BURGER:1": {
         "GlobalID": "de:09564:458:0:1",
@@ -2825,6 +2910,7 @@
   },
   "459": {
     "VAGKennung": "CRAMER",
+    "VGNKennung": "459",
     "Platforms": {
       "CRAMER:1": {
         "GlobalID": "de:09564:459:0:1",
@@ -2844,6 +2930,7 @@
   },
   "460": {
     "VAGKennung": "UNBAUS",
+    "VGNKennung": "460",
     "Platforms": {
       "UNBAUS:1": {
         "GlobalID": "de:09564:460:0:1",
@@ -2863,6 +2950,7 @@
   },
   "462": {
     "VAGKennung": "KOEHNS",
+    "VGNKennung": "462",
     "Platforms": {
       "KOEHNS:1": {
         "GlobalID": "de:09564:462:0:1",
@@ -2896,6 +2984,7 @@
   },
   "463": {
     "VAGKennung": "DOKU-N",
+    "VGNKennung": "463",
     "Platforms": {
       "DOKU-N:1": {
         "GlobalID": "de:09564:463:0:1",
@@ -2908,6 +2997,7 @@
   },
   "464": {
     "VAGKennung": "DOKU-Z",
+    "VGNKennung": "464",
     "Platforms": {
       "DOKU-Z:1": {
         "GlobalID": "de:09564:464:2:1",
@@ -2948,6 +3038,7 @@
   },
   "465": {
     "VAGKennung": "VOLKFE",
+    "VGNKennung": "465",
     "Platforms": {
       "VOLKFE:1": {
         "GlobalID": "de:09564:465:0:1",
@@ -2974,6 +3065,7 @@
   },
   "466": {
     "VAGKennung": "BAYE",
+    "VGNKennung": "466",
     "Platforms": {
       "BAYE:1": {
         "GlobalID": "de:09564:466:13:1",
@@ -3007,6 +3099,7 @@
   },
   "503": {
     "VAGKennung": "MAFFEI",
+    "VGNKennung": "503",
     "Platforms": {
       "MAFFEI:7": {
         "GlobalID": "de:09564:503:3:7",
@@ -3040,6 +3133,7 @@
   },
   "505": {
     "VAGKennung": "OPERNH",
+    "VGNKennung": "505",
     "Platforms": {
       "OPERNH:6": {
         "GlobalID": "de:09564:505:3:6",
@@ -3073,6 +3167,7 @@
   },
   "510": {
     "VAGKennung": "HBF",
+    "VGNKennung": "510",
     "Platforms": {
       "HBF:6": {
         "GlobalID": "de:09564:510:3:D",
@@ -3169,6 +3264,7 @@
   },
   "511": {
     "VAGKennung": "LO",
+    "VGNKennung": "511",
     "Platforms": {
       "LO:1": {
         "GlobalID": "de:09564:511:11:1",
@@ -3188,6 +3284,7 @@
   },
   "515": {
     "VAGKennung": "GLEISB",
+    "VGNKennung": "515",
     "Platforms": {
       "GLEISB:1": {
         "GlobalID": "de:09564:515:0:1",
@@ -3200,6 +3297,7 @@
   },
   "528": {
     "VAGKennung": "KOPERN",
+    "VGNKennung": "528",
     "Platforms": {
       "KOPERN:1": {
         "GlobalID": "de:09564:528:0:1",
@@ -3219,6 +3317,7 @@
   },
   "530": {
     "VAGKennung": "CELTIS",
+    "VGNKennung": "530",
     "Platforms": {
       "CELTIS:1": {
         "GlobalID": "de:09564:530:13:1",
@@ -3259,6 +3358,7 @@
   },
   "531": {
     "VAGKennung": "LAND",
+    "VGNKennung": "531",
     "Platforms": {
       "LAND:1": {
         "GlobalID": "de:09564:531:13:1",
@@ -3306,6 +3406,7 @@
   },
   "532": {
     "VAGKennung": "HEYNES",
+    "VGNKennung": "532",
     "Platforms": {
       "HEYNES:1": {
         "GlobalID": "de:09564:532:13:1",
@@ -3346,6 +3447,7 @@
   },
   "533": {
     "VAGKennung": "CHR",
+    "VGNKennung": "533",
     "Platforms": {
       "CHR:1": {
         "GlobalID": "de:09564:533:13:1",
@@ -3407,6 +3509,7 @@
   },
   "534": {
     "VAGKennung": "AUFS",
+    "VGNKennung": "534",
     "Platforms": {
       "AUFS:6": {
         "GlobalID": "de:09564:534:3:6",
@@ -3468,6 +3571,7 @@
   },
   "535": {
     "VAGKennung": "HUMMEL",
+    "VGNKennung": "535",
     "Platforms": {
       "HUMMEL:11": {
         "GlobalID": "de:09564:535:12:11",
@@ -3501,6 +3605,7 @@
   },
   "536": {
     "VAGKennung": "SCHW",
+    "VGNKennung": "536",
     "Platforms": {
       "SCHW:1": {
         "GlobalID": "de:09564:536:13:1",
@@ -3576,6 +3681,7 @@
   },
   "537": {
     "VAGKennung": "BREH",
+    "VGNKennung": "537",
     "Platforms": {
       "BREH:1": {
         "GlobalID": "de:09564:537:13:1",
@@ -3623,6 +3729,7 @@
   },
   "538": {
     "VAGKennung": "ALEMAN",
+    "VGNKennung": "538",
     "Platforms": {
       "ALEMAN:1": {
         "GlobalID": "de:09564:538:13:1",
@@ -3663,6 +3770,7 @@
   },
   "539": {
     "VAGKennung": "DIAN",
+    "VGNKennung": "539",
     "Platforms": {
       "DIAN:1": {
         "GlobalID": "de:09564:539:2:1",
@@ -3710,6 +3818,7 @@
   },
   "541": {
     "VAGKennung": "LOTH",
+    "VGNKennung": "541",
     "Platforms": {
       "LOTH:1": {
         "GlobalID": "de:09564:541:13:1",
@@ -3750,6 +3859,7 @@
   },
   "542": {
     "VAGKennung": "SIEMEN",
+    "VGNKennung": "542",
     "Platforms": {
       "SIEMEN:1": {
         "GlobalID": "de:09564:542:13:1",
@@ -3790,6 +3900,7 @@
   },
   "543": {
     "VAGKennung": "SCHU",
+    "VGNKennung": "543",
     "Platforms": {
       "SCHU:1": {
         "GlobalID": "de:09564:543:13:1",
@@ -3830,6 +3941,7 @@
   },
   "544": {
     "VAGKennung": "HUMBOL",
+    "VGNKennung": "544",
     "Platforms": {
       "HUMBOL:1": {
         "GlobalID": "de:09564:544:13:1",
@@ -3856,6 +3968,7 @@
   },
   "545": {
     "VAGKennung": "WODA",
+    "VGNKennung": "545",
     "Platforms": {
       "WODA:1": {
         "GlobalID": "de:09564:545:13:1",
@@ -3896,6 +4009,7 @@
   },
   "546": {
     "VAGKennung": "WIDHAL",
+    "VGNKennung": "546",
     "Platforms": {
       "WIDHAL:1": {
         "GlobalID": "de:09564:546:13:1",
@@ -3950,6 +4064,7 @@
   },
   "547": {
     "VAGKennung": "TRISTA",
+    "VGNKennung": "547",
     "Platforms": {
       "TRISTA:1": {
         "GlobalID": "de:09564:547:13:1",
@@ -3983,6 +4098,7 @@
   },
   "555": {
     "VAGKennung": "PLATEN",
+    "VGNKennung": "555",
     "Platforms": {
       "PLATEN:1": {
         "GlobalID": "de:09564:555:0:1",
@@ -4002,6 +4118,7 @@
   },
   "556": {
     "VAGKennung": "PLATEN",
+    "VGNKennung": "556",
     "Platforms": {
       "PLATEN:41": {
         "GlobalID": "de:09564:555:0:41",
@@ -4014,6 +4131,7 @@
   },
   "557": {
     "VAGKennung": "LOEFFE",
+    "VGNKennung": "557",
     "Platforms": {
       "LOEFFE:1": {
         "GlobalID": "de:09564:557:0:1",
@@ -4047,6 +4165,7 @@
   },
   "558": {
     "VAGKennung": "VOGELW",
+    "VGNKennung": "558",
     "Platforms": {
       "VOGELW:1": {
         "GlobalID": "de:09564:558:0:1",
@@ -4087,6 +4206,7 @@
   },
   "559": {
     "VAGKennung": "MARKGR",
+    "VGNKennung": "559",
     "Platforms": {
       "MARKGR:1": {
         "GlobalID": "de:09564:559:0:1",
@@ -4106,6 +4226,7 @@
   },
   "561": {
     "VAGKennung": "FRAN",
+    "VGNKennung": "561",
     "Platforms": {
       "FRAN:6": {
         "GlobalID": "de:09564:561:3:6",
@@ -4202,6 +4323,7 @@
   },
   "562": {
     "VAGKennung": "TIROLE",
+    "VGNKennung": "562",
     "Platforms": {
       "TIROLE:1": {
         "GlobalID": "de:09564:562:0:1",
@@ -4221,6 +4343,7 @@
   },
   "563": {
     "VAGKennung": "HIROSH",
+    "VGNKennung": "563",
     "Platforms": {
       "HIROSH:1": {
         "GlobalID": "de:09564:563:0:1",
@@ -4247,6 +4370,7 @@
   },
   "601": {
     "VAGKennung": "SCHWN",
+    "VGNKennung": "601",
     "Platforms": {
       "SCHWN:6": {
         "GlobalID": "de:09564:601:13:6",
@@ -4287,6 +4411,7 @@
   },
   "602": {
     "VAGKennung": "SL",
+    "VGNKennung": "602",
     "Platforms": {
       "SL:1": {
         "GlobalID": "de:09564:602:11:1",
@@ -4306,6 +4431,7 @@
   },
   "606": {
     "VAGKennung": "LEOPOL",
+    "VGNKennung": "606",
     "Platforms": {
       "LEOPOL:1": {
         "GlobalID": "de:09564:606:0:1",
@@ -4325,6 +4451,7 @@
   },
   "620": {
     "VAGKennung": "STBU",
+    "VGNKennung": "620",
     "Platforms": {
       "STBU:3": {
         "GlobalID": "de:09564:620:3:3",
@@ -4358,6 +4485,7 @@
   },
   "630": {
     "VAGKennung": "KOH",
+    "VGNKennung": "630",
     "Platforms": {
       "KOH:1": {
         "GlobalID": "de:09564:630:3:1",
@@ -4405,6 +4533,7 @@
   },
   "648": {
     "VAGKennung": "DR-LUP",
+    "VGNKennung": "648",
     "Platforms": {
       "DR-LUP:1": {
         "GlobalID": "de:09564:648:0:1",
@@ -4424,6 +4553,7 @@
   },
   "651": {
     "VAGKennung": "SANDRE",
+    "VGNKennung": "651",
     "Platforms": {
       "SANDRE:1": {
         "GlobalID": "de:09564:651:0:1",
@@ -4457,6 +4587,7 @@
   },
   "652": {
     "VAGKennung": "WALDAU",
+    "VGNKennung": "652",
     "Platforms": {
       "WALDAU:1": {
         "GlobalID": "de:09564:652:0:1",
@@ -4490,6 +4621,7 @@
   },
   "654": {
     "VAGKennung": "GUA",
+    "VGNKennung": "654",
     "Platforms": {
       "GUA:6": {
         "GlobalID": "de:09564:654:13:6",
@@ -4558,6 +4690,7 @@
   },
   "655": {
     "VAGKennung": "GEISSE",
+    "VGNKennung": "655",
     "Platforms": {
       "GEISSE:1": {
         "GlobalID": "de:09564:655:0:1",
@@ -4591,6 +4724,7 @@
   },
   "656": {
     "VAGKennung": "DIES-N",
+    "VGNKennung": "656",
     "Platforms": {
       "DIES-N:1": {
         "GlobalID": "de:09564:656:0:1",
@@ -4617,6 +4751,7 @@
   },
   "657": {
     "VAGKennung": "HO-N",
+    "VGNKennung": "657",
     "Platforms": {
       "HO-N:6": {
         "GlobalID": "de:09564:657:0:6",
@@ -4657,6 +4792,7 @@
   },
   "658": {
     "VAGKennung": "JAEC",
+    "VGNKennung": "658",
     "Platforms": {
       "JAEC:1": {
         "GlobalID": "de:09564:658:0:1",
@@ -4676,6 +4812,7 @@
   },
   "659": {
     "VAGKennung": "INDUST",
+    "VGNKennung": "659",
     "Platforms": {
       "INDUST:1": {
         "GlobalID": "de:09564:659:0:1",
@@ -4695,6 +4832,7 @@
   },
   "660": {
     "VAGKennung": "MAYB",
+    "VGNKennung": "660",
     "Platforms": {
       "MAYB:1": {
         "GlobalID": "de:09564:660:0:1",
@@ -4721,6 +4859,7 @@
   },
   "662": {
     "VAGKennung": "KREUTZ",
+    "VGNKennung": "662",
     "Platforms": {
       "KREUTZ:1": {
         "GlobalID": "de:09564:662:0:1",
@@ -4740,6 +4879,7 @@
   },
   "664": {
     "VAGKennung": "GEIS-M",
+    "VGNKennung": "664",
     "Platforms": {
       "GEIS-M:1": {
         "GlobalID": "de:09564:664:0:1",
@@ -4759,6 +4899,7 @@
   },
   "701": {
     "VAGKennung": "MAXI",
+    "VGNKennung": "701",
     "Platforms": {
       "MAXI:6": {
         "GlobalID": "de:09564:701:3:6",
@@ -4813,6 +4954,7 @@
   },
   "702": {
     "VAGKennung": "BAER-S",
+    "VGNKennung": "702",
     "Platforms": {
       "BAER-S:1": {
         "GlobalID": "de:09564:702:3:3",
@@ -4846,6 +4988,7 @@
   },
   "703": {
     "VAGKennung": "GO",
+    "VGNKennung": "703",
     "Platforms": {
       "GO:1": {
         "GlobalID": "de:09564:703:11:1",
@@ -4865,6 +5008,7 @@
   },
   "704": {
     "VAGKennung": "PLAE",
+    "VGNKennung": "704",
     "Platforms": {
       "PLAE:6": {
         "GlobalID": "de:09564:704:3:6 F",
@@ -4982,6 +5126,7 @@
   },
   "706": {
     "VAGKennung": "PLAE-O",
+    "VGNKennung": "706",
     "Platforms": {
       "PLAE-O:1": {
         "GlobalID": "de:09564:706:0:1",
@@ -4994,6 +5139,7 @@
   },
   "710": {
     "VAGKennung": "ROTH",
+    "VGNKennung": "710",
     "Platforms": {
       "ROTH:6": {
         "GlobalID": "de:09564:710:3:6",
@@ -5034,6 +5180,7 @@
   },
   "730": {
     "VAGKennung": "OTS",
+    "VGNKennung": "730",
     "Platforms": {
       "OTS:1": {
         "GlobalID": "de:09564:730:13:1",
@@ -5067,6 +5214,7 @@
   },
   "737": {
     "VAGKennung": "DRERKL",
+    "VGNKennung": "737",
     "Platforms": {
       "DRERKL:1": {
         "GlobalID": "de:09564:737:0:1",
@@ -5079,6 +5227,7 @@
   },
   "752": {
     "VAGKennung": "DEUTSC",
+    "VGNKennung": "752",
     "Platforms": {
       "DEUTSC:1": {
         "GlobalID": "de:09564:752:0:1",
@@ -5098,6 +5247,7 @@
   },
   "753": {
     "VAGKennung": "GOSTWE",
+    "VGNKennung": "753",
     "Platforms": {
       "GOSTWE:6": {
         "GlobalID": "de:09564:753:0:6",
@@ -5117,6 +5267,7 @@
   },
   "754": {
     "VAGKennung": "GOSTOS",
+    "VGNKennung": "754",
     "Platforms": {
       "GOSTOS:8": {
         "GlobalID": "de:09564:754:0:8",
@@ -5143,6 +5294,7 @@
   },
   "755": {
     "VAGKennung": "AUSTRA",
+    "VGNKennung": "755",
     "Platforms": {
       "AUSTRA:3": {
         "GlobalID": "de:09564:755:0:3",
@@ -5155,6 +5307,7 @@
   },
   "757": {
     "VAGKennung": "HEINRI",
+    "VGNKennung": "757",
     "Platforms": {
       "HEINRI:1": {
         "GlobalID": "de:09564:757:0:1",
@@ -5174,6 +5327,7 @@
   },
   "759": {
     "VAGKennung": "BLUECH",
+    "VGNKennung": "759",
     "Platforms": {
       "BLUECH:1": {
         "GlobalID": "de:09564:759:0:1",
@@ -5193,6 +5347,7 @@
   },
   "760": {
     "VAGKennung": "WESTPA",
+    "VGNKennung": "760",
     "Platforms": {
       "WESTPA:1": {
         "GlobalID": "de:09564:760:0:1",
@@ -5212,6 +5367,7 @@
   },
   "761": {
     "VAGKennung": "FRUE",
+    "VGNKennung": "761",
     "Platforms": {
       "FRUE:1": {
         "GlobalID": "de:09564:761:0:1",
@@ -5238,6 +5394,7 @@
   },
   "764": {
     "VAGKennung": "DUNANT",
+    "VGNKennung": "764",
     "Platforms": {
       "DUNANT:1": {
         "GlobalID": "de:09564:764:0:1",
@@ -5250,6 +5407,7 @@
   },
   "1101": {
     "VAGKennung": "STAD",
+    "VGNKennung": "1101",
     "Platforms": {
       "STAD:6": {
         "GlobalID": "de:09564:1101:3:6",
@@ -5332,6 +5490,7 @@
   },
   "1102": {
     "VAGKennung": "MUGGEN",
+    "VGNKennung": "1102",
     "Platforms": {
       "MUGGEN:6": {
         "GlobalID": "de:09564:1102:3:6",
@@ -5365,6 +5524,7 @@
   },
   "1103": {
     "VAGKennung": "MUGGEN",
+    "VGNKennung": "1103",
     "Platforms": {
       "MUGGEN:41": {
         "GlobalID": "de:09564:1102:3:41",
@@ -5405,6 +5565,7 @@
   },
   "1104": {
     "VAGKennung": "MUGGEN",
+    "VGNKennung": "1104",
     "Platforms": {
       "MUGGEN:42": {
         "GlobalID": "de:09564:1102:3:42",
@@ -5417,6 +5578,7 @@
   },
   "1105": {
     "VAGKennung": "DOOSER",
+    "VGNKennung": "1105",
     "Platforms": {
       "DOOSER:1": {
         "GlobalID": "de:09564:1105:0:1",
@@ -5436,6 +5598,7 @@
   },
   "1120": {
     "VAGKennung": "SNDRSB",
+    "VGNKennung": "1120",
     "Platforms": {
       "SNDRSB:6": {
         "GlobalID": "de:09564:1120:13:6",
@@ -5469,6 +5632,7 @@
   },
   "1151": {
     "VAGKennung": "R-WAGN",
+    "VGNKennung": "1151",
     "Platforms": {
       "R-WAGN:1": {
         "GlobalID": "de:09564:1151:0:1",
@@ -5488,6 +5652,7 @@
   },
   "1152": {
     "VAGKennung": "K-MART",
+    "VGNKennung": "1152",
     "Platforms": {
       "K-MART:1": {
         "GlobalID": "de:09564:1152:0:1",
@@ -5514,6 +5679,7 @@
   },
   "1153": {
     "VAGKennung": "SCHIER",
+    "VGNKennung": "1153",
     "Platforms": {
       "SCHIER:1": {
         "GlobalID": "de:09564:1153:0:1",
@@ -5533,6 +5699,7 @@
   },
   "1154": {
     "VAGKennung": "OSTSTR",
+    "VGNKennung": "1154",
     "Platforms": {
       "OSTSTR:1": {
         "GlobalID": "de:09564:1154:0:1",
@@ -5559,6 +5726,7 @@
   },
   "1155": {
     "VAGKennung": "LEYH-K",
+    "VGNKennung": "1155",
     "Platforms": {
       "LEYH-K:1": {
         "GlobalID": "de:09564:1155:0:1",
@@ -5585,6 +5753,7 @@
   },
   "1156": {
     "VAGKennung": "GROSSM",
+    "VGNKennung": "1156",
     "Platforms": {
       "GROSSM:1": {
         "GlobalID": "de:09564:1156:0:1",
@@ -5604,6 +5773,7 @@
   },
   "1157": {
     "VAGKennung": "TUCHEN",
+    "VGNKennung": "1157",
     "Platforms": {
       "TUCHEN:1": {
         "GlobalID": "de:09564:1157:0:1",
@@ -5623,6 +5793,7 @@
   },
   "1158": {
     "VAGKennung": "SCHEIN",
+    "VGNKennung": "1158",
     "Platforms": {
       "SCHEIN:1": {
         "GlobalID": "de:09564:1158:0:1",
@@ -5656,6 +5827,7 @@
   },
   "1159": {
     "VAGKennung": "LENKER",
+    "VGNKennung": "1159",
     "Platforms": {
       "LENKER:1": {
         "GlobalID": "de:09564:1159:0:1",
@@ -5675,6 +5847,7 @@
   },
   "1160": {
     "VAGKennung": "VIRN",
+    "VGNKennung": "1160",
     "Platforms": {
       "VIRN:1": {
         "GlobalID": "de:09564:1160:0:1",
@@ -5708,6 +5881,7 @@
   },
   "1161": {
     "VAGKennung": "VIRW",
+    "VGNKennung": "1161",
     "Platforms": {
       "VIRW:1": {
         "GlobalID": "de:09564:1161:0:1",
@@ -5727,6 +5901,7 @@
   },
   "1162": {
     "VAGKennung": "BUTTEN",
+    "VGNKennung": "1162",
     "Platforms": {
       "BUTTEN:1": {
         "GlobalID": "de:09564:1162:0:1",
@@ -5746,6 +5921,7 @@
   },
   "1163": {
     "VAGKennung": "R-SIGM",
+    "VGNKennung": "1163",
     "Platforms": {
       "R-SIGM:1": {
         "GlobalID": "de:09564:1163:0:1",
@@ -5786,6 +5962,7 @@
   },
   "1164": {
     "VAGKennung": "DIEBAC",
+    "VGNKennung": "1164",
     "Platforms": {
       "DIEBAC:1": {
         "GlobalID": "de:09564:1164:0:1",
@@ -5805,6 +5982,7 @@
   },
   "1166": {
     "VAGKennung": "CLARSB",
+    "VGNKennung": "1166",
     "Platforms": {
       "CLARSB:1": {
         "GlobalID": "de:09564:1166:0:1",
@@ -5838,6 +6016,7 @@
   },
   "1167": {
     "VAGKennung": "LEHRBE",
+    "VGNKennung": "1167",
     "Platforms": {
       "LEHRBE:1": {
         "GlobalID": "de:09564:1167:0:1",
@@ -5857,6 +6036,7 @@
   },
   "1168": {
     "VAGKennung": "ZUERIC",
+    "VGNKennung": "1168",
     "Platforms": {
       "ZUERIC:1": {
         "GlobalID": "de:09564:1168:0:1",
@@ -5883,6 +6063,7 @@
   },
   "1169": {
     "VAGKennung": "HAESEL",
+    "VGNKennung": "1169",
     "Platforms": {
       "HAESEL:1": {
         "GlobalID": "de:09564:1169:0:1",
@@ -5902,6 +6083,7 @@
   },
   "1170": {
     "VAGKennung": "HERDER",
+    "VGNKennung": "1170",
     "Platforms": {
       "HERDER:1": {
         "GlobalID": "de:09564:1170:0:1",
@@ -5921,6 +6103,7 @@
   },
   "1171": {
     "VAGKennung": "ROTH-V",
+    "VGNKennung": "1171",
     "Platforms": {
       "ROTH-V:1": {
         "GlobalID": "de:09564:1171:0:1",
@@ -5954,6 +6137,7 @@
   },
   "1172": {
     "VAGKennung": "FLACHS",
+    "VGNKennung": "1172",
     "Platforms": {
       "FLACHS:1": {
         "GlobalID": "de:09564:1172:0:1",
@@ -5966,6 +6150,7 @@
   },
   "1173": {
     "VAGKennung": "N-REGE",
+    "VGNKennung": "1173",
     "Platforms": {
       "N-REGE:1": {
         "GlobalID": "de:09564:1173:0:1",
@@ -5985,6 +6170,7 @@
   },
   "1175": {
     "VAGKennung": "VERSHO",
+    "VGNKennung": "1175",
     "Platforms": {
       "VERSHO:1": {
         "GlobalID": "de:09564:1175:0:1",
@@ -6004,6 +6190,7 @@
   },
   "1176": {
     "VAGKennung": "HÖFSPA",
+    "VGNKennung": "1176",
     "Platforms": {
       "HÖFSPA:1": {
         "GlobalID": "de:09564:1176:0:1",
@@ -6023,6 +6210,7 @@
   },
   "1180": {
     "VAGKennung": "GR",
+    "VGNKennung": "1180",
     "Platforms": {
       "GR:1": {
         "GlobalID": "de:09564:1180:11:1",
@@ -6042,6 +6230,7 @@
   },
   "1209": {
     "VAGKennung": "SPESSA",
+    "VGNKennung": "1209",
     "Platforms": {
       "SPESSA:1": {
         "GlobalID": "de:09564:1209:0:1",
@@ -6061,6 +6250,7 @@
   },
   "1212": {
     "VAGKennung": "MARBUR",
+    "VGNKennung": "1212",
     "Platforms": {
       "MARBUR:1": {
         "GlobalID": "de:09564:1212:0:1",
@@ -6080,6 +6270,7 @@
   },
   "1218": {
     "VAGKennung": "DÄS",
+    "VGNKennung": "1218",
     "Platforms": {
       "DÄS:1": {
         "GlobalID": "de:09564:1218:0:1",
@@ -6092,6 +6283,7 @@
   },
   "1241": {
     "VAGKennung": "BINZWG",
+    "VGNKennung": "1241",
     "Platforms": {
       "BINZWG:1": {
         "GlobalID": "de:09564:1241:0:1",
@@ -6111,6 +6303,7 @@
   },
   "1242": {
     "VAGKennung": "NEUNSC",
+    "VGNKennung": "1242",
     "Platforms": {
       "NEUNSC:1": {
         "GlobalID": "de:09564:1242:0:1",
@@ -6130,6 +6323,7 @@
   },
   "1244": {
     "VAGKennung": "AMWEIH",
+    "VGNKennung": "1244",
     "Platforms": {
       "AMWEIH:1": {
         "GlobalID": "de:09564:1244:0:1",
@@ -6149,6 +6343,7 @@
   },
   "1246": {
     "VAGKennung": "SONNWG",
+    "VGNKennung": "1246",
     "Platforms": {
       "SONNWG:1": {
         "GlobalID": "de:09564:1246:0:1",
@@ -6168,6 +6363,7 @@
   },
   "1247": {
     "VAGKennung": "WEHREN",
+    "VGNKennung": "1247",
     "Platforms": {
       "WEHREN:1": {
         "GlobalID": "de:09564:1247:0:1",
@@ -6187,6 +6383,7 @@
   },
   "1248": {
     "VAGKennung": "DORFFE",
+    "VGNKennung": "1248",
     "Platforms": {
       "DORFFE:1": {
         "GlobalID": "de:09564:1248:0:1",
@@ -6206,6 +6403,7 @@
   },
   "1249": {
     "VAGKennung": "BIENWE",
+    "VGNKennung": "1249",
     "Platforms": {
       "BIENWE:1": {
         "GlobalID": "de:09564:1249:0:1",
@@ -6225,6 +6423,7 @@
   },
   "1250": {
     "VAGKennung": "KRANIC",
+    "VGNKennung": "1250",
     "Platforms": {
       "KRANIC:1": {
         "GlobalID": "de:09564:1250:0:1",
@@ -6244,6 +6443,7 @@
   },
   "1251": {
     "VAGKennung": "SCHNIE",
+    "VGNKennung": "1251",
     "Platforms": {
       "SCHNIE:1": {
         "GlobalID": "de:09564:1251:0:1",
@@ -6270,6 +6470,7 @@
   },
   "1252": {
     "VAGKennung": "FRAUEN",
+    "VGNKennung": "1252",
     "Platforms": {
       "FRAUEN:1": {
         "GlobalID": "de:09564:1252:0:1",
@@ -6289,6 +6490,7 @@
   },
   "1253": {
     "VAGKennung": "BRETTE",
+    "VGNKennung": "1253",
     "Platforms": {
       "BRETTE:1": {
         "GlobalID": "de:09564:1253:0:1",
@@ -6308,6 +6510,7 @@
   },
   "1254": {
     "VAGKennung": "KREMAT",
+    "VGNKennung": "1254",
     "Platforms": {
       "KREMAT:1": {
         "GlobalID": "de:09564:1254:0:1",
@@ -6327,6 +6530,7 @@
   },
   "1256": {
     "VAGKennung": "KRIE",
+    "VGNKennung": "1256",
     "Platforms": {
       "KRIE:1": {
         "GlobalID": "de:09564:1256:0:1",
@@ -6360,6 +6564,7 @@
   },
   "1257": {
     "VAGKennung": "WETZ-W",
+    "VGNKennung": "1257",
     "Platforms": {
       "WETZ-W:1": {
         "GlobalID": "de:09564:1257:0:1",
@@ -6393,6 +6598,7 @@
   },
   "1258": {
     "VAGKennung": "WETZ-O",
+    "VGNKennung": "1258",
     "Platforms": {
       "WETZ-O:1": {
         "GlobalID": "de:09564:1258:0:1",
@@ -6412,6 +6618,7 @@
   },
   "1259": {
     "VAGKennung": "DORTMU",
+    "VGNKennung": "1259",
     "Platforms": {
       "DORTMU:1": {
         "GlobalID": "de:09564:1259:0:1",
@@ -6431,6 +6638,7 @@
   },
   "1260": {
     "VAGKennung": "GGNO",
+    "VGNKennung": "1260",
     "Platforms": {
       "GGNO:1": {
         "GlobalID": "de:09564:1260:3:1",
@@ -6464,6 +6672,7 @@
   },
   "1261": {
     "VAGKennung": "HANSEN",
+    "VGNKennung": "1261",
     "Platforms": {
       "HANSEN:1": {
         "GlobalID": "de:09564:1261:0:1",
@@ -6476,6 +6685,7 @@
   },
   "1262": {
     "VAGKennung": "QUELLW",
+    "VGNKennung": "1262",
     "Platforms": {
       "QUELLW:1": {
         "GlobalID": "de:09564:1262:0:1",
@@ -6488,6 +6698,7 @@
   },
   "1263": {
     "VAGKennung": "GROSGM",
+    "VGNKennung": "1263",
     "Platforms": {
       "GROSGM:1": {
         "GlobalID": "de:09564:1263:0:1",
@@ -6521,6 +6732,7 @@
   },
   "1264": {
     "VAGKennung": "SCHULE",
+    "VGNKennung": "1264",
     "Platforms": {
       "SCHULE:1": {
         "GlobalID": "de:09564:1264:0:1",
@@ -6540,6 +6752,7 @@
   },
   "1265": {
     "VAGKennung": "GROSGH",
+    "VGNKennung": "1265",
     "Platforms": {
       "GROSGH:1": {
         "GlobalID": "de:09564:1265:0:1",
@@ -6566,6 +6779,7 @@
   },
   "1266": {
     "VAGKennung": "AM-STE",
+    "VGNKennung": "1266",
     "Platforms": {
       "AM-STE:1": {
         "GlobalID": "de:09564:1266:0:1",
@@ -6599,6 +6813,7 @@
   },
   "1267": {
     "VAGKennung": "SCHMAL",
+    "VGNKennung": "1267",
     "Platforms": {
       "SCHMAL:1": {
         "GlobalID": "de:09564:1267:0:1",
@@ -6625,6 +6840,7 @@
   },
   "1268": {
     "VAGKennung": "STEINA",
+    "VGNKennung": "1268",
     "Platforms": {
       "STEINA:1": {
         "GlobalID": "de:09564:1268:0:1",
@@ -6644,6 +6860,7 @@
   },
   "1269": {
     "VAGKennung": "BOXBER",
+    "VGNKennung": "1269",
     "Platforms": {
       "BOXBER:1": {
         "GlobalID": "de:09564:1269:0:1",
@@ -6663,6 +6880,7 @@
   },
   "1270": {
     "VAGKennung": "ERICH-",
+    "VGNKennung": "1270",
     "Platforms": {
       "ERICH-:1": {
         "GlobalID": "de:09564:1270:0:1",
@@ -6689,6 +6907,7 @@
   },
   "1271": {
     "VAGKennung": "BOXD",
+    "VGNKennung": "1271",
     "Platforms": {
       "BOXD:1": {
         "GlobalID": "de:09564:1271:0:1",
@@ -6722,6 +6941,7 @@
   },
   "1272": {
     "VAGKennung": "REUTLE",
+    "VGNKennung": "1272",
     "Platforms": {
       "REUTLE:1": {
         "GlobalID": "de:09564:1272:0:1",
@@ -6741,6 +6961,7 @@
   },
   "1273": {
     "VAGKennung": "BOX-NO",
+    "VGNKennung": "1273",
     "Platforms": {
       "BOX-NO:1": {
         "GlobalID": "de:09564:1273:0:1",
@@ -6767,6 +6988,7 @@
   },
   "1274": {
     "VAGKennung": "MOOSAE",
+    "VGNKennung": "1274",
     "Platforms": {
       "MOOSAE:1": {
         "GlobalID": "de:09564:1274:0:1",
@@ -6793,6 +7015,7 @@
   },
   "1275": {
     "VAGKennung": "NEUN",
+    "VGNKennung": "1275",
     "Platforms": {
       "NEUN:1": {
         "GlobalID": "de:09564:1275:0:1",
@@ -6812,6 +7035,7 @@
   },
   "1276": {
     "VAGKennung": "KRIEGE",
+    "VGNKennung": "1276",
     "Platforms": {
       "KRIEGE:1": {
         "GlobalID": "de:09564:1276:0:1",
@@ -6838,6 +7062,7 @@
   },
   "1277": {
     "VAGKennung": "A-KRES",
+    "VGNKennung": "1277",
     "Platforms": {
       "A-KRES:1": {
         "GlobalID": "de:09564:1277:0:1",
@@ -6857,6 +7082,7 @@
   },
   "1278": {
     "VAGKennung": "KRAF",
+    "VGNKennung": "1278",
     "Platforms": {
       "KRAF:1": {
         "GlobalID": "de:09564:1278:0:1",
@@ -6890,6 +7116,7 @@
   },
   "1279": {
     "VAGKennung": "KRAF-S",
+    "VGNKennung": "1279",
     "Platforms": {
       "KRAF-S:1": {
         "GlobalID": "de:09564:1279:0:1",
@@ -6923,6 +7150,7 @@
   },
   "1280": {
     "VAGKennung": "BUCH-N",
+    "VGNKennung": "1280",
     "Platforms": {
       "BUCH-N:1": {
         "GlobalID": "de:09564:1280:0:1",
@@ -6956,6 +7184,7 @@
   },
   "1281": {
     "VAGKennung": "BUCH-S",
+    "VGNKennung": "1281",
     "Platforms": {
       "BUCH-S:1": {
         "GlobalID": "de:09564:1281:0:1",
@@ -6975,6 +7204,7 @@
   },
   "1282": {
     "VAGKennung": "HOEFLE",
+    "VGNKennung": "1282",
     "Platforms": {
       "HOEFLE:1": {
         "GlobalID": "de:09564:1282:0:1",
@@ -6994,6 +7224,7 @@
   },
   "1283": {
     "VAGKennung": "AWEG",
+    "VGNKennung": "1283",
     "Platforms": {
       "AWEG-B:1": {
         "GlobalID": "de:09564:1283:13:1",
@@ -7097,6 +7328,7 @@
   },
   "1284": {
     "VAGKennung": "ALMOSH",
+    "VGNKennung": "1284",
     "Platforms": {
       "ALMOSH:1": {
         "GlobalID": "de:09564:1284:0:1",
@@ -7123,6 +7355,7 @@
   },
   "1285": {
     "VAGKennung": "ALM-SC",
+    "VGNKennung": "1285",
     "Platforms": {
       "ALM-SC:1": {
         "GlobalID": "de:09564:1285:0:1",
@@ -7142,6 +7375,7 @@
   },
   "1286": {
     "VAGKennung": "LOHE",
+    "VGNKennung": "1286",
     "Platforms": {
       "LOHE:1": {
         "GlobalID": "de:09564:1286:0:1",
@@ -7161,6 +7395,7 @@
   },
   "1287": {
     "VAGKennung": "FLUGHS",
+    "VGNKennung": "1287",
     "Platforms": {
       "FLUGHS:1": {
         "GlobalID": "de:09564:1287:0:1",
@@ -7187,6 +7422,7 @@
   },
   "1288": {
     "VAGKennung": "AM-BAE",
+    "VGNKennung": "1288",
     "Platforms": {
       "AM-BAE:1": {
         "GlobalID": "de:09564:1288:0:1",
@@ -7220,6 +7456,7 @@
   },
   "1289": {
     "VAGKennung": "WILHEL",
+    "VGNKennung": "1289",
     "Platforms": {
       "WILHEL:2": {
         "GlobalID": "de:09564:1289:0:2",
@@ -7246,6 +7483,7 @@
   },
   "1290": {
     "VAGKennung": "SCHWER",
+    "VGNKennung": "1290",
     "Platforms": {
       "SCHWER:1": {
         "GlobalID": "de:09564:1290:0:1",
@@ -7265,6 +7503,7 @@
   },
   "1291": {
     "VAGKennung": "KLREUH",
+    "VGNKennung": "1291",
     "Platforms": {
       "KLREUH:1": {
         "GlobalID": "de:09564:1291:0:1",
@@ -7284,6 +7523,7 @@
   },
   "1292": {
     "VAGKennung": "LANG",
+    "VGNKennung": "1292",
     "Platforms": {
       "LANG:1": {
         "GlobalID": "de:09564:1292:0:1",
@@ -7324,6 +7564,7 @@
   },
   "1293": {
     "VAGKennung": "THON",
+    "VGNKennung": "1293",
     "Platforms": {
       "THON:6": {
         "GlobalID": "de:09564:1293:13:6",
@@ -7385,6 +7626,7 @@
   },
   "1294": {
     "VAGKennung": "CUXH",
+    "VGNKennung": "1294",
     "Platforms": {
       "CUXH-B:1": {
         "GlobalID": "de:09564:1294:13:1",
@@ -7418,6 +7660,7 @@
   },
   "1295": {
     "VAGKennung": "SCHL",
+    "VGNKennung": "1295",
     "Platforms": {
       "SCHL-B:1": {
         "GlobalID": "de:09564:1295:13:1",
@@ -7465,6 +7708,7 @@
   },
   "1296": {
     "VAGKennung": "SCHNEP",
+    "VGNKennung": "1296",
     "Platforms": {
       "SCHNEP:1": {
         "GlobalID": "de:09564:1296:0:1",
@@ -7484,6 +7728,7 @@
   },
   "1297": {
     "VAGKennung": "KIELER",
+    "VGNKennung": "1297",
     "Platforms": {
       "KIELER:1": {
         "GlobalID": "de:09564:1297:0:1",
@@ -7503,6 +7748,7 @@
   },
   "1298": {
     "VAGKennung": "BERU",
+    "VGNKennung": "1298",
     "Platforms": {
       "BERU:1": {
         "GlobalID": "de:09564:1298:0:1",
@@ -7522,6 +7768,7 @@
   },
   "1299": {
     "VAGKennung": "H-BOEC",
+    "VGNKennung": "1299",
     "Platforms": {
       "H-BOEC:1": {
         "GlobalID": "de:09563:1299:0:1",
@@ -7555,6 +7802,7 @@
   },
   "1300": {
     "VAGKennung": "BUCH-M",
+    "VGNKennung": "1300",
     "Platforms": {
       "BUCH-M:1": {
         "GlobalID": "de:09564:1300:0:1",
@@ -7574,6 +7822,7 @@
   },
   "1301": {
     "VAGKennung": "BAMN",
+    "VGNKennung": "1301",
     "Platforms": {
       "BAMN-N:1": {
         "GlobalID": "de:09564:1301:13:1",
@@ -7621,6 +7870,7 @@
   },
   "1302": {
     "VAGKennung": "WALTBR",
+    "VGNKennung": "1302",
     "Platforms": {
       "WALTBR:1": {
         "GlobalID": "de:09564:1302:0:1",
@@ -7640,6 +7890,7 @@
   },
   "1303": {
     "VAGKennung": "REUTLS",
+    "VGNKennung": "1303",
     "Platforms": {
       "REUTLS:1": {
         "GlobalID": "de:09564:1303:0:1",
@@ -7673,6 +7924,7 @@
   },
   "1304": {
     "VAGKennung": "WERTHS",
+    "VGNKennung": "1304",
     "Platforms": {
       "WERTHS:1": {
         "GlobalID": "de:09564:1304:0:1",
@@ -7692,6 +7944,7 @@
   },
   "1305": {
     "VAGKennung": "BASTST",
+    "VGNKennung": "1305",
     "Platforms": {
       "BASTST:1": {
         "GlobalID": "de:09564:1305:0:1",
@@ -7711,6 +7964,7 @@
   },
   "1306": {
     "VAGKennung": "ROEHRI",
+    "VGNKennung": "1306",
     "Platforms": {
       "ROEHRI:1": {
         "GlobalID": "de:09564:1306:0:1",
@@ -7730,6 +7984,7 @@
   },
   "1307": {
     "VAGKennung": "KILIAN",
+    "VGNKennung": "1307",
     "Platforms": {
       "KILIAN:1": {
         "GlobalID": "de:09564:1307:0:1",
@@ -7749,6 +8004,7 @@
   },
   "1308": {
     "VAGKennung": "ROTFUC",
+    "VGNKennung": "1308",
     "Platforms": {
       "ROTFUC:1": {
         "GlobalID": "de:09564:1308:0:1",
@@ -7768,6 +8024,7 @@
   },
   "1309": {
     "VAGKennung": "MICHAE",
+    "VGNKennung": "1309",
     "Platforms": {
       "MICHAE:1": {
         "GlobalID": "de:09564:1309:0:1",
@@ -7787,6 +8044,7 @@
   },
   "1310": {
     "VAGKennung": "OSTB",
+    "VGNKennung": "1310",
     "Platforms": {
       "OSTB:1": {
         "GlobalID": "de:09564:1310:3:1",
@@ -7820,6 +8078,7 @@
   },
   "1311": {
     "VAGKennung": "ERLS",
+    "VGNKennung": "1311",
     "Platforms": {
       "ERLS:1": {
         "GlobalID": "de:09564:1311:3:1",
@@ -7860,6 +8119,7 @@
   },
   "1313": {
     "VAGKennung": "J-SPER",
+    "VGNKennung": "1313",
     "Platforms": {
       "J-SPER:1": {
         "GlobalID": "de:09564:1313:0:1",
@@ -7879,6 +8139,7 @@
   },
   "1314": {
     "VAGKennung": "HOEFOS",
+    "VGNKennung": "1314",
     "Platforms": {
       "HOEFOS:1": {
         "GlobalID": "de:09564:1314:0:1",
@@ -7912,6 +8173,7 @@
   },
   "1315": {
     "VAGKennung": "HOEFWE",
+    "VGNKennung": "1315",
     "Platforms": {
       "HOEFWE:1": {
         "GlobalID": "de:09564:1315:0:1",
@@ -7931,6 +8193,7 @@
   },
   "1316": {
     "VAGKennung": "FORCHH",
+    "VGNKennung": "1316",
     "Platforms": {
       "FORCHH:1": {
         "GlobalID": "de:09564:1316:0:1",
@@ -7943,6 +8206,7 @@
   },
   "1317": {
     "VAGKennung": "WKLINK",
+    "VGNKennung": "1317",
     "Platforms": {
       "WKLINK:1": {
         "GlobalID": "de:09564:1317:0:1",
@@ -7962,6 +8226,7 @@
   },
   "1318": {
     "VAGKennung": "KLREUW",
+    "VGNKennung": "1318",
     "Platforms": {
       "KLREUW:1": {
         "GlobalID": "de:09564:1318:0:1",
@@ -7995,6 +8260,7 @@
   },
   "1319": {
     "VAGKennung": "BUCHHS",
+    "VGNKennung": "1319",
     "Platforms": {
       "BUCHHS:1": {
         "GlobalID": "de:09564:1319:0:1",
@@ -8007,6 +8273,7 @@
   },
   "1320": {
     "VAGKennung": "ZI",
+    "VGNKennung": "1320",
     "Platforms": {
       "ZI:1": {
         "GlobalID": "de:09564:1320:11:1",
@@ -8026,6 +8293,7 @@
   },
   "1321": {
     "VAGKennung": "SYLTST",
+    "VGNKennung": "1321",
     "Platforms": {
       "SYLTST:1": {
         "GlobalID": "de:09564:1321:0:1",
@@ -8045,6 +8313,7 @@
   },
   "1322": {
     "VAGKennung": "LOHEST",
+    "VGNKennung": "1322",
     "Platforms": {
       "LOHEST:1": {
         "GlobalID": "de:09564:1322:0:1",
@@ -8064,6 +8333,7 @@
   },
   "1324": {
     "VAGKennung": "HERRNH",
+    "VGNKennung": "1324",
     "Platforms": {
       "HERRNH:4": {
         "GlobalID": "de:09564:1324:3:4",
@@ -8111,6 +8381,7 @@
   },
   "1326": {
     "VAGKennung": "LEIPLA",
+    "VGNKennung": "1326",
     "Platforms": {
       "LEIPLA:1": {
         "GlobalID": "de:09564:1326:0:1",
@@ -8123,6 +8394,7 @@
   },
   "1327": {
     "VAGKennung": "MARI-B",
+    "VGNKennung": "1327",
     "Platforms": {
       "MARI-B:1": {
         "GlobalID": "de:09564:1327:0:1",
@@ -8142,6 +8414,7 @@
   },
   "1328": {
     "VAGKennung": "MERIAN",
+    "VGNKennung": "1328",
     "Platforms": {
       "MERIAN:1": {
         "GlobalID": "de:09564:1328:0:1",
@@ -8161,6 +8434,7 @@
   },
   "1330": {
     "VAGKennung": "ZIEG-N",
+    "VGNKennung": "1330",
     "Platforms": {
       "ZIEG-N:6": {
         "GlobalID": "de:09564:1330:0:6",
@@ -8180,6 +8454,7 @@
   },
   "1331": {
     "VAGKennung": "ZIEG-S",
+    "VGNKennung": "1331",
     "Platforms": {
       "ZIEG-S:8": {
         "GlobalID": "de:09564:1331:0:8",
@@ -8227,6 +8502,7 @@
   },
   "1332": {
     "VAGKennung": "LOHM",
+    "VGNKennung": "1332",
     "Platforms": {
       "LOHM:1": {
         "GlobalID": "de:09564:1332:0:1",
@@ -8246,6 +8522,7 @@
   },
   "1333": {
     "VAGKennung": "FLATAU",
+    "VGNKennung": "1333",
     "Platforms": {
       "FLATAU:1": {
         "GlobalID": "de:09564:1333:0:1",
@@ -8272,6 +8549,7 @@
   },
   "1334": {
     "VAGKennung": "BESS",
+    "VGNKennung": "1334",
     "Platforms": {
       "BESS:1": {
         "GlobalID": "de:09564:1334:0:1",
@@ -8298,6 +8576,7 @@
   },
   "1335": {
     "VAGKennung": "N-O",
+    "VGNKennung": "1335",
     "Platforms": {
       "N-O:6": {
         "GlobalID": "de:09564:1335:13:6",
@@ -8385,6 +8664,7 @@
   },
   "1337": {
     "VAGKennung": "SENEFE",
+    "VGNKennung": "1337",
     "Platforms": {
       "SENEFE:1": {
         "GlobalID": "de:09564:1337:0:1",
@@ -8404,6 +8684,7 @@
   },
   "1338": {
     "VAGKennung": "TAFELH",
+    "VGNKennung": "1338",
     "Platforms": {
       "TAFELH:1": {
         "GlobalID": "de:09564:1338:13:1",
@@ -8437,6 +8718,7 @@
   },
   "1339": {
     "VAGKennung": "STPLWG",
+    "VGNKennung": "1339",
     "Platforms": {
       "STPLWG:1": {
         "GlobalID": "de:09564:1339:0:1",
@@ -8456,6 +8738,7 @@
   },
   "1340": {
     "VAGKennung": "THUMEN",
+    "VGNKennung": "1340",
     "Platforms": {
       "THUMEN:1": {
         "GlobalID": "de:09564:1340:13:1",
@@ -8517,6 +8800,7 @@
   },
   "1341": {
     "VAGKennung": "PLATNE",
+    "VGNKennung": "1341",
     "Platforms": {
       "PLATNE:1": {
         "GlobalID": "de:09564:1341:13:1",
@@ -8550,6 +8834,7 @@
   },
   "1342": {
     "VAGKennung": "KLINGE",
+    "VGNKennung": "1342",
     "Platforms": {
       "KLINGE:1": {
         "GlobalID": "de:09564:1342:0:1",
@@ -8569,6 +8854,7 @@
   },
   "1343": {
     "VAGKennung": "BENNOS",
+    "VGNKennung": "1343",
     "Platforms": {
       "BENNOS:1": {
         "GlobalID": "de:09564:1343:0:1",
@@ -8588,6 +8874,7 @@
   },
   "1344": {
     "VAGKennung": "PAULMO",
+    "VGNKennung": "1344",
     "Platforms": {
       "PAULMO:1": {
         "GlobalID": "de:09564:1344:0:1",
@@ -8607,6 +8894,7 @@
   },
   "1345": {
     "VAGKennung": "KLINGS",
+    "VGNKennung": "1345",
     "Platforms": {
       "KLINGS:1": {
         "GlobalID": "de:09564:1345:0:1",
@@ -8633,6 +8921,7 @@
   },
   "1346": {
     "VAGKennung": "MARALB",
+    "VGNKennung": "1346",
     "Platforms": {
       "MARALB:1": {
         "GlobalID": "de:09564:1346:0:1",
@@ -8652,6 +8941,7 @@
   },
   "1348": {
     "VAGKennung": "WEIH-S",
+    "VGNKennung": "1348",
     "Platforms": {
       "WEIH-S:1": {
         "GlobalID": "de:09564:1348:0:1",
@@ -8671,6 +8961,7 @@
   },
   "1350": {
     "VAGKennung": "TUCHER",
+    "VGNKennung": "1350",
     "Platforms": {
       "TUCHER:1": {
         "GlobalID": "de:09564:1350:0:1",
@@ -8690,6 +8981,7 @@
   },
   "1351": {
     "VAGKennung": "EHEINC",
+    "VGNKennung": "1351",
     "Platforms": {
       "EHEINC:1": {
         "GlobalID": "de:09564:1351:0:1",
@@ -8709,6 +9001,7 @@
   },
   "1353": {
     "VAGKennung": "HEROLD",
+    "VGNKennung": "1353",
     "Platforms": {
       "HEROLD:1": {
         "GlobalID": "de:09564:1353:0:1",
@@ -8728,6 +9021,7 @@
   },
   "1354": {
     "VAGKennung": "HOFERS",
+    "VGNKennung": "1354",
     "Platforms": {
       "HOFERS:1": {
         "GlobalID": "de:09564:1354:0:1",
@@ -8754,6 +9048,7 @@
   },
   "1356": {
     "VAGKennung": "THUI",
+    "VGNKennung": "1356",
     "Platforms": {
       "THUI:1": {
         "GlobalID": "de:09564:1356:3:1",
@@ -8773,6 +9068,7 @@
   },
   "1358": {
     "VAGKennung": "WALDAR",
+    "VGNKennung": "1358",
     "Platforms": {
       "WALDAR:1": {
         "GlobalID": "de:09564:1358:0:1",
@@ -8792,6 +9088,7 @@
   },
   "1359": {
     "VAGKennung": "LOESCH",
+    "VGNKennung": "1359",
     "Platforms": {
       "LOESCH:1": {
         "GlobalID": "de:09564:1359:0:1",
@@ -8811,6 +9108,7 @@
   },
   "1360": {
     "VAGKennung": "Z-FELS",
+    "VGNKennung": "1360",
     "Platforms": {
       "Z-FELS:1": {
         "GlobalID": "de:09564:1360:0:1",
@@ -8830,6 +9128,7 @@
   },
   "1361": {
     "VAGKennung": "OHRWAS",
+    "VGNKennung": "1361",
     "Platforms": {
       "OHRWAS:1": {
         "GlobalID": "de:09564:1361:0:1",
@@ -8849,6 +9148,7 @@
   },
   "1362": {
     "VAGKennung": "NUSCHE",
+    "VGNKennung": "1362",
     "Platforms": {
       "NUSCHE:1": {
         "GlobalID": "de:09564:1362:0:1",
@@ -8875,6 +9175,7 @@
   },
   "1363": {
     "VAGKennung": "SDLW",
+    "VGNKennung": "1363",
     "Platforms": {
       "SDLW:1": {
         "GlobalID": "de:09564:1363:0:1",
@@ -8894,6 +9195,7 @@
   },
   "1364": {
     "VAGKennung": "PAULUS",
+    "VGNKennung": "1364",
     "Platforms": {
       "PAULUS:1": {
         "GlobalID": "de:09564:1364:0:1",
@@ -8913,6 +9215,7 @@
   },
   "1365": {
     "VAGKennung": "H-LOEN",
+    "VGNKennung": "1365",
     "Platforms": {
       "H-LOEN:1": {
         "GlobalID": "de:09564:1365:0:1",
@@ -8939,6 +9242,7 @@
   },
   "1366": {
     "VAGKennung": "BUBUEW",
+    "VGNKennung": "1366",
     "Platforms": {
       "BUBUEW:1": {
         "GlobalID": "de:09564:1366:0:1",
@@ -8958,6 +9262,7 @@
   },
   "1367": {
     "VAGKennung": "SCHWEN",
+    "VGNKennung": "1367",
     "Platforms": {
       "SCHWEN:1": {
         "GlobalID": "de:09564:1367:0:1",
@@ -8977,6 +9282,7 @@
   },
   "1368": {
     "VAGKennung": "SCHLEI",
+    "VGNKennung": "1368",
     "Platforms": {
       "SCHLEI:1": {
         "GlobalID": "de:09564:1368:0:1",
@@ -8996,6 +9302,7 @@
   },
   "1369": {
     "VAGKennung": "KURZST",
+    "VGNKennung": "1369",
     "Platforms": {
       "KURZST:1": {
         "GlobalID": "de:09564:1369:0:1",
@@ -9015,6 +9322,7 @@
   },
   "1370": {
     "VAGKennung": "GROSRH",
+    "VGNKennung": "1370",
     "Platforms": {
       "GROSRH:1": {
         "GlobalID": "de:09564:1370:0:1",
@@ -9034,6 +9342,7 @@
   },
   "1371": {
     "VAGKennung": "STIR",
+    "VGNKennung": "1371",
     "Platforms": {
       "STIR:1": {
         "GlobalID": "de:09564:1371:0:1",
@@ -9053,6 +9362,7 @@
   },
   "1372": {
     "VAGKennung": "NO-PAR",
+    "VGNKennung": "1372",
     "Platforms": {
       "NO-PAR:1": {
         "GlobalID": "de:09564:1372:0:1",
@@ -9100,6 +9410,7 @@
   },
   "1373": {
     "VAGKennung": "NMEYER",
+    "VGNKennung": "1373",
     "Platforms": {
       "NMEYER:1": {
         "GlobalID": "de:09564:1373:0:1",
@@ -9119,6 +9430,7 @@
   },
   "1374": {
     "VAGKennung": "SIEBOL",
+    "VGNKennung": "1374",
     "Platforms": {
       "SIEBOL:1": {
         "GlobalID": "de:09564:1374:0:1",
@@ -9152,6 +9464,7 @@
   },
   "1375": {
     "VAGKennung": "SCHAFH",
+    "VGNKennung": "1375",
     "Platforms": {
       "SCHAFH:1": {
         "GlobalID": "de:09564:1375:0:1",
@@ -9171,6 +9484,7 @@
   },
   "1376": {
     "VAGKennung": "HILTPO",
+    "VGNKennung": "1376",
     "Platforms": {
       "HILTPO:1": {
         "GlobalID": "de:09564:1376:0:1",
@@ -9190,6 +9504,7 @@
   },
   "1380": {
     "VAGKennung": "NOPAMI",
+    "VGNKennung": "1380",
     "Platforms": {
       "NOPAMI:1": {
         "GlobalID": "de:09564:1380:0:1",
@@ -9209,6 +9524,7 @@
   },
   "1382": {
     "VAGKennung": "C-V-LI",
+    "VGNKennung": "1382",
     "Platforms": {
       "C-V-LI:1": {
         "GlobalID": "de:09564:1382:0:1",
@@ -9228,6 +9544,7 @@
   },
   "1383": {
     "VAGKennung": "THERES",
+    "VGNKennung": "1383",
     "Platforms": {
       "THERES:1": {
         "GlobalID": "de:09564:1383:0:1",
@@ -9247,6 +9564,7 @@
   },
   "1384": {
     "VAGKennung": "TEUTOB",
+    "VGNKennung": "1384",
     "Platforms": {
       "TEUTOB:1": {
         "GlobalID": "de:09564:1384:0:1",
@@ -9266,6 +9584,7 @@
   },
   "1385": {
     "VAGKennung": "LEIPZI",
+    "VGNKennung": "1385",
     "Platforms": {
       "LEIPZI:1": {
         "GlobalID": "de:09564:1385:0:1",
@@ -9285,6 +9604,7 @@
   },
   "1386": {
     "VAGKennung": "DRESDE",
+    "VGNKennung": "1386",
     "Platforms": {
       "DRESDE:1": {
         "GlobalID": "de:09564:1386:0:1",
@@ -9311,6 +9631,7 @@
   },
   "1387": {
     "VAGKennung": "SPITAL",
+    "VGNKennung": "1387",
     "Platforms": {
       "SPITAL:1": {
         "GlobalID": "de:09564:1387:0:1",
@@ -9330,6 +9651,7 @@
   },
   "1388": {
     "VAGKennung": "HUBERT",
+    "VGNKennung": "1388",
     "Platforms": {
       "HUBERT:1": {
         "GlobalID": "de:09564:1388:0:1",
@@ -9349,6 +9671,7 @@
   },
   "1389": {
     "VAGKennung": "TATTER",
+    "VGNKennung": "1389",
     "Platforms": {
       "TATTER:1": {
         "GlobalID": "de:09564:1389:0:1",
@@ -9368,6 +9691,7 @@
   },
   "1390": {
     "VAGKennung": "M-MA",
+    "VGNKennung": "1390",
     "Platforms": {
       "M-MA:1": {
         "GlobalID": "de:09564:1390:0:1",
@@ -9380,6 +9704,7 @@
   },
   "1391": {
     "VAGKennung": "FLUGHA",
+    "VGNKennung": "1391",
     "Platforms": {
       "FLUGHA:6": {
         "GlobalID": "de:09564:1391:3:6",
@@ -9413,6 +9738,7 @@
   },
   "1392": {
     "VAGKennung": "WEIS",
+    "VGNKennung": "1392",
     "Platforms": {
       "WEIS:1": {
         "GlobalID": "de:09564:1392:0:1",
@@ -9432,6 +9758,7 @@
   },
   "1393": {
     "VAGKennung": "DR-CAR",
+    "VGNKennung": "1393",
     "Platforms": {
       "DR-CAR:1": {
         "GlobalID": "de:09564:1393:0:1",
@@ -9451,6 +9778,7 @@
   },
   "1396": {
     "VAGKennung": "CARGOZ",
+    "VGNKennung": "1396",
     "Platforms": {
       "CARGOZ:1": {
         "GlobalID": "de:09564:1396:0:1",
@@ -9470,6 +9798,7 @@
   },
   "1398": {
     "VAGKennung": "NO-P",
+    "VGNKennung": "1398",
     "Platforms": {
       "NO-P:1": {
         "GlobalID": "de:09564:1398:0:1",
@@ -9489,6 +9818,7 @@
   },
   "1399": {
     "VAGKennung": "SIW",
+    "VGNKennung": "1399",
     "Platforms": {
       "SIW:1": {
         "GlobalID": "de:09564:1399:0:1",
@@ -9501,6 +9831,7 @@
   },
   "1400": {
     "VAGKennung": "LUFTNO",
+    "VGNKennung": "1400",
     "Platforms": {
       "LUFTNO:1": {
         "GlobalID": "de:09564:1400:0:1",
@@ -9520,6 +9851,7 @@
   },
   "1428": {
     "VAGKennung": "GOLDHA",
+    "VGNKennung": "1428",
     "Platforms": {
       "GOLDHA:1": {
         "GlobalID": "de:09564:1428:0:1",
@@ -9546,6 +9878,7 @@
   },
   "1430": {
     "VAGKennung": "LECHNE",
+    "VGNKennung": "1430",
     "Platforms": {
       "LECHNE:1": {
         "GlobalID": "de:09564:1430:13:1",
@@ -9579,6 +9912,7 @@
   },
   "1431": {
     "VAGKennung": "MOEG",
+    "VGNKennung": "1431",
     "Platforms": {
       "MOEG:1": {
         "GlobalID": "de:09564:1431:3:C",
@@ -9640,6 +9974,7 @@
   },
   "1432": {
     "VAGKennung": "BALNEU",
+    "VGNKennung": "1432",
     "Platforms": {
       "BALNEU:1": {
         "GlobalID": "de:09564:1432:13:1",
@@ -9673,6 +10008,7 @@
   },
   "1433": {
     "VAGKennung": "SIED",
+    "VGNKennung": "1433",
     "Platforms": {
       "SIED:1": {
         "GlobalID": "de:09564:1433:1:1",
@@ -9706,6 +10042,7 @@
   },
   "1434": {
     "VAGKennung": "TIER",
+    "VGNKennung": "1434",
     "Platforms": {
       "TIER:1": {
         "GlobalID": "de:09564:1434:1:1",
@@ -9732,6 +10069,7 @@
   },
   "1435": {
     "VAGKennung": "AKADEM",
+    "VGNKennung": "1435",
     "Platforms": {
       "AKADEM:1": {
         "GlobalID": "de:09564:1435:0:1",
@@ -9751,6 +10089,7 @@
   },
   "1436": {
     "VAGKennung": "WOHNST",
+    "VGNKennung": "1436",
     "Platforms": {
       "WOHNST:1": {
         "GlobalID": "de:09564:1436:0:1",
@@ -9770,6 +10109,7 @@
   },
   "1445": {
     "VAGKennung": "ZABO-O",
+    "VGNKennung": "1445",
     "Platforms": {
       "ZABO-O:1": {
         "GlobalID": "de:09564:1445:0:1",
@@ -9789,6 +10129,7 @@
   },
   "1446": {
     "VAGKennung": "W-REGE",
+    "VGNKennung": "1446",
     "Platforms": {
       "W-REGE:1": {
         "GlobalID": "de:09564:1446:0:1",
@@ -9808,6 +10149,7 @@
   },
   "1448": {
     "VAGKennung": "AU-MEI",
+    "VGNKennung": "1448",
     "Platforms": {
       "AU-MEI:1": {
         "GlobalID": "de:09564:1448:0:1",
@@ -9834,6 +10176,7 @@
   },
   "1449": {
     "VAGKennung": "REGENS",
+    "VGNKennung": "1449",
     "Platforms": {
       "REGENS:1": {
         "GlobalID": "de:09564:1449:0:1",
@@ -9853,6 +10196,7 @@
   },
   "1451": {
     "VAGKennung": "H-KALB",
+    "VGNKennung": "1451",
     "Platforms": {
       "H-KALB:1": {
         "GlobalID": "de:09564:1451:0:1",
@@ -9872,6 +10216,7 @@
   },
   "1452": {
     "VAGKennung": "SPORTF",
+    "VGNKennung": "1452",
     "Platforms": {
       "SPORTF:1": {
         "GlobalID": "de:09564:1452:0:1",
@@ -9891,6 +10236,7 @@
   },
   "1453": {
     "VAGKennung": "VALZNE",
+    "VGNKennung": "1453",
     "Platforms": {
       "VALZNE:1": {
         "GlobalID": "de:09564:1453:0:1",
@@ -9910,6 +10256,7 @@
   },
   "1454": {
     "VAGKennung": "AYRERS",
+    "VGNKennung": "1454",
     "Platforms": {
       "AYRERS:1": {
         "GlobalID": "de:09564:1454:0:1",
@@ -9929,6 +10276,7 @@
   },
   "1455": {
     "VAGKennung": "WALDLU",
+    "VGNKennung": "1455",
     "Platforms": {
       "WALDLU:1": {
         "GlobalID": "de:09564:1455:0:1",
@@ -9948,6 +10296,7 @@
   },
   "1456": {
     "VAGKennung": "SCHEDE",
+    "VGNKennung": "1456",
     "Platforms": {
       "SCHEDE:1": {
         "GlobalID": "de:09564:1456:0:1",
@@ -9974,6 +10323,7 @@
   },
   "1457": {
     "VAGKennung": "ZABM",
+    "VGNKennung": "1457",
     "Platforms": {
       "ZABM:1": {
         "GlobalID": "de:09564:1457:0:1",
@@ -10014,6 +10364,7 @@
   },
   "1458": {
     "VAGKennung": "BING",
+    "VGNKennung": "1458",
     "Platforms": {
       "BING:1": {
         "GlobalID": "de:09564:1458:0:1",
@@ -10040,6 +10391,7 @@
   },
   "1459": {
     "VAGKennung": "FALLRO",
+    "VGNKennung": "1459",
     "Platforms": {
       "FALLRO:1": {
         "GlobalID": "de:09564:1459:0:1",
@@ -10066,6 +10418,7 @@
   },
   "1460": {
     "VAGKennung": "ECKENS",
+    "VGNKennung": "1460",
     "Platforms": {
       "ECKENS:1": {
         "GlobalID": "de:09564:1460:0:1",
@@ -10085,6 +10438,7 @@
   },
   "1462": {
     "VAGKennung": "BEGURI",
+    "VGNKennung": "1462",
     "Platforms": {
       "BEGURI:1": {
         "GlobalID": "de:09564:1462:0:1",
@@ -10104,6 +10458,7 @@
   },
   "1463": {
     "VAGKennung": "ZIEGEN",
+    "VGNKennung": "1463",
     "Platforms": {
       "ZIEGEN:1": {
         "GlobalID": "de:09564:1463:0:1",
@@ -10123,6 +10478,7 @@
   },
   "1464": {
     "VAGKennung": "WALDST",
+    "VGNKennung": "1464",
     "Platforms": {
       "WALDST:1": {
         "GlobalID": "de:09564:1464:0:1",
@@ -10142,6 +10498,7 @@
   },
   "1465": {
     "VAGKennung": "PRUTZS",
+    "VGNKennung": "1465",
     "Platforms": {
       "PRUTZS:1": {
         "GlobalID": "de:09564:1465:0:1",
@@ -10161,6 +10518,7 @@
   },
   "1466": {
     "VAGKennung": "HUETTE",
+    "VGNKennung": "1466",
     "Platforms": {
       "HUETTE:1": {
         "GlobalID": "de:09564:1466:0:1",
@@ -10180,6 +10538,7 @@
   },
   "1467": {
     "VAGKennung": "HAPPUR",
+    "VGNKennung": "1467",
     "Platforms": {
       "HAPPUR:1": {
         "GlobalID": "de:09564:1467:0:1",
@@ -10199,6 +10558,7 @@
   },
   "1468": {
     "VAGKennung": "GRUENR",
+    "VGNKennung": "1468",
     "Platforms": {
       "GRUENR:1": {
         "GlobalID": "de:09564:1468:0:1",
@@ -10218,6 +10578,7 @@
   },
   "1469": {
     "VAGKennung": "BRAN",
+    "VGNKennung": "1469",
     "Platforms": {
       "BRAN:1": {
         "GlobalID": "de:09564:1469:0:1",
@@ -10237,6 +10598,7 @@
   },
   "1470": {
     "VAGKennung": "HAMMER",
+    "VGNKennung": "1470",
     "Platforms": {
       "HAMMER:1": {
         "GlobalID": "de:09564:1470:0:1",
@@ -10256,6 +10618,7 @@
   },
   "1471": {
     "VAGKennung": "HENF",
+    "VGNKennung": "1471",
     "Platforms": {
       "HENF:2": {
         "GlobalID": "de:09564:1471:0:2",
@@ -10268,6 +10631,7 @@
   },
   "1472": {
     "VAGKennung": "HENF-W",
+    "VGNKennung": "1472",
     "Platforms": {
       "HENF-W:1": {
         "GlobalID": "de:09564:1472:0:1",
@@ -10280,6 +10644,7 @@
   },
   "1473": {
     "VAGKennung": "FREILA",
+    "VGNKennung": "1473",
     "Platforms": {
       "FREILA:1": {
         "GlobalID": "de:09564:1473:0:1",
@@ -10299,6 +10664,7 @@
   },
   "1502": {
     "VAGKennung": "",
+    "VGNKennung": "1502",
     "Platforms": {
       "MESSE:41": {
         "GlobalID": "de:09564:1502:3:41",
@@ -10325,6 +10691,7 @@
   },
   "1503": {
     "VAGKennung": "LWNO",
+    "VGNKennung": "1503",
     "Platforms": {
       "LWNO:6": {
         "GlobalID": "de:09564:1503:16:6",
@@ -10358,6 +10725,7 @@
   },
   "1504": {
     "VAGKennung": "SCHARF",
+    "VGNKennung": "1504",
     "Platforms": {
       "SCHARF:6": {
         "GlobalID": "de:09564:1504:3:6",
@@ -10391,6 +10759,7 @@
   },
   "1506": {
     "VAGKennung": "GEMEIN",
+    "VGNKennung": "1506",
     "Platforms": {
       "GEMEIN:1": {
         "GlobalID": "de:09564:1506:3:3",
@@ -10424,6 +10793,7 @@
   },
   "1507": {
     "VAGKennung": "LWSU",
+    "VGNKennung": "1507",
     "Platforms": {
       "LWSU:6": {
         "GlobalID": "de:09564:1507:3:6",
@@ -10464,6 +10834,7 @@
   },
   "1510": {
     "VAGKennung": "DUTZ-B",
+    "VGNKennung": "1510",
     "Platforms": {
       "DUTZ-B:1": {
         "GlobalID": "de:09564:1510:3:1",
@@ -10497,6 +10868,7 @@
   },
   "1549": {
     "VAGKennung": "ZOL-G",
+    "VGNKennung": "1549",
     "Platforms": {
       "ZOL-G:1": {
         "GlobalID": "de:09564:1549:0:1",
@@ -10516,6 +10888,7 @@
   },
   "1550": {
     "VAGKennung": "BAUERN",
+    "VGNKennung": "1550",
     "Platforms": {
       "BAUERN:6": {
         "GlobalID": "de:09564:1550:3:6",
@@ -10549,6 +10922,7 @@
   },
   "1551": {
     "VAGKennung": "NEUSEL",
+    "VGNKennung": "1551",
     "Platforms": {
       "NEUSEL:1": {
         "GlobalID": "de:09564:1551:0:1",
@@ -10568,6 +10942,7 @@
   },
   "1552": {
     "VAGKennung": "NOETTE",
+    "VGNKennung": "1552",
     "Platforms": {
       "NOETTE:1": {
         "GlobalID": "de:09564:1552:0:1",
@@ -10587,6 +10962,7 @@
   },
   "1553": {
     "VAGKennung": "NEULAN",
+    "VGNKennung": "1553",
     "Platforms": {
       "NEULAN:1": {
         "GlobalID": "de:09564:1553:0:1",
@@ -10613,6 +10989,7 @@
   },
   "1554": {
     "VAGKennung": "WERKVO",
+    "VGNKennung": "1554",
     "Platforms": {
       "WERKVO:1": {
         "GlobalID": "de:09564:1554:0:1",
@@ -10632,6 +11009,7 @@
   },
   "1555": {
     "VAGKennung": "AM-ZOL",
+    "VGNKennung": "1555",
     "Platforms": {
       "AM-ZOL:1": {
         "GlobalID": "de:09564:1555:0:1",
@@ -10651,6 +11029,7 @@
   },
   "1557": {
     "VAGKennung": "GLH",
+    "VGNKennung": "1557",
     "Platforms": {
       "GLH:1": {
         "GlobalID": "de:09564:1557:0:1",
@@ -10663,6 +11042,7 @@
   },
   "1558": {
     "VAGKennung": "IMBUSC",
+    "VGNKennung": "1558",
     "Platforms": {
       "IMBUSC:1": {
         "GlobalID": "de:09564:1558:0:1",
@@ -10682,6 +11062,7 @@
   },
   "1559": {
     "VAGKennung": "G-L-LI",
+    "VGNKennung": "1559",
     "Platforms": {
       "G-L-LI:1": {
         "GlobalID": "de:09564:1559:0:1",
@@ -10701,6 +11082,7 @@
   },
   "1560": {
     "VAGKennung": "G-LIEG",
+    "VGNKennung": "1560",
     "Platforms": {
       "G-LIEG:1": {
         "GlobalID": "de:09564:1560:0:1",
@@ -10734,6 +11116,7 @@
   },
   "1561": {
     "VAGKennung": "MOORFE",
+    "VGNKennung": "1561",
     "Platforms": {
       "MOORFE:1": {
         "GlobalID": "de:09564:1561:0:1",
@@ -10753,6 +11136,7 @@
   },
   "1562": {
     "VAGKennung": "G-L-GL",
+    "VGNKennung": "1562",
     "Platforms": {
       "G-L-GL:1": {
         "GlobalID": "de:09564:1562:0:1",
@@ -10772,6 +11156,7 @@
   },
   "1563": {
     "VAGKennung": "JAUERS",
+    "VGNKennung": "1563",
     "Platforms": {
       "JAUERS:1": {
         "GlobalID": "de:09564:1563:0:1",
@@ -10791,6 +11176,7 @@
   },
   "1564": {
     "VAGKennung": "HIRSCH",
+    "VGNKennung": "1564",
     "Platforms": {
       "HIRSCH:1": {
         "GlobalID": "de:09564:1564:0:1",
@@ -10810,6 +11196,7 @@
   },
   "1565": {
     "VAGKennung": "LWBA",
+    "VGNKennung": "1565",
     "Platforms": {
       "LWBA:1": {
         "GlobalID": "de:09564:1565:0:1",
@@ -10857,6 +11244,7 @@
   },
   "1566": {
     "VAGKennung": "GR-STR",
+    "VGNKennung": "1566",
     "Platforms": {
       "GR-STR:1": {
         "GlobalID": "de:09564:1566:0:1",
@@ -10876,6 +11264,7 @@
   },
   "1567": {
     "VAGKennung": "LWMI",
+    "VGNKennung": "1567",
     "Platforms": {
       "LWMI:6": {
         "GlobalID": "de:09564:1567:3:6",
@@ -10998,6 +11387,7 @@
   },
   "1568": {
     "VAGKennung": "KAFKAS",
+    "VGNKennung": "1568",
     "Platforms": {
       "KAFKAS:1": {
         "GlobalID": "de:09564:1568:0:1",
@@ -11031,6 +11421,7 @@
   },
   "1569": {
     "VAGKennung": "ZUCKMA",
+    "VGNKennung": "1569",
     "Platforms": {
       "ZUCKMA:1": {
         "GlobalID": "de:09564:1569:0:1",
@@ -11050,6 +11441,7 @@
   },
   "1570": {
     "VAGKennung": "ANN-KO",
+    "VGNKennung": "1570",
     "Platforms": {
       "ANN-KO:1": {
         "GlobalID": "de:09564:1570:0:1",
@@ -11069,6 +11461,7 @@
   },
   "1571": {
     "VAGKennung": "TUCHOL",
+    "VGNKennung": "1571",
     "Platforms": {
       "TUCHOL:1": {
         "GlobalID": "de:09564:1571:0:1",
@@ -11102,6 +11495,7 @@
   },
   "1572": {
     "VAGKennung": "H-FALL",
+    "VGNKennung": "1572",
     "Platforms": {
       "H-FALL:1": {
         "GlobalID": "de:09564:1572:0:1",
@@ -11121,6 +11515,7 @@
   },
   "1574": {
     "VAGKennung": "MGRUND",
+    "VGNKennung": "1574",
     "Platforms": {
       "MGRUND:1": {
         "GlobalID": "de:09564:1574:0:1",
@@ -11140,6 +11535,7 @@
   },
   "1575": {
     "VAGKennung": "BEUTHE",
+    "VGNKennung": "1575",
     "Platforms": {
       "BEUTHE:1": {
         "GlobalID": "de:09564:1575:0:1",
@@ -11159,6 +11555,7 @@
   },
   "1577": {
     "VAGKennung": "POSTST",
+    "VGNKennung": "1577",
     "Platforms": {
       "POSTST:1": {
         "GlobalID": "de:09564:1577:0:1",
@@ -11178,6 +11575,7 @@
   },
   "1578": {
     "VAGKennung": "TH-MAN",
+    "VGNKennung": "1578",
     "Platforms": {
       "TH-MAN:1": {
         "GlobalID": "de:09564:1578:0:1",
@@ -11197,6 +11595,7 @@
   },
   "1610": {
     "VAGKennung": "FISCHB",
+    "VGNKennung": "1610",
     "Platforms": {
       "FISCHB:1": {
         "GlobalID": "de:09564:1610:3:1",
@@ -11216,6 +11615,7 @@
   },
   "1612": {
     "VAGKennung": "FISCHW",
+    "VGNKennung": "1612",
     "Platforms": {
       "FISCHW:1": {
         "GlobalID": "de:09564:1612:0:1",
@@ -11228,6 +11628,7 @@
   },
   "1647": {
     "VAGKennung": "SP-FIS",
+    "VGNKennung": "1647",
     "Platforms": {
       "SP-FIS:1": {
         "GlobalID": "de:09564:1647:0:1",
@@ -11247,6 +11648,7 @@
   },
   "1649": {
     "VAGKennung": "ALTENF",
+    "VGNKennung": "1649",
     "Platforms": {
       "ALTENF:1": {
         "GlobalID": "de:09564:1649:0:1",
@@ -11287,6 +11689,7 @@
   },
   "1650": {
     "VAGKennung": "FLAC",
+    "VGNKennung": "1650",
     "Platforms": {
       "FLAC:1": {
         "GlobalID": "de:09564:1650:0:1",
@@ -11299,6 +11702,7 @@
   },
   "1651": {
     "VAGKennung": "AM-SCH",
+    "VGNKennung": "1651",
     "Platforms": {
       "AM-SCH:1": {
         "GlobalID": "de:09564:1651:0:1",
@@ -11318,6 +11722,7 @@
   },
   "1652": {
     "VAGKennung": "BAER-B",
+    "VGNKennung": "1652",
     "Platforms": {
       "BAER-B:1": {
         "GlobalID": "de:09564:1652:0:1",
@@ -11337,6 +11742,7 @@
   },
   "1653": {
     "VAGKennung": "AM-BAU",
+    "VGNKennung": "1653",
     "Platforms": {
       "AM-BAU:1": {
         "GlobalID": "de:09564:1653:0:1",
@@ -11356,6 +11762,7 @@
   },
   "1654": {
     "VAGKennung": "PELLER",
+    "VGNKennung": "1654",
     "Platforms": {
       "PELLER:1": {
         "GlobalID": "de:09564:1654:0:1",
@@ -11382,6 +11789,7 @@
   },
   "1655": {
     "VAGKennung": "HOLZ",
+    "VGNKennung": "1655",
     "Platforms": {
       "HOLZ:1": {
         "GlobalID": "de:09564:1655:0:1",
@@ -11408,6 +11816,7 @@
   },
   "1656": {
     "VAGKennung": "HUTBER",
+    "VGNKennung": "1656",
     "Platforms": {
       "HUTBER:1": {
         "GlobalID": "de:09564:1656:0:1",
@@ -11427,6 +11836,7 @@
   },
   "1657": {
     "VAGKennung": "ZSCHUE",
+    "VGNKennung": "1657",
     "Platforms": {
       "ZSCHUE:1": {
         "GlobalID": "de:09564:1657:0:1",
@@ -11460,6 +11870,7 @@
   },
   "1658": {
     "VAGKennung": "ANZENG",
+    "VGNKennung": "1658",
     "Platforms": {
       "ANZENG:1": {
         "GlobalID": "de:09564:1658:0:1",
@@ -11479,6 +11890,7 @@
   },
   "1659": {
     "VAGKennung": "AM-HAR",
+    "VGNKennung": "1659",
     "Platforms": {
       "AM-HAR:1": {
         "GlobalID": "de:09564:1659:0:1",
@@ -11498,6 +11910,7 @@
   },
   "1660": {
     "VAGKennung": "RDTSTR",
+    "VGNKennung": "1660",
     "Platforms": {
       "RDTSTR:1": {
         "GlobalID": "de:09564:1660:0:1",
@@ -11517,6 +11930,7 @@
   },
   "1661": {
     "VAGKennung": "LOE",
+    "VGNKennung": "1661",
     "Platforms": {
       "LOE:1": {
         "GlobalID": "de:09564:1661:0:1",
@@ -11567,6 +11981,7 @@
   },
   "1662": {
     "VAGKennung": "OELSER",
+    "VGNKennung": "1662",
     "Platforms": {
       "OELSER:1": {
         "GlobalID": "de:09564:1662:0:1",
@@ -11586,6 +12001,7 @@
   },
   "1663": {
     "VAGKennung": "STREUB",
+    "VGNKennung": "1663",
     "Platforms": {
       "STREUB:1": {
         "GlobalID": "de:09564:1663:0:1",
@@ -11605,6 +12021,7 @@
   },
   "1664": {
     "VAGKennung": "MOOREN",
+    "VGNKennung": "1664",
     "Platforms": {
       "MOOREN:1": {
         "GlobalID": "de:09564:1664:0:1",
@@ -11624,6 +12041,7 @@
   },
   "1665": {
     "VAGKennung": "ALFH",
+    "VGNKennung": "1665",
     "Platforms": {
       "ALFH:1": {
         "GlobalID": "de:09564:1665:0:1",
@@ -11650,6 +12068,7 @@
   },
   "1666": {
     "VAGKennung": "WELFEN",
+    "VGNKennung": "1666",
     "Platforms": {
       "WELFEN:1": {
         "GlobalID": "de:09564:1666:0:1",
@@ -11669,6 +12088,7 @@
   },
   "1668": {
     "VAGKennung": "VONSOD",
+    "VGNKennung": "1668",
     "Platforms": {
       "VONSOD:1": {
         "GlobalID": "de:09564:1668:0:1",
@@ -11681,6 +12101,7 @@
   },
   "1669": {
     "VAGKennung": "FREYST",
+    "VGNKennung": "1669",
     "Platforms": {
       "FREYST:1": {
         "GlobalID": "de:09564:1669:0:1",
@@ -11714,6 +12135,7 @@
   },
   "1670": {
     "VAGKennung": "SPROTT",
+    "VGNKennung": "1670",
     "Platforms": {
       "SPROTT:1": {
         "GlobalID": "de:09564:1670:0:1",
@@ -11733,6 +12155,7 @@
   },
   "1671": {
     "VAGKennung": "SAGANE",
+    "VGNKennung": "1671",
     "Platforms": {
       "SAGANE:1": {
         "GlobalID": "de:09564:1671:0:1",
@@ -11752,6 +12175,7 @@
   },
   "1672": {
     "VAGKennung": "BRIEGE",
+    "VGNKennung": "1672",
     "Platforms": {
       "BRIEGE:1": {
         "GlobalID": "de:09564:1672:0:1",
@@ -11778,6 +12202,7 @@
   },
   "1673": {
     "VAGKennung": "BR-BER",
+    "VGNKennung": "1673",
     "Platforms": {
       "BR-BER:1": {
         "GlobalID": "de:09564:1673:0:1",
@@ -11797,6 +12222,7 @@
   },
   "1674": {
     "VAGKennung": "BRUN-M",
+    "VGNKennung": "1674",
     "Platforms": {
       "BRUN-M:1": {
         "GlobalID": "de:09564:1674:0:1",
@@ -11816,6 +12242,7 @@
   },
   "1675": {
     "VAGKennung": "BRUN-O",
+    "VGNKennung": "1675",
     "Platforms": {
       "BRUN-O:1": {
         "GlobalID": "de:09564:1675:0:1",
@@ -11835,6 +12262,7 @@
   },
   "1676": {
     "VAGKennung": "BR-S",
+    "VGNKennung": "1676",
     "Platforms": {
       "BR-S:1": {
         "GlobalID": "de:09564:1676:0:1",
@@ -11847,6 +12275,7 @@
   },
   "1677": {
     "VAGKennung": "BRUNNE",
+    "VGNKennung": "1677",
     "Platforms": {
       "BRUNNE:1": {
         "GlobalID": "de:09564:1677:0:1",
@@ -11866,6 +12295,7 @@
   },
   "1678": {
     "VAGKennung": "ATOWER",
+    "VGNKennung": "1678",
     "Platforms": {
       "ATOWER:1": {
         "GlobalID": "de:09564:1678:0:1",
@@ -11885,6 +12315,7 @@
   },
   "1679": {
     "VAGKennung": "BIRNTH",
+    "VGNKennung": "1679",
     "Platforms": {
       "BIRNTH:1": {
         "GlobalID": "de:09564:1679:0:1",
@@ -11904,6 +12335,7 @@
   },
   "1680": {
     "VAGKennung": "BIRN-W",
+    "VGNKennung": "1680",
     "Platforms": {
       "BIRN-W:1": {
         "GlobalID": "de:09564:1680:0:1",
@@ -11923,6 +12355,7 @@
   },
   "1686": {
     "VAGKennung": "T-Dach",
+    "VGNKennung": "1686",
     "Platforms": {
       "T-Dach:1": {
         "GlobalID": "de:09564:1686:0:1",
@@ -11935,6 +12368,7 @@
   },
   "1688": {
     "VAGKennung": "FLACHM",
+    "VGNKennung": "1688",
     "Platforms": {
       "FLACHM:1": {
         "GlobalID": "de:09564:1688:0:1",
@@ -11947,6 +12381,7 @@
   },
   "1689": {
     "VAGKennung": "SÜDALL",
+    "VGNKennung": "1689",
     "Platforms": {
       "SÜDALL:1": {
         "GlobalID": "de:09564:1689:0:1",
@@ -11959,6 +12394,7 @@
   },
   "1701": {
     "VAGKennung": "HAB",
+    "VGNKennung": "1701",
     "Platforms": {
       "HAB:42": {
         "GlobalID": "de:09564:1701:13:42",
@@ -11985,6 +12421,7 @@
   },
   "1730": {
     "VAGKennung": "GIB",
+    "VGNKennung": "1730",
     "Platforms": {
       "GIB:1": {
         "GlobalID": "de:09564:1730:13:1",
@@ -12018,6 +12455,7 @@
   },
   "1731": {
     "VAGKennung": "WORZ",
+    "VGNKennung": "1731",
     "Platforms": {
       "WORZ:1": {
         "GlobalID": "de:09564:1731:13:1",
@@ -12051,6 +12489,7 @@
   },
   "1740": {
     "VAGKennung": "WOFEUE",
+    "VGNKennung": "1740",
     "Platforms": {
       "WOFEUE:1": {
         "GlobalID": "de:09564:1740:0:1",
@@ -12077,6 +12516,7 @@
   },
   "1750": {
     "VAGKennung": "HARNIS",
+    "VGNKennung": "1750",
     "Platforms": {
       "HARNIS:1": {
         "GlobalID": "de:09564:1750:0:1",
@@ -12110,6 +12550,7 @@
   },
   "1751": {
     "VAGKennung": "KORN-S",
+    "VGNKennung": "1751",
     "Platforms": {
       "KORN-S:1": {
         "GlobalID": "de:09564:1751:0:1",
@@ -12129,6 +12570,7 @@
   },
   "1752": {
     "VAGKennung": "SCHWAN",
+    "VGNKennung": "1752",
     "Platforms": {
       "SCHWAN:1": {
         "GlobalID": "de:09564:1752:0:1",
@@ -12148,6 +12590,7 @@
   },
   "1753": {
     "VAGKennung": "HERDOS",
+    "VGNKennung": "1753",
     "Platforms": {
       "HERDOS:1": {
         "GlobalID": "de:09564:1753:0:1",
@@ -12167,6 +12610,7 @@
   },
   "1755": {
     "VAGKennung": "FALK-H",
+    "VGNKennung": "1755",
     "Platforms": {
       "FALK-H:1": {
         "GlobalID": "de:09564:1755:0:1",
@@ -12193,6 +12637,7 @@
   },
   "1756": {
     "VAGKennung": "SAAR",
+    "VGNKennung": "1756",
     "Platforms": {
       "SAAR:1": {
         "GlobalID": "de:09564:1756:13:1",
@@ -12240,6 +12685,7 @@
   },
   "1757": {
     "VAGKennung": "SUEDFR",
+    "VGNKennung": "1757",
     "Platforms": {
       "SUEDFR:1": {
         "GlobalID": "de:09564:1757:13:1",
@@ -12273,6 +12719,7 @@
   },
   "1758": {
     "VAGKennung": "FINK",
+    "VGNKennung": "1758",
     "Platforms": {
       "FINK:1": {
         "GlobalID": "de:09564:1758:13:1",
@@ -12334,6 +12781,7 @@
   },
   "1759": {
     "VAGKennung": "AM-KAN",
+    "VGNKennung": "1759",
     "Platforms": {
       "AM-KAN:1": {
         "GlobalID": "de:09564:1759:0:1",
@@ -12353,6 +12801,7 @@
   },
   "1760": {
     "VAGKennung": "ROTTER",
+    "VGNKennung": "1760",
     "Platforms": {
       "ROTTER:1": {
         "GlobalID": "de:09564:1760:0:1",
@@ -12372,6 +12821,7 @@
   },
   "1761": {
     "VAGKennung": "BREMER",
+    "VGNKennung": "1761",
     "Platforms": {
       "BREMER:1": {
         "GlobalID": "de:09564:1761:0:1",
@@ -12391,6 +12841,7 @@
   },
   "1762": {
     "VAGKennung": "LECHST",
+    "VGNKennung": "1762",
     "Platforms": {
       "LECHST:1": {
         "GlobalID": "de:09564:1762:0:1",
@@ -12410,6 +12861,7 @@
   },
   "1763": {
     "VAGKennung": "HAMBUR",
+    "VGNKennung": "1763",
     "Platforms": {
       "HAMBUR:1": {
         "GlobalID": "de:09564:1763:0:1",
@@ -12443,6 +12895,7 @@
   },
   "1764": {
     "VAGKennung": "AM-RAN",
+    "VGNKennung": "1764",
     "Platforms": {
       "AM-RAN:1": {
         "GlobalID": "de:09564:1764:13:1",
@@ -12476,6 +12929,7 @@
   },
   "1765": {
     "VAGKennung": "TRA",
+    "VGNKennung": "1765",
     "Platforms": {
       "TRA:1": {
         "GlobalID": "de:09564:1765:13:1",
@@ -12516,6 +12970,7 @@
   },
   "1766": {
     "VAGKennung": "MINERV",
+    "VGNKennung": "1766",
     "Platforms": {
       "MINERV:1": {
         "GlobalID": "de:09564:1766:0:1",
@@ -12535,6 +12990,7 @@
   },
   "1767": {
     "VAGKennung": "BREM-W",
+    "VGNKennung": "1767",
     "Platforms": {
       "BREM-W:1": {
         "GlobalID": "de:09564:1767:0:1",
@@ -12547,6 +13003,7 @@
   },
   "1768": {
     "VAGKennung": "HEISTE",
+    "VGNKennung": "1768",
     "Platforms": {
       "HEISTE:1": {
         "GlobalID": "de:09564:1768:0:1",
@@ -12566,6 +13023,7 @@
   },
   "1769": {
     "VAGKennung": "SPORTS",
+    "VGNKennung": "1769",
     "Platforms": {
       "SPORTS:1": {
         "GlobalID": "de:09564:1769:0:1",
@@ -12585,6 +13043,7 @@
   },
   "1770": {
     "VAGKennung": "A-D-MA",
+    "VGNKennung": "1770",
     "Platforms": {
       "A-D-MA:1": {
         "GlobalID": "de:09564:1770:0:1",
@@ -12597,6 +13056,7 @@
   },
   "1771": {
     "VAGKennung": "ALPENR",
+    "VGNKennung": "1771",
     "Platforms": {
       "ALPENR:1": {
         "GlobalID": "de:09564:1771:0:1",
@@ -12609,6 +13069,7 @@
   },
   "1772": {
     "VAGKennung": "WACH",
+    "VGNKennung": "1772",
     "Platforms": {
       "WACH:1": {
         "GlobalID": "de:09564:1772:3:1",
@@ -12628,6 +13089,7 @@
   },
   "1773": {
     "VAGKennung": "AKELEI",
+    "VGNKennung": "1773",
     "Platforms": {
       "AKELEI:1": {
         "GlobalID": "de:09564:1773:0:1",
@@ -12640,6 +13102,7 @@
   },
   "1774": {
     "VAGKennung": "O-MILL",
+    "VGNKennung": "1774",
     "Platforms": {
       "O-MILL:1": {
         "GlobalID": "de:09564:1774:0:1",
@@ -12659,6 +13122,7 @@
   },
   "1777": {
     "VAGKennung": "MUELHE",
+    "VGNKennung": "1777",
     "Platforms": {
       "MUELHE:1": {
         "GlobalID": "de:09564:1777:0:1",
@@ -12678,6 +13142,7 @@
   },
   "1781": {
     "VAGKennung": "KOBLEN",
+    "VGNKennung": "1781",
     "Platforms": {
       "KOBLEN:1": {
         "GlobalID": "de:09564:1781:0:1",
@@ -12697,6 +13162,7 @@
   },
   "1783": {
     "VAGKennung": "PRESSB",
+    "VGNKennung": "1783",
     "Platforms": {
       "PRESSB:1": {
         "GlobalID": "de:09564:1783:0:1",
@@ -12716,6 +13182,7 @@
   },
   "1786": {
     "VAGKennung": "ZOLLAM",
+    "VGNKennung": "1786",
     "Platforms": {
       "ZOLLAM:1": {
         "GlobalID": "de:09564:1786:0:1",
@@ -12735,6 +13202,7 @@
   },
   "1787": {
     "VAGKennung": "RHEINS",
+    "VGNKennung": "1787",
     "Platforms": {
       "RHEINS:1": {
         "GlobalID": "de:09564:1787:0:1",
@@ -12754,6 +13222,7 @@
   },
   "1788": {
     "VAGKennung": "BOCHUM",
+    "VGNKennung": "1788",
     "Platforms": {
       "BOCHUM:1": {
         "GlobalID": "de:09564:1788:0:1",
@@ -12773,6 +13242,7 @@
   },
   "1789": {
     "VAGKennung": "DONAUS",
+    "VGNKennung": "1789",
     "Platforms": {
       "DONAUS:1": {
         "GlobalID": "de:09564:1789:0:1",
@@ -12792,6 +13262,7 @@
   },
   "1790": {
     "VAGKennung": "MAI-AC",
+    "VGNKennung": "1790",
     "Platforms": {
       "MAI-AC:1": {
         "GlobalID": "de:09564:1790:0:1",
@@ -12811,6 +13282,7 @@
   },
   "1791": {
     "VAGKennung": "LINZER",
+    "VGNKennung": "1791",
     "Platforms": {
       "LINZER:1": {
         "GlobalID": "de:09564:1791:0:1",
@@ -12830,6 +13302,7 @@
   },
   "1792": {
     "VAGKennung": "DUISBU",
+    "VGNKennung": "1792",
     "Platforms": {
       "DUISBU:1": {
         "GlobalID": "de:09564:1792:0:1",
@@ -12849,6 +13322,7 @@
   },
   "1793": {
     "VAGKennung": "TRIESN",
+    "VGNKennung": "1793",
     "Platforms": {
       "TRIESN:1": {
         "GlobalID": "de:09564:1793:0:1",
@@ -12875,6 +13349,7 @@
   },
   "1794": {
     "VAGKennung": "TRIESS",
+    "VGNKennung": "1794",
     "Platforms": {
       "TRIESS:1": {
         "GlobalID": "de:09564:1794:0:1",
@@ -12894,6 +13369,7 @@
   },
   "1795": {
     "VAGKennung": "WERTAC",
+    "VGNKennung": "1795",
     "Platforms": {
       "WERTAC:1": {
         "GlobalID": "de:09564:1795:0:1",
@@ -12913,6 +13389,7 @@
   },
   "1796": {
     "VAGKennung": "KOPER",
+    "VGNKennung": "1796",
     "Platforms": {
       "KOPER:1": {
         "GlobalID": "de:09564:1796:0:1",
@@ -12932,6 +13409,7 @@
   },
   "1810": {
     "VAGKennung": "KATBHN",
+    "VGNKennung": "1810",
     "Platforms": {
       "KATBHN:1": {
         "GlobalID": "de:09564:1810:13:1",
@@ -12958,6 +13436,7 @@
   },
   "1813": {
     "VAGKennung": "KATSPL",
+    "VGNKennung": "1813",
     "Platforms": {
       "KATSPL:1": {
         "GlobalID": "de:09564:1813:0:1",
@@ -12984,6 +13463,7 @@
   },
   "1849": {
     "VAGKennung": "KORN-N",
+    "VGNKennung": "1849",
     "Platforms": {
       "KORN-N:1": {
         "GlobalID": "de:09564:1849:0:1",
@@ -13003,6 +13483,7 @@
   },
   "1850": {
     "VAGKennung": "VORJUR",
+    "VGNKennung": "1850",
     "Platforms": {
       "VORJUR:1": {
         "GlobalID": "de:09564:1850:0:1",
@@ -13022,6 +13503,7 @@
   },
   "1851": {
     "VAGKennung": "KELLER",
+    "VGNKennung": "1851",
     "Platforms": {
       "KELLER:1": {
         "GlobalID": "de:09564:1851:0:1",
@@ -13041,6 +13523,7 @@
   },
   "1852": {
     "VAGKennung": "APPELS",
+    "VGNKennung": "1852",
     "Platforms": {
       "APPELS:1": {
         "GlobalID": "de:09564:1852:0:1",
@@ -13060,6 +13543,7 @@
   },
   "1853": {
     "VAGKennung": "LAUSIT",
+    "VGNKennung": "1853",
     "Platforms": {
       "LAUSIT:1": {
         "GlobalID": "de:09564:1853:0:1",
@@ -13079,6 +13563,7 @@
   },
   "1854": {
     "VAGKennung": "KATZ-H",
+    "VGNKennung": "1854",
     "Platforms": {
       "KATZ-H:1": {
         "GlobalID": "de:09564:1854:0:1",
@@ -13098,6 +13583,7 @@
   },
   "1855": {
     "VAGKennung": "KATZ-M",
+    "VGNKennung": "1855",
     "Platforms": {
       "KATZ-M:1": {
         "GlobalID": "de:09564:1855:0:1",
@@ -13117,6 +13603,7 @@
   },
   "1856": {
     "VAGKennung": "HUGOWO",
+    "VGNKennung": "1856",
     "Platforms": {
       "HUGOWO:1": {
         "GlobalID": "de:09564:1856:0:1",
@@ -13157,6 +13644,7 @@
   },
   "1857": {
     "VAGKennung": "STRW",
+    "VGNKennung": "1857",
     "Platforms": {
       "STRW:2": {
         "GlobalID": "de:09564:1857:13:2",
@@ -13176,6 +13664,7 @@
   },
   "1858": {
     "VAGKennung": "KATZ-S",
+    "VGNKennung": "1858",
     "Platforms": {
       "KATZ-S:1": {
         "GlobalID": "de:09564:1858:0:1",
@@ -13216,6 +13705,7 @@
   },
   "1859": {
     "VAGKennung": "GREUTH",
+    "VGNKennung": "1859",
     "Platforms": {
       "GREUTH:1": {
         "GlobalID": "de:09564:1859:0:1",
@@ -13235,6 +13725,7 @@
   },
   "1860": {
     "VAGKennung": "KOSL",
+    "VGNKennung": "1860",
     "Platforms": {
       "KOSL:1": {
         "GlobalID": "de:09564:1860:0:1",
@@ -13252,6 +13743,7 @@
   },
   "1861": {
     "VAGKennung": "KOSU",
+    "VGNKennung": "1861",
     "Platforms": {
       "KOSU:1": {
         "GlobalID": "de:09564:1861:0:1",
@@ -13285,6 +13777,7 @@
   },
   "1862": {
     "VAGKennung": "KORN-M",
+    "VGNKennung": "1862",
     "Platforms": {
       "KORN-M:1": {
         "GlobalID": "de:09564:1862:0:1",
@@ -13311,6 +13804,7 @@
   },
   "1863": {
     "VAGKennung": "SCHENK",
+    "VGNKennung": "1863",
     "Platforms": {
       "SCHENK:1": {
         "GlobalID": "de:09564:1863:0:1",
@@ -13344,6 +13838,7 @@
   },
   "1864": {
     "VAGKennung": "WOR-HA",
+    "VGNKennung": "1864",
     "Platforms": {
       "WOR-HA:1": {
         "GlobalID": "de:09564:1864:0:1",
@@ -13363,6 +13858,7 @@
   },
   "1865": {
     "VAGKennung": "BAYLIN",
+    "VGNKennung": "1865",
     "Platforms": {
       "BAYLIN:1": {
         "GlobalID": "de:09564:1865:0:1",
@@ -13382,6 +13878,7 @@
   },
   "1866": {
     "VAGKennung": "HABERM",
+    "VGNKennung": "1866",
     "Platforms": {
       "HABERM:1": {
         "GlobalID": "de:09564:1866:0:1",
@@ -13401,6 +13898,7 @@
   },
   "1867": {
     "VAGKennung": "WOR-SC",
+    "VGNKennung": "1867",
     "Platforms": {
       "WOR-SC:1": {
         "GlobalID": "de:09564:1867:0:1",
@@ -13420,6 +13918,7 @@
   },
   "1868": {
     "VAGKennung": "HERPER",
+    "VGNKennung": "1868",
     "Platforms": {
       "HERPER:1": {
         "GlobalID": "de:09564:1868:0:1",
@@ -13439,6 +13938,7 @@
   },
   "1869": {
     "VAGKennung": "MEMMIN",
+    "VGNKennung": "1869",
     "Platforms": {
       "MEMMIN:1": {
         "GlobalID": "de:09564:1869:0:1",
@@ -13458,6 +13958,7 @@
   },
   "1870": {
     "VAGKennung": "GAULNH",
+    "VGNKennung": "1870",
     "Platforms": {
       "GAULNH:1": {
         "GlobalID": "de:09564:1870:0:1",
@@ -13477,6 +13978,7 @@
   },
   "1871": {
     "VAGKennung": "ROTBUE",
+    "VGNKennung": "1871",
     "Platforms": {
       "ROTBUE:1": {
         "GlobalID": "de:09564:1871:0:1",
@@ -13496,6 +13998,7 @@
   },
   "1872": {
     "VAGKennung": "A-D-BE",
+    "VGNKennung": "1872",
     "Platforms": {
       "A-D-BE:1": {
         "GlobalID": "de:09564:1872:0:1",
@@ -13515,6 +14018,7 @@
   },
   "1873": {
     "VAGKennung": "SI-FRE",
+    "VGNKennung": "1873",
     "Platforms": {
       "SI-FRE:1": {
         "GlobalID": "de:09564:1873:0:1",
@@ -13534,6 +14038,7 @@
   },
   "1874": {
     "VAGKennung": "STOCKW",
+    "VGNKennung": "1874",
     "Platforms": {
       "STOCKW:1": {
         "GlobalID": "de:09564:1874:0:1",
@@ -13553,6 +14058,7 @@
   },
   "1875": {
     "VAGKennung": "WEIH-H",
+    "VGNKennung": "1875",
     "Platforms": {
       "WEIH-H:1": {
         "GlobalID": "de:09564:1875:0:1",
@@ -13572,6 +14078,7 @@
   },
   "1876": {
     "VAGKennung": "PROBST",
+    "VGNKennung": "1876",
     "Platforms": {
       "PROBST:1": {
         "GlobalID": "de:09564:1876:0:1",
@@ -13605,6 +14112,7 @@
   },
   "1877": {
     "VAGKennung": "KOENIG",
+    "VGNKennung": "1877",
     "Platforms": {
       "KOENIG:1": {
         "GlobalID": "de:09564:1877:0:1",
@@ -13645,6 +14153,7 @@
   },
   "1878": {
     "VAGKennung": "FOEHRE",
+    "VGNKennung": "1878",
     "Platforms": {
       "FOEHRE:1": {
         "GlobalID": "de:09564:1878:0:1",
@@ -13664,6 +14173,7 @@
   },
   "1879": {
     "VAGKennung": "STEINB",
+    "VGNKennung": "1879",
     "Platforms": {
       "STEINB:1": {
         "GlobalID": "de:09564:1879:0:1",
@@ -13683,6 +14193,7 @@
   },
   "1881": {
     "VAGKennung": "ROETHE",
+    "VGNKennung": "1881",
     "Platforms": {
       "ROETHE:1": {
         "GlobalID": "de:09564:1881:0:1",
@@ -13702,6 +14213,7 @@
   },
   "1883": {
     "VAGKennung": "HORDLE",
+    "VGNKennung": "1883",
     "Platforms": {
       "HORDLE:1": {
         "GlobalID": "de:09564:1883:0:1",
@@ -13721,6 +14233,7 @@
   },
   "1885": {
     "VAGKennung": "BURKHA",
+    "VGNKennung": "1885",
     "Platforms": {
       "BURKHA:1": {
         "GlobalID": "de:09564:1885:0:1",
@@ -13733,6 +14246,7 @@
   },
   "1887": {
     "VAGKennung": "PILLEN",
+    "VGNKennung": "1887",
     "Platforms": {
       "PILLEN:1": {
         "GlobalID": "de:09564:1887:0:1",
@@ -13745,6 +14259,7 @@
   },
   "1902": {
     "VAGKennung": "HM",
+    "VGNKennung": "1902",
     "Platforms": {
       "HM:1": {
         "GlobalID": "de:09564:1902:11:1",
@@ -13764,6 +14279,7 @@
   },
   "1912": {
     "VAGKennung": "REIC-B",
+    "VGNKennung": "1912",
     "Platforms": {
       "REIC-B:1": {
         "GlobalID": "de:09564:1912:3:1",
@@ -13804,6 +14320,7 @@
   },
   "1913": {
     "VAGKennung": "B-EIBA",
+    "VGNKennung": "1913",
     "Platforms": {
       "B-EIBA:1": {
         "GlobalID": "de:09564:1913:3:1",
@@ -13816,6 +14333,7 @@
   },
   "1915": {
     "VAGKennung": "EIB-HA",
+    "VGNKennung": "1915",
     "Platforms": {
       "EIB-HA:1": {
         "GlobalID": "de:09564:1915:3:1",
@@ -13835,6 +14353,7 @@
   },
   "1917": {
     "VAGKennung": "POMS-N",
+    "VGNKennung": "1917",
     "Platforms": {
       "POMS-N:1": {
         "GlobalID": "de:09564:1917:0:1",
@@ -13854,6 +14373,7 @@
   },
   "1918": {
     "VAGKennung": "EICHPL",
+    "VGNKennung": "1918",
     "Platforms": {
       "EICHPL:1": {
         "GlobalID": "de:09564:1918:0:1",
@@ -13866,6 +14386,7 @@
   },
   "1921": {
     "VAGKennung": "SOLNHO",
+    "VGNKennung": "1921",
     "Platforms": {
       "SOLNHO:1": {
         "GlobalID": "de:09564:1921:0:1",
@@ -13885,6 +14406,7 @@
   },
   "1923": {
     "VAGKennung": "WLDSTR",
+    "VGNKennung": "1923",
     "Platforms": {
       "WLDSTR:1": {
         "GlobalID": "de:09564:1923:0:1",
@@ -13897,6 +14419,7 @@
   },
   "1931": {
     "VAGKennung": "LOHHOF",
+    "VGNKennung": "1931",
     "Platforms": {
       "LOHHOF:1": {
         "GlobalID": "de:09564:1931:0:1",
@@ -13944,6 +14467,7 @@
   },
   "1933": {
     "VAGKennung": "KRONOR",
+    "VGNKennung": "1933",
     "Platforms": {
       "KRONOR:1": {
         "GlobalID": "de:09564:1933:0:1",
@@ -13963,6 +14487,7 @@
   },
   "1934": {
     "VAGKennung": "KROMIT",
+    "VGNKennung": "1934",
     "Platforms": {
       "KROMIT:1": {
         "GlobalID": "de:09564:1934:0:1",
@@ -13989,6 +14514,7 @@
   },
   "1936": {
     "VAGKennung": "DRAHTZ",
+    "VGNKennung": "1936",
     "Platforms": {
       "DRAHTZ:1": {
         "GlobalID": "de:09564:1936:0:1",
@@ -14015,6 +14541,7 @@
   },
   "1937": {
     "VAGKennung": "ALDRNG",
+    "VGNKennung": "1937",
     "Platforms": {
       "ALDRNG:1": {
         "GlobalID": "de:09564:1937:0:1",
@@ -14027,6 +14554,7 @@
   },
   "1938": {
     "VAGKennung": "ADSCHN",
+    "VGNKennung": "1938",
     "Platforms": {
       "ADSCHN:1": {
         "GlobalID": "de:09564:1938:0:1",
@@ -14039,6 +14567,7 @@
   },
   "1939": {
     "VAGKennung": "PCCLMN",
+    "VGNKennung": "1939",
     "Platforms": {
       "PCCLMN:1": {
         "GlobalID": "de:09564:1939:0:1",
@@ -14051,6 +14580,7 @@
   },
   "1940": {
     "VAGKennung": "REIC-H",
+    "VGNKennung": "1940",
     "Platforms": {
       "REIC-H:1": {
         "GlobalID": "de:09564:1940:0:1",
@@ -14070,6 +14600,7 @@
   },
   "1941": {
     "VAGKennung": "CHARKO",
+    "VGNKennung": "1941",
     "Platforms": {
       "CHARKO:1": {
         "GlobalID": "de:09564:1941:0:1",
@@ -14089,6 +14620,7 @@
   },
   "1942": {
     "VAGKennung": "PRAGER",
+    "VGNKennung": "1942",
     "Platforms": {
       "PRAGER:1": {
         "GlobalID": "de:09564:1942:0:1",
@@ -14108,6 +14640,7 @@
   },
   "1943": {
     "VAGKennung": "GLASGO",
+    "VGNKennung": "1943",
     "Platforms": {
       "GLASGO:1": {
         "GlobalID": "de:09564:1943:0:1",
@@ -14127,6 +14660,7 @@
   },
   "1944": {
     "VAGKennung": "GERAER",
+    "VGNKennung": "1944",
     "Platforms": {
       "GERAER:1": {
         "GlobalID": "de:09564:1944:0:1",
@@ -14146,6 +14680,7 @@
   },
   "1945": {
     "VAGKennung": "SKOPJE",
+    "VGNKennung": "1945",
     "Platforms": {
       "SKOPJE:1": {
         "GlobalID": "de:09564:1945:0:1",
@@ -14165,6 +14700,7 @@
   },
   "1946": {
     "VAGKennung": "KOPP-W",
+    "VGNKennung": "1946",
     "Platforms": {
       "KOPP-W:1": {
         "GlobalID": "de:09564:1946:0:1",
@@ -14177,6 +14713,7 @@
   },
   "1949": {
     "VAGKennung": "MUEHLF",
+    "VGNKennung": "1949",
     "Platforms": {
       "MUEHLF:1": {
         "GlobalID": "de:09564:1949:0:1",
@@ -14196,6 +14733,7 @@
   },
   "1950": {
     "VAGKennung": "HZHE",
+    "VGNKennung": "1950",
     "Platforms": {
       "HZHE:1": {
         "GlobalID": "de:09564:1950:0:1",
@@ -14215,6 +14753,7 @@
   },
   "1951": {
     "VAGKennung": "MUEHLH",
+    "VGNKennung": "1951",
     "Platforms": {
       "MUEHLH:1": {
         "GlobalID": "de:09564:1951:0:1",
@@ -14234,6 +14773,7 @@
   },
   "1952": {
     "VAGKennung": "REIC-S",
+    "VGNKennung": "1952",
     "Platforms": {
       "REIC-S:1": {
         "GlobalID": "de:09564:1952:0:1",
@@ -14260,6 +14800,7 @@
   },
   "1953": {
     "VAGKennung": "FURTEN",
+    "VGNKennung": "1953",
     "Platforms": {
       "FURTEN:1": {
         "GlobalID": "de:09564:1953:0:1",
@@ -14293,6 +14834,7 @@
   },
   "1954": {
     "VAGKennung": "HZHESC",
+    "VGNKennung": "1954",
     "Platforms": {
       "HZHESC:1": {
         "GlobalID": "de:09564:1954:0:1",
@@ -14305,6 +14847,7 @@
   },
   "1955": {
     "VAGKennung": "ALTMUE",
+    "VGNKennung": "1955",
     "Platforms": {
       "ALTMUE:1": {
         "GlobalID": "de:09564:1955:0:1",
@@ -14324,6 +14867,7 @@
   },
   "1956": {
     "VAGKennung": "KOPP",
+    "VGNKennung": "1956",
     "Platforms": {
       "KOPP:1": {
         "GlobalID": "de:09564:1956:0:1",
@@ -14350,6 +14894,7 @@
   },
   "1957": {
     "VAGKennung": "EINSTE",
+    "VGNKennung": "1957",
     "Platforms": {
       "EINSTE:1": {
         "GlobalID": "de:09564:1957:0:1",
@@ -14369,6 +14914,7 @@
   },
   "1958": {
     "VAGKennung": "KOEN-W",
+    "VGNKennung": "1958",
     "Platforms": {
       "KOEN-W:1": {
         "GlobalID": "de:09564:1958:0:1",
@@ -14388,6 +14934,7 @@
   },
   "1959": {
     "VAGKennung": "EIBM",
+    "VGNKennung": "1959",
     "Platforms": {
       "EIBM:1": {
         "GlobalID": "de:09564:1959:0:1",
@@ -14407,6 +14954,7 @@
   },
   "1960": {
     "VAGKennung": "CASTEL",
+    "VGNKennung": "1960",
     "Platforms": {
       "CASTEL:1": {
         "GlobalID": "de:09564:1960:0:1",
@@ -14426,6 +14974,7 @@
   },
   "1961": {
     "VAGKennung": "SCHUSS",
+    "VGNKennung": "1961",
     "Platforms": {
       "SCHUSS:1": {
         "GlobalID": "de:09564:1961:0:1",
@@ -14459,6 +15008,7 @@
   },
   "1962": {
     "VAGKennung": "SCHULS",
+    "VGNKennung": "1962",
     "Platforms": {
       "SCHULS:1": {
         "GlobalID": "de:09564:1962:0:1",
@@ -14497,6 +15047,7 @@
   },
   "1963": {
     "VAGKennung": "HEIDES",
+    "VGNKennung": "1963",
     "Platforms": {
       "HEIDES:1": {
         "GlobalID": "de:09564:1963:0:1",
@@ -14516,6 +15067,7 @@
   },
   "1964": {
     "VAGKennung": "ZWIESE",
+    "VGNKennung": "1964",
     "Platforms": {
       "ZWIESE:1": {
         "GlobalID": "de:09564:1964:0:1",
@@ -14535,6 +15087,7 @@
   },
   "1965": {
     "VAGKennung": "JAEGER",
+    "VGNKennung": "1965",
     "Platforms": {
       "JAEGER:1": {
         "GlobalID": "de:09564:1965:0:1",
@@ -14561,6 +15114,7 @@
   },
   "1966": {
     "VAGKennung": "ROETHH",
+    "VGNKennung": "1966",
     "Platforms": {
       "ROETHH:1": {
         "GlobalID": "de:09564:1966:0:1",
@@ -14580,6 +15134,7 @@
   },
   "1967": {
     "VAGKennung": "ELLING",
+    "VGNKennung": "1967",
     "Platforms": {
       "ELLING:1": {
         "GlobalID": "de:09564:1967:0:1",
@@ -14599,6 +15154,7 @@
   },
   "1968": {
     "VAGKennung": "KAMM",
+    "VGNKennung": "1968",
     "Platforms": {
       "KAMM:1": {
         "GlobalID": "de:09564:1968:0:1",
@@ -14618,6 +15174,7 @@
   },
   "1969": {
     "VAGKennung": "HOHEMA",
+    "VGNKennung": "1969",
     "Platforms": {
       "HOHEMA:10": {
         "GlobalID": "de:09564:1969:0:10",
@@ -14637,6 +15194,7 @@
   },
   "1970": {
     "VAGKennung": "ROET",
+    "VGNKennung": "1970",
     "Platforms": {
       "ROET:7": {
         "GlobalID": "de:09564:1970:3:7",
@@ -14736,6 +15294,7 @@
   },
   "1971": {
     "VAGKennung": "SCHNEL",
+    "VGNKennung": "1971",
     "Platforms": {
       "SCHNEL:1": {
         "GlobalID": "de:09564:1971:0:1",
@@ -14755,6 +15314,7 @@
   },
   "1972": {
     "VAGKennung": "TAUBER",
+    "VGNKennung": "1972",
     "Platforms": {
       "TAUBER:1": {
         "GlobalID": "de:09564:1972:0:1",
@@ -14774,6 +15334,7 @@
   },
   "1973": {
     "VAGKennung": "SINBRO",
+    "VGNKennung": "1973",
     "Platforms": {
       "SINBRO:1": {
         "GlobalID": "de:09564:1973:0:1",
@@ -14807,6 +15368,7 @@
   },
   "1974": {
     "VAGKennung": "RANGAU",
+    "VGNKennung": "1974",
     "Platforms": {
       "RANGAU:1": {
         "GlobalID": "de:09564:1974:0:1",
@@ -14840,6 +15402,7 @@
   },
   "1976": {
     "VAGKennung": "HUEG",
+    "VGNKennung": "1976",
     "Platforms": {
       "HUEG:1": {
         "GlobalID": "de:09564:1976:0:1",
@@ -14873,6 +15436,7 @@
   },
   "1977": {
     "VAGKennung": "GLAFEY",
+    "VGNKennung": "1977",
     "Platforms": {
       "GLAFEY:1": {
         "GlobalID": "de:09564:1977:0:1",
@@ -14892,6 +15456,7 @@
   },
   "1978": {
     "VAGKennung": "BIBERT",
+    "VGNKennung": "1978",
     "Platforms": {
       "BIBERT:1": {
         "GlobalID": "de:09564:1978:0:1",
@@ -14925,6 +15490,7 @@
   },
   "1979": {
     "VAGKennung": "HOHENE",
+    "VGNKennung": "1979",
     "Platforms": {
       "HOHENE:1": {
         "GlobalID": "de:09564:1979:0:1",
@@ -14944,6 +15510,7 @@
   },
   "1980": {
     "VAGKennung": "CADOLZ",
+    "VGNKennung": "1980",
     "Platforms": {
       "CADOLZ:1": {
         "GlobalID": "de:09564:1980:0:1",
@@ -14963,6 +15530,7 @@
   },
   "1981": {
     "VAGKennung": "PUET",
+    "VGNKennung": "1981",
     "Platforms": {
       "PUET:1": {
         "GlobalID": "de:09564:1981:0:1",
@@ -14989,6 +15557,7 @@
   },
   "1982": {
     "VAGKennung": "REZATW",
+    "VGNKennung": "1982",
     "Platforms": {
       "REZATW:1": {
         "GlobalID": "de:09564:1982:0:1",
@@ -15015,6 +15584,7 @@
   },
   "1983": {
     "VAGKennung": "UFFENH",
+    "VGNKennung": "1983",
     "Platforms": {
       "UFFENH:1": {
         "GlobalID": "de:09564:1983:0:1",
@@ -15034,6 +15604,7 @@
   },
   "1984": {
     "VAGKennung": "AWALST",
+    "VGNKennung": "1984",
     "Platforms": {
       "AWALST:1": {
         "GlobalID": "de:09564:1984:0:1",
@@ -15053,6 +15624,7 @@
   },
   "1985": {
     "VAGKennung": "BAYRUF",
+    "VGNKennung": "1985",
     "Platforms": {
       "BAYRUF:1": {
         "GlobalID": "de:09564:1985:0:1",
@@ -15072,6 +15644,7 @@
   },
   "1986": {
     "VAGKennung": "TILLYS",
+    "VGNKennung": "1986",
     "Platforms": {
       "TILLYS:1": {
         "GlobalID": "de:09564:1986:0:1",
@@ -15091,6 +15664,7 @@
   },
   "1987": {
     "VAGKennung": "A-TILL",
+    "VGNKennung": "1987",
     "Platforms": {
       "A-TILL:1": {
         "GlobalID": "de:09564:1987:0:1",
@@ -15124,6 +15698,7 @@
   },
   "1988": {
     "VAGKennung": "KIRCHO",
+    "VGNKennung": "1988",
     "Platforms": {
       "KIRCHO:1": {
         "GlobalID": "de:09564:1988:0:1",
@@ -15143,6 +15718,7 @@
   },
   "1989": {
     "VAGKennung": "EDISON",
+    "VGNKennung": "1989",
     "Platforms": {
       "EDISON:1": {
         "GlobalID": "de:09564:1989:0:1",
@@ -15162,6 +15738,7 @@
   },
   "1990": {
     "VAGKennung": "SCHLOS",
+    "VGNKennung": "1990",
     "Platforms": {
       "SCHLOS:1": {
         "GlobalID": "de:09564:1990:0:1",
@@ -15181,6 +15758,7 @@
   },
   "1991": {
     "VAGKennung": "FEUCHT",
+    "VGNKennung": "1991",
     "Platforms": {
       "FEUCHT:1": {
         "GlobalID": "de:09564:1991:0:1",
@@ -15200,6 +15778,7 @@
   },
   "1992": {
     "VAGKennung": "LAGEAN",
+    "VGNKennung": "1992",
     "Platforms": {
       "LAGEAN:1": {
         "GlobalID": "de:09564:1992:0:1",
@@ -15219,6 +15798,7 @@
   },
   "1993": {
     "VAGKennung": "WILLST",
+    "VGNKennung": "1993",
     "Platforms": {
       "WILLST:1": {
         "GlobalID": "de:09564:1993:0:1",
@@ -15238,6 +15818,7 @@
   },
   "1994": {
     "VAGKennung": "SW-PAR",
+    "VGNKennung": "1994",
     "Platforms": {
       "SW-PAR:1": {
         "GlobalID": "de:09564:1994:0:1",
@@ -15257,6 +15838,7 @@
   },
   "1995": {
     "VAGKennung": "INSING",
+    "VGNKennung": "1995",
     "Platforms": {
       "INSING:1": {
         "GlobalID": "de:09564:1995:0:1",
@@ -15269,6 +15851,7 @@
   },
   "1996": {
     "VAGKennung": "KUGLER",
+    "VGNKennung": "1996",
     "Platforms": {
       "KUGLER:1": {
         "GlobalID": "de:09564:1996:0:1",
@@ -15295,6 +15878,7 @@
   },
   "1998": {
     "VAGKennung": "HANSA",
+    "VGNKennung": "1998",
     "Platforms": {
       "HANSA:1": {
         "GlobalID": "de:09564:1998:0:1",
@@ -15314,6 +15898,7 @@
   },
   "2110": {
     "VAGKennung": "F-HB",
+    "VGNKennung": "2110",
     "Platforms": {
       "F-HB:4": {
         "GlobalID": "de:09563:2110:3:4",
@@ -15403,6 +15988,7 @@
   },
   "2130": {
     "VAGKennung": "SF",
+    "VGNKennung": "2130",
     "Platforms": {
       "SF:1": {
         "GlobalID": "de:09563:2130:11:1",
@@ -15422,6 +16008,7 @@
   },
   "2131": {
     "VAGKennung": "F-KULT",
+    "VGNKennung": "2131",
     "Platforms": {
       "F-KULT:6": {
         "GlobalID": "de:09563:2131:0:6",
@@ -15455,6 +16042,7 @@
   },
   "2152": {
     "VAGKennung": "FREIHE",
+    "VGNKennung": "2152",
     "Platforms": {
       "FREIHE:1": {
         "GlobalID": "de:09563:2152:0:1",
@@ -15495,6 +16083,7 @@
   },
   "2154": {
     "VAGKennung": "MAXS-S",
+    "VGNKennung": "2154",
     "Platforms": {
       "MAXS-S:1": {
         "GlobalID": "de:09563:2154:0:1",
@@ -15507,6 +16096,7 @@
   },
   "2155": {
     "VAGKennung": "MAXSTR",
+    "VGNKennung": "2155",
     "Platforms": {
       "MAXSTR:1": {
         "GlobalID": "de:09563:2155:0:1",
@@ -15533,6 +16123,7 @@
   },
   "2162": {
     "VAGKennung": "MAXBRU",
+    "VGNKennung": "2162",
     "Platforms": {
       "MAXBRU:1": {
         "GlobalID": "de:09563:2162:0:1",
@@ -15552,6 +16143,7 @@
   },
   "2163": {
     "VAGKennung": "GRUENE",
+    "VGNKennung": "2163",
     "Platforms": {
       "GRUENE:1": {
         "GlobalID": "de:09563:2163:23:1",
@@ -15571,6 +16163,7 @@
   },
   "2164": {
     "VAGKennung": "RATHAU",
+    "VGNKennung": "2164",
     "Platforms": {
       "RATHAU:6": {
         "GlobalID": "de:09563:2164:53:C",
@@ -15625,6 +16218,7 @@
   },
   "2165": {
     "VAGKennung": "STADTT",
+    "VGNKennung": "2165",
     "Platforms": {
       "STADTT:1": {
         "GlobalID": "de:09563:2165:0:1",
@@ -15651,6 +16245,7 @@
   },
   "2168": {
     "VAGKennung": "KURGAR",
+    "VGNKennung": "2168",
     "Platforms": {
       "KURGAR:1": {
         "GlobalID": "de:09563:2168:0:1",
@@ -15691,6 +16286,7 @@
   },
   "2171": {
     "VAGKennung": "JAKO",
+    "VGNKennung": "2171",
     "Platforms": {
       "JAKO:6": {
         "GlobalID": "de:09563:2171:3:6",
@@ -15745,6 +16341,7 @@
   },
   "2175": {
     "VAGKennung": "GABE-F",
+    "VGNKennung": "2175",
     "Platforms": {
       "GABE-F:1": {
         "GlobalID": "de:09563:2175:0:1",
@@ -15757,6 +16354,7 @@
   },
   "2176": {
     "VAGKennung": "KIRC-F",
+    "VGNKennung": "2176",
     "Platforms": {
       "KIRC-F:1": {
         "GlobalID": "de:09563:2176:0:1",
@@ -15769,6 +16367,7 @@
   },
   "2177": {
     "VAGKennung": "LUIS-F",
+    "VGNKennung": "2177",
     "Platforms": {
       "LUIS-F:1": {
         "GlobalID": "de:09563:2177:0:1",
@@ -15788,6 +16387,7 @@
   },
   "2179": {
     "VAGKennung": "FINK-F",
+    "VGNKennung": "2179",
     "Platforms": {
       "FINK-F:1": {
         "GlobalID": "de:09563:2179:0:1",
@@ -15807,6 +16407,7 @@
   },
   "2180": {
     "VAGKennung": "KF",
+    "VGNKennung": "2180",
     "Platforms": {
       "KF:1": {
         "GlobalID": "de:09563:2180:11:1",
@@ -15826,6 +16427,7 @@
   },
   "2181": {
     "VAGKennung": "KF-OST",
+    "VGNKennung": "2181",
     "Platforms": {
       "KF-OST:6": {
         "GlobalID": "de:09563:2181:0:B",
@@ -15845,6 +16447,7 @@
   },
   "2241": {
     "VAGKennung": "",
+    "VGNKennung": "2241",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09563:2241:0:1",
@@ -15864,6 +16467,7 @@
   },
   "2246": {
     "VAGKennung": "",
+    "VGNKennung": "2246",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09563:2246:0:1",
@@ -15883,6 +16487,7 @@
   },
   "2250": {
     "VAGKennung": "AMALIE",
+    "VGNKennung": "2250",
     "Platforms": {
       "AMALIE:1": {
         "GlobalID": "de:09563:2250:0:1",
@@ -15902,6 +16507,7 @@
   },
   "2251": {
     "VAGKennung": "",
+    "VGNKennung": "2251",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09563:2251:0:1",
@@ -15921,6 +16527,7 @@
   },
   "2253": {
     "VAGKennung": "SIMONS",
+    "VGNKennung": "2253",
     "Platforms": {
       "SIMONS:1": {
         "GlobalID": "de:09563:2253:0:1",
@@ -15954,6 +16561,7 @@
   },
   "2254": {
     "VAGKennung": "STRESP",
+    "VGNKennung": "2254",
     "Platforms": {
       "STRESP:1": {
         "GlobalID": "de:09563:2254:0:1",
@@ -15987,6 +16595,7 @@
   },
   "2256": {
     "VAGKennung": "",
+    "VGNKennung": "2256",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09563:2256:0:1",
@@ -16020,6 +16629,7 @@
   },
   "2260": {
     "VAGKennung": "HOLZST",
+    "VGNKennung": "2260",
     "Platforms": {
       "HOLZST:1": {
         "GlobalID": "de:09563:2260:0:1",
@@ -16039,6 +16649,7 @@
   },
   "2261": {
     "VAGKennung": "KAISER",
+    "VGNKennung": "2261",
     "Platforms": {
       "KAISER:1": {
         "GlobalID": "de:09563:2261:0:1",
@@ -16079,6 +16690,7 @@
   },
   "2262": {
     "VAGKennung": "FLOES",
+    "VGNKennung": "2262",
     "Platforms": {
       "FLOES:1": {
         "GlobalID": "de:09563:2262:0:1",
@@ -16098,6 +16710,7 @@
   },
   "2264": {
     "VAGKennung": "",
+    "VGNKennung": "2264",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09563:2264:0:1",
@@ -16124,6 +16737,7 @@
   },
   "2266": {
     "VAGKennung": "SAARBU",
+    "VGNKennung": "2266",
     "Platforms": {
       "SAARBU:1": {
         "GlobalID": "de:09563:2266:0:1",
@@ -16143,6 +16757,7 @@
   },
   "2267": {
     "VAGKennung": "WEIKER",
+    "VGNKennung": "2267",
     "Platforms": {
       "WEIKER:1": {
         "GlobalID": "de:09563:2267:0:1",
@@ -16162,6 +16777,7 @@
   },
   "2268": {
     "VAGKennung": "F-SU",
+    "VGNKennung": "2268",
     "Platforms": {
       "F-SU:1": {
         "GlobalID": "de:09563:2268:0:1",
@@ -16209,6 +16825,7 @@
   },
   "2269": {
     "VAGKennung": "WEIK-S",
+    "VGNKennung": "2269",
     "Platforms": {
       "WEIK-S:1": {
         "GlobalID": "de:09563:2269:0:1",
@@ -16235,6 +16852,7 @@
   },
   "2270": {
     "VAGKennung": "F-BENN",
+    "VGNKennung": "2270",
     "Platforms": {
       "F-BENN:1": {
         "GlobalID": "de:09563:2270:0:1",
@@ -16254,6 +16872,7 @@
   },
   "2271": {
     "VAGKennung": "",
+    "VGNKennung": "2271",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09563:2271:0:1",
@@ -16266,6 +16885,7 @@
   },
   "2274": {
     "VAGKennung": "",
+    "VGNKennung": "2274",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09563:2274:0:1",
@@ -16299,6 +16919,7 @@
   },
   "2276": {
     "VAGKennung": "",
+    "VGNKennung": "2276",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09563:2276:0:1",
@@ -16339,6 +16960,7 @@
   },
   "2278": {
     "VAGKennung": "MAGAZI",
+    "VGNKennung": "2278",
     "Platforms": {
       "MAGAZI:1": {
         "GlobalID": "de:09563:2278:0:1",
@@ -16372,6 +16994,7 @@
   },
   "2281": {
     "VAGKennung": "",
+    "VGNKennung": "2281",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09563:2281:0:1",
@@ -16391,6 +17014,7 @@
   },
   "2283": {
     "VAGKennung": "",
+    "VGNKennung": "2283",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09563:2283:0:1",
@@ -16410,6 +17034,7 @@
   },
   "2284": {
     "VAGKennung": "",
+    "VGNKennung": "2284",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09563:2284:0:1",
@@ -16429,6 +17054,7 @@
   },
   "2349": {
     "VAGKennung": "",
+    "VGNKennung": "2349",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09563:2349:0:1",
@@ -16448,6 +17074,7 @@
   },
   "2350": {
     "VAGKennung": "",
+    "VGNKennung": "2350",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09563:2350:0:1",
@@ -16467,6 +17094,7 @@
   },
   "2351": {
     "VAGKennung": "",
+    "VGNKennung": "2351",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09563:2351:0:1",
@@ -16486,6 +17114,7 @@
   },
   "2359": {
     "VAGKennung": "PILLAU",
+    "VGNKennung": "2359",
     "Platforms": {
       "PILLAU:1": {
         "GlobalID": "de:09563:2359:0:1",
@@ -16519,6 +17148,7 @@
   },
   "2360": {
     "VAGKennung": "STIFTS",
+    "VGNKennung": "2360",
     "Platforms": {
       "STIFTS:1": {
         "GlobalID": "de:09563:2360:0:1",
@@ -16545,6 +17175,7 @@
   },
   "2362": {
     "VAGKennung": "BILLIN",
+    "VGNKennung": "2362",
     "Platforms": {
       "BILLIN:1": {
         "GlobalID": "de:09563:2362:3:1",
@@ -16599,6 +17230,7 @@
   },
   "2363": {
     "VAGKennung": "HEIMGA",
+    "VGNKennung": "2363",
     "Platforms": {
       "HEIMGA:1": {
         "GlobalID": "de:09563:2363:0:1",
@@ -16618,6 +17250,7 @@
   },
   "2364": {
     "VAGKennung": "F-HEUW",
+    "VGNKennung": "2364",
     "Platforms": {
       "F-HEUW:1": {
         "GlobalID": "de:09563:2364:0:1",
@@ -16637,6 +17270,7 @@
   },
   "2369": {
     "VAGKennung": "TAUBEN",
+    "VGNKennung": "2369",
     "Platforms": {
       "TAUBEN:1": {
         "GlobalID": "de:09563:2369:0:1",
@@ -16649,6 +17283,7 @@
   },
   "2370": {
     "VAGKennung": "LUCAS-",
+    "VGNKennung": "2370",
     "Platforms": {
       "LUCAS-:1": {
         "GlobalID": "de:09563:2370:0:1",
@@ -16668,6 +17303,7 @@
   },
   "2371": {
     "VAGKennung": "EIG-HE",
+    "VGNKennung": "2371",
     "Platforms": {
       "EIG-HE:1": {
         "GlobalID": "de:09563:2371:23:1",
@@ -16680,6 +17316,7 @@
   },
   "2372": {
     "VAGKennung": "RIEMEN",
+    "VGNKennung": "2372",
     "Platforms": {
       "RIEMEN:1": {
         "GlobalID": "de:09563:2372:0:1",
@@ -16706,6 +17343,7 @@
   },
   "2373": {
     "VAGKennung": "FELDST",
+    "VGNKennung": "2373",
     "Platforms": {
       "FELDST:1": {
         "GlobalID": "de:09563:2373:0:1",
@@ -16725,6 +17363,7 @@
   },
   "2374": {
     "VAGKennung": "RO-KO-",
+    "VGNKennung": "2374",
     "Platforms": {
       "RO-KO-:1": {
         "GlobalID": "de:09563:2374:0:1",
@@ -16744,6 +17383,7 @@
   },
   "2375": {
     "VAGKennung": "HENEL",
+    "VGNKennung": "2375",
     "Platforms": {
       "HENEL:1": {
         "GlobalID": "de:09563:2375:0:1",
@@ -16763,6 +17403,7 @@
   },
   "2379": {
     "VAGKennung": "LUEBEC",
+    "VGNKennung": "2379",
     "Platforms": {
       "LUEBEC:1": {
         "GlobalID": "de:09563:2379:0:1",
@@ -16789,6 +17430,7 @@
   },
   "2380": {
     "VAGKennung": "UNTFAH",
+    "VGNKennung": "2380",
     "Platforms": {
       "UNTFAH:1": {
         "GlobalID": "de:09563:2380:0:1",
@@ -16808,6 +17450,7 @@
   },
   "2381": {
     "VAGKennung": "UNTFAS",
+    "VGNKennung": "2381",
     "Platforms": {
       "UNTFAS:1": {
         "GlobalID": "de:09563:2381:0:1",
@@ -16827,6 +17470,7 @@
   },
   "2382": {
     "VAGKennung": "HAFENS",
+    "VGNKennung": "2382",
     "Platforms": {
       "HAFENS:1": {
         "GlobalID": "de:09563:2382:0:1",
@@ -16846,6 +17490,7 @@
   },
   "2383": {
     "VAGKennung": "HANSAS",
+    "VGNKennung": "2383",
     "Platforms": {
       "HANSAS:1": {
         "GlobalID": "de:09563:2383:0:1",
@@ -16893,6 +17538,7 @@
   },
   "2384": {
     "VAGKennung": "LEIBNI",
+    "VGNKennung": "2384",
     "Platforms": {
       "LEIBNI:1": {
         "GlobalID": "de:09563:2384:0:1",
@@ -16912,6 +17558,7 @@
   },
   "2386": {
     "VAGKennung": "HARDSO",
+    "VGNKennung": "2386",
     "Platforms": {
       "HARDSO:1": {
         "GlobalID": "de:09563:2386:3:1",
@@ -16938,6 +17585,7 @@
   },
   "2390": {
     "VAGKennung": "HRDHHF",
+    "VGNKennung": "2390",
     "Platforms": {
       "HRDHHF:6": {
         "GlobalID": "de:09563:2390:23:6",
@@ -16971,6 +17619,7 @@
   },
   "2392": {
     "VAGKennung": "GRNRPK",
+    "VGNKennung": "2392",
     "Platforms": {
       "GRNRPK:1": {
         "GlobalID": "de:09563:2392:0:1",
@@ -16990,6 +17639,7 @@
   },
   "2396": {
     "VAGKennung": "BRMWSN",
+    "VGNKennung": "2396",
     "Platforms": {
       "BRMWSN:1": {
         "GlobalID": "de:09563:2396:0:1",
@@ -17009,6 +17659,7 @@
   },
   "2449": {
     "VAGKennung": "WEIGMA",
+    "VGNKennung": "2449",
     "Platforms": {
       "WEIGMA:1": {
         "GlobalID": "de:09563:2449:0:1",
@@ -17028,6 +17679,7 @@
   },
   "2454": {
     "VAGKennung": "KARL-B",
+    "VGNKennung": "2454",
     "Platforms": {
       "KARL-B:1": {
         "GlobalID": "de:09563:2454:0:1",
@@ -17061,6 +17713,7 @@
   },
   "2455": {
     "VAGKennung": "SCHILF",
+    "VGNKennung": "2455",
     "Platforms": {
       "SCHILF:1": {
         "GlobalID": "de:09563:2455:0:1",
@@ -17080,6 +17733,7 @@
   },
   "2456": {
     "VAGKennung": "WIESEN",
+    "VGNKennung": "2456",
     "Platforms": {
       "WIESEN:1": {
         "GlobalID": "de:09563:2456:0:1",
@@ -17099,6 +17753,7 @@
   },
   "2457": {
     "VAGKennung": "AMKAVI",
+    "VGNKennung": "2457",
     "Platforms": {
       "AMKAVI:1": {
         "GlobalID": "de:09563:2457:0:1",
@@ -17118,6 +17773,7 @@
   },
   "2458": {
     "VAGKennung": "POPP-S",
+    "VGNKennung": "2458",
     "Platforms": {
       "POPP-S:1": {
         "GlobalID": "de:09563:2458:0:1",
@@ -17137,6 +17793,7 @@
   },
   "2462": {
     "VAGKennung": "",
+    "VGNKennung": "2462",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09563:2462:0:1",
@@ -17170,6 +17827,7 @@
   },
   "2463": {
     "VAGKennung": "",
+    "VGNKennung": "2463",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09563:2463:0:1",
@@ -17182,6 +17840,7 @@
   },
   "2464": {
     "VAGKennung": "",
+    "VGNKennung": "2464",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09563:2464:0:1",
@@ -17208,6 +17867,7 @@
   },
   "2465": {
     "VAGKennung": "",
+    "VGNKennung": "2465",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09563:2465:0:1",
@@ -17227,6 +17887,7 @@
   },
   "2466": {
     "VAGKennung": "",
+    "VGNKennung": "2466",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09563:2466:0:1",
@@ -17246,6 +17907,7 @@
   },
   "2467": {
     "VAGKennung": "",
+    "VGNKennung": "2467",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09563:2467:0:1",
@@ -17265,6 +17927,7 @@
   },
   "2468": {
     "VAGKennung": "",
+    "VGNKennung": "2468",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09563:2468:0:1",
@@ -17284,6 +17947,7 @@
   },
   "2469": {
     "VAGKennung": "",
+    "VGNKennung": "2469",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09563:2469:0:1",
@@ -17303,6 +17967,7 @@
   },
   "2470": {
     "VAGKennung": "",
+    "VGNKennung": "2470",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09563:2470:0:1",
@@ -17322,6 +17987,7 @@
   },
   "2474": {
     "VAGKennung": "",
+    "VGNKennung": "2474",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09563:2474:0:1",
@@ -17355,6 +18021,7 @@
   },
   "2476": {
     "VAGKennung": "",
+    "VGNKennung": "2476",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09563:2476:0:1",
@@ -17374,6 +18041,7 @@
   },
   "2477": {
     "VAGKennung": "",
+    "VGNKennung": "2477",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09563:2477:0:1",
@@ -17400,6 +18068,7 @@
   },
   "2478": {
     "VAGKennung": "",
+    "VGNKennung": "2478",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09563:2478:0:1",
@@ -17419,6 +18088,7 @@
   },
   "2479": {
     "VAGKennung": "",
+    "VGNKennung": "2479",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09563:2479:0:1",
@@ -17438,6 +18108,7 @@
   },
   "2480": {
     "VAGKennung": "",
+    "VGNKennung": "2480",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09563:2480:0:1",
@@ -17457,6 +18128,7 @@
   },
   "2481": {
     "VAGKennung": "",
+    "VGNKennung": "2481",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09563:2481:0:1",
@@ -17476,6 +18148,7 @@
   },
   "2611": {
     "VAGKennung": "BURFAO",
+    "VGNKennung": "2611",
     "Platforms": {
       "BURFAO:1": {
         "GlobalID": "de:09563:2611:0:1",
@@ -17495,6 +18168,7 @@
   },
   "2654": {
     "VAGKennung": "",
+    "VGNKennung": "2654",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09563:2654:0:1",
@@ -17514,6 +18188,7 @@
   },
   "2655": {
     "VAGKennung": "SPERLI",
+    "VGNKennung": "2655",
     "Platforms": {
       "SPERLI:1": {
         "GlobalID": "de:09563:2655:0:1",
@@ -17547,6 +18222,7 @@
   },
   "3110": {
     "VAGKennung": "BFPL",
+    "VGNKennung": "3110",
     "Platforms": {
       "BFPL:1": {
         "GlobalID": "de:09562:3110:3:B",
@@ -17573,6 +18249,7 @@
   },
   "3151": {
     "VAGKennung": "ARCADE",
+    "VGNKennung": "3151",
     "Platforms": {
       "ARCADE:1": {
         "GlobalID": "de:09562:3151:0:1",
@@ -17627,6 +18304,7 @@
   },
   "3152": {
     "VAGKennung": "N-MARK",
+    "VGNKennung": "3152",
     "Platforms": {
       "N-MARK:1": {
         "GlobalID": "de:09562:3152:0:1",
@@ -17709,6 +18387,7 @@
   },
   "3153": {
     "VAGKennung": "LANGEM",
+    "VGNKennung": "3153",
     "Platforms": {
       "LANGEM:1": {
         "GlobalID": "de:09562:3153:0:1",
@@ -17756,6 +18435,7 @@
   },
   "3156": {
     "VAGKennung": "STUBEN",
+    "VGNKennung": "3156",
     "Platforms": {
       "STUBEN:1": {
         "GlobalID": "de:09562:3156:0:1",
@@ -17789,6 +18469,7 @@
   },
   "3164": {
     "VAGKennung": "",
+    "VGNKennung": "3164",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09562:3164:0:1",
@@ -17815,6 +18496,7 @@
   },
   "3165": {
     "VAGKennung": "",
+    "VGNKennung": "3165",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09562:3165:0:1",
@@ -17841,6 +18523,7 @@
   },
   "3167": {
     "VAGKennung": "",
+    "VGNKennung": "3167",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09562:3167:0:1",
@@ -17874,6 +18557,7 @@
   },
   "3170": {
     "VAGKennung": "",
+    "VGNKennung": "3170",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09562:3170:0:1",
@@ -17893,6 +18577,7 @@
   },
   "3171": {
     "VAGKennung": "HUGE",
+    "VGNKennung": "3171",
     "Platforms": {
       "HUGE:1": {
         "GlobalID": "de:09562:3171:0:1",
@@ -17968,6 +18653,7 @@
   },
   "3175": {
     "VAGKennung": "",
+    "VGNKennung": "3175",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09562:3175:0:1",
@@ -17987,6 +18673,7 @@
   },
   "3249": {
     "VAGKennung": "",
+    "VGNKennung": "3249",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09562:3249:0:1",
@@ -18006,6 +18693,7 @@
   },
   "3251": {
     "VAGKennung": "",
+    "VGNKennung": "3251",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09562:3251:0:1",
@@ -18032,6 +18720,7 @@
   },
   "3252": {
     "VAGKennung": "",
+    "VGNKennung": "3252",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09562:3252:0:1",
@@ -18058,6 +18747,7 @@
   },
   "3253": {
     "VAGKennung": "",
+    "VGNKennung": "3253",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09562:3253:0:1",
@@ -18077,6 +18767,7 @@
   },
   "3254": {
     "VAGKennung": "",
+    "VGNKennung": "3254",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09562:3254:0:1",
@@ -18096,6 +18787,7 @@
   },
   "3255": {
     "VAGKennung": "",
+    "VGNKennung": "3255",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09562:3255:3:1",
@@ -18115,6 +18807,7 @@
   },
   "3343": {
     "VAGKennung": "KSCHER",
+    "VGNKennung": "3343",
     "Platforms": {
       "KSCHER:1": {
         "GlobalID": "de:09562:3343:0:1",
@@ -18134,6 +18827,7 @@
   },
   "3344": {
     "VAGKennung": "STDTER",
+    "VGNKennung": "3344",
     "Platforms": {
       "STDTER:1": {
         "GlobalID": "de:09562:3344:0:1",
@@ -18153,6 +18847,7 @@
   },
   "3345": {
     "VAGKennung": "NIFIER",
+    "VGNKennung": "3345",
     "Platforms": {
       "NIFIER:1": {
         "GlobalID": "de:09562:3345:0:1",
@@ -18172,6 +18867,7 @@
   },
   "3353": {
     "VAGKennung": "SCHELL",
+    "VGNKennung": "3353",
     "Platforms": {
       "SCHELL:1": {
         "GlobalID": "de:09562:3353:0:1",
@@ -18191,6 +18887,7 @@
   },
   "3359": {
     "VAGKennung": "ROET-B",
+    "VGNKennung": "3359",
     "Platforms": {
       "ROET-B:1": {
         "GlobalID": "de:09562:3359:0:1",
@@ -18224,6 +18921,7 @@
   },
   "3360": {
     "VAGKennung": "SI-STA",
+    "VGNKennung": "3360",
     "Platforms": {
       "SI-STA:1": {
         "GlobalID": "de:09562:3360:0:1",
@@ -18243,6 +18941,7 @@
   },
   "3361": {
     "VAGKennung": "GLEIWI",
+    "VGNKennung": "3361",
     "Platforms": {
       "GLEIWI:1": {
         "GlobalID": "de:09562:3361:0:1",
@@ -18262,6 +18961,7 @@
   },
   "3366": {
     "VAGKennung": "TECH-F",
+    "VGNKennung": "3366",
     "Platforms": {
       "TECH-F:1": {
         "GlobalID": "de:09562:3366:0:1",
@@ -18309,6 +19009,7 @@
   },
   "3377": {
     "VAGKennung": "E-HOF",
+    "VGNKennung": "3377",
     "Platforms": {
       "E-HOF:1": {
         "GlobalID": "de:09562:3377:0:1",
@@ -18342,6 +19043,7 @@
   },
   "3378": {
     "VAGKennung": "RUPPEN",
+    "VGNKennung": "3378",
     "Platforms": {
       "RUPPEN:1": {
         "GlobalID": "de:09562:3378:0:1",
@@ -18361,6 +19063,7 @@
   },
   "3381": {
     "VAGKennung": "RÖ-P-Z",
+    "VGNKennung": "3381",
     "Platforms": {
       "RÖ-P-Z:1": {
         "GlobalID": "de:09562:3381:0:1",
@@ -18380,6 +19083,7 @@
   },
   "3384": {
     "VAGKennung": "M-CURI",
+    "VGNKennung": "3384",
     "Platforms": {
       "M-CURI:1": {
         "GlobalID": "de:09562:3384:0:1",
@@ -18399,6 +19103,7 @@
   },
   "3465": {
     "VAGKennung": "",
+    "VGNKennung": "3465",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09562:3465:0:1",
@@ -18439,6 +19144,7 @@
   },
   "3466": {
     "VAGKennung": "",
+    "VGNKennung": "3466",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09562:3466:3:1",
@@ -18458,6 +19164,7 @@
   },
   "3467": {
     "VAGKennung": "",
+    "VGNKennung": "3467",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09562:3467:0:1",
@@ -18484,6 +19191,7 @@
   },
   "3468": {
     "VAGKennung": "",
+    "VGNKennung": "3468",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09562:3468:0:1",
@@ -18517,6 +19225,7 @@
   },
   "3472": {
     "VAGKennung": "",
+    "VGNKennung": "3472",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09562:3472:0:1",
@@ -18536,6 +19245,7 @@
   },
   "3473": {
     "VAGKennung": "E-SUED",
+    "VGNKennung": "3473",
     "Platforms": {
       "E-SUED:1": {
         "GlobalID": "de:09562:3473:0:1",
@@ -18555,6 +19265,7 @@
   },
   "3474": {
     "VAGKennung": "GEBB",
+    "VGNKennung": "3474",
     "Platforms": {
       "GEBB:1": {
         "GlobalID": "de:09562:3474:0:1",
@@ -18588,6 +19299,7 @@
   },
   "3475": {
     "VAGKennung": "STINTZ",
+    "VGNKennung": "3475",
     "Platforms": {
       "STINTZ:1": {
         "GlobalID": "de:09562:3475:0:1",
@@ -18628,6 +19340,7 @@
   },
   "3479": {
     "VAGKennung": "OHMPLA",
+    "VGNKennung": "3479",
     "Platforms": {
       "OHMPLA:1": {
         "GlobalID": "de:09562:3479:0:1",
@@ -18647,6 +19360,7 @@
   },
   "3480": {
     "VAGKennung": "W-V-SI",
+    "VGNKennung": "3480",
     "Platforms": {
       "W-V-SI:1": {
         "GlobalID": "de:09562:3480:0:1",
@@ -18687,6 +19401,7 @@
   },
   "3481": {
     "VAGKennung": "W-V-SI",
+    "VGNKennung": "3481",
     "Platforms": {
       "W-V-SI:41": {
         "GlobalID": "de:09562:3480:0:41",
@@ -18699,6 +19414,7 @@
   },
   "3482": {
     "VAGKennung": "",
+    "VGNKennung": "3482",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09562:3482:0:1",
@@ -18718,6 +19434,7 @@
   },
   "3483": {
     "VAGKennung": "",
+    "VGNKennung": "3483",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09562:3483:0:1",
@@ -18737,6 +19454,7 @@
   },
   "3491": {
     "VAGKennung": "",
+    "VGNKennung": "3491",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09562:3491:0:1",
@@ -18756,6 +19474,7 @@
   },
   "3556": {
     "VAGKennung": "",
+    "VGNKennung": "3556",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09562:3556:0:1",
@@ -18768,6 +19487,7 @@
   },
   "3557": {
     "VAGKennung": "",
+    "VGNKennung": "3557",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09562:3557:0:1",
@@ -18801,6 +19521,7 @@
   },
   "3558": {
     "VAGKennung": "",
+    "VGNKennung": "3558",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09562:3558:0:1",
@@ -18820,6 +19541,7 @@
   },
   "3559": {
     "VAGKennung": "WALDIN",
+    "VGNKennung": "3559",
     "Platforms": {
       "WALDIN:1": {
         "GlobalID": "de:09562:3559:0:1",
@@ -18839,6 +19561,7 @@
   },
   "3560": {
     "VAGKennung": "SKLPTP",
+    "VGNKennung": "3560",
     "Platforms": {
       "SKLPTP:1": {
         "GlobalID": "de:09562:3560:0:1",
@@ -18872,6 +19595,7 @@
   },
   "3561": {
     "VAGKennung": "TENN",
+    "VGNKennung": "3561",
     "Platforms": {
       "TENN:1": {
         "GlobalID": "de:09562:3561:0:1",
@@ -18891,6 +19615,7 @@
   },
   "3562": {
     "VAGKennung": "WETTER",
+    "VGNKennung": "3562",
     "Platforms": {
       "WETTER:1": {
         "GlobalID": "de:09562:3562:0:1",
@@ -18910,6 +19635,7 @@
   },
   "4154": {
     "VAGKennung": "NASBAC",
+    "VGNKennung": "4154",
     "Platforms": {
       "NASBAC:1": {
         "GlobalID": "de:09565:4154:0:1",
@@ -18929,6 +19655,7 @@
   },
   "4155": {
     "VAGKennung": "ANSBAC",
+    "VGNKennung": "4155",
     "Platforms": {
       "ANSBAC:1": {
         "GlobalID": "de:09565:4155:0:1",
@@ -18948,6 +19675,7 @@
   },
   "4156": {
     "VAGKennung": "NBGSTR",
+    "VGNKennung": "4156",
     "Platforms": {
       "NBGSTR:1": {
         "GlobalID": "de:09565:4156:0:1",
@@ -18967,6 +19695,7 @@
   },
   "4157": {
     "VAGKennung": "NEUTOR",
+    "VGNKennung": "4157",
     "Platforms": {
       "NEUTOR:1": {
         "GlobalID": "de:09565:4157:0:1",
@@ -18986,6 +19715,7 @@
   },
   "4160": {
     "VAGKennung": "S-SCHI",
+    "VGNKennung": "4160",
     "Platforms": {
       "S-SCHI:1": {
         "GlobalID": "de:09565:4160:0:1",
@@ -19005,6 +19735,7 @@
   },
   "4165": {
     "VAGKennung": "SC-WAS",
+    "VGNKennung": "4165",
     "Platforms": {
       "SC-WAS:1": {
         "GlobalID": "de:09565:4165:0:1",
@@ -19024,6 +19755,7 @@
   },
   "4179": {
     "VAGKennung": "SC-STE",
+    "VGNKennung": "4179",
     "Platforms": {
       "SC-STE:1": {
         "GlobalID": "de:09565:4179:0:1",
@@ -19043,6 +19775,7 @@
   },
   "4183": {
     "VAGKennung": "S-SCHS",
+    "VGNKennung": "4183",
     "Platforms": {
       "S-SCHS:1": {
         "GlobalID": "de:09565:4183:0:1",
@@ -19055,6 +19788,7 @@
   },
   "4190": {
     "VAGKennung": "SC-LUD",
+    "VGNKennung": "4190",
     "Platforms": {
       "SC-LUD:1": {
         "GlobalID": "de:09565:4190:0:1",
@@ -19074,6 +19808,7 @@
   },
   "4246": {
     "VAGKennung": "DKRSTR",
+    "VGNKennung": "4246",
     "Platforms": {
       "DKRSTR:1": {
         "GlobalID": "de:09565:4246:0:1",
@@ -19093,6 +19828,7 @@
   },
   "4247": {
     "VAGKennung": "DMHPLA",
+    "VGNKennung": "4247",
     "Platforms": {
       "DMHPLA:1": {
         "GlobalID": "de:09565:4247:0:1",
@@ -19112,6 +19848,7 @@
   },
   "4248": {
     "VAGKennung": "DVRRTB",
+    "VGNKennung": "4248",
     "Platforms": {
       "DVRRTB:1": {
         "GlobalID": "de:09565:4248:0:1",
@@ -19124,6 +19861,7 @@
   },
   "4250": {
     "VAGKennung": "WOLK-M",
+    "VGNKennung": "4250",
     "Platforms": {
       "WOLK-M:1": {
         "GlobalID": "de:09565:4250:0:1",
@@ -19143,6 +19881,7 @@
   },
   "4251": {
     "VAGKennung": "WOLKER",
+    "VGNKennung": "4251",
     "Platforms": {
       "WOLKER:1": {
         "GlobalID": "de:09565:4251:0:1",
@@ -19162,6 +19901,7 @@
   },
   "4253": {
     "VAGKennung": "DDHDB",
+    "VGNKennung": "4253",
     "Platforms": {
       "DDHDB:1": {
         "GlobalID": "de:09565:4253:0:1",
@@ -19181,6 +19921,7 @@
   },
   "4254": {
     "VAGKennung": "ABZWBI",
+    "VGNKennung": "4254",
     "Platforms": {
       "ABZWBI:1": {
         "GlobalID": "de:09565:4254:0:1",
@@ -19200,6 +19941,7 @@
   },
   "4256": {
     "VAGKennung": "WHASTR",
+    "VGNKennung": "4256",
     "Platforms": {
       "WHASTR:1": {
         "GlobalID": "de:09565:4256:0:1",
@@ -19219,6 +19961,7 @@
   },
   "4262": {
     "VAGKennung": "WOLKSC",
+    "VGNKennung": "4262",
     "Platforms": {
       "WOLKSC:1": {
         "GlobalID": "de:09565:4262:0:1",
@@ -19231,6 +19974,7 @@
   },
   "4267": {
     "VAGKennung": "WOLKBE",
+    "VGNKennung": "4267",
     "Platforms": {
       "WOLKBE:1": {
         "GlobalID": "de:09565:4267:0:1",
@@ -19250,6 +19994,7 @@
   },
   "4411": {
     "VAGKennung": "SC-BHF",
+    "VGNKennung": "4411",
     "Platforms": {
       "SC-BHF:3": {
         "GlobalID": "de:09565:4411:3:3",
@@ -19276,6 +20021,7 @@
   },
   "4551": {
     "VAGKennung": "SC-WRO",
+    "VGNKennung": "4551",
     "Platforms": {
       "SC-WRO:1": {
         "GlobalID": "de:09565:4551:0:1",
@@ -19295,6 +20041,7 @@
   },
   "4552": {
     "VAGKennung": "SC-GUT",
+    "VGNKennung": "4552",
     "Platforms": {
       "SC-GUT:1": {
         "GlobalID": "de:09565:4552:0:1",
@@ -19314,6 +20061,7 @@
   },
   "4553": {
     "VAGKennung": "NOER",
+    "VGNKennung": "4553",
     "Platforms": {
       "NOER:1": {
         "GlobalID": "de:09565:4553:0:1",
@@ -19347,6 +20095,7 @@
   },
   "4555": {
     "VAGKennung": "HIN-SC",
+    "VGNKennung": "4555",
     "Platforms": {
       "HIN-SC:1": {
         "GlobalID": "de:09565:4555:0:1",
@@ -19359,6 +20108,7 @@
   },
   "4556": {
     "VAGKennung": "SC-EB",
+    "VGNKennung": "4556",
     "Platforms": {
       "SC-EB:1": {
         "GlobalID": "de:09565:4556:0:1",
@@ -19378,6 +20128,7 @@
   },
   "4563": {
     "VAGKennung": "SC-BUS",
+    "VGNKennung": "4563",
     "Platforms": {
       "SC-BUS:1": {
         "GlobalID": "de:09565:4563:0:1",
@@ -19390,6 +20141,7 @@
   },
   "4564": {
     "VAGKennung": "STPA-S",
+    "VGNKennung": "4564",
     "Platforms": {
       "STPA-S:1": {
         "GlobalID": "de:09565:4564:0:1",
@@ -19409,6 +20161,7 @@
   },
   "4589": {
     "VAGKennung": "SC-PAR",
+    "VGNKennung": "4589",
     "Platforms": {
       "SC-PAR:1": {
         "GlobalID": "de:09565:4589:0:1",
@@ -19428,6 +20181,7 @@
   },
   "4612": {
     "VAGKennung": "WVOSTR",
+    "VGNKennung": "4612",
     "Platforms": {
       "WVOSTR:1": {
         "GlobalID": "de:09565:4612:0:1",
@@ -19447,6 +20201,7 @@
   },
   "4613": {
     "VAGKennung": "WWSCHL",
+    "VGNKennung": "4613",
     "Platforms": {
       "WWSCHL:1": {
         "GlobalID": "de:09565:4613:0:1",
@@ -19466,6 +20221,7 @@
   },
   "4615": {
     "VAGKennung": "WHPSTR",
+    "VGNKennung": "4615",
     "Platforms": {
       "WHPSTR:1": {
         "GlobalID": "de:09565:4615:0:1",
@@ -19485,6 +20241,7 @@
   },
   "5131": {
     "VAGKennung": "BCHSCS",
+    "VGNKennung": "5131",
     "Platforms": {
       "BCHSCS:1": {
         "GlobalID": "de:09573:5131:0:1",
@@ -19504,6 +20261,7 @@
   },
   "5132": {
     "VAGKennung": "BCHSCB",
+    "VGNKennung": "5132",
     "Platforms": {
       "BCHSCB:3": {
         "GlobalID": "de:09573:5132:0:3",
@@ -19530,6 +20288,7 @@
   },
   "5135": {
     "VAGKennung": "CLARS",
+    "VGNKennung": "5135",
     "Platforms": {
       "CLARS:1": {
         "GlobalID": "de:09573:5135:0:1",
@@ -19549,6 +20308,7 @@
   },
   "5137": {
     "VAGKennung": "DEFERS",
+    "VGNKennung": "5137",
     "Platforms": {
       "DEFERS:1": {
         "GlobalID": "de:09573:5137:0:1",
@@ -19568,6 +20328,7 @@
   },
   "5141": {
     "VAGKennung": "BUTNSD",
+    "VGNKennung": "5141",
     "Platforms": {
       "BUTNSD:1": {
         "GlobalID": "de:09573:5141:0:1",
@@ -19587,6 +20348,7 @@
   },
   "5142": {
     "VAGKennung": "RAITRS",
+    "VGNKennung": "5142",
     "Platforms": {
       "RAITRS:1": {
         "GlobalID": "de:09573:5142:0:1",
@@ -19606,6 +20368,7 @@
   },
   "5143": {
     "VAGKennung": "BUTNND",
+    "VGNKennung": "5143",
     "Platforms": {
       "BUTNND:1": {
         "GlobalID": "de:09573:5143:0:1",
@@ -19618,6 +20381,7 @@
   },
   "5155": {
     "VAGKennung": "ROSSPK",
+    "VGNKennung": "5155",
     "Platforms": {
       "ROSSPK:1": {
         "GlobalID": "de:09573:5155:0:1",
@@ -19637,6 +20401,7 @@
   },
   "5158": {
     "VAGKennung": "ROSFRA",
+    "VGNKennung": "5158",
     "Platforms": {
       "ROSFRA:1": {
         "GlobalID": "de:09573:5158:0:1",
@@ -19656,6 +20421,7 @@
   },
   "5167": {
     "VAGKennung": "ROSWIL",
+    "VGNKennung": "5167",
     "Platforms": {
       "ROSWIL:1": {
         "GlobalID": "de:09573:5167:0:1",
@@ -19675,6 +20441,7 @@
   },
   "5171": {
     "VAGKennung": "GROSSW",
+    "VGNKennung": "5171",
     "Platforms": {
       "GROSSW:1": {
         "GlobalID": "de:09573:5171:0:1",
@@ -19694,6 +20461,7 @@
   },
   "5178": {
     "VAGKennung": "OEDENR",
+    "VGNKennung": "5178",
     "Platforms": {
       "OEDENR:1": {
         "GlobalID": "de:09573:5178:0:1",
@@ -19713,6 +20481,7 @@
   },
   "5182": {
     "VAGKennung": "AMANST",
+    "VGNKennung": "5182",
     "Platforms": {
       "AMANST:1": {
         "GlobalID": "de:09573:5182:0:1",
@@ -19732,6 +20501,7 @@
   },
   "5183": {
     "VAGKennung": "AMHAUP",
+    "VGNKennung": "5183",
     "Platforms": {
       "AMHAUP:1": {
         "GlobalID": "de:09573:5183:0:1",
@@ -19751,6 +20521,7 @@
   },
   "5215": {
     "VAGKennung": "BLUMEN",
+    "VGNKennung": "5215",
     "Platforms": {
       "BLUMEN:1": {
         "GlobalID": "de:09573:5215:0:1",
@@ -19770,6 +20541,7 @@
   },
   "5220": {
     "VAGKennung": "GHDSPO",
+    "VGNKennung": "5220",
     "Platforms": {
       "GHDSPO:1": {
         "GlobalID": "de:09573:5220:0:1",
@@ -19789,6 +20561,7 @@
   },
   "5223": {
     "VAGKennung": "FERSCH",
+    "VGNKennung": "5223",
     "Platforms": {
       "FERSCH:1": {
         "GlobalID": "de:09573:5223:0:1",
@@ -19808,6 +20581,7 @@
   },
   "5235": {
     "VAGKennung": "VINCBR",
+    "VGNKennung": "5235",
     "Platforms": {
       "VINCBR:1": {
         "GlobalID": "de:09573:5235:0:1",
@@ -19827,6 +20601,7 @@
   },
   "5500": {
     "VAGKennung": "ZIR-BA",
+    "VGNKennung": "5500",
     "Platforms": {
       "ZIR-BA:1": {
         "GlobalID": "de:09573:5500:53:1",
@@ -19860,6 +20635,7 @@
   },
   "5506": {
     "VAGKennung": "AL-EIN",
+    "VGNKennung": "5506",
     "Platforms": {
       "AL-EIN:1": {
         "GlobalID": "de:09573:5506:0:1",
@@ -19879,6 +20655,7 @@
   },
   "5507": {
     "VAGKennung": "ZGRASW",
+    "VGNKennung": "5507",
     "Platforms": {
       "ZGRASW:1": {
         "GlobalID": "de:09573:5507:0:1",
@@ -19898,6 +20675,7 @@
   },
   "5509": {
     "VAGKennung": "Z-BAND",
+    "VGNKennung": "5509",
     "Platforms": {
       "Z-BAND:1": {
         "GlobalID": "de:09573:5509:0:1",
@@ -19917,6 +20695,7 @@
   },
   "5510": {
     "VAGKennung": "ZIR-RE",
+    "VGNKennung": "5510",
     "Platforms": {
       "ZIR-RE:1": {
         "GlobalID": "de:09573:5510:13:1",
@@ -19936,6 +20715,7 @@
   },
   "5515": {
     "VAGKennung": "Z-FRIE",
+    "VGNKennung": "5515",
     "Platforms": {
       "Z-FRIE:1": {
         "GlobalID": "de:09573:5515:0:1",
@@ -19962,6 +20742,7 @@
   },
   "5516": {
     "VAGKennung": "Z-HIRT",
+    "VGNKennung": "5516",
     "Platforms": {
       "Z-HIRT:1": {
         "GlobalID": "de:09573:5516:0:1",
@@ -19981,6 +20762,7 @@
   },
   "5517": {
     "VAGKennung": "Z-GEIS",
+    "VGNKennung": "5517",
     "Platforms": {
       "Z-GEIS:1": {
         "GlobalID": "de:09573:5517:0:1",
@@ -20000,6 +20782,7 @@
   },
   "5518": {
     "VAGKennung": "JAHNST",
+    "VGNKennung": "5518",
     "Platforms": {
       "JAHNST:1": {
         "GlobalID": "de:09573:5518:0:1",
@@ -20026,6 +20809,7 @@
   },
   "5519": {
     "VAGKennung": "J-WASS",
+    "VGNKennung": "5519",
     "Platforms": {
       "J-WASS:1": {
         "GlobalID": "de:09573:5519:0:1",
@@ -20045,6 +20829,7 @@
   },
   "5520": {
     "VAGKennung": "Z-KNEI",
+    "VGNKennung": "5520",
     "Platforms": {
       "Z-KNEI:1": {
         "GlobalID": "de:09573:5520:2:1",
@@ -20078,6 +20863,7 @@
   },
   "5525": {
     "VAGKennung": "MARK-Z",
+    "VGNKennung": "5525",
     "Platforms": {
       "MARK-Z:1": {
         "GlobalID": "de:09573:5525:53:1",
@@ -20104,6 +20890,7 @@
   },
   "5529": {
     "VAGKennung": "Z-KRAF",
+    "VGNKennung": "5529",
     "Platforms": {
       "Z-KRAF:1": {
         "GlobalID": "de:09573:5529:0:1",
@@ -20130,6 +20917,7 @@
   },
   "5537": {
     "VAGKennung": "ZIRN-O",
+    "VGNKennung": "5537",
     "Platforms": {
       "ZIRN-O:1": {
         "GlobalID": "de:09573:5537:0:1",
@@ -20156,6 +20944,7 @@
   },
   "5540": {
     "VAGKennung": "Z-LAND",
+    "VGNKennung": "5540",
     "Platforms": {
       "Z-LAND:1": {
         "GlobalID": "de:09573:5540:0:1",
@@ -20182,6 +20971,7 @@
   },
   "5545": {
     "VAGKennung": "Z-SIED",
+    "VGNKennung": "5545",
     "Platforms": {
       "Z-SIED:1": {
         "GlobalID": "de:09573:5545:0:1",
@@ -20201,6 +20991,7 @@
   },
   "5556": {
     "VAGKennung": "BANDBA",
+    "VGNKennung": "5556",
     "Platforms": {
       "BANDBA:1": {
         "GlobalID": "de:09573:5556:0:1",
@@ -20220,6 +21011,7 @@
   },
   "5564": {
     "VAGKennung": "LEISCS",
+    "VGNKennung": "5564",
     "Platforms": {
       "LEISCS:1": {
         "GlobalID": "de:09573:5564:0:1",
@@ -20239,6 +21031,7 @@
   },
   "5567": {
     "VAGKennung": "BBBSTR",
+    "VGNKennung": "5567",
     "Platforms": {
       "BBBSTR:1": {
         "GlobalID": "de:09573:5567:0:1",
@@ -20258,6 +21051,7 @@
   },
   "5598": {
     "VAGKennung": "WINOST",
+    "VGNKennung": "5598",
     "Platforms": {
       "WINOST:2": {
         "GlobalID": "de:09573:5598:0:2",
@@ -20277,6 +21071,7 @@
   },
   "5599": {
     "VAGKennung": "WINMIT",
+    "VGNKennung": "5599",
     "Platforms": {
       "WINMIT:2": {
         "GlobalID": "de:09573:5599:0:2",
@@ -20296,6 +21091,7 @@
   },
   "5649": {
     "VAGKennung": "OA-GYM",
+    "VGNKennung": "5649",
     "Platforms": {
       "OA-GYM:1": {
         "GlobalID": "de:09573:5649:0:1",
@@ -20315,6 +21111,7 @@
   },
   "5650": {
     "VAGKennung": "TALSTR",
+    "VGNKennung": "5650",
     "Platforms": {
       "TALSTR:1": {
         "GlobalID": "de:09573:5650:0:1",
@@ -20334,6 +21131,7 @@
   },
   "5651": {
     "VAGKennung": "ALTB-W",
+    "VGNKennung": "5651",
     "Platforms": {
       "ALTB-W:1": {
         "GlobalID": "de:09573:5651:0:1",
@@ -20353,6 +21151,7 @@
   },
   "5653": {
     "VAGKennung": "BAYREU",
+    "VGNKennung": "5653",
     "Platforms": {
       "BAYREU:1": {
         "GlobalID": "de:09573:5653:0:1",
@@ -20379,6 +21178,7 @@
   },
   "5657": {
     "VAGKennung": "KREUTO",
+    "VGNKennung": "5657",
     "Platforms": {
       "KREUTO:1": {
         "GlobalID": "de:09573:5657:0:1",
@@ -20398,6 +21198,7 @@
   },
   "5658": {
     "VAGKennung": "KREUTW",
+    "VGNKennung": "5658",
     "Platforms": {
       "KREUTW:1": {
         "GlobalID": "de:09573:5658:0:1",
@@ -20417,6 +21218,7 @@
   },
   "5661": {
     "VAGKennung": "A-DUER",
+    "VGNKennung": "5661",
     "Platforms": {
       "A-DUER:1": {
         "GlobalID": "de:09573:5661:0:1",
@@ -20443,6 +21245,7 @@
   },
   "5662": {
     "VAGKennung": "OAFICH",
+    "VGNKennung": "5662",
     "Platforms": {
       "OAFICH:1": {
         "GlobalID": "de:09573:5662:0:1",
@@ -20462,6 +21265,7 @@
   },
   "5663": {
     "VAGKennung": "OASLEI",
+    "VGNKennung": "5663",
     "Platforms": {
       "OASLEI:1": {
         "GlobalID": "de:09573:5663:0:1",
@@ -20481,6 +21285,7 @@
   },
   "5664": {
     "VAGKennung": "OBERAS",
+    "VGNKennung": "5664",
     "Platforms": {
       "OBERAS:1": {
         "GlobalID": "de:09573:5664:0:1",
@@ -20514,6 +21319,7 @@
   },
   "5667": {
     "VAGKennung": "ALTB-O",
+    "VGNKennung": "5667",
     "Platforms": {
       "ALTB-O:1": {
         "GlobalID": "de:09573:5667:0:1",
@@ -20540,6 +21346,7 @@
   },
   "5669": {
     "VAGKennung": "WBR-OA",
+    "VGNKennung": "5669",
     "Platforms": {
       "WBR-OA:1": {
         "GlobalID": "de:09573:5669:0:1",
@@ -20559,6 +21366,7 @@
   },
   "5670": {
     "VAGKennung": "HUM-OA",
+    "VGNKennung": "5670",
     "Platforms": {
       "HUM-OA:1": {
         "GlobalID": "de:09573:5670:0:1",
@@ -20578,6 +21386,7 @@
   },
   "5747": {
     "VAGKennung": "SPITZL",
+    "VGNKennung": "5747",
     "Platforms": {
       "SPITZL:1": {
         "GlobalID": "de:09573:5747:0:1",
@@ -20597,6 +21406,7 @@
   },
   "5750": {
     "VAGKennung": "A-MAGN",
+    "VGNKennung": "5750",
     "Platforms": {
       "A-MAGN:1": {
         "GlobalID": "de:09573:5750:2:1",
@@ -20630,6 +21440,7 @@
   },
   "5751": {
     "VAGKennung": "DEUTBM",
+    "VGNKennung": "5751",
     "Platforms": {
       "DEUTBM:1": {
         "GlobalID": "de:09573:5751:0:1",
@@ -20663,6 +21474,7 @@
   },
   "5752": {
     "VAGKennung": "FABG",
+    "VGNKennung": "5752",
     "Platforms": {
       "FABG:1": {
         "GlobalID": "de:09573:5752:0:1",
@@ -20682,6 +21494,7 @@
   },
   "5753": {
     "VAGKennung": "GOET",
+    "VGNKennung": "5753",
     "Platforms": {
       "GOET:1": {
         "GlobalID": "de:09573:5753:0:1",
@@ -20694,6 +21507,7 @@
   },
   "5754": {
     "VAGKennung": "JAGDWE",
+    "VGNKennung": "5754",
     "Platforms": {
       "JAGDWE:1": {
         "GlobalID": "de:09573:5754:0:1",
@@ -20720,6 +21534,7 @@
   },
   "5755": {
     "VAGKennung": "S-KIRC",
+    "VGNKennung": "5755",
     "Platforms": {
       "S-KIRC:1": {
         "GlobalID": "de:09573:5755:0:1",
@@ -20739,6 +21554,7 @@
   },
   "5756": {
     "VAGKennung": "PALMBE",
+    "VGNKennung": "5756",
     "Platforms": {
       "PALMBE:1": {
         "GlobalID": "de:09573:5756:0:1",
@@ -20765,6 +21581,7 @@
   },
   "5757": {
     "VAGKennung": "ROSENS",
+    "VGNKennung": "5757",
     "Platforms": {
       "ROSENS:1": {
         "GlobalID": "de:09573:5757:0:1",
@@ -20798,6 +21615,7 @@
   },
   "5758": {
     "VAGKennung": "SCHILL",
+    "VGNKennung": "5758",
     "Platforms": {
       "SCHILL:1": {
         "GlobalID": "de:09573:5758:0:1",
@@ -20824,6 +21642,7 @@
   },
   "5759": {
     "VAGKennung": "SOMMER",
+    "VGNKennung": "5759",
     "Platforms": {
       "SOMMER:1": {
         "GlobalID": "de:09573:5759:0:1",
@@ -20843,6 +21662,7 @@
   },
   "5760": {
     "VAGKennung": "UNTWEB",
+    "VGNKennung": "5760",
     "Platforms": {
       "UNTWEB:1": {
         "GlobalID": "de:09573:5760:0:1",
@@ -20862,6 +21682,7 @@
   },
   "5762": {
     "VAGKennung": "OBWEB",
+    "VGNKennung": "5762",
     "Platforms": {
       "OBWEB:1": {
         "GlobalID": "de:09573:5762:0:1",
@@ -20881,6 +21702,7 @@
   },
   "5767": {
     "VAGKennung": "BERTEL",
+    "VGNKennung": "5767",
     "Platforms": {
       "BERTEL:1": {
         "GlobalID": "de:09573:5767:0:1",
@@ -20900,6 +21722,7 @@
   },
   "5768": {
     "VAGKennung": "ECKERH",
+    "VGNKennung": "5768",
     "Platforms": {
       "ECKERH:1": {
         "GlobalID": "de:09573:5768:0:1",
@@ -20919,6 +21742,7 @@
   },
   "5769": {
     "VAGKennung": "GUTZBE",
+    "VGNKennung": "5769",
     "Platforms": {
       "GUTZBE:1": {
         "GlobalID": "de:09573:5769:0:1",
@@ -20938,6 +21762,7 @@
   },
   "5771": {
     "VAGKennung": "GYMNAS",
+    "VGNKennung": "5771",
     "Platforms": {
       "GYMNAS:1": {
         "GlobalID": "de:09573:5771:0:1",
@@ -20957,6 +21782,7 @@
   },
   "6998": {
     "VAGKennung": "LAUHEN",
+    "VGNKennung": "6998",
     "Platforms": {
       "LAUHEN:1": {
         "GlobalID": "de:09574:6998:0:1",
@@ -20976,6 +21802,7 @@
   },
   "6999": {
     "VAGKennung": "LAUZIG",
+    "VGNKennung": "6999",
     "Platforms": {
       "LAUZIG:1": {
         "GlobalID": "de:09574:6999:0:1",
@@ -20995,6 +21822,7 @@
   },
   "7005": {
     "VAGKennung": "LAUNÜS",
+    "VGNKennung": "7005",
     "Platforms": {
       "LAUNÜS:1": {
         "GlobalID": "de:09574:7005:0:1",
@@ -21014,6 +21842,7 @@
   },
   "7006": {
     "VAGKennung": "LAUSAS",
+    "VGNKennung": "7006",
     "Platforms": {
       "LAUSAS:1": {
         "GlobalID": "de:09574:7006:0:1",
@@ -21033,6 +21862,7 @@
   },
   "7011": {
     "VAGKennung": "LAUWET",
+    "VGNKennung": "7011",
     "Platforms": {
       "LAUWET:1": {
         "GlobalID": "de:09574:7011:0:1",
@@ -21052,6 +21882,7 @@
   },
   "7013": {
     "VAGKennung": "LAUALB",
+    "VGNKennung": "7013",
     "Platforms": {
       "LAUALB:1": {
         "GlobalID": "de:09574:7013:0:1",
@@ -21071,6 +21902,7 @@
   },
   "7015": {
     "VAGKennung": "LAUEWS",
+    "VGNKennung": "7015",
     "Platforms": {
       "LAUEWS:1": {
         "GlobalID": "de:09574:7015:0:1",
@@ -21090,6 +21922,7 @@
   },
   "7021": {
     "VAGKennung": "LAUSTÜ",
+    "VGNKennung": "7021",
     "Platforms": {
       "LAUSTÜ:1": {
         "GlobalID": "de:09574:7021:0:1",
@@ -21109,6 +21942,7 @@
   },
   "7035": {
     "VAGKennung": "LAUINN",
+    "VGNKennung": "7035",
     "Platforms": {
       "LAUINN:1": {
         "GlobalID": "de:09574:7035:0:1",
@@ -21128,6 +21962,7 @@
   },
   "7038": {
     "VAGKennung": "LAUHOL",
+    "VGNKennung": "7038",
     "Platforms": {
       "LAUHOL:1": {
         "GlobalID": "de:09574:7038:0:1",
@@ -21147,6 +21982,7 @@
   },
   "7042": {
     "VAGKennung": "LAUSHF",
+    "VGNKennung": "7042",
     "Platforms": {
       "LAUSHF:1": {
         "GlobalID": "de:09574:7042:0:1",
@@ -21166,6 +22002,7 @@
   },
   "7054": {
     "VAGKennung": "LAUFRI",
+    "VGNKennung": "7054",
     "Platforms": {
       "LAUFRI:1": {
         "GlobalID": "de:09574:7054:0:1",
@@ -21185,6 +22022,7 @@
   },
   "7095": {
     "VAGKennung": "WETZEN",
+    "VGNKennung": "7095",
     "Platforms": {
       "WETZEN:1": {
         "GlobalID": "de:09574:7095:0:1",
@@ -21204,6 +22042,7 @@
   },
   "7100": {
     "VAGKennung": "HERBHF",
+    "VGNKennung": "7100",
     "Platforms": {
       "HERBHF:1": {
         "GlobalID": "de:09574:7100:3:1",
@@ -21230,6 +22069,7 @@
   },
   "7129": {
     "VAGKennung": "HERMÜH",
+    "VGNKennung": "7129",
     "Platforms": {
       "HERMÜH:1": {
         "GlobalID": "de:09574:7129:0:1",
@@ -21249,6 +22089,7 @@
   },
   "7137": {
     "VAGKennung": "HERSCH",
+    "VGNKennung": "7137",
     "Platforms": {
       "HERSCH:1": {
         "GlobalID": "de:09574:7137:0:1",
@@ -21268,6 +22109,7 @@
   },
   "7151": {
     "VAGKennung": "HERNÜR",
+    "VGNKennung": "7151",
     "Platforms": {
       "HERNÜR:1": {
         "GlobalID": "de:09574:7151:0:1",
@@ -21287,6 +22129,7 @@
   },
   "7154": {
     "VAGKennung": "HERLOH",
+    "VGNKennung": "7154",
     "Platforms": {
       "HERLOH:1": {
         "GlobalID": "de:09574:7154:0:1",
@@ -21306,6 +22149,7 @@
   },
   "7156": {
     "VAGKennung": "HERULM",
+    "VGNKennung": "7156",
     "Platforms": {
       "HERULM:1": {
         "GlobalID": "de:09574:7156:0:1",
@@ -21318,6 +22162,7 @@
   },
   "7158": {
     "VAGKennung": "HERHAN",
+    "VGNKennung": "7158",
     "Platforms": {
       "HERHAN:1": {
         "GlobalID": "de:09574:7158:0:1",
@@ -21337,6 +22182,7 @@
   },
   "7201": {
     "VAGKennung": "FE-BF",
+    "VGNKennung": "7201",
     "Platforms": {
       "FE-BF:1": {
         "GlobalID": "de:09574:7201:0:1",
@@ -21356,6 +22202,7 @@
   },
   "7202": {
     "VAGKennung": "FEO",
+    "VGNKennung": "7202",
     "Platforms": {
       "FEO:1": {
         "GlobalID": "de:09574:7202:0:1",
@@ -21375,6 +22222,7 @@
   },
   "7203": {
     "VAGKennung": "FE-NÜR",
+    "VGNKennung": "7203",
     "Platforms": {
       "FE-NÜR:1": {
         "GlobalID": "de:09574:7203:0:1",
@@ -21394,6 +22242,7 @@
   },
   "7206": {
     "VAGKennung": "FE-ARW",
+    "VGNKennung": "7206",
     "Platforms": {
       "FE-ARW:1": {
         "GlobalID": "de:09574:7206:0:1",
@@ -21406,6 +22255,7 @@
   },
   "7209": {
     "VAGKennung": "FE-GST",
+    "VGNKennung": "7209",
     "Platforms": {
       "FE-GST:1": {
         "GlobalID": "de:09574:7209:0:1",
@@ -21425,6 +22275,7 @@
   },
   "7213": {
     "VAGKennung": "FE-FRI",
+    "VGNKennung": "7213",
     "Platforms": {
       "FE-FRI:1": {
         "GlobalID": "de:09574:7213:0:1",
@@ -21444,6 +22295,7 @@
   },
   "7215": {
     "VAGKennung": "FE-ALT",
+    "VGNKennung": "7215",
     "Platforms": {
       "FE-ALT:1": {
         "GlobalID": "de:09574:7215:0:1",
@@ -21456,6 +22308,7 @@
   },
   "7219": {
     "VAGKennung": "FE-ZEI",
+    "VGNKennung": "7219",
     "Platforms": {
       "FE-ZEI:1": {
         "GlobalID": "de:09574:7219:0:1",
@@ -21475,6 +22328,7 @@
   },
   "7222": {
     "VAGKennung": "MO-KIR",
+    "VGNKennung": "7222",
     "Platforms": {
       "MO-KIR:1": {
         "GlobalID": "de:09574:7222:0:1",
@@ -21487,6 +22341,7 @@
   },
   "7225": {
     "VAGKennung": "MO-GAU",
+    "VGNKennung": "7225",
     "Platforms": {
       "MO-GAU:1": {
         "GlobalID": "de:09574:7225:0:1",
@@ -21506,6 +22361,7 @@
   },
   "7246": {
     "VAGKennung": "HAGENH",
+    "VGNKennung": "7246",
     "Platforms": {
       "HAGENH:1": {
         "GlobalID": "de:09574:7246:0:1",
@@ -21525,6 +22381,7 @@
   },
   "7248": {
     "VAGKennung": "LDWRKS",
+    "VGNKennung": "7248",
     "Platforms": {
       "LDWRKS:1": {
         "GlobalID": "de:09574:7248:0:1",
@@ -21537,6 +22394,7 @@
   },
   "7249": {
     "VAGKennung": "LU-FEU",
+    "VGNKennung": "7249",
     "Platforms": {
       "LU-FEU:1": {
         "GlobalID": "de:09574:7249:0:1",
@@ -21556,6 +22414,7 @@
   },
   "7257": {
     "VAGKennung": "RA-SPO",
+    "VGNKennung": "7257",
     "Platforms": {
       "RA-SPO:1": {
         "GlobalID": "de:09574:7257:0:1",
@@ -21575,6 +22434,7 @@
   },
   "7259": {
     "VAGKennung": "RA-BER",
+    "VGNKennung": "7259",
     "Platforms": {
       "RA-BER:1": {
         "GlobalID": "de:09574:7259:0:1",
@@ -21594,6 +22454,7 @@
   },
   "7262": {
     "VAGKennung": "AL-RÖT",
+    "VGNKennung": "7262",
     "Platforms": {
       "AL-RÖT:1": {
         "GlobalID": "de:09574:7262:0:1",
@@ -21613,6 +22474,7 @@
   },
   "7264": {
     "VAGKennung": "SCHLEM",
+    "VGNKennung": "7264",
     "Platforms": {
       "SCHLEM:1": {
         "GlobalID": "de:09574:7264:0:1",
@@ -21646,6 +22508,7 @@
   },
   "7271": {
     "VAGKennung": "AL-WEI",
+    "VGNKennung": "7271",
     "Platforms": {
       "AL-WEI:1": {
         "GlobalID": "de:09574:7271:0:1",
@@ -21665,6 +22528,7 @@
   },
   "7273": {
     "VAGKennung": "AL-ZIE",
+    "VGNKennung": "7273",
     "Platforms": {
       "AL-ZIE:3": {
         "GlobalID": "de:09574:7273:0:3",
@@ -21705,6 +22569,7 @@
   },
   "7277": {
     "VAGKennung": "AFY",
+    "VGNKennung": "7277",
     "Platforms": {
       "AFY:1": {
         "GlobalID": "de:09574:7277:0:1",
@@ -21724,6 +22589,7 @@
   },
   "7289": {
     "VAGKennung": "AL-MUE",
+    "VGNKennung": "7289",
     "Platforms": {
       "AL-MUE:1": {
         "GlobalID": "de:09574:7289:0:1",
@@ -21743,6 +22609,7 @@
   },
   "7290": {
     "VAGKennung": "AL-TÜR",
+    "VGNKennung": "7290",
     "Platforms": {
       "AL-TÜR:1": {
         "GlobalID": "de:09574:7290:0:1",
@@ -21769,6 +22636,7 @@
   },
   "7293": {
     "VAGKennung": "AFN",
+    "VGNKennung": "7293",
     "Platforms": {
       "AFN:1": {
         "GlobalID": "de:09574:7293:0:1",
@@ -21795,6 +22663,7 @@
   },
   "7294": {
     "VAGKennung": "AL-PRA",
+    "VGNKennung": "7294",
     "Platforms": {
       "AL-PRA:1": {
         "GlobalID": "de:09574:7294:0:1",
@@ -21814,6 +22683,7 @@
   },
   "7300": {
     "VAGKennung": "AL-BHF",
+    "VGNKennung": "7300",
     "Platforms": {
       "AL-BHF:1": {
         "GlobalID": "de:09574:7300:3:1",
@@ -21833,6 +22703,7 @@
   },
   "7344": {
     "VAGKennung": "EZ-HAU",
+    "VGNKennung": "7344",
     "Platforms": {
       "EZ-HAU:1": {
         "GlobalID": "de:09574:7344:0:1",
@@ -21852,6 +22723,7 @@
   },
   "7347": {
     "VAGKennung": "EZ-STE",
+    "VGNKennung": "7347",
     "Platforms": {
       "EZ-STE:1": {
         "GlobalID": "de:09574:7347:0:1",
@@ -21871,6 +22743,7 @@
   },
   "7350": {
     "VAGKennung": "BT-BHF",
+    "VGNKennung": "7350",
     "Platforms": {
       "BT-BHF:1": {
         "GlobalID": "de:09574:7350:3:1",
@@ -21883,6 +22756,7 @@
   },
   "7357": {
     "VAGKennung": "BT-TSV",
+    "VGNKennung": "7357",
     "Platforms": {
       "BT-TSV:1": {
         "GlobalID": "de:09574:7357:0:1",
@@ -21902,6 +22776,7 @@
   },
   "7358": {
     "VAGKennung": "BT-REI",
+    "VGNKennung": "7358",
     "Platforms": {
       "BT-REI:1": {
         "GlobalID": "de:09574:7358:0:1",
@@ -21921,6 +22796,7 @@
   },
   "7359": {
     "VAGKennung": "BT-SCH",
+    "VGNKennung": "7359",
     "Platforms": {
       "BT-SCH:1": {
         "GlobalID": "de:09574:7359:0:1",
@@ -21940,6 +22816,7 @@
   },
   "7362": {
     "VAGKennung": "MI-DOR",
+    "VGNKennung": "7362",
     "Platforms": {
       "MI-DOR:1": {
         "GlobalID": "de:09574:7362:0:1",
@@ -21959,6 +22836,7 @@
   },
   "7363": {
     "VAGKennung": "MI-AWO",
+    "VGNKennung": "7363",
     "Platforms": {
       "MI-AWO:1": {
         "GlobalID": "de:09574:7363:0:1",
@@ -21978,6 +22856,7 @@
   },
   "7369": {
     "VAGKennung": "OB-MIT",
+    "VGNKennung": "7369",
     "Platforms": {
       "OB-MIT:1": {
         "GlobalID": "de:09574:7369:0:1",
@@ -22004,6 +22883,7 @@
   },
   "7372": {
     "VAGKennung": "OSTERH",
+    "VGNKennung": "7372",
     "Platforms": {
       "OSTERH:1": {
         "GlobalID": "de:09574:7372:0:1",
@@ -22023,6 +22903,7 @@
   },
   "7373": {
     "VAGKennung": "PAT-MI",
+    "VGNKennung": "7373",
     "Platforms": {
       "PAT-MI:1": {
         "GlobalID": "de:09574:7373:0:1",
@@ -22056,6 +22937,7 @@
   },
   "7375": {
     "VAGKennung": "SB-ALT",
+    "VGNKennung": "7375",
     "Platforms": {
       "SB-ALT:1": {
         "GlobalID": "de:09574:7375:0:1",
@@ -22082,6 +22964,7 @@
   },
   "7376": {
     "VAGKennung": "SB-KIG",
+    "VGNKennung": "7376",
     "Platforms": {
       "SB-KIG:1": {
         "GlobalID": "de:09574:7376:0:1",
@@ -22101,6 +22984,7 @@
   },
   "7379": {
     "VAGKennung": "UN-MIT",
+    "VGNKennung": "7379",
     "Platforms": {
       "UN-MIT:1": {
         "GlobalID": "de:09574:7379:0:1",
@@ -22120,6 +23004,7 @@
   },
   "7384": {
     "VAGKennung": "OB-WES",
+    "VGNKennung": "7384",
     "Platforms": {
       "OB-WES:1": {
         "GlobalID": "de:09574:7384:0:1",
@@ -22139,6 +23024,7 @@
   },
   "7572": {
     "VAGKennung": "NEUN-S",
+    "VGNKennung": "7572",
     "Platforms": {
       "NEUN-S:1": {
         "GlobalID": "de:09574:7572:0:1",
@@ -22158,6 +23044,7 @@
   },
   "7573": {
     "VAGKennung": "NEUN-F",
+    "VGNKennung": "7573",
     "Platforms": {
       "NEUN-F:1": {
         "GlobalID": "de:09574:7573:0:1",
@@ -22177,6 +23064,7 @@
   },
   "7578": {
     "VAGKennung": "KERSBA",
+    "VGNKennung": "7578",
     "Platforms": {
       "KERSBA:1": {
         "GlobalID": "de:09574:7578:0:1",
@@ -22196,6 +23084,7 @@
   },
   "7581": {
     "VAGKennung": "ROLLHO",
+    "VGNKennung": "7581",
     "Platforms": {
       "ROLLHO:1": {
         "GlobalID": "de:09574:7581:0:1",
@@ -22215,6 +23104,7 @@
   },
   "7589": {
     "VAGKennung": "SPEIKE",
+    "VGNKennung": "7589",
     "Platforms": {
       "SPEIKE:1": {
         "GlobalID": "de:09574:7589:0:1",
@@ -22234,6 +23124,7 @@
   },
   "7632": {
     "VAGKennung": "OTTENS",
+    "VGNKennung": "7632",
     "Platforms": {
       "OTTENS:1": {
         "GlobalID": "de:09574:7632:0:1",
@@ -22253,6 +23144,7 @@
   },
   "7672": {
     "VAGKennung": "REIRAT",
+    "VGNKennung": "7672",
     "Platforms": {
       "REIRAT:1": {
         "GlobalID": "de:09574:7672:0:1",
@@ -22286,6 +23178,7 @@
   },
   "7700": {
     "VAGKennung": "RÖTBHF",
+    "VGNKennung": "7700",
     "Platforms": {
       "RÖTBHF:1": {
         "GlobalID": "de:09574:7700:3:1",
@@ -22312,6 +23205,7 @@
   },
   "7702": {
     "VAGKennung": "RÖTSPK",
+    "VGNKennung": "7702",
     "Platforms": {
       "RÖTSPK:1": {
         "GlobalID": "de:09574:7702:0:1",
@@ -22331,6 +23225,7 @@
   },
   "7703": {
     "VAGKennung": "RÖPOST",
+    "VGNKennung": "7703",
     "Platforms": {
       "RÖPOST:1": {
         "GlobalID": "de:09574:7703:0:1",
@@ -22350,6 +23245,7 @@
   },
   "7704": {
     "VAGKennung": "RÖTANK",
+    "VGNKennung": "7704",
     "Platforms": {
       "RÖTANK:1": {
         "GlobalID": "de:09574:7704:0:1",
@@ -22369,6 +23265,7 @@
   },
   "7705": {
     "VAGKennung": "RÖTRAT",
+    "VGNKennung": "7705",
     "Platforms": {
       "RÖTRAT:1": {
         "GlobalID": "de:09574:7705:0:1",
@@ -22388,6 +23285,7 @@
   },
   "7709": {
     "VAGKennung": "RÖHDS",
+    "VGNKennung": "7709",
     "Platforms": {
       "RÖHDS:1": {
         "GlobalID": "de:09574:7709:0:1",
@@ -22407,6 +23305,7 @@
   },
   "7712": {
     "VAGKennung": "RÖTGOE",
+    "VGNKennung": "7712",
     "Platforms": {
       "RÖTGOE:1": {
         "GlobalID": "de:09574:7712:0:1",
@@ -22426,6 +23325,7 @@
   },
   "7751": {
     "VAGKennung": "RÜCKMI",
+    "VGNKennung": "7751",
     "Platforms": {
       "RÜCKMI:1": {
         "GlobalID": "de:09574:7751:0:1",
@@ -22445,6 +23345,7 @@
   },
   "7754": {
     "VAGKennung": "RÜCKWE",
+    "VGNKennung": "7754",
     "Platforms": {
       "RÜCKWE:1": {
         "GlobalID": "de:09574:7754:0:1",
@@ -22464,6 +23365,7 @@
   },
   "7800": {
     "VAGKennung": "SCHNAB",
+    "VGNKennung": "7800",
     "Platforms": {
       "SCHNAB:1": {
         "GlobalID": "de:09574:7800:3:1",
@@ -22483,6 +23385,7 @@
   },
   "7803": {
     "VAGKennung": "ABZHED",
+    "VGNKennung": "7803",
     "Platforms": {
       "ABZHED:1": {
         "GlobalID": "de:09574:7803:0:1",
@@ -22502,6 +23405,7 @@
   },
   "7820": {
     "VAGKennung": "BEHR",
+    "VGNKennung": "7820",
     "Platforms": {
       "BEHR:1": {
         "GlobalID": "de:09574:7820:3:1",
@@ -22521,6 +23425,7 @@
   },
   "7822": {
     "VAGKennung": "BDFB14",
+    "VGNKennung": "7822",
     "Platforms": {
       "BDFB14:1": {
         "GlobalID": "de:09574:7822:0:1",
@@ -22540,6 +23445,7 @@
   },
   "7823": {
     "VAGKennung": "BDF14O",
+    "VGNKennung": "7823",
     "Platforms": {
       "BDF14O:1": {
         "GlobalID": "de:09574:7823:0:1",
@@ -22559,6 +23465,7 @@
   },
   "7825": {
     "VAGKennung": "A-NE",
+    "VGNKennung": "7825",
     "Platforms": {
       "A-NE:1": {
         "GlobalID": "de:09574:7825:0:1",
@@ -22571,6 +23478,7 @@
   },
   "7831": {
     "VAGKennung": "MALMBA",
+    "VGNKennung": "7831",
     "Platforms": {
       "MALMBA:1": {
         "GlobalID": "de:09574:7831:0:1",
@@ -22590,6 +23498,7 @@
   },
   "7845": {
     "VAGKennung": "LORTZI",
+    "VGNKennung": "7845",
     "Platforms": {
       "LORTZI:1": {
         "GlobalID": "de:09574:7845:1:1",
@@ -22616,6 +23525,7 @@
   },
   "7846": {
     "VAGKennung": "SHGBST",
+    "VGNKennung": "7846",
     "Platforms": {
       "SHGBST:1": {
         "GlobalID": "de:09574:7846:0:1",
@@ -22635,6 +23545,7 @@
   },
   "7847": {
     "VAGKennung": "SHGOST",
+    "VGNKennung": "7847",
     "Platforms": {
       "SHGOST:1": {
         "GlobalID": "de:09574:7847:0:1",
@@ -22654,6 +23565,7 @@
   },
   "7848": {
     "VAGKennung": "MAXR",
+    "VGNKennung": "7848",
     "Platforms": {
       "MAXR:1": {
         "GlobalID": "de:09574:7848:0:1",
@@ -22673,6 +23585,7 @@
   },
   "7850": {
     "VAGKennung": "SCHG",
+    "VGNKennung": "7850",
     "Platforms": {
       "SCHG:1": {
         "GlobalID": "de:09574:7850:3:1",
@@ -22706,6 +23619,7 @@
   },
   "7861": {
     "VAGKennung": "S-KIR",
+    "VGNKennung": "7861",
     "Platforms": {
       "S-KIR:1": {
         "GlobalID": "de:09574:7861:0:1",
@@ -22725,6 +23639,7 @@
   },
   "7863": {
     "VAGKennung": "S-PLAE",
+    "VGNKennung": "7863",
     "Platforms": {
       "S-PLAE:1": {
         "GlobalID": "de:09574:7863:0:1",
@@ -22744,6 +23659,7 @@
   },
   "7864": {
     "VAGKennung": "S-MOOR",
+    "VGNKennung": "7864",
     "Platforms": {
       "S-MOOR:1": {
         "GlobalID": "de:09574:7864:0:1",
@@ -22763,6 +23679,7 @@
   },
   "7867": {
     "VAGKennung": "O-RATH",
+    "VGNKennung": "7867",
     "Platforms": {
       "O-RATH:1": {
         "GlobalID": "de:09574:7867:0:1",
@@ -22782,6 +23699,7 @@
   },
   "7872": {
     "VAGKennung": "ATF",
+    "VGNKennung": "7872",
     "Platforms": {
       "ATF:1": {
         "GlobalID": "de:09574:7872:0:1",
@@ -22801,6 +23719,7 @@
   },
   "7873": {
     "VAGKennung": "ATK",
+    "VGNKennung": "7873",
     "Platforms": {
       "ATK:1": {
         "GlobalID": "de:09574:7873:0:1",
@@ -22820,6 +23739,7 @@
   },
   "7875": {
     "VAGKennung": "FRÖ",
+    "VGNKennung": "7875",
     "Platforms": {
       "FRÖ:1": {
         "GlobalID": "de:09574:7875:0:1",
@@ -22839,6 +23759,7 @@
   },
   "7877": {
     "VAGKennung": "GSTBRE",
+    "VGNKennung": "7877",
     "Platforms": {
       "GSTBRE:1": {
         "GlobalID": "de:09574:7877:16:1",
@@ -22858,6 +23779,7 @@
   },
   "7881": {
     "VAGKennung": "O-LIND",
+    "VGNKennung": "7881",
     "Platforms": {
       "O-LIND:1": {
         "GlobalID": "de:09574:7881:0:1",
@@ -22877,6 +23799,7 @@
   },
   "7882": {
     "VAGKennung": "O-OST",
+    "VGNKennung": "7882",
     "Platforms": {
       "O-OST:1": {
         "GlobalID": "de:09574:7882:0:1",
@@ -22896,6 +23819,7 @@
   },
   "7883": {
     "VAGKennung": "ABZPFE",
+    "VGNKennung": "7883",
     "Platforms": {
       "ABZPFE:1": {
         "GlobalID": "de:09574:7883:0:1",
@@ -22908,6 +23832,7 @@
   },
   "7884": {
     "VAGKennung": "PFEIFF",
+    "VGNKennung": "7884",
     "Platforms": {
       "PFEIFF:1": {
         "GlobalID": "de:09574:7884:0:1",
@@ -22927,6 +23852,7 @@
   },
   "7886": {
     "VAGKennung": "RUH",
+    "VGNKennung": "7886",
     "Platforms": {
       "RUH:1": {
         "GlobalID": "de:09574:7886:0:1",
@@ -22946,6 +23872,7 @@
   },
   "7887": {
     "VAGKennung": "RUW",
+    "VGNKennung": "7887",
     "Platforms": {
       "RUW:1": {
         "GlobalID": "de:09574:7887:0:1",
@@ -22965,6 +23892,7 @@
   },
   "7900": {
     "VAGKennung": "SIMHÜB",
+    "VGNKennung": "7900",
     "Platforms": {
       "SIMHÜB:1": {
         "GlobalID": "de:09574:7900:3:1",
@@ -22977,6 +23905,7 @@
   },
   "7901": {
     "VAGKennung": "SIMTUC",
+    "VGNKennung": "7901",
     "Platforms": {
       "SIMTUC:1": {
         "GlobalID": "de:09574:7901:0:1",
@@ -22996,6 +23925,7 @@
   },
   "7908": {
     "VAGKennung": "ABZAU",
+    "VGNKennung": "7908",
     "Platforms": {
       "ABZAU:1": {
         "GlobalID": "de:09574:7908:0:1",
@@ -23015,6 +23945,7 @@
   },
   "7971": {
     "VAGKennung": "WI-RAT",
+    "VGNKennung": "7971",
     "Platforms": {
       "WI-RAT:1": {
         "GlobalID": "de:09574:7971:0:1",
@@ -23034,6 +23965,7 @@
   },
   "7974": {
     "VAGKennung": "UNGEL",
+    "VGNKennung": "7974",
     "Platforms": {
       "UNGEL:1": {
         "GlobalID": "de:09574:7974:0:1",
@@ -23053,6 +23985,7 @@
   },
   "7977": {
     "VAGKennung": "PE-KIR",
+    "VGNKennung": "7977",
     "Platforms": {
       "PE-KIR:1": {
         "GlobalID": "de:09574:7977:0:1",
@@ -23079,6 +24012,7 @@
   },
   "7978": {
     "VAGKennung": "PE-ASS",
+    "VGNKennung": "7978",
     "Platforms": {
       "PE-ASS:1": {
         "GlobalID": "de:09574:7978:0:1",
@@ -23098,6 +24032,7 @@
   },
   "8125": {
     "VAGKennung": "",
+    "VGNKennung": "8125",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09576:8125:0:1",
@@ -23117,6 +24052,7 @@
   },
   "8129": {
     "VAGKennung": "WSHKDS",
+    "VGNKennung": "8129",
     "Platforms": {
       "WSHKDS:1": {
         "GlobalID": "de:09576:8129:0:1",
@@ -23136,6 +24072,7 @@
   },
   "8130": {
     "VAGKennung": "",
+    "VGNKennung": "8130",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09576:8130:0:1",
@@ -23155,6 +24092,7 @@
   },
   "8134": {
     "VAGKennung": "",
+    "VGNKennung": "8134",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09576:8134:0:1",
@@ -23174,6 +24112,7 @@
   },
   "8138": {
     "VAGKennung": "WSGRDS",
+    "VGNKennung": "8138",
     "Platforms": {
       "WSGRDS:1": {
         "GlobalID": "de:09576:8138:0:1",
@@ -23193,6 +24132,7 @@
   },
   "8140": {
     "VAGKennung": "WSHLND",
+    "VGNKennung": "8140",
     "Platforms": {
       "WSHLND:1": {
         "GlobalID": "de:09576:8140:0:1",
@@ -23212,6 +24152,7 @@
   },
   "8142": {
     "VAGKennung": "WSIDGN",
+    "VGNKennung": "8142",
     "Platforms": {
       "WSIDGN:1": {
         "GlobalID": "de:09576:8142:0:1",
@@ -23231,6 +24172,7 @@
   },
   "8145": {
     "VAGKennung": "WSMXRW",
+    "VGNKennung": "8145",
     "Platforms": {
       "WSMXRW:1": {
         "GlobalID": "de:09576:8145:0:1",
@@ -23250,6 +24192,7 @@
   },
   "8146": {
     "VAGKennung": "",
+    "VGNKennung": "8146",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09576:8146:0:1",
@@ -23269,6 +24212,7 @@
   },
   "8147": {
     "VAGKennung": "",
+    "VGNKennung": "8147",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09576:8147:0:1",
@@ -23288,6 +24232,7 @@
   },
   "8151": {
     "VAGKennung": "WSPRML",
+    "VGNKennung": "8151",
     "Platforms": {
       "WSPRML:1": {
         "GlobalID": "de:09576:8151:0:1",
@@ -23307,6 +24252,7 @@
   },
   "8152": {
     "VAGKennung": "",
+    "VGNKennung": "8152",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09576:8152:0:1",
@@ -23326,6 +24272,7 @@
   },
   "8161": {
     "VAGKennung": "GSH",
+    "VGNKennung": "8161",
     "Platforms": {
       "GSH:1": {
         "GlobalID": "de:09576:8161:0:1",
@@ -23345,6 +24292,7 @@
   },
   "8163": {
     "VAGKennung": "GLSPRL",
+    "VGNKennung": "8163",
     "Platforms": {
       "GLSPRL:1": {
         "GlobalID": "de:09576:8163:0:1",
@@ -23364,6 +24312,7 @@
   },
   "8165": {
     "VAGKennung": "GSK",
+    "VGNKennung": "8165",
     "Platforms": {
       "GSK:1": {
         "GlobalID": "de:09576:8165:0:1",
@@ -23383,6 +24332,7 @@
   },
   "8166": {
     "VAGKennung": "GLPRKS",
+    "VGNKennung": "8166",
     "Platforms": {
       "GLPRKS:1": {
         "GlobalID": "de:09576:8166:0:1",
@@ -23402,6 +24352,7 @@
   },
   "8167": {
     "VAGKennung": "",
+    "VGNKennung": "8167",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09576:8167:0:1",
@@ -23421,6 +24372,7 @@
   },
   "8168": {
     "VAGKennung": "GLSCHB",
+    "VGNKennung": "8168",
     "Platforms": {
       "GLSCHB:1": {
         "GlobalID": "de:09576:8168:0:1",
@@ -23440,6 +24392,7 @@
   },
   "8171": {
     "VAGKennung": "KLALLH",
+    "VGNKennung": "8171",
     "Platforms": {
       "KLALLH:1": {
         "GlobalID": "de:09576:8171:0:1",
@@ -23459,6 +24412,7 @@
   },
   "8173": {
     "VAGKennung": "KLERIM",
+    "VGNKennung": "8173",
     "Platforms": {
       "KLERIM:1": {
         "GlobalID": "de:09576:8173:0:1",
@@ -23478,6 +24432,7 @@
   },
   "8175": {
     "VAGKennung": "KLFRNK",
+    "VGNKennung": "8175",
     "Platforms": {
       "KLFRNK:1": {
         "GlobalID": "de:09576:8175:0:1",
@@ -23497,6 +24452,7 @@
   },
   "8176": {
     "VAGKennung": "KLRNG",
+    "VGNKennung": "8176",
     "Platforms": {
       "KLRNG:2": {
         "GlobalID": "de:09576:8176:0:2",
@@ -23516,6 +24472,7 @@
   },
   "8177": {
     "VAGKennung": "KSLSPL",
+    "VGNKennung": "8177",
     "Platforms": {
       "KSLSPL:1": {
         "GlobalID": "de:09576:8177:0:1",
@@ -23535,6 +24492,7 @@
   },
   "8178": {
     "VAGKennung": "KLSCHL",
+    "VGNKennung": "8178",
     "Platforms": {
       "KLSCHL:1": {
         "GlobalID": "de:09576:8178:0:1",
@@ -23554,6 +24512,7 @@
   },
   "8180": {
     "VAGKennung": "KSLNRD",
+    "VGNKennung": "8180",
     "Platforms": {
       "KSLNRD:1": {
         "GlobalID": "de:09576:8180:0:1",
@@ -23566,6 +24525,7 @@
   },
   "8193": {
     "VAGKennung": "SORG",
+    "VGNKennung": "8193",
     "Platforms": {
       "SORG:1": {
         "GlobalID": "de:09576:8193:0:1",
@@ -23585,6 +24545,7 @@
   },
   "8195": {
     "VAGKennung": "",
+    "VGNKennung": "8195",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09576:8195:0:1",
@@ -23604,6 +24565,7 @@
   },
   "8199": {
     "VAGKennung": "",
+    "VGNKennung": "8199",
     "Platforms": {
       ":1": {
         "GlobalID": "de:09576:8199:0:1",
@@ -23623,6 +24585,7 @@
   },
   "8748": {
     "VAGKennung": "AM-SGH",
+    "VGNKennung": "8748",
     "Platforms": {
       "AM-SGH:1": {
         "GlobalID": "de:09576:8748:0:1",
@@ -23642,6 +24605,7 @@
   },
   "8751": {
     "VAGKennung": "MARK-S",
+    "VGNKennung": "8751",
     "Platforms": {
       "MARK-S:1": {
         "GlobalID": "de:09576:8751:73:1",
@@ -23668,6 +24632,7 @@
   },
   "8752": {
     "VAGKennung": "AFORST",
+    "VGNKennung": "8752",
     "Platforms": {
       "AFORST:1": {
         "GlobalID": "de:09576:8752:0:1",
@@ -23687,6 +24652,7 @@
   },
   "8755": {
     "VAGKennung": "SGK",
+    "VGNKennung": "8755",
     "Platforms": {
       "SGK:1": {
         "GlobalID": "de:09576:8755:0:1",
@@ -23699,6 +24665,7 @@
   },
   "8757": {
     "VAGKennung": "SKK",
+    "VGNKennung": "8757",
     "Platforms": {
       "SKK:1": {
         "GlobalID": "de:09576:8757:0:1",
@@ -23718,6 +24685,7 @@
   },
   "8773": {
     "VAGKennung": "LBN",
+    "VGNKennung": "8773",
     "Platforms": {
       "LBN:1": {
         "GlobalID": "de:09576:8773:0:1",
@@ -23737,6 +24705,7 @@
   },
   "8776": {
     "VAGKennung": "LHP",
+    "VGNKennung": "8776",
     "Platforms": {
       "LHP:1": {
         "GlobalID": "de:09576:8776:0:1",

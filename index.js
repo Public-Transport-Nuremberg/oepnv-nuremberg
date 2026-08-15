@@ -4,6 +4,7 @@ const Fahrten = require("./src/fahrten");
 const WebProcessor = require("./src/web_processor");
 const routen = require("./src/routen");
 const mapandroute = require("./src/mapandroute");
+const platformsByStopId = require("./static/haltestellen-id-geodaten.json");
 const { Fuhrpark_Bus, Fuhrpark_Tram, Fuhrpark_PVU, Steighoehen_Tram, StopInfo_Tram, StopInfo_Ubahn } = require("./static");
 const Fuhrpark_Total = {...Fuhrpark_Bus, ...Fuhrpark_Tram, ...Fuhrpark_PVU};
 const allowed_apiparameter = {
@@ -124,6 +125,26 @@ class openvgn {
         }).catch(function (err) {
             return err;
         });
+    };
+
+    /**
+     * Resolve platform and coordinate data for a stop ID.
+     * @param {String|Number} id VGN stop ID
+     * @returns {Object|Error} Stop data containing VAGKennung and Platforms
+     */
+    getPlatforms(id) {
+        if (id === undefined || id === null || id === "") {
+            return new Error("getPlatforms: ID can´t be empty.");
+        }
+
+        const requestedId = String(id);
+        const platforms = platformsByStopId[requestedId]
+            || Object.values(platformsByStopId).find(stop => stop.VAGKennung === requestedId);
+        if (!platforms) {
+            return new Error(`getPlatforms: No platform data found for ID ${id}.`);
+        }
+
+        return platforms;
     };
 
     /**

@@ -58,6 +58,16 @@ This will get you all known data about a stop.
 getStops('Plärrer', {limit: 1});
  ```
 
+### getPlatforms
+Resolves platform and coordinate data for a stop. The stop can be addressed by
+numeric stop ID or by its VAG stop code (`VAGKennung`).
+
+```js
+getPlatforms(101);
+// Or
+getPlatforms('WT');
+```
+
 ### getStopsbygps
 This will list all stops in a given radius.  
    

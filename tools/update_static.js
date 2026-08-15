@@ -178,7 +178,7 @@ function transformStationsSheet(workbook) {
         }
 
         if (!result[vgnKey]) {
-            result[vgnKey] = { VAGKennung: rowObj.VAGKennung, Platforms: {} };
+            result[vgnKey] = { VAGKennung: rowObj.VAGKennung ?? null, VGNKennung: rowObj.VGNKennung ?? null, Platforms: {} };
         }
 
         const platformKey = rowObj.Haltepunkt;
