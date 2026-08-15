@@ -99,11 +99,14 @@ const getDeparturesbygps = (url, latitude, longitude, parameter, api_url, encode
 			if (err) { reject(err); }
 			try {
 				if (res.statusCode === 200) {
-					body.Haltestellen.map((Haltestellen) => {
+					// HOTFIX: The API currently returns stations outside the requested distance, so enforce the radius locally before loading departures.
+					body.Haltestellen = body.Haltestellen.filter((Haltestellen) => {
 						Haltestellen.Distance = geolib.getDistance(
 							{ latitude: latitude, longitude: longitude },
 							{ latitude: Haltestellen.Latitude, longitude: Haltestellen.Longitude }
 						);
+						return !parameter?.distance || Haltestellen.Distance <= Number(parameter.distance);
+					}).map((Haltestellen) => {
 						let HaltestellennameSplit = Haltestellen.Haltestellenname.split("(");
 						Haltestellen.Haltestellenname = HaltestellennameSplit[0].trim();
 						Haltestellen.Ort = HaltestellennameSplit[1].replace(/[)]/g, "",);
@@ -113,14 +116,15 @@ const getDeparturesbygps = (url, latitude, longitude, parameter, api_url, encode
 							url = `${url}?${encodeQueryData(parameter, 'Departures')}`
 						}
 						PromiseAbfahren.push(getDepartures(url, { Fuhrpark_Tram, Fuhrpark_Bus }))
+						return Haltestellen;
 
 					});
 
 					Promise.all(PromiseAbfahren)
 						.then(function (PAll) {
-							for (i in PAll) {
-								body.Haltestellen[i].Abfahrten = PAll[i]
-							}
+							PAll.forEach((departure, index) => {
+								body.Haltestellen[index].Abfahrten = departure;
+							});
 							if (parameter.sort.toLowerCase() === "distance") { body.Haltestellen.sort((a, b) => (a.Distance > b.Distance) ? 1 : -1) };
 							if (parameter.sort.toLowerCase() === "alphabetically") { body.Haltestellen.sort((a, b) => (a.Haltestellenname > b.Haltestellenname) ? 1 : -1) };
 							if (parameter) {
