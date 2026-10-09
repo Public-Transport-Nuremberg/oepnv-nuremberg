@@ -17,7 +17,8 @@ Version: 0.1.2 to 0.2.0 Not compatible, abfahrten output now contains more info
 - [X] Stops based on GPS
 - [X] Get Trips
 - [X] Get Trip
-- [?] Get elevator malfunctions
+- [X] Get elevator malfunctions
+- [X] Get live vehicle positions
 - [?] Get current timetable changes
 - [X] Turn (part of) adress into list of near stops
 - [X] Turn GPS into Adress
@@ -138,6 +139,47 @@ This will calculate the time it takes to travel from one stop to another.
 ```js
 calculateTripTime(getTripResponse, "LS", "704") // Returns difference in seconds acourting to the timetable
 calculateActualTripTime(getTripResponse, "LS", "704") // Returns difference in seconds acourting to the actual time
+```
+
+### getVehicles
+Returns live vehicle data as `Vehicles` and `Meta`. Bounds and `Latitude`/`Longitude` use WGS84 degrees; `Delay` is in seconds.
+Previous positions use `LatitudePrevious`/`LongitudePrevious`; original `X`/`Y` fields remain in MRCV. Invalid or missing positions return `null` coordinates.
+Optional filters: `MOTCode`, `ID`, `JourneyIdentifier`.
+```js
+getVehicles({west: 11.02, south: 49.42, east: 11.13, north: 49.49, MOTCode: 5})
+```
+
+`MOTCode` filters by transport type. Use a number for one type or a comma-separated string like `"4,5"` for tram and city bus. Omit it to return all available types.
+
+| MOTCode | Transport type |
+| ------------- | ------------- |
+| 0 | Train |
+| 1 | S-Bahn / suburban railway |
+| 2 | U-Bahn / underground |
+| 3 | Stadtbahn / light rail |
+| 4 | Tram |
+| 5 | City bus |
+| 6 | Regional bus |
+| 7 | Coach |
+| 8 | Cable car |
+| 9 | Boat / ferry |
+| 10 | On-demand transport / Rufbus |
+| 11 | Other |
+| 12 | Aircraft |
+| 13 | Regional train |
+| 14 | National train |
+| 15 | International train |
+| 16 | High-speed train |
+| 17 | Rail replacement |
+| 18 | Shuttle train |
+| 19 | Bürgerbus / community bus |
+
+These are the [standard EFA codes](https://www.mobidata-bw.de/data/EFA_JSON_API_Training_EN_2.3.pdf#page=68); provider assignments can differ. Codes `4` and `5` were verified for this endpoint. Other codes may return no vehicles.
+
+### getElevatorInfo
+Returns the elevator status supplied by NürnbergMOBIL as `Elevators` and `Meta`.
+```js
+getElevatorInfo()
 ```
 
 ### getVagWebpageDisturbances (BETA)

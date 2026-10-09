@@ -1,6 +1,8 @@
 const Haltestellen = require("./src/haltestellen");
 const Abfahrten = require("./src/abfahrten");
 const Fahrten = require("./src/fahrten");
+const Fahrzeuge = require("./src/fahrzeuge");
+const Aufzuege = require("./src/aufzuege");
 const WebProcessor = require("./src/web_processor");
 const routen = require("./src/routen");
 const mapandroute = require("./src/mapandroute");
@@ -11,7 +13,8 @@ const allowed_apiparameter = {
     Departures: ["product", "timespan", "timedelay", "limitcount"],
     Stops: ["name", "lon", "lat", "distance"],
     Trips: ["timespan"],
-    Locations: ["name"]
+    Locations: ["name"],
+    Vehicles: ["minx", "miny", "maxx", "maxy", "motcode", "id", "journeyidentifier"]
 };
 
 class openvgn {
@@ -23,6 +26,8 @@ class openvgn {
     constructor(api_url, vag_url) {
         this.api_url = api_url || "https://start.vag.de/dm/api";
         this.vag_url = vag_url || "https://efa-gateway.vag.de";
+        this.vgn_livemap_url = "https://vis.defas-fgi.de/VMI";
+        this.nuernbergmobil_url = "https://api.nuernbergmobil.de/srs/api/v1";
         this.map_and_route_url = "https://iw.mapandroute.de/MapAPI-1.4/servlet/FrontController";
         this.vag_livemap_url = "https://livemap.vag.de"; // VAG often forgets to update SSL for couple of weeks, be warned (Downtime about 5 Weeks a year (2022 & 2023)) - Also IPv4 only
     };
@@ -89,6 +94,15 @@ class openvgn {
         const lat = (Math.atan(Math.exp(xy[1] / A)) * 2 - Math.PI / 2) * R2D;
     
         return [lon, lat];
+    }
+
+    #MRCVtoWGS84(x, y) {
+        if (x === undefined || x === null || String(x).trim() === ""
+            || y === undefined || y === null || String(y).trim() === ""
+            || !Number.isFinite(Number(x)) || !Number.isFinite(Number(y))) {
+            return [null, null];
+        }
+        return this.#WGS84toXY([Number(x), 12000000 - Number(y)]);
     }
 
     /**
@@ -280,6 +294,67 @@ class openvgn {
     getVagWebpageDisturbances(test) {
         return WebProcessor.getVagWebpageDisturbances(test).then(function (Oobject) {
             return Oobject;
+        }).catch(function (err) {
+            return err;
+        });
+    };
+
+    /**
+     * This will list live vehicle positions in WGS84 coordinates.
+     * @param {Object} parameter Query parameter
+     * @param {Number} [parameter.west] Western longitude in WGS84 degrees
+     * @param {Number} [parameter.south] Southern latitude in WGS84 degrees
+     * @param {Number} [parameter.east] Eastern longitude in WGS84 degrees
+     * @param {Number} [parameter.north] Northern latitude in WGS84 degrees
+     * @param {String|Number} [parameter.MOTCode] One or multiple comma-separated product codes
+     * @param {String} [parameter.ID] VMI object ID
+     * @param {String} [parameter.JourneyIdentifier] One or multiple comma-separated journey IDs
+     */
+    getVehicles(parameter = {}) {
+        const request = {};
+        for (const key of ["MOTCode", "ID", "JourneyIdentifier"]) {
+            if (parameter[key] !== undefined) request[key] = parameter[key];
+        }
+        const bounds = ["west", "south", "east", "north"];
+        if (bounds.some(key => parameter[key] !== undefined)) {
+            if (!bounds.every(key => (typeof parameter[key] === "number" || typeof parameter[key] === "string")
+                && String(parameter[key]).trim() !== "" && Number.isFinite(Number(parameter[key])))) {
+                return new Error("getVehicles: All four WGS84 bounds are required and must be numbers.");
+            }
+            const [west, south, east, north] = bounds.map(key => Number(parameter[key]));
+            if (west < -180 || east > 180 || south < -85.0511287798066 || north > 85.0511287798066
+                || west >= east || south >= north) {
+                return new Error("getVehicles: Invalid WGS84 bounds.");
+            }
+            const northwest = this.#XYtoWGS84([west, north]);
+            const southeast = this.#XYtoWGS84([east, south]);
+            request.MinX = northwest[0];
+            request.MinY = 12000000 - northwest[1];
+            request.MaxX = southeast[0];
+            request.MaxY = 12000000 - southeast[1];
+        }
+        const query = this.#encodeQueryData(request, "Vehicles");
+        const url = `${this.vgn_livemap_url}?CoordSystem=MRCV${query ? "&" + query : ""}`;
+        return Fahrzeuge.getVehicles(url).then(Fahrzeuge => {
+            Fahrzeuge.Vehicles.forEach(vehicle => {
+                [vehicle.Longitude, vehicle.Latitude] = this.#MRCVtoWGS84(vehicle.X, vehicle.Y);
+                if (vehicle.XPrevious !== undefined || vehicle.YPrevious !== undefined) {
+                    [vehicle.LongitudePrevious, vehicle.LatitudePrevious] = this.#MRCVtoWGS84(vehicle.XPrevious, vehicle.YPrevious);
+                }
+            });
+            return Fahrzeuge;
+        }).catch(function (err) {
+            return err;
+        });
+    };
+
+    /**
+     * This will return the current elevator status from NürnbergMOBIL.
+     */
+    getElevatorInfo() {
+        const url = `${this.nuernbergmobil_url}/elevatorInfo?tenant=vagn`;
+        return Aufzuege.getElevatorInfo(url).then(function (Aufzuege) {
+            return Aufzuege;
         }).catch(function (err) {
             return err;
         });
